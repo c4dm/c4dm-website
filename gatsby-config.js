@@ -3,11 +3,10 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Anne website`,
+    title: `C4DM website`,
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [
-    "gatsby-plugin-google-gtag",
     "gatsby-plugin-image",
     {
       resolve: "gatsby-plugin-manifest",
