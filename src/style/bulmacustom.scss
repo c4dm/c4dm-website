@@ -1,0 +1,22 @@
+$primary: #3E40A5;
+
+@import "~bulma/bulma.sass";
+
+
+.blog-card-text {
+    position: relative;
+    max-height: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+// Add a gradient to the bottom of the text
+.blog-card-text::after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(180deg, transparent 0, white 100%);
+}
