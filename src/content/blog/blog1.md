@@ -5,7 +5,7 @@ date: "2022-07-05"
 image: "./placeholder.png"
 ---
 
-Consectetur amet laborum labore anim magna mollit aute. Occaecat cillum consectetur aliqua eiusmod pariatur consequat. In non elit consectetur laborum.
+**Consectetur** <b>I'm bold </b>amet laborum labore anim magna mollit aute. Occaecat cillum consectetur aliqua eiusmod pariatur consequat. In non elit consectetur laborum.
 
 Consequat et consequat duis sint. Tempor laboris cupidatat cupidatat ea commodo incididunt ad reprehenderit ea laboris non laborum. Nisi sunt quis excepteur fugiat est quis quis labore. Nostrud cillum laboris incididunt duis et officia quis enim. Aliqua commodo tempor ad occaecat esse minim amet commodo.
 

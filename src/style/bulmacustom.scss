@@ -20,3 +20,9 @@ $primary: #3E40A5;
     height: 50px;
     background-image: linear-gradient(180deg, transparent 0, white 100%);
 }
+
+.navbar {
+    .gatsby-image-wrapper {
+        margin: 10px;
+    }
+}
