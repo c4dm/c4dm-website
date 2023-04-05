@@ -1,4 +1,6 @@
 import React, {useState} from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import { GatsbyImage } from "gatsby-plugin-image"
 import {Link} from "gatsby"
 
 const navItems = [
@@ -18,13 +20,29 @@ const socialMediaItems = [
 
 const Layout = (props) => {
 
+    const data = useStaticQuery(graphql`
+    {
+    image: file(absolutePath: {regex: "/images/.*icon.*/"}, extension: {eq: "png"}) {
+      id
+      publicURL
+      childImageSharp {
+        gatsbyImageData(layout: FIXED, height: 50)
+        }
+      }
+    }
+    `);
+
     const [showMobileMenu,setShowMobileMenu] = useState(false);
 
     const navBarTop = (
       <nav className="navbar" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
           <Link to="/">
-            <b>Logo</b>
+            <GatsbyImage
+              alt="C4DM logo"
+              className="logo"
+              image={data.image.childImageSharp.gatsbyImageData}
+            />
           </Link>
           <a
             role="button"
