@@ -6,7 +6,7 @@ import ContactForm from "../components/contactForm";
 
 
 
-const Participate = () => {
+const GetInvolved = () => {
     const data = useStaticQuery(graphql`
     {
         markdownRemark(fields: {category: {eq: "participate"}}) {
@@ -47,4 +47,4 @@ const Participate = () => {
     )
 }
 
-export default Participate
+export default GetInvolved

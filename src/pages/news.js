@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import Layout from "../components/layout";
 import BlogCard from "../components/blogCard";
 
-const Blog = () => {
+const News = () => {
   const data = useStaticQuery(graphql`
   {
     allMarkdownRemark(
@@ -31,7 +31,7 @@ const Blog = () => {
   }
   `);
   return (
-    <Layout name="Blog">
+    <Layout name="News">
       <section className="section">
         <div className="columns is-multiline">
           {data.allMarkdownRemark.nodes.map((blogentry) => (
@@ -52,4 +52,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default News;

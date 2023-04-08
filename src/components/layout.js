@@ -4,9 +4,11 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import {Link} from "gatsby"
 
 const navItems = [
-    {name: "About", link: "/about"},
-    {name: "Blog", link: "/blog"},
-    {name: "Participate", link: "/participate"},
+    {name: "Research", link: "/research"},
+    {name: "People", link: "/people"},
+    {name: "News", link: "/news"},
+    {name: "Partners", link: "/partners"},
+    {name: "Get Involved", link: "/get-involved"},
 ]
 
 const socialMediaItems = [
@@ -17,14 +19,19 @@ const socialMediaItems = [
 ];
 
 
-
 const Layout = (props) => {
 
     const data = useStaticQuery(graphql`
     {
-    image: file(absolutePath: {regex: "/images/.*icon.*/"}, extension: {eq: "png"}) {
+    c4dmlogo: file(absolutePath: {regex: "/images/.*icon.*/"}, extension: {eq: "png"}) {
       id
       publicURL
+      childImageSharp {
+        gatsbyImageData(layout: FIXED, height: 50)
+        }
+      }
+    qmullogo: file(absolutePath: {regex: "/images/.*QMUL_black.*/"}, extension: {eq: "png"}) {
+      id
       childImageSharp {
         gatsbyImageData(layout: FIXED, height: 50)
         }
@@ -41,7 +48,7 @@ const Layout = (props) => {
             <GatsbyImage
               alt="C4DM logo"
               className="logo"
-              image={data.image.childImageSharp.gatsbyImageData}
+              image={data.c4dmlogo.childImageSharp.gatsbyImageData}
             />
           </Link>
           <a
@@ -97,6 +104,27 @@ const Layout = (props) => {
       </nav>
     );
 
+    const footer = (
+      <footer class="footer">
+        <div class="columns">
+          <div class="column is-one-third">
+            <p className="has-text-centered">TODO: address</p>
+          </div>
+          <div class="column is-one-third">
+            <p className="has-text-centered">TODO: site search</p>
+          </div>
+          <div class="column is-one-third">
+            <div className="container is-flex is-justify-content-center">
+            <GatsbyImage
+              alt="QMUL logo"
+              image={data.qmullogo.childImageSharp.gatsbyImageData}
+            />
+            </div>
+          </div>
+        </div>
+      </footer>
+    );
+
     return (
       <>
         <header className="hero is-medium is-primary">
@@ -109,6 +137,7 @@ const Layout = (props) => {
           <div className="hero-footer">{navBarBottom}</div>
         </header>
         <main className="container">{props.children}</main>
+        {footer}
       </>
     );
 }
