@@ -9,7 +9,7 @@ import ContactForm from "../components/contactForm";
 const GetInvolved = () => {
     const data = useStaticQuery(graphql`
     {
-        markdownRemark(fields: {category: {eq: "participate"}}) {
+        markdownRemark(fields: {category: {eq: "get-involved"}}) {
             id
             html
             frontmatter {

@@ -22,6 +22,29 @@ const IndexPage = () => {
             }
           }
         }
+        projects: allMarkdownRemark(
+          filter: { fields: { category: { eq: "news" } } }
+          sort: { frontmatter: { date: DESC } }
+          limit: 6
+        ) {
+          nodes {
+            fields {
+              slug
+            }
+            frontmatter {
+              image {
+                childrenImageSharp {
+                  gatsbyImageData(layout: CONSTRAINED)
+                }
+              }
+              title
+              author
+              date(formatString: "ddd DD MMM yy")
+            }
+            html
+            id
+          }
+        }
       }
     `);
   return (

@@ -3,7 +3,7 @@ import { graphql} from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";
 
-const BlogPost = ({ data }) => {
+const NewsPost = ({ data }) => {
     const {markdownRemark} = data;
     const {frontmatter, fields, html} = markdownRemark;
 
@@ -31,7 +31,7 @@ const BlogPost = ({ data }) => {
     );
 }
 
-export default BlogPost;
+export default NewsPost;
 
 export const pageQuery = graphql`
   query ($slug: String!) {

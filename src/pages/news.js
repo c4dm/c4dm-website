@@ -7,7 +7,7 @@ const News = () => {
   const data = useStaticQuery(graphql`
   {
     allMarkdownRemark(
-    filter: {fields: {category: {eq: "blog"}}}
+    filter: {fields: {category: {eq: "news"}}}
     sort: {frontmatter: {date: DESC}}
     ) {
       nodes {
