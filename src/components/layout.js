@@ -72,21 +72,21 @@ const Layout = (props) => {
           }`}
         >
           {navItems.map((item) => (
-            <>
-              <Link className="navbar-item" to={item.link} key={item.name}>
+            <React.Fragment key={`navbar-unit-${item.name}`}>
+              <Link className="navbar-item" to={item.link}>
                 {item.name}
               </Link>
               <span className="navitem-divider"></span>
-            </>
+            </React.Fragment>
           ))}
         </div>
       </nav>
     );
 
     const footer = (
-      <footer class="footer">
-        <div class="columns">
-          <div class="column is-one-third">
+      <footer className="footer">
+        <div className="columns">
+          <div className="column is-one-third">
             <p className="has-text-centered">
               TODO: address <br/>
               {socialMediaItems.map((item) => (
@@ -103,10 +103,10 @@ const Layout = (props) => {
               ))}
             </p>
           </div>
-          <div class="column is-one-third">
+          <div className="column is-one-third">
             <p className="has-text-centered">TODO: site search</p>
           </div>
-          <div class="column is-one-third">
+          <div className="column is-one-third">
             <div className="container is-flex is-justify-content-center">
               <GatsbyImage
                 alt="QMUL logo"

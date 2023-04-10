@@ -9,6 +9,11 @@ $primary: #3E40A5;
     flex-direction: column;
 }
 
+// Make sure main content is not wider than page
+main.container {
+    max-width: 100%;
+}
+
 .blog-card-text {
     position: relative;
     max-height: 150px;
@@ -33,7 +38,6 @@ $primary: #3E40A5;
         margin: 10px;
     }
 
-
     // Divide navbar items with a slash
     .navitem-divider {
         @extend .navbar-item;
@@ -52,5 +56,50 @@ $primary: #3E40A5;
             display: none;    
         }
     }    
-
 }
+
+
+// CSS for carousel
+.carousel {
+    width: 100%;
+    .carousel-inner {
+        // add padding to the bottom to avoid cutoff of items
+        padding-bottom: 20px;
+        overflow-x: hidden;
+    }
+
+    .carousel-item {
+        transition: width 2s;
+    }
+
+    .slide-helper {
+        position: relative;
+        left: -30%;
+    }
+
+    .column {
+        transition: transform 1.5s;
+    }
+
+    .zero-width {
+        width: 0;
+    }
+
+    .icon {
+        width: 3.5rem;
+        height: 3.5rem;
+        position: absolute;
+        top: calc(50% - 1.75rem);
+        z-index: 10;
+        i {
+            font-size: 3rem;
+        }
+        &:last-of-type {
+            right: 0;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+

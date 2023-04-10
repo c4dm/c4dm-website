@@ -35,7 +35,7 @@ const News = () => {
       <section className="section">
         <div className="columns is-multiline">
           {data.allMarkdownRemark.nodes.map((blogentry) => (
-            <div className="column is-one-quarter is-one-third-tabled is-full-mobile is-flex" key={blogentry.id}>
+            <div className="column is-one-quarter-desktop is-one-third-tablet is-full-mobile is-flex" key={blogentry.id}>
               <BlogCard
                 title={blogentry.frontmatter.title}
                 author={blogentry.frontmatter.author}

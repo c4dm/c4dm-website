@@ -2,7 +2,9 @@ import * as React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import "../style/bulmacustom.scss"
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import Layout from "../components/layout.js"
+import Layout from "../components/layout.js";
+import Carousel from "../components/carousel";
+import BlogCard from "../components/blogCard";
 
 
 const IndexPage = () => {
@@ -23,7 +25,7 @@ const IndexPage = () => {
           }
         }
         projects: allMarkdownRemark(
-          filter: { fields: { category: { eq: "news" } } }
+          filter: { fields: { category: { eq: "projects" } } }
           sort: { frontmatter: { date: DESC } }
           limit: 6
         ) {
@@ -33,7 +35,7 @@ const IndexPage = () => {
             }
             frontmatter {
               image {
-                childrenImageSharp {
+                childImageSharp {
                   gatsbyImageData(layout: CONSTRAINED)
                 }
               }
@@ -47,8 +49,20 @@ const IndexPage = () => {
         }
       }
     `);
+
+    const projectCards = data.projects.nodes.map((project) => (
+      <BlogCard
+        title={project.frontmatter.title}
+        author={project.frontmatter.author}
+        date={project.frontmatter.date}
+        image={project.frontmatter.image.childImageSharp.gatsbyImageData}
+        html={project.html}
+        slug={project.fields.slug}
+      />
+    ));
+
   return (
-    <Layout>
+    <Layout name="Homepage">
       <section className="section">
         <div className="columns">
           <div className="column is-two-thirds">
@@ -63,7 +77,7 @@ const IndexPage = () => {
       <section className="section">
         <h2 className="title">Projects</h2>
         <div className="container">
-          <p>TODO: carousel with project cards here</p>
+          <Carousel content={projectCards}/>
         </div>
       </section>
       <section className="section">

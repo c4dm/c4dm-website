@@ -34,12 +34,7 @@ const BlogCard = (props) => {
             <div className="blog-card-text" dangerouslySetInnerHTML={{__html:props.html}}></div>
           </div>
           <div className="card-footer p-2 has-text-centered is-align-self-center">
-            <Link
-              to={`${props.slug}/#header`}
-              className="has-text-link has-text-weight-bold"
-            >
               Read More
-            </Link>
           </div>
         </div>
       </Link>

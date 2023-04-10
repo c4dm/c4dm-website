@@ -32,7 +32,7 @@ const People = () => {
             <section className="section">
                 <div className="columns is-multiline">
                     {data.allMarkdownRemark.nodes.map((peopleentry) => (
-                        <div className="column is-one-quarter is-one-third-tabled is-full-mobile is-flex" key={peopleentry.id}>
+                        <div className="column is-one-quarter-desktop is-one-third-tablet is-full-mobile is-flex" key={peopleentry.id}>
                             <PeopleCard
                                 name={peopleentry.frontmatter.name}
                                 role={peopleentry.frontmatter.role}
