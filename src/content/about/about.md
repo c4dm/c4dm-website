@@ -1,5 +1,6 @@
 ---
 title: "About the centre"
+video: https://www.youtube.com/embed/Rcbs4NvMFHM
 image: "c4dm.png"
 ---
 

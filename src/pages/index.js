@@ -5,18 +5,19 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import Layout from "../components/layout.js";
 import Carousel from "../components/carousel";
 import BlogCard from "../components/blogCard";
-
+import Video from "../components/video";
 
 const IndexPage = () => {
     const data = useStaticQuery(graphql`
       {
         about: markdownRemark(
           fields: { category: { eq: "about" } }
-          fileAbsolutePath: { regex: "/bio.md/" }
+          fileAbsolutePath: { regex: "/about.md/" }
         ) {
           html
           frontmatter {
             title
+            video
             image {
               childImageSharp {
                 gatsbyImageData(layout: CONSTRAINED, width: 400)
@@ -65,12 +66,12 @@ const IndexPage = () => {
     <Layout name="Homepage">
       <section className="section">
         <div className="columns">
-          <div className="column is-two-thirds">
+          <div className="column is-half">
             <h2 className="title">About</h2>
             <div className="content" dangerouslySetInnerHTML={{ __html: data.about.html }}></div>
           </div>
-          <div className="column is-one-third">
-            <p>TODO: implement youtube video here</p>  
+          <div className="column is-half">
+            <Video videoSrcURL={data.about.frontmatter.video} /> 
           </div>
         </div>
       </section>
