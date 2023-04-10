@@ -48,6 +48,29 @@ const IndexPage = () => {
             id
           }
         }
+        news: allMarkdownRemark(
+          filter: { fields: { category: { eq: "news" } } }
+          sort: { frontmatter: { date: DESC } }
+          limit: 6
+        ) {
+          nodes {
+            fields {
+              slug
+            }
+            frontmatter {
+              image {
+                childImageSharp {
+                  gatsbyImageData(layout: CONSTRAINED)
+                }
+              }
+              title
+              author
+              date(formatString: "ddd DD MMM yy")
+            }
+            html
+            id
+          }
+        }
       }
     `);
 
@@ -62,29 +85,43 @@ const IndexPage = () => {
       />
     ));
 
+    const newsCards = data.news.nodes.map((news) => (
+      <BlogCard
+        title={news.frontmatter.title}
+        author={news.frontmatter.author}
+        date={news.frontmatter.date}
+        image={news.frontmatter.image.childImageSharp.gatsbyImageData}
+        html={news.html}
+        slug={news.fields.slug}
+      />
+    ));
+
   return (
     <Layout name="Homepage">
       <section className="section">
         <div className="columns">
           <div className="column is-half">
             <h2 className="title">About</h2>
-            <div className="content" dangerouslySetInnerHTML={{ __html: data.about.html }}></div>
+            <div
+              className="content"
+              dangerouslySetInnerHTML={{ __html: data.about.html }}
+            ></div>
           </div>
           <div className="column is-half">
-            <Video videoSrcURL={data.about.frontmatter.video} /> 
+            <Video videoSrcURL={data.about.frontmatter.video} />
           </div>
         </div>
       </section>
       <section className="section">
         <h2 className="title">Projects</h2>
         <div className="container">
-          <Carousel content={projectCards}/>
+          <Carousel content={projectCards} />
         </div>
       </section>
       <section className="section">
         <h2 className="title">News</h2>
         <div className="container">
-          <p>TODO: carousel with latest news and tweets</p>
+          <Carousel content={newsCards} />
         </div>
       </section>
     </Layout>
