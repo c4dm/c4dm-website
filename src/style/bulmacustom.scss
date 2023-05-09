@@ -2,6 +2,17 @@ $primary: #3E40A5;
 
 @import "~bulma/bulma.sass";
 
+// Make sure that page takes up whole vertical space
+#gatsby-focus-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+// Make sure main content is not wider than page
+main.container {
+    max-width: 100%;
+}
 
 .blog-card-text {
     position: relative;
@@ -22,7 +33,73 @@ $primary: #3E40A5;
 }
 
 .navbar {
+    // Add margin to logos
     .gatsby-image-wrapper {
         margin: 10px;
     }
+
+    // Divide navbar items with a slash
+    .navitem-divider {
+        @extend .navbar-item;
+        margin: 0;
+        padding: 0;
+        &::after {
+            display: block;
+            content: "/";   
+        }
+        // Last item should not have a slash
+        &:last-child::after {
+            display: none;
+        }
+        // Hide navbar divider on mobile 
+        @media (max-width: $desktop) {  
+            display: none;    
+        }
+    }    
 }
+
+
+// CSS for carousel
+.carousel {
+    width: 100%;
+    .carousel-inner {
+        // add padding to the bottom to avoid cutoff of items
+        padding-bottom: 20px;
+        overflow-x: hidden;
+    }
+
+    .carousel-item {
+        transition: width 2s;
+    }
+
+    .slide-helper {
+        position: relative;
+        left: -30%;
+    }
+
+    .column {
+        transition: transform 1.5s;
+    }
+
+    .zero-width {
+        width: 0;
+    }
+
+    .icon {
+        width: 3.5rem;
+        height: 3.5rem;
+        position: absolute;
+        top: calc(50% - 1.75rem);
+        z-index: 10;
+        i {
+            font-size: 3rem;
+        }
+        &:last-of-type {
+            right: 0;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+

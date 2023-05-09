@@ -3,11 +3,11 @@ import { graphql, useStaticQuery } from "gatsby";
 import Layout from "../components/layout";
 import BlogCard from "../components/blogCard";
 
-const Blog = () => {
+const News = () => {
   const data = useStaticQuery(graphql`
   {
     allMarkdownRemark(
-    filter: {fields: {category: {eq: "blog"}}}
+    filter: {fields: {category: {eq: "news"}}}
     sort: {frontmatter: {date: DESC}}
     ) {
       nodes {
@@ -31,11 +31,11 @@ const Blog = () => {
   }
   `);
   return (
-    <Layout name="Blog">
+    <Layout name="News">
       <section className="section">
         <div className="columns is-multiline">
           {data.allMarkdownRemark.nodes.map((blogentry) => (
-            <div className="column is-one-quarter is-one-third-tabled is-full-mobile is-flex" key={blogentry.id}>
+            <div className="column is-one-quarter-desktop is-one-third-tablet is-full-mobile is-flex" key={blogentry.id}>
               <BlogCard
                 title={blogentry.frontmatter.title}
                 author={blogentry.frontmatter.author}
@@ -52,4 +52,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default News;

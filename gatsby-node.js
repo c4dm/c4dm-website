@@ -30,12 +30,21 @@ exports.onCreateNode = async ({ node, actions }) => {
 
 exports.createPages = async ({ graphql, actions }) => {
     const { createPage } = actions
-    const blogPostTemplate = path.resolve("./src/templates/blogPost.js");
+    const newsPostTemplate = path.resolve("./src/templates/newsPost.js");
+    const projectPostTemplate = path.resolve("./src/templates/projectPost.js");
 
     const result = await graphql(`
         {
-            allMarkdownRemark ( filter: {fields: {category: {eq: "blog"}}})
+            news: allMarkdownRemark ( filter: {fields: {category: {eq: "news"}}})
             {   
+                nodes {
+                    fields {
+                        slug
+                    }
+                }
+            }
+            projects: allMarkdownRemark ( filter: {fields: {category: {eq: "projects"}}})
+            {
                 nodes {
                     fields {
                         slug
@@ -45,13 +54,25 @@ exports.createPages = async ({ graphql, actions }) => {
         }
     `);
 
-    result.data.allMarkdownRemark.nodes.forEach(node => {
+
+    // Create news pages 
+    result.data.news.nodes.forEach(node => {
         createPage({
             path: node.fields.slug,
-            component: blogPostTemplate,
+            component: newsPostTemplate,
             context: {
                 slug: node.fields.slug,
             },
         })
     })
+    // Create project pages
+    result.data.projects.nodes.forEach((node) => {
+        createPage({
+        path: node.fields.slug,
+        component: projectPostTemplate,
+        context: {
+            slug: node.fields.slug,
+        },
+        });
+    });
 }
