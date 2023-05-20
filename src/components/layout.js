@@ -121,7 +121,7 @@ const Layout = (props) => {
     return (
       <>
         {navBar}
-        <main className="container">{props.children}</main>
+        <main className="container" >{props.children}</main>
         {footer}
       </>
     );

@@ -29,10 +29,12 @@
     "gatsby-remark-embed-video": "^3.2.1",
     "gatsby-remark-responsive-iframe": "^6.8.0",
     "gatsby-source-filesystem": "^5.7.0",
+    "gatsby-transformer-bibtex": "^0.1.5",
     "gatsby-transformer-remark": "^6.7.0",
     "gatsby-transformer-sharp": "^5.7.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
     "sass": "^1.58.3"
   }
 }

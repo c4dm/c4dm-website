@@ -1,5 +1,6 @@
 const { graphql } = require("gatsby");
 const path = require("path");
+const _ = require("lodash")
 
 
 exports.onCreateNode = async ({ node, actions }) => {
@@ -32,6 +33,8 @@ exports.createPages = async ({ graphql, actions }) => {
     const { createPage } = actions
     const newsPostTemplate = path.resolve("./src/templates/newsPost.js");
     const projectPostTemplate = path.resolve("./src/templates/projectPost.js");
+    const tagTemplate = path.resolve("src/templates/projectTags.js")
+    const yearTemplate = path.resolve("src/templates/years.js")
 
     const result = await graphql(`
         {
@@ -49,6 +52,22 @@ exports.createPages = async ({ graphql, actions }) => {
                     fields {
                         slug
                     }
+                }
+            }
+
+            projectsTagsGroup: allMarkdownRemark(
+                filter: { fields: { category: { eq: "projects" } }}
+                limit: 2000) 
+                {
+                group(field: { frontmatter: { tags: SELECT }}) {
+                  fieldValue
+                }
+            }
+
+
+            yearsGroup: allReference(limit: 2000) {
+                group(field:  { year: SELECT }) {
+                  fieldValue
                 }
             }
         }
@@ -75,4 +94,33 @@ exports.createPages = async ({ graphql, actions }) => {
         },
         });
     });
+
+      // Extract tag data from query
+    const projectTags = result.data.projectsTagsGroup.group
+
+    // Make one page for each tag (only tags inside projects)
+    projectTags.forEach(tag => {
+    createPage({
+      path: `/projectstags/${_.kebabCase(tag.fieldValue)}/`,
+      component: tagTemplate,
+      context: {
+        tag: tag.fieldValue,
+      },
+    })
+    })
+
+    const years = result.data.yearsGroup.group
+
+    // Make one page for each year (for publications)
+    years.forEach(year => {
+    createPage({
+      path: `/years/${_.kebabCase(year.fieldValue)}/`,
+      component: yearTemplate,
+      context: {
+        year: year.fieldValue,
+      },
+    })
+    })
+
 }
+

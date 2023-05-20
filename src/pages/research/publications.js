@@ -1,148 +1,99 @@
 import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
+import { graphql, useStaticQuery, Link } from "gatsby";
 import Layout from "../../components/layout";
-import BlogCard from "../../components/blogCard";
-import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
+import PublicationCard from "../../components/publicationCard";
+import kebabCase from "lodash/kebabCase"
 
-const Groups = () => {
+
+const Publications = () => {
+    const data = useStaticQuery(graphql`
+    query {
+      pubs:  allReference (
+          limit: 2000
+          sort: {year: DESC}){
+          edges {
+            node {
+                title
+                author
+                journal
+                booktitle
+                year
+            }
+          }
+        }
+      
+
+ 
+      years: allReference(
+        limit: 2000
+        ) {
+        group(field: {year: SELECT}) {
+          fieldValue
+          totalCount
+        }
+      }
+    }  
+   
+
+    `);
+
+    
     return (
         <Layout name="Groups">
             <section className="section">
-            <h4>Research</h4>
-                <div className="columns is-multiline">
+            <h1 class="title">Publications</h1>
+
+              <div>
+                  <h1>Year: </h1>
                    
+                    {data.years.group.map(year => (
                         
-                        <div className="column is-one-quarter-desktop is-one-third-tablet is-full-mobile is-flex">
-                            <div className="card is-flex is-flex-direction-column is-flex-grow-1">
-                                <div className="card-image">
-                                    <figure className="image">
-                                        
-                                        <StaticImage
-                                            alt="default event picture as no event picture was specified"
-                                            src="../content/research/images/projects.png"
-                                        />
-                                    </figure>
-                                </div>
-
-                                <div className="card-content">
-                                    <div className="media">
-                                        <div className="media-content">
-                                            <p className="title is-4">Research Groups </p>
-                                            
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                              
-                            </div>
-                        </div>
-
-                       
-                        <div className="column is-one-quarter-desktop is-one-third-tablet is-full-mobile is-flex">
-                            <div className="card is-flex is-flex-direction-column is-flex-grow-1">
-                                <div className="card-image">
-                                    <figure className="image">
-                                        
-                                        <StaticImage
-                                            alt="default event picture as no event picture was specified"
-                                            src="../content/research/images/projects.png"
-                                        />
-                                    </figure>
-                                </div>
-
-                                <div className="card-content">
-                                    <div className="media">
-                                        <div className="media-content">
-                                            <p className="title is-4">Projects </p>
-                                            
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                              
-                            </div>
-                        </div>
-
-                        <div className="column is-one-quarter-desktop is-one-third-tablet is-full-mobile is-flex">
-                            <div className="card is-flex is-flex-direction-column is-flex-grow-1">
-                                <div className="card-image">
-                                    <figure className="image">
-                                        
-                                        <StaticImage
-                                            alt="default event picture as no event picture was specified"
-                                            src="../content/research/images/projects.png"
-                                        />
-                                    </figure>
-                                </div>
-
-                                <div className="card-content">
-                                    <div className="media">
-                                        <div className="media-content">
-                                            <p className="title is-4">Publications </p>
-                                            
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                              
-                            </div>
-                        </div>
-
-                        <div className="column is-one-quarter-desktop is-one-third-tablet is-full-mobile is-flex">
-                            <div className="card is-flex is-flex-direction-column is-flex-grow-1">
-                                <div className="card-image">
-                                    <figure className="image">
-                                        
-                                        <StaticImage
-                                            alt="default event picture as no event picture was specified"
-                                            src="../content/research/images/projects.png"
-                                        />
-                                    </figure>
-                                </div>
-
-                                <div className="card-content">
-                                    <div className="media">
-                                        <div className="media-content">
-                                            <p className="title is-4">Datasets & Code </p>
-                                            
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                              
-                            </div>
-                        </div>
-
-                        <div className="column is-one-quarter-desktop is-one-third-tablet is-full-mobile is-flex">
-                            <div className="card is-flex is-flex-direction-column is-flex-grow-1">
-                                <div className="card-image">
-                                    <figure className="image">
-                                        
-                                        <StaticImage
-                                            alt="default event picture as no event picture was specified"
-                                            src="../content/research/images/projects.png"
-                                        />
-                                    </figure>
-                                </div>
-
-                                <div className="card-content">
-                                    <div className="media">
-                                        <div className="media-content">
-                                            <p className="title is-4">Patents </p>
-                                            
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                              
-                            </div>
-                        </div>
-               
-           
+                        <Link to={`/years/${kebabCase(year.fieldValue)}/`}>
+                          {year.fieldValue}
+                        </Link> 
+                         
+                      
+                    ))}
+                  
+                  
                 </div>
-                </section>
+
+                <div class="card is-horizontal rows">
+            {data.pubs.edges.map(({ node })  => {
+                const { title } = node
+                const { author } = node
+                const { journal } = node
+                const { conference } = node
+                const { booktitle } = node
+                const { year } = node
+                
+                
+                return (
+                  <div class="pt-3">
+                 
+                 
+                  <PublicationCard
+                  title={title} 
+                  author={author} 
+                 journal={journal}
+                 conference={conference}
+                 booktitle={booktitle}
+                 year={year}
+                
+                 
+              />
+             
+          
+              </div>
+              
+                )
+                
+                }
+            )}
+                </div>
+            </section>
         </Layout>
     );
 }
 
-export default Groups;
+export default Publications;
