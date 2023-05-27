@@ -64,5 +64,13 @@ module.exports = {
     },
     "gatsby-remark-responsive-iframe", //Optional: Must be loaded after gatsby-remark-embed-video
     "gatsby-plugin-twitter",
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `documents`,
+        path: `${__dirname}/src/content/publications`,
+      },
+    },
+    'gatsby-transformer-bibtex',
   ],
 };
