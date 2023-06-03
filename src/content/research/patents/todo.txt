@@ -1,0 +1,9 @@
+need to put the actual patent md data in here:
+
+frontmatter needs:
+(thing we need: thing we are pulling at the moment - rename that...)
+
+
+- title={patentEntry.frontmatter.title}
+- applicationNumber={patentEntry.frontmatter.author}
+- filingDate={patentEntry.frontmatter.begin}

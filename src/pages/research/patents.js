@@ -1,15 +1,14 @@
 import React from "react";
 import { graphql, Link, useStaticQuery } from "gatsby";
 import Layout from "../../components/layout";
-import ProjectCard from "../../components/projectCard";
-import kebabCase from "lodash/kebabCase"
+import PatentCard from "../../components/patentCard";
 
 
-const Project = () => {
+const Patents = () => {
     const data = useStaticQuery(graphql`
       {
         active: allMarkdownRemark(
-          filter: { fields: { category: { eq: "projects" } }, frontmatter: { status: { eq: "active" } } }
+          filter: { fields: { category: { eq: "research/patents/projects" } }, frontmatter: { status: { eq: "active" } } }
           sort: { frontmatter: { date: DESC } }
         ) {
           nodes {
@@ -28,39 +27,6 @@ const Project = () => {
               link
             }
             id
-          }
-        }
-
-        completed: allMarkdownRemark(
-          filter: { fields: { category: { eq: "projects" } }, frontmatter: { status: { eq: "complete" } } }
-          sort: { frontmatter: { date: DESC } }
-        ) {
-          nodes {
-            frontmatter {
-              image {
-                childImageSharp {
-                  gatsbyImageData(layout: CONSTRAINED)
-                }
-              }
-              title
-              author
-              begin
-              end
-              grant
-              amount
-              link
-            }
-            id
-          }
-        }
-
-        tags: allMarkdownRemark(
-          limit: 2000
-          filter: { fields: { category: { eq: "projects" } }}
-          ) {
-          group(field: { frontmatter: { tags: SELECT }}) {
-            fieldValue
-            totalCount
           }
         }
       }
@@ -70,60 +36,20 @@ const Project = () => {
 
     return (
      
-        <Layout name="Project">
+        <Layout name="Patents">
             <section className="section">
-
-
-
-              <div>
-                <h1>Tags</h1>
-                <ul>
-                  {data.tags.group.map(tag => (
-                    <li key={tag.fieldValue}>
-                      <Link to={`/projectstags/${kebabCase(tag.fieldValue)}/`}>
-                        {tag.fieldValue} ({tag.totalCount})
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <h1>ACTIVE PROJECTS</h1>
+              <h1>Patents</h1>
               <div class="card is-horizontal rows">
-                    {data.active.nodes.map((projectentry) => (
-                       <Link to={projectentry.frontmatter.link}>
-                        <div class="card-image row is-three-fifths pt-3" key={projectentry.id}> 
-                            <ProjectCard
-                                title={projectentry.frontmatter.title}
-                                author={projectentry.frontmatter.author}
-                                begin={projectentry.frontmatter.begin}
-                                end={projectentry.frontmatter.end}
-                                grant= {projectentry.frontmatter.grant}
-                                amount={projectentry.frontmatter.amount}
-                                image={projectentry.frontmatter.image.childImageSharp.gatsbyImageData}
+                    {data.active.nodes.map((patentEntry) => (
+                       <Link to={patentEntry.frontmatter.link}>
+                        <div class="card-image row is-three-fifths pt-3" key={patentEntry.id}> 
+                            <PatentCard
+                                title={patentEntry.frontmatter.title}
+                                applicationNumber={patentEntry.frontmatter.author}
+                                filingDate={patentEntry.frontmatter.begin}
                             />
                         </div>
                         </Link>
-                    ))}
-                </div>
-               
-                <h1 class="pt-5">COMPLETED PROJECTS</h1>
-              <div class="card is-horizontal rows">
-                    {data.completed.nodes.map((projectentry) => (
-                        <Link to={projectentry.frontmatter.link}>
-                        <div class="card-image row is-three-fifths pt-3" key={projectentry.id}> 
-                            <ProjectCard
-                                title={projectentry.frontmatter.title}
-                                author={projectentry.frontmatter.author}
-                                begin={projectentry.frontmatter.begin}
-                                end={projectentry.frontmatter.end}
-                                grant= {projectentry.frontmatter.grant}
-                                amount={projectentry.frontmatter.amount}
-                                image={projectentry.frontmatter.image.childImageSharp.gatsbyImageData}
-                            />
-                        </div>
-                        </Link>
-
                     ))}
                 </div>
             </section>
@@ -131,4 +57,4 @@ const Project = () => {
     );
 }
 
-export default Project;
+export default Patents;
