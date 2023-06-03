@@ -1,148 +1,133 @@
-import React from "react";
+import * as React from "react";
 import { graphql, useStaticQuery } from "gatsby";
-import Layout from "../../components/layout";
-import BlogCard from "../../components/blogCard";
-import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
+import "../../style/bulmacustom.scss"
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import Layout from "../../components/layout.js";
+// import Carousel from "../components/carousel";
+// import BlogCard from "../components/blogCard";
+// import Video from "../components/video";
 
-const Groups = () => {
-    return (
-        <Layout name="Groups">
-            <section className="section">
-            <h4>Research</h4>
-                <div className="columns is-multiline">
-                   
-                        
-                        <div className="column is-one-quarter-desktop is-one-third-tablet is-full-mobile is-flex">
-                            <div className="card is-flex is-flex-direction-column is-flex-grow-1">
-                                <div className="card-image">
-                                    <figure className="image">
-                                        
-                                        <StaticImage
-                                            alt="default event picture as no event picture was specified"
-                                            src="../content/research/images/projects.png"
-                                        />
-                                    </figure>
-                                </div>
+const IndexPage = () => {
+    const data = useStaticQuery(graphql`
+      {
+        about: markdownRemark(
+          fields: { category: { eq: "about" } }
+          fileAbsolutePath: { regex: "/about.md/" }
+        ) {
+          html
+          frontmatter {
+            title
+            video
+            image {
+              childImageSharp {
+                gatsbyImageData(layout: CONSTRAINED, width: 400)
+              }
+            }
+          }
+        }
+        projects: allMarkdownRemark(
+          filter: { fields: { category: { eq: "projects" } } }
+          sort: { frontmatter: { date: DESC } }
+          limit: 6
+        ) {
+          nodes {
+            fields {
+              slug
+            }
+            frontmatter {
+              image {
+                childImageSharp {
+                  gatsbyImageData(layout: CONSTRAINED)
+                }
+              }
+              title
+              author
+              date(formatString: "ddd DD MMM yy")
+            }
+            html
+            id
+          }
+        }
+        news: allMarkdownRemark(
+          filter: { fields: { category: { eq: "news" } } }
+          sort: { frontmatter: { date: DESC } }
+          limit: 6
+        ) {
+          nodes {
+            fields {
+              slug
+            }
+            frontmatter {
+              image {
+                childImageSharp {
+                  gatsbyImageData(layout: CONSTRAINED)
+                }
+              }
+              title
+              author
+              date(formatString: "ddd DD MMM yy")
+            }
+            html
+            id
+          }
+        }
+      }
+    `);
 
-                                <div className="card-content">
-                                    <div className="media">
-                                        <div className="media-content">
-                                            <p className="title is-4">Research Groups </p>
-                                            
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                              
-                            </div>
-                        </div>
+    // const projectCards = data.projects.nodes.map((project) => (
+    //   <BlogCard
+    //     title={project.frontmatter.title}
+    //     author={project.frontmatter.author}
+    //     date={project.frontmatter.date}
+    //     image={project.frontmatter.image.childImageSharp.gatsbyImageData}
+    //     html={project.html}
+    //     slug={project.fields.slug}
+    //   />
+    // ));
 
-                       
-                        <div className="column is-one-quarter-desktop is-one-third-tablet is-full-mobile is-flex">
-                            <div className="card is-flex is-flex-direction-column is-flex-grow-1">
-                                <div className="card-image">
-                                    <figure className="image">
-                                        
-                                        <StaticImage
-                                            alt="default event picture as no event picture was specified"
-                                            src="../content/research/images/projects.png"
-                                        />
-                                    </figure>
-                                </div>
+    // const newsCards = data.news.nodes.map((news) => (
+    //   <BlogCard
+    //     title={news.frontmatter.title}
+    //     author={news.frontmatter.author}
+    //     date={news.frontmatter.date}
+    //     image={news.frontmatter.image.childImageSharp.gatsbyImageData}
+    //     html={news.html}
+    //     slug={news.fields.slug}
+    //   />
+    // ));
 
-                                <div className="card-content">
-                                    <div className="media">
-                                        <div className="media-content">
-                                            <p className="title is-4">Projects </p>
-                                            
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                              
-                            </div>
-                        </div>
-
-                        <div className="column is-one-quarter-desktop is-one-third-tablet is-full-mobile is-flex">
-                            <div className="card is-flex is-flex-direction-column is-flex-grow-1">
-                                <div className="card-image">
-                                    <figure className="image">
-                                        
-                                        <StaticImage
-                                            alt="default event picture as no event picture was specified"
-                                            src="../content/research/images/projects.png"
-                                        />
-                                    </figure>
-                                </div>
-
-                                <div className="card-content">
-                                    <div className="media">
-                                        <div className="media-content">
-                                            <p className="title is-4">Publications </p>
-                                            
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                              
-                            </div>
-                        </div>
-
-                        <div className="column is-one-quarter-desktop is-one-third-tablet is-full-mobile is-flex">
-                            <div className="card is-flex is-flex-direction-column is-flex-grow-1">
-                                <div className="card-image">
-                                    <figure className="image">
-                                        
-                                        <StaticImage
-                                            alt="default event picture as no event picture was specified"
-                                            src="../content/research/images/projects.png"
-                                        />
-                                    </figure>
-                                </div>
-
-                                <div className="card-content">
-                                    <div className="media">
-                                        <div className="media-content">
-                                            <p className="title is-4">Datasets & Code </p>
-                                            
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                              
-                            </div>
-                        </div>
-
-                        <div className="column is-one-quarter-desktop is-one-third-tablet is-full-mobile is-flex">
-                            <div className="card is-flex is-flex-direction-column is-flex-grow-1">
-                                <div className="card-image">
-                                    <figure className="image">
-                                        
-                                        <StaticImage
-                                            alt="default event picture as no event picture was specified"
-                                            src="../content/research/images/projects.png"
-                                        />
-                                    </figure>
-                                </div>
-
-                                <div className="card-content">
-                                    <div className="media">
-                                        <div className="media-content">
-                                            <p className="title is-4">Patents </p>
-                                            
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                              
-                            </div>
-                        </div>
-               
-           
-                </div>
-                </section>
-        </Layout>
-    );
+  return (
+    <Layout name="Homepage">
+      <section className="section">
+        <div className="columns">
+          <div className="column is-half">
+            <h2 className="title">About</h2>
+            <div
+              className="content"
+              dangerouslySetInnerHTML={{ __html: data.about.html }}
+            ></div>
+          </div>
+          <div className="column is-half">
+            {/* <Video videoSrcURL={data.about.frontmatter.video} /> */}
+          </div>
+        </div>
+      </section>
+      <section className="section">
+        <h2 className="title">Projects</h2>
+        <div className="container">
+          {/* <Carousel content={projectCards} /> */}
+        </div>
+      </section>
+      <section className="section">
+        <h2 className="title">News</h2>
+        <div className="container">
+          {/* <Carousel content={newsCards} /> */}
+        </div>
+      </section>
+    </Layout>
+  );
 }
 
-export default Groups;
+export default IndexPage
+
+export const Head = () => <title>Home Page</title>
