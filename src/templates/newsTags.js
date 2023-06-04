@@ -1,7 +1,7 @@
 import React from "react"
-import PropTypes from "prop-types"
+// import PropTypes from "prop-types"
 import Layout from "../components/layout";
-import ProjectCard from "../components/projectCard";
+import NewsCard from "../components/newsCard";
 
 // Components
 import { Link, graphql } from "gatsby"
@@ -21,32 +21,18 @@ const NewsTags = ({ pageContext, data }) => {
       <div class="card is-horizontal rows">
             {edges.map(({ node })  => {
                 const { slug } = node.fields
-                const { title } = node.frontmatter
-                const { author } = node.frontmatter
-                const { begin } = node.frontmatter
-                const { end } = node.frontmatter
-                const { grant } = node.frontmatter
-                const { image } = node.frontmatter
-                
+                const {title,author,date,image} = node.frontmatter
+                const { html } = node.html
                 
                 return (
-                  <div class="pt-3">
                   <Link to={slug}>
-                 
-                  <ProjectCard
-                  title={title} 
-                  author={author} 
-                  begin={begin}
-                  end={end}
-                  grant={grant}
-                  image={image.childImageSharp.gatsbyImageData}
-                
-                 
-              />
-             
-              </Link>
-              </div>
-              
+                    <NewsCard
+                    title={title} 
+                    author={author} 
+                    date={date}
+                    html = {html}
+                    />
+                  </Link>
                 )
                 
                 }
@@ -74,22 +60,20 @@ export const pageQuery = graphql`
       edges {
         node {
           fields {
-            slug
-          }
-          frontmatter {
-            image {
-              childImageSharp {
-                gatsbyImageData(layout: CONSTRAINED)
-              }
+          slug
+        }
+        frontmatter {
+          image {
+            childrenImageSharp {
+              gatsbyImageData(layout: CONSTRAINED)
             }
-            title
-            author
-            begin
-            end
-            grant
-            amount
-            link
           }
+          title
+          author
+          date(formatString: "ddd DD MMM yy")
+        }
+        html
+        id
         }
       }
     }
