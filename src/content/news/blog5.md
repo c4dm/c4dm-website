@@ -3,6 +3,7 @@ title: "Blogpost 5"
 author: "Jan Novak"
 date: "2022-09-07"
 image: "./placeholder.png"
+tags: ["industry"]
 ---
 
 Consectetur amet laborum labore anim magna mollit aute. Occaecat cillum consectetur aliqua eiusmod pariatur consequat. In non elit consectetur laborum.

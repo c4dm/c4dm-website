@@ -3,6 +3,7 @@ title: "Blogpost 4"
 author: "Anne Steinhoff"
 date: "2022-08-30"
 image: "./placeholder.png"
+tags: ["not-industry"]
 ---
 
 Consectetur amet laborum labore anim magna mollit aute. Occaecat cillum consectetur aliqua eiusmod pariatur consequat. In non elit consectetur laborum.

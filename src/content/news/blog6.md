@@ -3,6 +3,7 @@ title: "Blogpost 6"
 author: "Jane Doe"
 date: "2022-10-01"
 image: "./placeholder.png"
+tags: ["industry"]
 ---
 
 Consectetur amet laborum labore anim magna mollit aute. Occaecat cillum consectetur aliqua eiusmod pariatur consequat. In non elit consectetur laborum.

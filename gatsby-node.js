@@ -33,7 +33,8 @@ exports.createPages = async ({ graphql, actions }) => {
     const { createPage } = actions
     const newsPostTemplate = path.resolve("./src/templates/newsPost.js");
     const projectPostTemplate = path.resolve("./src/templates/projectPost.js");
-    const tagTemplate = path.resolve("src/templates/projectTags.js")
+    const projectTagTemplate = path.resolve("src/templates/projectTags.js")
+    const newsTagTemplate = path.resolve("src/templates/newsTags.js")
     const yearTemplate = path.resolve("src/templates/years.js")
 
     const result = await graphql(`
@@ -46,6 +47,16 @@ exports.createPages = async ({ graphql, actions }) => {
                     }
                 }
             }
+
+            newsTagsGroup: allMarkdownRemark(
+                filter: {fields: {category: {eq: "news"}}}
+                limit: 2000) 
+                {
+                group(field: { frontmatter: { tags: SELECT }}) {
+                  fieldValue
+                }
+            }
+
             projects: allMarkdownRemark ( filter: {fields: {category: {eq: "projects"}}})
             {
                 nodes {
@@ -64,7 +75,7 @@ exports.createPages = async ({ graphql, actions }) => {
                 }
             }
 
-
+    
             yearsGroup: allReference(limit: 2000) {
                 group(field:  { year: SELECT }) {
                   fieldValue
@@ -84,6 +95,22 @@ exports.createPages = async ({ graphql, actions }) => {
             },
         })
     })
+
+    // Extract news tag data from query
+    const newsTags = result.data.newsTagsGroup.group
+
+    // Make one page for each tag (only tags inside news)
+    newsTags.forEach(tag => {
+    createPage({
+      path: `/newstags/${_.kebabCase(tag.fieldValue)}/`,
+      component: newsTagTemplate,
+      context: {
+        tag: tag.fieldValue,
+      },
+    })
+    })
+
+
     // Create project pages
     result.data.projects.nodes.forEach((node) => {
         createPage({
@@ -95,14 +122,14 @@ exports.createPages = async ({ graphql, actions }) => {
         });
     });
 
-      // Extract tag data from query
+    // Extract project tag data from query
     const projectTags = result.data.projectsTagsGroup.group
 
     // Make one page for each tag (only tags inside projects)
     projectTags.forEach(tag => {
     createPage({
       path: `/projectstags/${_.kebabCase(tag.fieldValue)}/`,
-      component: tagTemplate,
+      component: projectTagTemplate,
       context: {
         tag: tag.fieldValue,
       },
