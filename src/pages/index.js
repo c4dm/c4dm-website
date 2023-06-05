@@ -7,7 +7,10 @@ import Carousel from "../components/carousel";
 import BlogCard from "../components/blogCard";
 import Video from "../components/video";
 
-const IndexPage = () => {
+const IndexPage = ({pageContext}) => {
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext
     const data = useStaticQuery(graphql`
       {
         about: markdownRemark(
@@ -97,7 +100,7 @@ const IndexPage = () => {
     ));
 
   return (
-    <Layout name="Homepage">
+    <Layout name="Homepage" >
       <section className="section">
         <div className="columns">
           <div className="column is-half">

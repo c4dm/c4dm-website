@@ -4,7 +4,10 @@ import Layout from "../components/layout";
 import PartnerCard from "../components/partnercard";
 
 
-const Partners = () => {
+const Partners = ({pageContext}) => {
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext
     const data = useStaticQuery(graphql`
       {
         active: allMarkdownRemark(
@@ -30,7 +33,7 @@ const Partners = () => {
 
     return (
      
-        <Layout name="Partners">
+        <Layout name="Partners" crumbs={crumbs}>
           <section className="section">
               <h1 class="title">Partners</h1>
               <div class="columns is-multiline">

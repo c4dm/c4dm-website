@@ -1,7 +1,9 @@
 import React, {useState} from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
+import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
 import {Link} from "gatsby"
+import { Breadcrumb } from "gatsby-plugin-breadcrumb"
+import {startCase, camelCase} from 'lodash';
 
 const navItems = [
     {name: "Research", link: "/research"},
@@ -19,8 +21,7 @@ const socialMediaItems = [
 ];
 
 
-const Layout = (props) => {
-
+const Layout = ({children, crumbs, name}) => {
     const data = useStaticQuery(graphql`
     {
     c4dmlogo: file(absolutePath: {regex: "/images/.*c4dm.*/"}, extension: {eq: "png"}) {
@@ -121,7 +122,36 @@ const Layout = (props) => {
     return (
       <>
         {navBar}
-        <main className="container" >{props.children}</main>
+        <main className="container">
+         {crumbs ? (
+          <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+              {crumbs.map((crumb, index) => (
+                  (crumb.crumbLabel=='tags') ? 
+                  (
+                    <li>{startCase(camelCase(crumb.crumbLabel))}</li>
+                    ):
+                  (
+                    (index==crumbs.length-1) ? 
+                    (
+                      // comment out the below line to remove current page from breadcrumb
+                    <li class="is-active"><a href={crumb.pathname} aria-current="page">{startCase(camelCase(crumb.crumbLabel))}</a></li>):
+                    (
+                    <li><a href={crumb.pathname}>{startCase(camelCase(crumb.crumbLabel))}</a></li>
+                    )
+                  )
+                ))
+                }
+              
+            
+            
+            {/* <li class="is-active"><a href="#" aria-current="page">Breadcrumb</a></li> */}
+          </ul>
+        </nav>)
+        : (console.log("Page has no breadcrumbs *gasp*")
+                )} 
+          {children}
+          </main>
         {footer}
       </>
     );

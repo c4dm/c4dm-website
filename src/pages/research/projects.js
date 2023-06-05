@@ -6,7 +6,10 @@ import ProjectCard from "../../components/projectCard";
 import {startCase, camelCase, kebabCase} from 'lodash';
 import TagSelector from "../../components/tagSelector";
 
-const Project = () => {
+const Project = ({pageContext}) => {
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext
     const data = useStaticQuery(graphql`
       {
         active: allMarkdownRemark(
@@ -70,7 +73,7 @@ const Project = () => {
    
 
     return (
-        <Layout name="Project">
+        <Layout name="Project" crumbs={crumbs}>
             <section className="section">
               <h1>Research Projects</h1>
               <TagSelector

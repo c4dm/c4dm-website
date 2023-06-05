@@ -40,6 +40,12 @@ module.exports = {
         path: "./src/content",
       },
     },
+    {
+      resolve: `gatsby-plugin-breadcrumb`,
+      options: {
+        useAutoGen: true, // useAutoGen: required 'true' to use autogen
+        }
+    },
     `gatsby-transformer-remark`,
     "gatsby-plugin-sass",
     {

@@ -7,7 +7,10 @@ import Layout from "../../components/layout.js";
 // import BlogCard from "../components/blogCard";
 // import Video from "../components/video";
 
-const IndexPage = () => {
+const IndexPage = ({pageContext}) => {
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext
     const data = useStaticQuery(graphql`
       {
         datasets: markdownRemark(
@@ -33,7 +36,7 @@ const IndexPage = () => {
     `);
 
   return (
-    <Layout name="Datasets">
+    <Layout name="Datasets" crumbs={crumbs}>
       <section className="section">
         <h2 className="title">{data.software.frontmatter.title}</h2>
         <div

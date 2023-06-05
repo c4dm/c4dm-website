@@ -4,7 +4,10 @@ import Layout from "../components/layout";
 import PeopleCard from "../components/peopleCard";
 
 
-const People = () => {
+const People = ({pageContext}) => {
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext
     const data = useStaticQuery(graphql`
       {
         allMarkdownRemark(
@@ -28,7 +31,7 @@ const People = () => {
       }
     `);
     return (
-        <Layout name="People">
+        <Layout name="People" crumbs={crumbs}>
             <section className="section">
                 <div className="columns is-multiline">
                     {data.allMarkdownRemark.nodes.map((peopleentry) => (

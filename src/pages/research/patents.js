@@ -4,7 +4,10 @@ import Layout from "../../components/layout";
 import PatentCard from "../../components/patentCard";
 
 
-const Patents = () => {
+const Patents = ({pageContext}) => {
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext
     const data = useStaticQuery(graphql`
       {
         active: allMarkdownRemark(
@@ -36,7 +39,7 @@ const Patents = () => {
 
     return (
      
-        <Layout name="Patents">
+        <Layout name="Patents" crumbs={crumbs}>
             <section className="section">
               <h1>Patents</h1>
               <div class="card is-horizontal rows">

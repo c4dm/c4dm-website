@@ -4,14 +4,15 @@ import Layout from "../../components/layout";
 import BlogCard from "../../components/blogCard";
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
 
-const Research = () => {
+const Research = ({pageContext}) => {
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext
     return (
-        <Layout name="Research">
+        <Layout name="Research" crumbs={crumbs}>
             <section className="section">
             <p class="title">Research Groups</p>
                 <div className="columns is-multiline">
-                   
-                        
                         <div className="column is-one-quarter-desktop is-one-third-tablet is-full-mobile is-flex">
                             <div className="card is-flex is-flex-direction-column is-flex-grow-1">
                                 <Link to="https://c4dm.eecs.qmul.ac.uk/audioengineering.html">

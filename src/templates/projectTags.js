@@ -4,16 +4,16 @@ import Layout from "../components/layout";
 import ProjectCard from "../components/projectCard";
 import {startCase, camelCase} from 'lodash';
 import TagSelector from "../components/tagSelector";
-import { useStaticQuery } from "gatsby";
-// import pageQuery;
-
-// Components
-import { Link, graphql } from "gatsby"
+import { useStaticQuery, Link, graphql} from "gatsby";
 
 
 
 const ProjectTags = ({ pageContext, data }) => {
 
+  
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext
   const { tag } = pageContext
   const { edges, totalCount } = data.allMarkdownRemark
   const tagHeader = `${totalCount} post${
@@ -22,7 +22,7 @@ const ProjectTags = ({ pageContext, data }) => {
   const tagName = `${tag}`
 
   return (
-    <Layout name="ProjectTag">
+    <Layout name={startCase(camelCase(tagName))+ " Projects"} crumbs={crumbs}>
     <section className="section">
       <h1>Research Projects</h1>
       <TagSelector

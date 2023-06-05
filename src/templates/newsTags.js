@@ -8,6 +8,9 @@ import TagSelector from "../components/tagSelector";
 import { Link, graphql } from "gatsby"
 
 const NewsTags = ({ pageContext, data }) => {
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext
   const { tag } = pageContext
   const { edges, totalCount } = data.allMarkdownRemark
   const tagHeader = `${totalCount} post${
@@ -16,7 +19,7 @@ const NewsTags = ({ pageContext, data }) => {
   const tagName = `${tag}`
 
   return (
-    <Layout name="NewsTag">
+    <Layout name="NewsTag" crumbs={crumbs}>
     <section className="section">
       <h1 class="title">News with tag: {tagName}</h1>
       <TagSelector

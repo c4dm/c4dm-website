@@ -3,9 +3,12 @@ import { graphql, useStaticQuery } from "gatsby";
 import "../style/bulmacustom.scss"
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Layout from "../components/layout.js";
+  
 
-
-const NewsPage = () => {
+const NewsPage = ({pageContext}) => {
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext
     const data = useStaticQuery(graphql`
       {
         participate: markdownRemark(
@@ -27,7 +30,7 @@ const NewsPage = () => {
     `);
 
   return (
-    <Layout name="get-involved">
+    <Layout name="get-involved" crumbs={crumbs}>
       <section className="section">
             <h2 className="title">{data.participate.frontmatter.title}</h2>
             <div

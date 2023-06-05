@@ -5,9 +5,12 @@ import {StaticImage} from "gatsby-plugin-image";
 
 
 // TODO: I think we should change this to dynamically create the links from gatsby nodes [ANH]
-const Research = () => {
+const Research = ({pageContext}) => {
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext
     return (
-        <Layout name="Research">
+        <Layout name="Research" crumbs={crumbs}>
             <section className="section">
             <h1>Research</h1>
                 <div className="columns is-multiline">
