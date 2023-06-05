@@ -102,7 +102,7 @@ exports.createPages = async ({ graphql, actions }) => {
     // Make one page for each tag (only tags inside news)
     newsTags.forEach(tag => {
     createPage({
-      path: `/newstags/${_.kebabCase(tag.fieldValue)}/`,
+      path: `/news/tags/${_.kebabCase(tag.fieldValue)}/`,
       component: newsTagTemplate,
       context: {
         tag: tag.fieldValue,
@@ -128,7 +128,7 @@ exports.createPages = async ({ graphql, actions }) => {
     // Make one page for each tag (only tags inside projects)
     projectTags.forEach(tag => {
     createPage({
-      path: `/projectstags/${_.kebabCase(tag.fieldValue)}/`,
+      path: `/research/projects/tags/${_.kebabCase(tag.fieldValue)}/`,
       component: projectTagTemplate,
       context: {
         tag: tag.fieldValue,

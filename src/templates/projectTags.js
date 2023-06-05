@@ -27,7 +27,7 @@ const ProjectTags = ({ pageContext, data }) => {
       <h1>Research Projects</h1>
       <TagSelector
                 data = {data}
-                filterTemplate = {'/projectstags/'}
+                // filterTemplate = {'/projectstags/'}
                 root ={`/research/projects`}
                 selected={tag}
               />

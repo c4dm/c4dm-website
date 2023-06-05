@@ -10,7 +10,7 @@ const TagSelector = (props) => {
             {props.data.allTags.group.map(tag => (
                 // If selected=='tag', then grey it out
             <li key={tag.fieldValue}>
-                <Link to={`${props.filterTemplate}${kebabCase(tag.fieldValue)}/`}>
+                <Link to={`${props.root}/tags/${kebabCase(tag.fieldValue)}/`}>
                 {startCase(camelCase(tag.fieldValue))} ({tag.totalCount})
                 </Link>
             </li>
