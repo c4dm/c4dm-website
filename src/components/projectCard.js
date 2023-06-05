@@ -5,7 +5,7 @@ import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
 const ProjectCard = (props) => {
   return (
     <div
-      className="card is-flex is-flex-direction-row is-flex-grow-1"
+      className="card is-flex is-flex-direction-row"
       key={props.slug}
     >
         <div className="card-image is-128x128">

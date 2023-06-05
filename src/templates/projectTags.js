@@ -24,13 +24,15 @@ const ProjectTags = ({ pageContext, data }) => {
   return (
     <Layout name="ProjectTag">
     <section className="section">
+      <h1>Research Projects</h1>
       <TagSelector
                 data = {data}
                 filterTemplate = {'/projectstags/'}
                 root ={`/research/projects`}
                 selected={tag}
               />
-      <div class="card is-horizontal rows">
+      <h2>{startCase(camelCase(tagName))+ " Projects"}</h2>
+          <div class="card is-horizontal rows">
             {edges.map(({ node })  => {
                 const { slug } = node.fields
                 const { title } = node.frontmatter
@@ -42,9 +44,9 @@ const ProjectTags = ({ pageContext, data }) => {
                 
                 
                 return (
-                  <div class="pt-3">
+                  // <div class="pt-3">
                   <Link to={slug}>
-                 
+                 <div class="card-image row is-three-fifths pt-3" key={node.id}> 
                   <ProjectCard
                   title={title} 
                   author={author} 
@@ -55,9 +57,9 @@ const ProjectTags = ({ pageContext, data }) => {
                 
                  
               />
-             
+             </div>
               </Link>
-              </div>
+              // </div>
               
                 )
                 

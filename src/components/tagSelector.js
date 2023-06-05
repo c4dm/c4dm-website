@@ -5,7 +5,7 @@ import {startCase, camelCase, kebabCase} from 'lodash';
 const TagSelector = (props) => {
   return (
     <div>
-        <h1>Tags</h1>
+        <h3>Tags</h3>
         <ul>
             {props.data.allTags.group.map(tag => (
                 // If selected=='tag', then grey it out
@@ -15,6 +15,8 @@ const TagSelector = (props) => {
                 </Link>
             </li>
             ))}
+
+            {/* // If selected==False, then grey this out */}
             <li>
                 <Link to={props.root}>
                 Clear Tags

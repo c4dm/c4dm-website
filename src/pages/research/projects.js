@@ -70,15 +70,15 @@ const Project = () => {
    
 
     return (
-     
         <Layout name="Project">
             <section className="section">
+              <h1>Research Projects</h1>
               <TagSelector
                 data = {data}
                 filterTemplate = {'/projectstags/'}
                 root ={`/research/projects`}
               />
-              <h1>ACTIVE PROJECTS</h1>
+              <h1>{startCase(camelCase("All ACTIVE PROJECTS"))}</h1>
               <div class="card is-horizontal rows">
                     {data.active.nodes.map((projectentry) => (
                        <Link to={projectentry.frontmatter.link}>
@@ -97,7 +97,7 @@ const Project = () => {
                     ))}
                 </div>
                
-                <h1 class="pt-5">COMPLETED PROJECTS</h1>
+                <h1 class="pt-5">{startCase(camelCase("All COMPLETED PROJECTS"))}</h1>
               <div class="card is-horizontal rows">
                     {data.completed.nodes.map((projectentry) => (
                         <Link to={projectentry.frontmatter.link}>

@@ -2,8 +2,8 @@ import React from "react";
 import { graphql, Link, useStaticQuery } from "gatsby";
 import Layout from "../components/layout";
 import NewsCard from "../components/newsCard";
-import kebabCase from "lodash/kebabCase"
-
+import kebabCase from "lodash/kebabCase";
+import TagSelector from "../components/tagSelector";
 
 
 const News = () => {
@@ -32,7 +32,7 @@ const News = () => {
       }
     }
 
-    tags: allMarkdownRemark(
+    allTags: allMarkdownRemark(
           limit: 2000
           filter: {fields: {category: {eq: "news"}}}
           ) {
@@ -46,19 +46,12 @@ const News = () => {
   return (
     <Layout name="News">
       <section className="section">
-        
-        <div>
-          <h1>Tags</h1>
-            <ul>
-              {data.tags.group.map(tag => (
-                <li key={tag.fieldValue}>
-                  <Link to={`/newstags/${kebabCase(tag.fieldValue)}/`}>
-                    {tag.fieldValue} ({tag.totalCount})
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+        <h1>News</h1>
+        <TagSelector
+                data = {data}
+                filterTemplate = {'/newstags/'}
+                root ={`/news`}
+              />
         <div class="card is-horizontal rows">
           {data.news.nodes.map((blogentry) => (
               <Link to={blogentry.fields.slug}>

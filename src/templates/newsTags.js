@@ -2,6 +2,7 @@ import React from "react"
 // import PropTypes from "prop-types"
 import Layout from "../components/layout";
 import NewsCard from "../components/newsCard";
+import TagSelector from "../components/tagSelector";
 
 // Components
 import { Link, graphql } from "gatsby"
@@ -18,6 +19,11 @@ const NewsTags = ({ pageContext, data }) => {
     <Layout name="NewsTag">
     <section className="section">
       <h1 class="title">News with tag: {tagName}</h1>
+      <TagSelector
+                data = {data}
+                filterTemplate = {'/newstags/'}
+                root ={`/news`}
+              />
       <div class="card is-horizontal rows">
             {edges.map(({ node })  => {
                 const { slug } = node.fields
@@ -50,7 +56,7 @@ const NewsTags = ({ pageContext, data }) => {
 export default NewsTags
 
 export const pageQuery = graphql`
-  query($tag: String) {
+    query($tag: String) {
     allMarkdownRemark(
       limit: 2000
       sort: { frontmatter: { date: DESC }}
@@ -77,5 +83,17 @@ export const pageQuery = graphql`
         }
       }
     }
+    
+    
+    allTags: allMarkdownRemark(
+      limit: 2000
+      filter: { fields: { category: { eq: "news" } }}
+      ) {
+        group(field: { frontmatter: { tags: SELECT }}) {
+          fieldValue
+          totalCount
+        }
+
+      }
   }
 `
