@@ -1,27 +1,12 @@
 import React from "react";
-// import { Link } from "gatsby";
-import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
 
 const NewsCard = (props) => {
   return (
+    <div class="container">
     <div
       className="card is-flex is-flex-direction-row is-flex-grow-1"
       key={props.slug}
     >
-      {/* <Link to={`${props.slug}/#header`}> */}
-        {/* <div className="card-image is-128x128">
-          <figure className="image is-128x128">
-            {props.image ? (
-              <GatsbyImage alt="picture of event" image={props.image} />
-            ) : (
-              <StaticImage
-                alt="default event picture as no event picture was specified"
-                src="../../static/defaultevent.png"
-              />
-            )}
-          </figure>
-        </div> */}
-
         <div className="card-content">
           <div className="media">
             <p className="subtitle is-6">{props.date || null}</p>
@@ -34,7 +19,7 @@ const NewsCard = (props) => {
           </div>
           </div>
         </div>
-      {/* </Link> */}
+    </div>
     </div>
   );
 };

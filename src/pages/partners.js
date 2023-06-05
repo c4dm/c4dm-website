@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql, Link, useStaticQuery } from "gatsby";
 import Layout from "../components/layout";
-import PartnerCard from "../components/partnerCard";
+import PartnerCard from "../components/partnercard";
 
 
 const Partners = () => {
@@ -10,6 +10,7 @@ const Partners = () => {
         active: allMarkdownRemark(
           filter: { fields: { category: { eq: "partners" } }, frontmatter: { status: { eq: "active" } } }
           sort: { frontmatter: { date: DESC } }
+          limit: 400
         ) {
           nodes {
             frontmatter {
@@ -30,20 +31,21 @@ const Partners = () => {
     return (
      
         <Layout name="Partners">
-            <section className="section">
-            <h1>Partners</h1>
-              <div className="columns is-multiline">
-              <div className="column is-one-quarter-desktop is-one-third-tablet is-full-mobile is-flex"></div>
-                    {data.active.nodes.map((partnerentry) => (
-                       <Link to={partnerentry.frontmatter.link}>
-                            <PartnerCard
-                                title={partnerentry.frontmatter.title}
-                                image={partnerentry.frontmatter.image.childImageSharp.gatsbyImageData}
-                            />
-                        </Link>
-                    ))}
-                </div>
-            </section>
+          <section className="section">
+              <h1 class="title">Partners</h1>
+              <div class="columns is-multiline">
+                {data.active.nodes.map((partnerentry) => (
+                  <div className="column is-one-quarter-desktop is-one-third-tablet is-full-mobile is-flex" key={partnerentry.id}>
+                    <Link to={partnerentry.frontmatter.link}>
+                        <PartnerCard
+                            title={partnerentry.frontmatter.title}
+                            image={partnerentry.frontmatter.image.childImageSharp.gatsbyImageData}
+                        />
+                    </Link>
+                    </div>
+                ))}
+              </div>
+          </section>
         </Layout>
     );
 }

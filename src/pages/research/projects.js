@@ -2,8 +2,9 @@ import React from "react";
 import { graphql, Link, useStaticQuery } from "gatsby";
 import Layout from "../../components/layout";
 import ProjectCard from "../../components/projectCard";
-import kebabCase from "lodash/kebabCase"
-
+// import kebabCase from "lodash/kebabCase"
+import {startCase, camelCase, kebabCase} from 'lodash';
+import TagSelector from "../../components/tagSelector";
 
 const Project = () => {
     const data = useStaticQuery(graphql`
@@ -54,7 +55,7 @@ const Project = () => {
           }
         }
 
-        tags: allMarkdownRemark(
+        allTags: allMarkdownRemark(
           limit: 2000
           filter: { fields: { category: { eq: "projects" } }}
           ) {
@@ -72,22 +73,11 @@ const Project = () => {
      
         <Layout name="Project">
             <section className="section">
-
-
-
-              <div>
-                <h1>Tags</h1>
-                <ul>
-                  {data.tags.group.map(tag => (
-                    <li key={tag.fieldValue}>
-                      <Link to={`/projectstags/${kebabCase(tag.fieldValue)}/`}>
-                        {tag.fieldValue} ({tag.totalCount})
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
+              <TagSelector
+                data = {data}
+                filterTemplate = {'/projectstags/'}
+                root ={`/research/projects`}
+              />
               <h1>ACTIVE PROJECTS</h1>
               <div class="card is-horizontal rows">
                     {data.active.nodes.map((projectentry) => (

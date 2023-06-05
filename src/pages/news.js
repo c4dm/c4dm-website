@@ -46,6 +46,7 @@ const News = () => {
   return (
     <Layout name="News">
       <section className="section">
+        
         <div>
           <h1>Tags</h1>
             <ul>

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
 
 const PeopleCard = (props) => {

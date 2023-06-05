@@ -2,11 +2,18 @@ import React from "react"
 import PropTypes from "prop-types"
 import Layout from "../components/layout";
 import ProjectCard from "../components/projectCard";
+import {startCase, camelCase} from 'lodash';
+import TagSelector from "../components/tagSelector";
+import { useStaticQuery } from "gatsby";
+// import pageQuery;
 
 // Components
 import { Link, graphql } from "gatsby"
 
+
+
 const ProjectTags = ({ pageContext, data }) => {
+
   const { tag } = pageContext
   const { edges, totalCount } = data.allMarkdownRemark
   const tagHeader = `${totalCount} post${
@@ -17,7 +24,12 @@ const ProjectTags = ({ pageContext, data }) => {
   return (
     <Layout name="ProjectTag">
     <section className="section">
-      <h1 class="title">Projects with tag: {tagName}</h1>
+      <TagSelector
+                data = {data}
+                filterTemplate = {'/projectstags/'}
+                root ={`/research/projects`}
+                selected={tag}
+              />
       <div class="card is-horizontal rows">
             {edges.map(({ node })  => {
                 const { slug } = node.fields
@@ -54,15 +66,10 @@ const ProjectTags = ({ pageContext, data }) => {
       </div> 
       </section>
     </Layout>
-    
- 
   )
 }
 
-
-
 export default ProjectTags
-
 export const pageQuery = graphql`
   query($tag: String) {
     allMarkdownRemark(
@@ -92,6 +99,18 @@ export const pageQuery = graphql`
           }
         }
       }
+      
     }
+  
+  allTags: allMarkdownRemark(
+      limit: 2000
+      filter: { fields: { category: { eq: "projects" } }}
+      ) {
+        group(field: { frontmatter: { tags: SELECT }}) {
+          fieldValue
+          totalCount
+        }
+
+      }
   }
 `

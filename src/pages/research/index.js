@@ -1,30 +1,27 @@
 import React from "react";
-import { Link, graphql, useStaticQuery } from "gatsby";
+import {Link} from "gatsby";
 import Layout from "../../components/layout";
-import BlogCard from "../../components/blogCard";
-import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
+import {StaticImage} from "gatsby-plugin-image";
 
+
+// TODO: I think we should change this to dynamically create the links from gatsby nodes [ANH]
 const Research = () => {
     return (
         <Layout name="Research">
             <section className="section">
-            <h4>Research</h4>
+            <h1>Research</h1>
                 <div className="columns is-multiline">
-                   
-                        
                         <div className="column is-one-quarter-desktop is-one-third-tablet is-full-mobile is-flex">
                             <div className="card is-flex is-flex-direction-column is-flex-grow-1">
                                 <Link to="./groups">
                                 <div className="card-image">
                                     <figure className="image">
-                                        
                                         <StaticImage
                                             alt="default event picture as no event picture was specified"
                                             src="../../content/research/images/projects.png"
                                         />
                                     </figure>
                                 </div>
-
                                 <div className="card-content">
                                     <div className="media">
                                         <div className="media-content">
