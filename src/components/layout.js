@@ -128,12 +128,12 @@ const Layout = ({children, crumbs, name}) => {
             <ul>
               {crumbs.map((crumb, index) => (
                   (crumb.crumbLabel=='tags') ? 
-                  (
-                    <li>{startCase(camelCase(crumb.crumbLabel))}</li>
+                  ( //if we have a tag filter on, ignore that link
+                    <li>{" " +startCase(camelCase(crumb.crumbLabel))+ " "}</li>
                     ):
                   (
                     (index==crumbs.length-1) ? 
-                    (
+                    ( // similarly ignore the link to our current page
                       // comment out the below line to remove current page from breadcrumb
                     <li class="is-active"><a href={crumb.pathname} aria-current="page">{startCase(camelCase(crumb.crumbLabel))}</a></li>):
                     (
