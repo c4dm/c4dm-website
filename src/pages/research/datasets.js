@@ -3,9 +3,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import "../../style/bulmacustom.scss"
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Layout from "../../components/layout.js";
-// import Carousel from "../components/carousel";
-// import BlogCard from "../components/blogCard";
-// import Video from "../components/video";
+
 
 const IndexPage = ({pageContext}) => {
   const {

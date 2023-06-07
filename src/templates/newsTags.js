@@ -1,5 +1,4 @@
 import React from "react"
-// import PropTypes from "prop-types"
 import Layout from "../components/layout";
 import NewsCard from "../components/newsCard";
 import TagSelector from "../components/tagSelector";

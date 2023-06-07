@@ -10,7 +10,6 @@ const News = ({pageContext}) => {
   const {
     breadcrumb: { crumbs },
   } = pageContext
-  // crumbs={crumbs}
 
   const data = useStaticQuery(graphql`
   {
@@ -52,7 +51,6 @@ const News = ({pageContext}) => {
     <Layout name="News" crumbs={crumbs}>
       <section className="section">
         <h1>News</h1>
-        {/* <p>{crumbs}</p> */}
         <TagSelector
                 data = {data}
                 filterTemplate = {'/newstags/'}
@@ -77,8 +75,3 @@ const News = ({pageContext}) => {
 };
 
 export default News;
-
-// export const AboutUs = ({ pageContext, location }) => {
-//   const {
-//     breadcrumb: { crumbs },
-//   } = pageContext

@@ -2,8 +2,7 @@ import React from "react";
 import { graphql, Link, useStaticQuery } from "gatsby";
 import Layout from "../../components/layout";
 import ProjectCard from "../../components/projectCard";
-// import kebabCase from "lodash/kebabCase"
-import {startCase, camelCase, kebabCase} from 'lodash';
+import {startCase, camelCase} from 'lodash';
 import TagSelector from "../../components/tagSelector";
 
 const Project = ({pageContext}) => {
