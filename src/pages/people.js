@@ -43,6 +43,11 @@ const People = ({pageContext}) => {
               name
               role
               topic
+              url
+              acadposition
+              blurb
+              themes  
+              role
             }
             id
           }
@@ -51,7 +56,7 @@ const People = ({pageContext}) => {
     `);
     return (
         <Layout name="People" crumbs={crumbs}>
-          {console.log(keys)}
+
             <section className="section">
               <table class="table has-sticky-header">
                 <thead>
@@ -65,16 +70,16 @@ const People = ({pageContext}) => {
                 </thead>
                 <tbody>
                   {data.allMarkdownRemark.nodes.map((peopleentry) => (
-                        // <div className="column is-one-quarter-desktop is-one-third-tablet is-full-mobile is-flex" key={peopleentry.id}>
                             <PeopleCard
                                 headings = {keys}
+                                person = {peopleentry.frontmatter}
                                 name={peopleentry.frontmatter.name}
                                 role={peopleentry.frontmatter.role}
                                 topic={peopleentry.frontmatter.topic}
                                 image={peopleentry.frontmatter.image.childImageSharp.gatsbyImageData}
                             />
-                        // </div>
-                    ))}
+                    )
+                    )}
                 </tbody>
               </table>
             </section>

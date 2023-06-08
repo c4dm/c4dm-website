@@ -7,7 +7,10 @@ const PeopleCard = (props) => {
       
       <tr>
         {props.headings.map((header)=>(
-          <td>{props[header]}</td>
+
+          <td>
+            {props.person[header]}
+            </td>
           )
         )
         }
