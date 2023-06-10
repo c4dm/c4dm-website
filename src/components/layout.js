@@ -121,10 +121,10 @@ const Layout = ({children, crumbs, name, hero}) => {
 
     return (
       <>
-      {/* { */}
       {hero}
-      {/* //  ? (hero) : ()} */}
         {navBar}
+
+        {/* Breadcrumbs and children*/}
         <main className="container">
          {crumbs ? (
           <nav class="breadcrumb is-6 is-left" aria-label="breadcrumbs">
@@ -146,16 +146,10 @@ const Layout = ({children, crumbs, name, hero}) => {
                   )
                 ))
                 }
-              
-            
-            
-            {/* <li class="is-active"><a href="#" aria-current="page">Breadcrumb</a></li> */}
           </ul>
         </nav>)
         : (console.log("Page has no breadcrumbs *gasp*")
                 )} 
-
-                {/* title */}
           {children}
           </main>
         {footer}
