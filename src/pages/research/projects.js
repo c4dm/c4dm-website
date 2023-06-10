@@ -74,13 +74,16 @@ const Project = ({pageContext}) => {
     return (
         <Layout name="Project" crumbs={crumbs}>
             <section className="section">
-              <h1>Research Projects</h1>
+              <h1 className="title">Research Projects</h1>
               <TagSelector
                 data = {data}
                 filterTemplate = {'/projectstags/'}
                 root ={`/research/projects`}
               />
-              <h1>{startCase(camelCase("All ACTIVE PROJECTS"))}</h1>
+
+              <div className="container">
+                <br></br>
+              <h2 className ="subtitle">{startCase(camelCase("All ACTIVE PROJECTS"))}</h2>
               <div class="card is-horizontal rows">
                     {data.active.nodes.map((projectentry) => (
                        <Link to={projectentry.frontmatter.link}>
@@ -98,8 +101,11 @@ const Project = ({pageContext}) => {
                         </Link>
                     ))}
                 </div>
+              </div>
                
-                <h1 class="pt-5">{startCase(camelCase("All COMPLETED PROJECTS"))}</h1>
+               <div className="container">
+                <br></br>
+                <h2 className="subtitle">{startCase(camelCase("All COMPLETED PROJECTS"))}</h2>
               <div class="card is-horizontal rows">
                     {data.completed.nodes.map((projectentry) => (
                         <Link to={projectentry.frontmatter.link}>
@@ -117,6 +123,7 @@ const Project = ({pageContext}) => {
                         </Link>
 
                     ))}
+                </div>
                 </div>
             </section>
         </Layout>

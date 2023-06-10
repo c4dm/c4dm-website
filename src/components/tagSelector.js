@@ -4,26 +4,28 @@ import {startCase, camelCase, kebabCase} from 'lodash';
 
 const TagSelector = (props) => {
   return (
+    
     <div>
-        <h3>Tags</h3>
-        <ul>
+        
+        <div className="buttons are-small">
+            {/* <h3 className="subtitle">tags:</h3> */}
             {props.data.allTags.group.map(tag => (
                 // If selected=='tag', then grey it out
-            <li key={tag.fieldValue}>
+            <button className="button" key={tag.fieldValue}>
                 <Link to={`${props.root}/tags/${kebabCase(tag.fieldValue)}/`}>
                 {startCase(camelCase(tag.fieldValue))} ({tag.totalCount})
                 </Link>
-            </li>
+            </button>
             ))}
 
             {/* // If selected==False, then grey this out */}
-            <li>
+            <button className="button">
                 <Link to={props.root}>
-                Clear Tags
+                Clear Tags (x)
                 </Link>
-            </li>
-        </ul>
+            </button>
         </div>
+    </div>
   );
 };
 

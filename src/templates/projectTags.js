@@ -24,7 +24,7 @@ const ProjectTags = ({ pageContext, data }) => {
   return (
     <Layout name={startCase(camelCase(tagName))+ " Projects"} crumbs={crumbs}>
     <section className="section">
-      <h1>Research Projects</h1>
+      <h1 className="title">Research Projects</h1>
       <TagSelector
                 data = {data}
                 // filterTemplate = {'/projectstags/'}

@@ -21,7 +21,7 @@ const socialMediaItems = [
 ];
 
 
-const Layout = ({children, crumbs, name}) => {
+const Layout = ({children, crumbs, name, hero}) => {
     const data = useStaticQuery(graphql`
     {
     c4dmlogo: file(absolutePath: {regex: "/images/.*c4dm.*/"}, extension: {eq: "png"}) {
@@ -121,21 +121,13 @@ const Layout = ({children, crumbs, name}) => {
 
     return (
       <>
-      {/* Add conditional rendering for the hero */}
-      <section class="hero is-link is-fullheight-with-navbar">
-        <div class="hero-body has-background-primary">
-          <p class="title is-size-1">
-            Centre for Digital Music
-          </p>
-          {/* ADD HERO IMAGE! */}
-          {/* <br></br>
-          <p class="subtitle">C4DM</p> */}
-        </div>
-      </section>
+      {/* { */}
+      {hero}
+      {/* //  ? (hero) : ()} */}
         {navBar}
         <main className="container">
          {crumbs ? (
-          <nav class="breadcrumb" aria-label="breadcrumbs">
+          <nav class="breadcrumb is-6 is-left" aria-label="breadcrumbs">
             <ul>
               {crumbs.map((crumb, index) => (
                   (crumb.crumbLabel=='tags') ? 
@@ -146,7 +138,8 @@ const Layout = ({children, crumbs, name}) => {
                     (index==crumbs.length-1) ? 
                     ( // similarly ignore the link to our current page
                       // comment out the below line to remove current page from breadcrumb
-                    <li class="is-active"><a href={crumb.pathname} aria-current="page">{startCase(camelCase(crumb.crumbLabel))}</a></li>):
+                    <li class="is-active"><a href={crumb.pathname} aria-current="page">{startCase(camelCase(crumb.crumbLabel))}</a></li>
+                    ):
                     (
                     <li><a href={crumb.pathname}>{startCase(camelCase(crumb.crumbLabel))}</a></li>
                     )
@@ -161,6 +154,8 @@ const Layout = ({children, crumbs, name}) => {
         </nav>)
         : (console.log("Page has no breadcrumbs *gasp*")
                 )} 
+
+                {/* title */}
           {children}
           </main>
         {footer}

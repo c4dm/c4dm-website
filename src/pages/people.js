@@ -56,8 +56,8 @@ const People = ({pageContext}) => {
     `);
     return (
         <Layout name="People" crumbs={crumbs}>
-
             <section className="section">
+              <h1 className="title">People</h1>
               <table class="table has-sticky-header">
                 <thead>
                   <tr>

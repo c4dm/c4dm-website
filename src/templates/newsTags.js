@@ -20,7 +20,7 @@ const NewsTags = ({ pageContext, data }) => {
   return (
     <Layout name="NewsTag" crumbs={crumbs}>
     <section className="section">
-      <h1 class="title">News with tag: {tagName}</h1>
+      <h1 class="title">News With Tag: {tagName}</h1>
       <TagSelector
                 data = {data}
                 filterTemplate = {'/newstags/'}

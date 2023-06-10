@@ -12,7 +12,7 @@ const Research = ({pageContext}) => {
     return (
         <Layout name="Research" crumbs={crumbs}>
             <section className="section">
-            <h1>Research</h1>
+            <h1 className="title">Research</h1>
                 <div className="columns is-multiline">
                         <div className="column is-one-quarter-desktop is-one-third-tablet is-full-mobile is-flex">
                             <div className="card is-flex is-flex-direction-column is-flex-grow-1">

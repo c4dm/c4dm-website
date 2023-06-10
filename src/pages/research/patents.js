@@ -41,7 +41,7 @@ const Patents = ({pageContext}) => {
      
         <Layout name="Patents" crumbs={crumbs}>
             <section className="section">
-              <h1>Patents</h1>
+              <h1 className="title">Patents</h1>
               <div class="card is-horizontal rows">
                     {data.active.nodes.map((patentEntry) => (
                        <Link to={patentEntry.frontmatter.link}>

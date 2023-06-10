@@ -36,7 +36,7 @@ const IndexPage = ({pageContext}) => {
   return (
     <Layout name="Datasets" crumbs={crumbs}>
       <section className="section">
-        <h2 className="title">{data.software.frontmatter.title}</h2>
+        <h1 className="title">{data.software.frontmatter.title}</h1>
         <div
             className="content"
             dangerouslySetInnerHTML={{ __html: data.software.html }}

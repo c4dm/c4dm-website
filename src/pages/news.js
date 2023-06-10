@@ -50,12 +50,13 @@ const News = ({pageContext}) => {
   return (
     <Layout name="News" crumbs={crumbs}>
       <section className="section">
-        <h1>News</h1>
+        <h1 className="title">News</h1>
         <TagSelector
                 data = {data}
                 filterTemplate = {'/newstags/'}
                 root ={`/news`}
               />
+              
         <div class="card is-horizontal rows">
           {data.news.nodes.map((blogentry) => (
               <Link to={blogentry.fields.slug}>
