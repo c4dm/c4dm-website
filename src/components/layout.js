@@ -121,6 +121,17 @@ const Layout = ({children, crumbs, name}) => {
 
     return (
       <>
+      {/* Add conditional rendering for the hero */}
+      <section class="hero is-link is-fullheight-with-navbar">
+        <div class="hero-body has-background-primary">
+          <p class="title is-size-1">
+            Centre for Digital Music
+          </p>
+          {/* ADD HERO IMAGE! */}
+          {/* <br></br>
+          <p class="subtitle">C4DM</p> */}
+        </div>
+      </section>
         {navBar}
         <main className="container">
          {crumbs ? (
@@ -153,6 +164,7 @@ const Layout = ({children, crumbs, name}) => {
           {children}
           </main>
         {footer}
+
       </>
     );
 }
