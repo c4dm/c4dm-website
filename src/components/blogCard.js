@@ -26,13 +26,11 @@ const BlogCard = (props) => {
           <div className="media">
             <div className="media-content">
               <p className="subtitle is-6">{props.date || null}</p>
-              <p className="title is-4">{props.title || "New Blog Entry"} </p>
+              <p className="title is-6">{props.title || "New Blog Entry"} </p>
               <p className="subtitle is-6"> by {props.author}</p>
             </div>
           </div>
-          <div className="content">
-            <div className="blog-card-text" dangerouslySetInnerHTML={{__html:props.html}}></div>
-          </div>
+          
           <div className="card-footer p-2 has-text-centered is-align-self-center">
               Read More
           </div>

@@ -11,17 +11,24 @@ const Research = ({pageContext}) => {
   } = pageContext
     return (
         <Layout name="Research" crumbs={crumbs}>
-            <section className="section">
-            <h1 className="title">Research</h1>
+            <section className="secondary">
+            <div className="column is-one-third">
+                <div className="parallelogram2">
+                    <h1 className="textp2">
+                    Research
+                    </h1>
+                </div>
+            </div>
+           
                 <div className="columns is-multiline">
                         <div className="column is-one-quarter-desktop is-one-third-tablet is-full-mobile is-flex">
                             <div className="card is-flex is-flex-direction-column is-flex-grow-1">
                                 <Link to="./groups">
-                                <div className="card-image">
-                                    <figure className="image">
+                                <div className="card-image is-256x256">
+                                    <figure className="image ">
                                         <StaticImage
                                             alt="default event picture as no event picture was specified"
-                                            src="../../content/research/images/projects.png"
+                                            src="../../images/groups.png"
                                         />
                                     </figure>
                                 </div>
@@ -43,13 +50,13 @@ const Research = ({pageContext}) => {
                         <div className="column is-one-quarter-desktop is-one-third-tablet is-full-mobile is-flex">
                             <div className="card is-flex is-flex-direction-column is-flex-grow-1">
                                 <Link to="./projects">
-                                <div className="card-image">
+                                <div className="card-image is-256x256">
                                    
-                                    <figure className="image">
+                                    <figure className="image ">
                                         
                                         <StaticImage
                                             alt="default event picture as no event picture was specified"
-                                            src="../../content/research/images/projects.png"
+                                            src="../../images/projects.png"
                                         />
                                     </figure>
                                 </div>
@@ -70,12 +77,12 @@ const Research = ({pageContext}) => {
                         <div className="column is-one-quarter-desktop is-one-third-tablet is-full-mobile is-flex">
                             <div className="card is-flex is-flex-direction-column is-flex-grow-1">
                                 <Link to="./publications">
-                                <div className="card-image">
-                                    <figure className="image">
+                                <div className="card-image is-256x256">
+                                    <figure className="image ">
                                         
                                         <StaticImage
                                             alt="default event picture as no event picture was specified"
-                                            src="../../content/research/images/projects.png"
+                                            src="../../images/publications.png"
                                         />
                                     </figure>
                                 </div>
@@ -101,7 +108,7 @@ const Research = ({pageContext}) => {
                                         
                                         <StaticImage
                                             alt="default event picture as no event picture was specified"
-                                            src="../../content/research/images/projects.png"
+                                            src="../../images/code.png"
                                         />
                                     </figure>
                                 </div>
@@ -127,8 +134,7 @@ const Research = ({pageContext}) => {
                                         
                                         <StaticImage
                                             alt="default event picture as no event picture was specified"
-                                            src="../../content/research/images/projects.png"
-                                        />
+                                            src="../../images/patents.png"                                        />
                                     </figure>
                                 </div>
 
