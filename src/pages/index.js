@@ -7,9 +7,6 @@ import Carousel from "../components/carousel";
 import BlogCard from "../components/blogCard";
 import Video from "../components/video";
 
-
-
-
 const IndexPage = ({pageContext}) => {
   const {
     breadcrumb: { crumbs },
@@ -105,39 +102,42 @@ const IndexPage = ({pageContext}) => {
     const homeHero = (
       <section className="hero is-link is-fullheight">
         <div className="hero-body has-background-primary">
-          <div className="column is-one-third">
-            <div className="parallelogram">
-              <h1 className="textp">
-                About Us 
-              </h1>
+          <div className="columns is-multiline">
+            <div className="column is-one-third-desktop is-full-tablet">
+              <div className="parallelogram has-background-white">
+                
+                <h1 className="is-size-2-desktop is-size-3-tablet is-size-4-mobile has-text-centered has-text-weight-bold has-text-primary">
+                  About Us
+                </h1>
+              </div>
+
+              <div
+                dangerouslySetInnerHTML={{ __html: data.about.html }}
+                className="pt-6 pr-6 is-size-4-desktop is-size-5-mobile has-text-justified has-text-white"
+              ></div>
             </div>
-            
-            <div 
-              dangerouslySetInnerHTML={{ __html: data.about.html }} className="aboutText"
-            ></div>
+            <div className="column is-two-thirds-desktop is-full-tablet">
+              <Video videoSrcURL={data.about.frontmatter.video} />
             </div>
-          <div className="column">
-          <Video videoSrcURL={data.about.frontmatter.video}/>
-            </div>
-          
+          </div>
           {/* ADD HERO IMAGE! */}
           {/* <br></br>
           <p class="subtitle">C4DM</p> */}
         </div>
-      </section>);
+      </section>
+    );
 
   return (
     <Layout name="Homepage" hero={homeHero}>
-    
       <section className="section">
         <div className="lowerPadding">
-        <div className="column is-one-third">
-          <div className="parallelogram2">
-            <h1 className="textp2">
-            Projects
-            </h1>
+          <div className="column is-one-third">
+            <div className="parallelogram has-background-primary">
+              <h1 className="is-size-2-desktop is-size-3-tablet is-size-4-mobile has-text-centered has-text-weight-bold has-text-white">
+                Projects
+              </h1>
+            </div>
           </div>
-        </div>
         </div>
         <div className="container">
           <Carousel content={projectCards} />
@@ -145,22 +145,21 @@ const IndexPage = ({pageContext}) => {
       </section>
 
       <section className="secondary">
-      <div className="lowerPadding">
-        <div className="column is-one-third">
-          <div className="parallelogram">
-            <h1 className="textp">
-            News
-            </h1>
+        <div className="lowerPadding">
+          <div className="column is-one-third">
+            <div className="parallelogram has-background-white">
+              
+                <h1 className="is-size-2-desktop is-size-3-tablet is-size-4-mobile has-text-centered has-text-weight-bold">
+                  News
+                </h1>
+            </div>
           </div>
         </div>
-        </div>
-        
+
         <div className="container">
           <Carousel content={newsCards} />
         </div>
       </section>
-      
-      
     </Layout>
   );
 }
