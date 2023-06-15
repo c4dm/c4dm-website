@@ -3,6 +3,7 @@ title: "Blogpost 7"
 author: "Max Mustermann"
 date: "2022-12-05"
 image: "./placeholder.png"
+tags: ["industry"]
 ---
 
 Consectetur amet laborum labore anim magna mollit aute. Occaecat cillum consectetur aliqua eiusmod pariatur consequat. In non elit consectetur laborum.

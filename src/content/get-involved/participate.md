@@ -1,5 +1,5 @@
 ---
-title: "Do you want to participate?"
+title: "Get Involved"
 image: "./placeholder.png"
 ---
 

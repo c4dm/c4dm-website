@@ -1,5 +1,5 @@
 import * as React from "react";
-import { graphql, useStaticQuery } from "gatsby";
+import { graphql, useStaticQuery, Link } from "gatsby";
 import "../style/bulmacustom.scss"
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Layout from "../components/layout.js";
@@ -7,7 +7,13 @@ import Carousel from "../components/carousel";
 import BlogCard from "../components/blogCard";
 import Video from "../components/video";
 
-const IndexPage = () => {
+
+
+
+const IndexPage = ({pageContext}) => {
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext
     const data = useStaticQuery(graphql`
       {
         about: markdownRemark(
@@ -96,34 +102,45 @@ const IndexPage = () => {
       />
     ));
 
-  return (
-    <Layout name="Homepage">
-      <section className="section">
-        <div className="columns">
+    const homeHero = (
+      <section class="hero is-link is-fullheight-with-navbar">
+        <div class="hero-body has-background-primary">
           <div className="column is-half">
-            <h2 className="title">About</h2>
+          <p class="title is-size-1">
+            Centre for Digital Music
+          </p>
             <div
-              className="content"
               dangerouslySetInnerHTML={{ __html: data.about.html }}
             ></div>
-          </div>
-          <div className="column is-half">
-            <Video videoSrcURL={data.about.frontmatter.video} />
-          </div>
+            </div>
+          {/* ADD HERO IMAGE! */}
+          {/* <br></br>
+          <p class="subtitle">C4DM</p> */}
         </div>
-      </section>
+      </section>);
+
+  return (
+    <Layout name="Homepage" hero={homeHero}>
       <section className="section">
-        <h2 className="title">Projects</h2>
-        <div className="container">
-          <Carousel content={projectCards} />
-        </div>
-      </section>
+        <section class="hero is-link is-fullwidth has-background-white">
+            <Video videoSrcURL={data.about.frontmatter.video}/>
+          </section>
+        </section>
       <section className="section">
-        <h2 className="title">News</h2>
+        <h2 className="title">
+          <Link to="/news">News</Link>
+          </h2>
         <div className="container">
           <Carousel content={newsCards} />
         </div>
       </section>
+      <section className="section">
+        <h2 className="title"> <Link to="/projects">Projects</Link></h2>
+        <div className="container">
+          <Carousel content={projectCards} />
+        </div>
+      </section>
+      
     </Layout>
   );
 }

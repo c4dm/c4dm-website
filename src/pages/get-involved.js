@@ -1,50 +1,47 @@
-import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image";
-import Layout from "../components/layout"
-import ContactForm from "../components/contactForm";
+import * as React from "react";
+import { graphql, useStaticQuery } from "gatsby";
+import "../style/bulmacustom.scss"
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import Layout from "../components/layout.js";
+  
 
-
-
-const GetInvolved = () => {
+const NewsPage = ({pageContext}) => {
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext
     const data = useStaticQuery(graphql`
-    {
-        markdownRemark(fields: {category: {eq: "get-involved"}}) {
-            id
-            html
-            frontmatter {
+      {
+        participate: markdownRemark(
+          fields: { category: { eq: "get-involved" } }
+          fileAbsolutePath: { regex: "/participate.md/" }
+        ) {
+          html
+          frontmatter {
             title
+            video
             image {
-                childImageSharp {
-                gatsbyImageData(layout: CONSTRAINED)
-                }
+              childImageSharp {
+                gatsbyImageData(layout: CONSTRAINED, width: 400)
+              }
             }
-            }
+          }
         }
-    }`) 
-                          
-    return (
-        <Layout name="Participate">
-            <section className="section">
-                <div className="columns">
-                    <div className="column is-one-third">
-                        <GatsbyImage 
-                            alt="Image about participating in the project"
-                            image={data.markdownRemark.frontmatter.image.childImageSharp.gatsbyImageData}
-                        />
-                    </div>
-                    <div className="column is-two-thirds">
-                        <h1 className="title">{data.markdownRemark.frontmatter.title}</h1>
-                        <div className="content" dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}></div>
-                    </div>
-                </div>
-            </section>
-            <hr/>
-            <section className="section">
-                <ContactForm/>
-            </section>
-        </Layout>
-    )
+      }
+    `);
+
+  return (
+    <Layout name="get-involved" crumbs={crumbs}>
+      <section className="section">
+            <h2 className="title">{data.participate.frontmatter.title}</h2>
+            <div
+              className="content"
+              dangerouslySetInnerHTML={{ __html: data.participate.html }}
+            ></div>
+        </section>
+    </Layout>
+  );
 }
 
-export default GetInvolved
+export default NewsPage
+
+export const Head = () => <title>Get Involved</title>

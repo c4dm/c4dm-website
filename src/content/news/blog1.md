@@ -3,6 +3,7 @@ title: "Blogpost 1"
 author: "Anne Steinhoff"
 date: "2022-07-05"
 image: "./placeholder.png"
+tags: ["industry"]
 ---
 
 **Consectetur** <b>I'm bold </b>amet laborum labore anim magna mollit aute. Occaecat cillum consectetur aliqua eiusmod pariatur consequat. In non elit consectetur laborum.

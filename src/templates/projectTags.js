@@ -2,11 +2,18 @@ import React from "react"
 import PropTypes from "prop-types"
 import Layout from "../components/layout";
 import ProjectCard from "../components/projectCard";
+import {startCase, camelCase} from 'lodash';
+import TagSelector from "../components/tagSelector";
+import { useStaticQuery, Link, graphql} from "gatsby";
 
-// Components
-import { Link, graphql } from "gatsby"
+
 
 const ProjectTags = ({ pageContext, data }) => {
+
+  
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext
   const { tag } = pageContext
   const { edges, totalCount } = data.allMarkdownRemark
   const tagHeader = `${totalCount} post${
@@ -15,10 +22,17 @@ const ProjectTags = ({ pageContext, data }) => {
   const tagName = `${tag}`
 
   return (
-    <Layout name="ProjectTag">
+    <Layout name={startCase(camelCase(tagName))+ " Projects"} crumbs={crumbs}>
     <section className="section">
-      <h1 class="title">Projects with tag: {tagName}</h1>
-      <div class="card is-horizontal rows">
+      <h1 className="title">Research Projects</h1>
+      <TagSelector
+                data = {data}
+                // filterTemplate = {'/projectstags/'}
+                root ={`/research/projects`}
+                selected={tag}
+              />
+      <h2>{startCase(camelCase(tagName))+ " Projects"}</h2>
+          <div class="card is-horizontal rows">
             {edges.map(({ node })  => {
                 const { slug } = node.fields
                 const { title } = node.frontmatter
@@ -30,9 +44,9 @@ const ProjectTags = ({ pageContext, data }) => {
                 
                 
                 return (
-                  <div class="pt-3">
+                  // <div class="pt-3">
                   <Link to={slug}>
-                 
+                 <div class="card-image row is-three-fifths pt-3" key={node.id}> 
                   <ProjectCard
                   title={title} 
                   author={author} 
@@ -43,9 +57,9 @@ const ProjectTags = ({ pageContext, data }) => {
                 
                  
               />
-             
+             </div>
               </Link>
-              </div>
+              // </div>
               
                 )
                 
@@ -54,15 +68,10 @@ const ProjectTags = ({ pageContext, data }) => {
       </div> 
       </section>
     </Layout>
-    
- 
   )
 }
 
-
-
 export default ProjectTags
-
 export const pageQuery = graphql`
   query($tag: String) {
     allMarkdownRemark(
@@ -92,6 +101,18 @@ export const pageQuery = graphql`
           }
         }
       }
+      
     }
+  
+  allTags: allMarkdownRemark(
+      limit: 2000
+      filter: { fields: { category: { eq: "projects" } }}
+      ) {
+        group(field: { frontmatter: { tags: SELECT }}) {
+          fieldValue
+          totalCount
+        }
+
+      }
   }
 `

@@ -1,6 +1,11 @@
 ---
-name: "Max Mustermann"
-role: "PhD Student"
-topic: "Machine learning for music"
+name: "Adán Benito" 
+url: ""
+acadposition: ""
+blurb: "Beyond the fret: gesture analysis on fretted instruments and its applications to instrument augmentation"
+themes: [
+"augmi"
+]
+role: "phd"
 image: "./defaultprofile.png"
 ---

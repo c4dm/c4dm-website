@@ -1,148 +1,63 @@
 import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
+import { graphql, Link, useStaticQuery } from "gatsby";
 import Layout from "../../components/layout";
-import BlogCard from "../../components/blogCard";
-import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
+import PatentCard from "../../components/patentCard";
 
-const Groups = () => {
+
+const Patents = ({pageContext}) => {
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext
+    const data = useStaticQuery(graphql`
+      {
+        active: allMarkdownRemark(
+          filter: { fields: { category: { eq: "research/patents/projects" } }, frontmatter: { status: { eq: "active" } } }
+          sort: { frontmatter: { date: DESC } }
+        ) {
+          nodes {
+            frontmatter {
+              image {
+                childImageSharp {
+                  gatsbyImageData(layout: CONSTRAINED)
+                }
+              }
+              title
+              author
+              begin
+              end
+              grant
+              amount
+              link
+            }
+            id
+          }
+        }
+      }
+    `);
+
+   
+
     return (
-        <Layout name="Groups">
+     
+        <Layout name="Patents" crumbs={crumbs}>
             <section className="section">
-            <h4>Research</h4>
-                <div className="columns is-multiline">
-                   
-                        
-                        <div className="column is-one-quarter-desktop is-one-third-tablet is-full-mobile is-flex">
-                            <div className="card is-flex is-flex-direction-column is-flex-grow-1">
-                                <div className="card-image">
-                                    <figure className="image">
-                                        
-                                        <StaticImage
-                                            alt="default event picture as no event picture was specified"
-                                            src="../content/research/images/projects.png"
-                                        />
-                                    </figure>
-                                </div>
-
-                                <div className="card-content">
-                                    <div className="media">
-                                        <div className="media-content">
-                                            <p className="title is-4">Research Groups </p>
-                                            
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                              
-                            </div>
+              <h1 className="title">Patents</h1>
+              <div class="card is-horizontal rows">
+                    {data.active.nodes.map((patentEntry) => (
+                       <Link to={patentEntry.frontmatter.link}>
+                        <div class="card-image row is-three-fifths pt-3" key={patentEntry.id}> 
+                            <PatentCard
+                                title={patentEntry.frontmatter.title}
+                                applicationNumber={patentEntry.frontmatter.author}
+                                filingDate={patentEntry.frontmatter.begin}
+                            />
                         </div>
-
-                       
-                        <div className="column is-one-quarter-desktop is-one-third-tablet is-full-mobile is-flex">
-                            <div className="card is-flex is-flex-direction-column is-flex-grow-1">
-                                <div className="card-image">
-                                    <figure className="image">
-                                        
-                                        <StaticImage
-                                            alt="default event picture as no event picture was specified"
-                                            src="../content/research/images/projects.png"
-                                        />
-                                    </figure>
-                                </div>
-
-                                <div className="card-content">
-                                    <div className="media">
-                                        <div className="media-content">
-                                            <p className="title is-4">Projects </p>
-                                            
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                              
-                            </div>
-                        </div>
-
-                        <div className="column is-one-quarter-desktop is-one-third-tablet is-full-mobile is-flex">
-                            <div className="card is-flex is-flex-direction-column is-flex-grow-1">
-                                <div className="card-image">
-                                    <figure className="image">
-                                        
-                                        <StaticImage
-                                            alt="default event picture as no event picture was specified"
-                                            src="../content/research/images/projects.png"
-                                        />
-                                    </figure>
-                                </div>
-
-                                <div className="card-content">
-                                    <div className="media">
-                                        <div className="media-content">
-                                            <p className="title is-4">Publications </p>
-                                            
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                              
-                            </div>
-                        </div>
-
-                        <div className="column is-one-quarter-desktop is-one-third-tablet is-full-mobile is-flex">
-                            <div className="card is-flex is-flex-direction-column is-flex-grow-1">
-                                <div className="card-image">
-                                    <figure className="image">
-                                        
-                                        <StaticImage
-                                            alt="default event picture as no event picture was specified"
-                                            src="../content/research/images/projects.png"
-                                        />
-                                    </figure>
-                                </div>
-
-                                <div className="card-content">
-                                    <div className="media">
-                                        <div className="media-content">
-                                            <p className="title is-4">Datasets & Code </p>
-                                            
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                              
-                            </div>
-                        </div>
-
-                        <div className="column is-one-quarter-desktop is-one-third-tablet is-full-mobile is-flex">
-                            <div className="card is-flex is-flex-direction-column is-flex-grow-1">
-                                <div className="card-image">
-                                    <figure className="image">
-                                        
-                                        <StaticImage
-                                            alt="default event picture as no event picture was specified"
-                                            src="../content/research/images/projects.png"
-                                        />
-                                    </figure>
-                                </div>
-
-                                <div className="card-content">
-                                    <div className="media">
-                                        <div className="media-content">
-                                            <p className="title is-4">Patents </p>
-                                            
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                              
-                            </div>
-                        </div>
-               
-           
+                        </Link>
+                    ))}
                 </div>
-                </section>
+            </section>
         </Layout>
     );
 }
 
-export default Groups;
+export default Patents;

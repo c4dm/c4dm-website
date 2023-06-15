@@ -1,7 +1,9 @@
 import React, {useState} from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
+import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
 import {Link} from "gatsby"
+import { Breadcrumb } from "gatsby-plugin-breadcrumb"
+import {startCase, camelCase} from 'lodash';
 
 const navItems = [
     {name: "Research", link: "/research"},
@@ -19,8 +21,7 @@ const socialMediaItems = [
 ];
 
 
-const Layout = (props) => {
-
+const Layout = ({children, crumbs, name, hero}) => {
     const data = useStaticQuery(graphql`
     {
     c4dmlogo: file(absolutePath: {regex: "/images/.*c4dm.*/"}, extension: {eq: "png"}) {
@@ -120,9 +121,39 @@ const Layout = (props) => {
 
     return (
       <>
+      {hero}
         {navBar}
-        <main className="container" >{props.children}</main>
+
+        {/* Breadcrumbs and children*/}
+        <main className="container">
+         {crumbs ? (
+          <nav class="breadcrumb is-6 is-left" aria-label="breadcrumbs">
+            <ul>
+              {crumbs.map((crumb, index) => (
+                  (crumb.crumbLabel=='tags') ? 
+                  ( //if we have a tag filter on, ignore that link
+                    <li>{" " +startCase(camelCase(crumb.crumbLabel))+ " "}</li>
+                    ):
+                  (
+                    (index==crumbs.length-1) ? 
+                    ( // similarly ignore the link to our current page
+                      // comment out the below line to remove current page from breadcrumb
+                    <li class="is-active"><a href={crumb.pathname} aria-current="page">{startCase(camelCase(crumb.crumbLabel))}</a></li>
+                    ):
+                    (
+                    <li><a href={crumb.pathname}>{startCase(camelCase(crumb.crumbLabel))}</a></li>
+                    )
+                  )
+                ))
+                }
+          </ul>
+        </nav>)
+        : (console.log("Page has no breadcrumbs *gasp*")
+                )} 
+          {children}
+          </main>
         {footer}
+
       </>
     );
 }

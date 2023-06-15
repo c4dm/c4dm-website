@@ -1,6 +1,18 @@
-$primary: #3E40A5;
+// Primary from old site
+// $primary: #3E40A5;
 
+// // new blue from branding doc is a lie 
+// $primary: #21386A;
+
+// Primary pulled from qm site
+$primary: #092350;
+
+@import url('https://fonts.googleapis.com/css?family=Source Sans Pro');
 @import "~bulma/bulma.sass";
+
+// Assign font
+$font-family: 'Source Sans Pro';
+$family-sans-serif: 'Source Sans Pro';
 
 // Make sure that page takes up whole vertical space
 #gatsby-focus-wrapper {

@@ -5,7 +5,10 @@ import PublicationCard from "../../components/publicationCard";
 import kebabCase from "lodash/kebabCase"
 
 
-const Publications = () => {
+const Publications = ({pageContext}) => {
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext
     const data = useStaticQuery(graphql`
     query {
       pubs:  allReference (
@@ -39,7 +42,7 @@ const Publications = () => {
 
     
     return (
-        <Layout name="Groups">
+        <Layout name="Groups" crumbs={crumbs}>
             <section className="section">
             <h1 class="title">Publications</h1>
 

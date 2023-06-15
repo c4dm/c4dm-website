@@ -3,12 +3,15 @@ import { graphql} from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";
 
-const NewsPost = ({ data }) => {
+const NewsPost = ({ data, pageContext }) => {
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext
     const {markdownRemark} = data;
     const {frontmatter, fields, html} = markdownRemark;
 
     return (
-      <Layout name="Blog">
+      <Layout name="Blog" crumbs={crumbs}>
         <section className="section" id="header">
           <div className="container">
             <GatsbyImage

@@ -2,10 +2,13 @@ import React from "react";
 import { graphql, Link, useStaticQuery } from "gatsby";
 import Layout from "../../components/layout";
 import ProjectCard from "../../components/projectCard";
-import kebabCase from "lodash/kebabCase"
+import {startCase, camelCase} from 'lodash';
+import TagSelector from "../../components/tagSelector";
 
-
-const Project = () => {
+const Project = ({pageContext}) => {
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext
     const data = useStaticQuery(graphql`
       {
         active: allMarkdownRemark(
@@ -54,7 +57,7 @@ const Project = () => {
           }
         }
 
-        tags: allMarkdownRemark(
+        allTags: allMarkdownRemark(
           limit: 2000
           filter: { fields: { category: { eq: "projects" } }}
           ) {
@@ -69,26 +72,18 @@ const Project = () => {
    
 
     return (
-     
-        <Layout name="Project">
+        <Layout name="Project" crumbs={crumbs}>
             <section className="section">
+              <h1 className="title">Research Projects</h1>
+              <TagSelector
+                data = {data}
+                filterTemplate = {'/projectstags/'}
+                root ={`/research/projects`}
+              />
 
-
-
-              <div>
-                <h1>Tags</h1>
-                <ul>
-                  {data.tags.group.map(tag => (
-                    <li key={tag.fieldValue}>
-                      <Link to={`/projectstags/${kebabCase(tag.fieldValue)}/`}>
-                        {tag.fieldValue} ({tag.totalCount})
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <h1>ACTIVE PROJECTS</h1>
+              <div className="container">
+                <br></br>
+              <h2 className ="subtitle">{startCase(camelCase("All ACTIVE PROJECTS"))}</h2>
               <div class="card is-horizontal rows">
                     {data.active.nodes.map((projectentry) => (
                        <Link to={projectentry.frontmatter.link}>
@@ -106,8 +101,11 @@ const Project = () => {
                         </Link>
                     ))}
                 </div>
+              </div>
                
-                <h1 class="pt-5">COMPLETED PROJECTS</h1>
+               <div className="container">
+                <br></br>
+                <h2 className="subtitle">{startCase(camelCase("All COMPLETED PROJECTS"))}</h2>
               <div class="card is-horizontal rows">
                     {data.completed.nodes.map((projectentry) => (
                         <Link to={projectentry.frontmatter.link}>
@@ -125,6 +123,7 @@ const Project = () => {
                         </Link>
 
                     ))}
+                </div>
                 </div>
             </section>
         </Layout>
