@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql, Link, useStaticQuery } from "gatsby";
 import Layout from "../components/layout";
-import PartnerCard from "../components/partnercard";
+import PartnerCard from "../components/partnerCard";
 
 
 const Partners = ({pageContext}) => {
