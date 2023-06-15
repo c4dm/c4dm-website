@@ -5,7 +5,10 @@
 // $primary: #21386A;
 
 // Primary pulled from qm site
+
 $primary: #092350;
+$grey: rgb(167, 167, 167);
+
 
 @import url('https://fonts.googleapis.com/css?family=Source Sans Pro');
 @import "~bulma/bulma.sass";
@@ -45,6 +48,12 @@ main.container {
 }
 
 
+.card-footer.stick-to-bottom {
+        position: absolute;
+        bottom: 0;
+    }
+
+
 .navbar {
     // Add margin to logos
     .gatsby-image-wrapper {
@@ -54,6 +63,7 @@ main.container {
     // Divide navbar items with a slash
     .navitem-divider {
         @extend .navbar-item;
+        pointer-events: none;
         margin: 0;
         padding: 0;
         &::after {
@@ -68,7 +78,18 @@ main.container {
         @media (max-width: $desktop) {  
             display: none;    
         }
-    }    
+    }
+    
+    // Colours for mobile menu
+    .navbar-end {
+        .navbar-item {
+            color: $light;
+            &:hover {
+                background-color: $light;
+                color: $primary;
+            }
+        }
+    }
 }
 
 
@@ -176,7 +197,8 @@ main.container {
 
 .secondary {
     @extend .section;
-    background-color: rgb(167, 167, 167);
+
+    background-color: $grey;
 
 }
 
@@ -184,6 +206,8 @@ main.container {
     width: 100%;
    
   }
+
+
 
 .card-content {
     vertical-align: bottom;

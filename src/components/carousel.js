@@ -83,7 +83,7 @@ const Carousel = ({content,transitionSpeed=1000}) => {
           <div className="columns is-flex">
             {content.map((item, i) => (
               <div
-                className="column is-one-quarter-desktop is-one-third-tablet is-full-mobile"
+                className="column is-one-quarter-desktop is-one-third-tablet is-full-mobile is-flex"
                 key={`carousel-item-${i}`}
                 style={getSlidePosition(i,position,content.length,slideDirection,transitionSpeed)}
               >
