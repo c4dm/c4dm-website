@@ -46,6 +46,12 @@ main.container {
 }
 
 
+.card-footer.stick-to-bottom {
+        position: absolute;
+        bottom: 0;
+    }
+
+
 .navbar {
     // Add margin to logos
     .gatsby-image-wrapper {
@@ -192,13 +198,5 @@ main.container {
     background-color: $grey;
 }
 
-.card-image {
-    height: 50%;
-   
-  }
 
-.card-footer.stick-to-bottom {
-        position: absolute;
-        bottom: 0;
-    }
 

@@ -43,7 +43,7 @@ const IndexPage = ({pageContext}) => {
             frontmatter {
               image {
                 childImageSharp {
-                  gatsbyImageData(layout: CONSTRAINED)
+                  gatsbyImageData(layout: CONSTRAINED, aspectRatio: 1)
                 }
               }
               title
@@ -66,7 +66,7 @@ const IndexPage = ({pageContext}) => {
             frontmatter {
               image {
                 childImageSharp {
-                  gatsbyImageData(layout: CONSTRAINED)
+                  gatsbyImageData(layout: CONSTRAINED, aspectRatio: 1)
                 }
               }
               title
