@@ -41,7 +41,12 @@ const Patents = ({pageContext}) => {
      
         <Layout name="Patents" crumbs={crumbs}>
             <section className="section">
-              <ParallelogramHeader text="Patents" backgroundColor="primary" textColor="white"/>
+              <ParallelogramHeader 
+                text="Patents" 
+                backgroundColor="primary" 
+                textColor="white"
+                className="mb-6"
+                />
               <div class="card is-horizontal rows">
                     {data.active.nodes.map((patentEntry) => (
                        <Link to={patentEntry.frontmatter.link}>

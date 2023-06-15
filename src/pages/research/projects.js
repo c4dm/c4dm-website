@@ -79,6 +79,7 @@ const Project = ({pageContext}) => {
             text="Research Projects"
             backgroundColor="primary"
             textColor="white"
+            className="mb-6"
           />
           <TagSelector
             data={data}

@@ -48,6 +48,7 @@ const Publications = ({pageContext}) => {
             text="Publications"
             backgroundColor="primary"
             textColor="white"
+            className="mb-6"
           />
 
           <div>
