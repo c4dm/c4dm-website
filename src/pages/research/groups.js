@@ -11,12 +11,14 @@ const Research = ({pageContext}) => {
     return (
         <Layout name="Research" crumbs={crumbs}>
             <section className="section">
+            <div className="lowerPadding">
             <div className="column is-one-third">
                 <div className="parallelogram2">
                     <h1 className="textp2">
                     Research Groups
                     </h1>
                 </div>
+            </div>
             </div>
                 <div className="columns is-multiline">
                         <div className="column is-one-quarter-desktop is-one-third-tablet is-full-mobile is-flex">
