@@ -43,7 +43,7 @@ const Layout = ({children, crumbs, name, hero}) => {
     const [showMobileMenu,setShowMobileMenu] = useState(false);
 
     const navBar = (
-      <nav className="navbar is-primary" role="navigation" aria-label="main navigation">
+      <nav className="navbar is-primary is-fixed-top" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
           <Link to="/">
             <GatsbyImage

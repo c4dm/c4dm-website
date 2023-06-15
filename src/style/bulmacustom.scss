@@ -6,6 +6,7 @@
 
 // Primary pulled from qm site
 $primary: #3E40A5;
+$grey: rgb(167, 167, 167);
 
 @import url('https://fonts.googleapis.com/css?family=Source Sans Pro');
 @import "~bulma/bulma.sass";
@@ -176,7 +177,7 @@ main.container {
 
 .secondary {
     @extend .section;
-    background-color: rgb(167, 167, 167);
+    background-color: $grey;
 }
 
 .card-image {

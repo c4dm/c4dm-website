@@ -103,8 +103,8 @@ const IndexPage = ({pageContext}) => {
     ));
 
     const homeHero = (
-      <section class="hero is-link is-fullheight-with-navbar">
-        <div class="hero-body has-background-primary">
+      <section className="hero is-link is-fullheight">
+        <div className="hero-body has-background-primary">
           <div className="column is-one-third">
             <div className="parallelogram">
               <h1 className="textp">
