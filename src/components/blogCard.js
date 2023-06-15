@@ -9,7 +9,7 @@ const BlogCard = (props) => {
       key={props.slug}
     >
       <Link to={`${props.slug}/#header`}>
-        <div className="card-image">
+        <div>
           <figure className="image">
             {props.image ? (
               <GatsbyImage alt="picture of event" image={props.image} />
@@ -22,7 +22,7 @@ const BlogCard = (props) => {
           </figure>
         </div>
 
-        <div className="card-content">
+        <div className="card-content is-flex is-flex-direction-column is-flex-grow-1">
           <div className="media">
             <div className="media-content">
               <p className="subtitle is-6">{props.date || null}</p>
@@ -31,10 +31,13 @@ const BlogCard = (props) => {
             </div>
           </div>
           <div className="content">
-            <div className="blog-card-text" dangerouslySetInnerHTML={{__html:props.html}}></div>
+            <div
+              className="blog-card-text"
+              dangerouslySetInnerHTML={{ __html: props.html }}
+            ></div>
           </div>
-          <div className="card-footer p-2 has-text-centered is-align-self-center">
-              Read More
+          <div className="card-footer stick-to-bottom p-2 has-text-centered is-align-self-center">
+            Read More
           </div>
         </div>
       </Link>
