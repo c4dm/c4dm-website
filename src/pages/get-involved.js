@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import "../style/bulmacustom.scss"
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Layout from "../components/layout.js";
-  
+import ParallelogramHeader from "../components/parallelogramHeader"; 
 
 const NewsPage = ({pageContext}) => {
   const {
@@ -32,12 +32,17 @@ const NewsPage = ({pageContext}) => {
   return (
     <Layout name="get-involved" crumbs={crumbs}>
       <section className="section">
-            <h2 className="title">{data.participate.frontmatter.title}</h2>
-            <div
-              className="content"
-              dangerouslySetInnerHTML={{ __html: data.participate.html }}
-            ></div>
-        </section>
+        <ParallelogramHeader
+          text="Get Involved"
+          backgroundColor="primary"
+          textColor="white"
+          className="mb-6"
+        />
+        <div
+          className="content"
+          dangerouslySetInnerHTML={{ __html: data.participate.html }}
+        ></div>
+      </section>
     </Layout>
   );
 }

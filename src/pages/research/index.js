@@ -2,6 +2,7 @@ import React from "react";
 import {Link} from "gatsby";
 import Layout from "../../components/layout";
 import {StaticImage} from "gatsby-plugin-image";
+import ParallelogramHeader from "../../components/parallelogramHeader";
 
 
 // TODO: I think we should change this to dynamically create the links from gatsby nodes [ANH]
@@ -14,11 +15,7 @@ const Research = ({pageContext}) => {
             <section className="section">
             <div className="lowerPadding">
             <div className="column is-one-third">
-                <div className="parallelogram2">
-                    <h1 className="textp2">
-                    Research
-                    </h1>
-                </div>
+                <ParallelogramHeader text="Research" backgroundColor="primary" textColor="white"/>
             </div>
             </div>
            
