@@ -56,8 +56,9 @@ const News = ({pageContext}) => {
                 filterTemplate = {'/newstags/'}
                 root ={`/news`}
               />
-              
-        <div class="card is-horizontal rows">
+
+          <div className="lowerPadding"> </div>
+           
           {data.news.nodes.map((blogentry) => (
               <Link to={blogentry.fields.slug}>
               <NewsCard
@@ -69,7 +70,7 @@ const News = ({pageContext}) => {
               />
               </Link>
           ))}
-          </div>
+          
       </section>
     </Layout>
   );
