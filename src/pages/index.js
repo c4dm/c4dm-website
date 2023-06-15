@@ -18,7 +18,7 @@ const IndexPage = ({pageContext}) => {
       {
         about: markdownRemark(
           fields: { category: { eq: "about" } }
-          fileAbsolutePath: { regex: "/about.md/" }
+          fileAbsolutePath: { regex: "/about-long.md/" }
         ) {
           html
           frontmatter {
@@ -33,7 +33,7 @@ const IndexPage = ({pageContext}) => {
         }
         projects: allMarkdownRemark(
           filter: { fields: { category: { eq: "projects" } } }
-          sort: { frontmatter: { date: DESC } }
+          sort: { frontmatter: { end: DESC } }
           limit: 6
         ) {
           nodes {
@@ -105,14 +105,21 @@ const IndexPage = ({pageContext}) => {
     const homeHero = (
       <section class="hero is-link is-fullheight-with-navbar">
         <div class="hero-body has-background-primary">
-          <div className="column is-half">
-          <p class="title is-size-1">
-            Centre for Digital Music
-          </p>
-            <div
-              dangerouslySetInnerHTML={{ __html: data.about.html }}
+          <div className="column is-one-third">
+            <div className="parallelogram">
+              <h1 className="textp">
+                About Us 
+              </h1>
+            </div>
+            
+            <div 
+              dangerouslySetInnerHTML={{ __html: data.about.html }} className="aboutText"
             ></div>
             </div>
+          <div className="column">
+          <Video videoSrcURL={data.about.frontmatter.video}/>
+            </div>
+          
           {/* ADD HERO IMAGE! */}
           {/* <br></br>
           <p class="subtitle">C4DM</p> */}
@@ -121,25 +128,34 @@ const IndexPage = ({pageContext}) => {
 
   return (
     <Layout name="Homepage" hero={homeHero}>
+    
       <section className="section">
-        <section class="hero is-link is-fullwidth has-background-white">
-            <Video videoSrcURL={data.about.frontmatter.video}/>
-          </section>
-        </section>
-      <section className="section">
-        <h2 className="title">
-          <Link to="/news">News</Link>
-          </h2>
-        <div className="container">
-          <Carousel content={newsCards} />
+        <div className="column is-one-third">
+          <div className="parallelogram2">
+            <h1 className="textp2">
+            Projects
+            </h1>
+          </div>
         </div>
-      </section>
-      <section className="section">
-        <h2 className="title"> <Link to="/projects">Projects</Link></h2>
         <div className="container">
           <Carousel content={projectCards} />
         </div>
       </section>
+
+      <section className="secondary">
+        <div className="column is-one-third">
+          <div className="parallelogram">
+            <h1 className="textp">
+            News
+            </h1>
+          </div>
+        </div>
+        
+        <div className="container">
+          <Carousel content={newsCards} />
+        </div>
+      </section>
+      
       
     </Layout>
   );
