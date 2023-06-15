@@ -69,7 +69,18 @@ main.container {
         @media (max-width: $desktop) {  
             display: none;    
         }
-    }    
+    }
+    
+    // Colours for mobile menu
+    .navbar-end {
+        .navbar-item {
+            color: $light;
+            &:hover {
+                background-color: $light;
+                color: $primary;
+            }
+        }
+    }
 }
 
 
