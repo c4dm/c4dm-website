@@ -7,6 +7,6 @@ end: "2023"
 grant: "AHRC grant AH/V009699/1"
 amount: "£50,845 (QMUL), £202,566 (total)"
 status: "active"
-image: "./rudiments.png"
+image: "./digitaljazz.jpeg"
 ---
 

@@ -8,7 +8,7 @@ grant: "ERC Consolidator Grant / UKRI Research Grant EP/X023478/1"
 amount: "£1,723,185"
 status: "active"
 tags: ["academic"]
-image: "./rudiments.png"
+image: "./rudiments.jpeg"
 ---
 
 

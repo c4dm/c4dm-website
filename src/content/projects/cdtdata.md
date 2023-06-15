@@ -8,7 +8,7 @@ grant: "EPSRC Training Grant EP/V519935/1"
 amount: "£1,629,373"
 status: "active"
 tags: ["academic"]
-image: "./rudiments.png"
+image: "./cdtdata.png"
 ---
 
 

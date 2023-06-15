@@ -7,6 +7,6 @@ end: "2024"
 amount: "£177,000 (standard stipend) + £27,000 (contribution from BBC)"
 status: "active"
 partner: "BBC"
-image: "./rudiments.png"
+image: "./dame.png"
 ---
 

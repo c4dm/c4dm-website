@@ -7,6 +7,6 @@ end: "2023"
 grant: "Royal Society International Exchanges grant IEC/NSFC/201382"
 amount: "£3,800"
 status: "active"
-image: "./rudiments.png"
+image: "./unsuperviseddetection.jpeg"
 ---
 

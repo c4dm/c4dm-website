@@ -7,6 +7,6 @@ end: "2025"
 grant: "UKRI Future Leaders Fellowship"
 amount: "£946,672 (total), £24,879 (QMUL)"
 status: "active"
-image: "./rudiments.png"
+image: "./elderwellbeing.png"
 ---
 
