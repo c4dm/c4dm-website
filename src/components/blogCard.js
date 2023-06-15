@@ -23,6 +23,7 @@ const BlogCard = (props) => {
         </Link>
       </div>
 
+
       <div className="card-content is-flex is-flex-direction-column is-flex-grow-1">
         <div className="media is-flex-grow-1">
           <div className="media-content">

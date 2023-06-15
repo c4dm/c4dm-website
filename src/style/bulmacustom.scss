@@ -5,8 +5,10 @@
 // $primary: #21386A;
 
 // Primary pulled from qm site
-$primary: #3E40A5;
+
+$primary: #092350;
 $grey: rgb(167, 167, 167);
+
 
 @import url('https://fonts.googleapis.com/css?family=Source Sans Pro');
 @import "~bulma/bulma.sass";
@@ -147,7 +149,7 @@ main.container {
 .textp {
 
     transform: initial;
-    color: #3E40A5;
+    color: $primary;
     transform: skewX(14deg);
     text-align: center;
     font-weight: bold;
@@ -160,7 +162,7 @@ main.container {
     padding: 3px 20px 3px 20px;
     width: 80%;
     display: inline-block;
-    background: #3E40A5;
+    background: $primary;
     transform: skewX(-14deg);
     }
 
@@ -195,8 +197,28 @@ main.container {
 
 .secondary {
     @extend .section;
+
     background-color: $grey;
+
 }
 
+.card-image {
+    width: 100%;
+   
+  }
 
 
+
+.card-content {
+    vertical-align: bottom;
+    width: 100%;
+}
+
+.lowerPadding {
+    padding: 0 0 5vw 0;
+}
+
+.row {
+
+    margin-bottom: 2vw;
+}

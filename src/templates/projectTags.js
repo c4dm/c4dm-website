@@ -32,7 +32,7 @@ const ProjectTags = ({ pageContext, data }) => {
                 selected={tag}
               />
       <h2>{startCase(camelCase(tagName))+ " Projects"}</h2>
-          <div class="card is-horizontal rows">
+          
             {edges.map(({ node })  => {
                 const { slug } = node.fields
                 const { title } = node.frontmatter
@@ -65,7 +65,7 @@ const ProjectTags = ({ pageContext, data }) => {
                 
                 }
             )}
-      </div> 
+      
       </section>
     </Layout>
   )
