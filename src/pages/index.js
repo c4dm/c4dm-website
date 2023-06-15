@@ -6,6 +6,7 @@ import Layout from "../components/layout.js";
 import Carousel from "../components/carousel";
 import BlogCard from "../components/blogCard";
 import Video from "../components/video";
+import ParallelogramHeader from "../components/parallelogramHeader";
 
 const IndexPage = ({pageContext}) => {
   const {
@@ -104,12 +105,7 @@ const IndexPage = ({pageContext}) => {
         <div className="hero-body has-background-primary">
           <div className="columns is-multiline">
             <div className="column is-one-third-desktop is-full-tablet">
-              <div className="parallelogram has-background-white">
-                
-                <h1 className="is-size-2-desktop is-size-3-tablet is-size-4-mobile has-text-centered has-text-weight-bold has-text-primary">
-                  About Us
-                </h1>
-              </div>
+              <ParallelogramHeader text="About Us" backgroundColor="white" textColor="primary"/>
 
               <div
                 dangerouslySetInnerHTML={{ __html: data.about.html }}
@@ -132,11 +128,7 @@ const IndexPage = ({pageContext}) => {
       <section className="section">
         <div className="lowerPadding">
           <div className="column is-one-third">
-            <div className="parallelogram has-background-primary">
-              <h1 className="is-size-2-desktop is-size-3-tablet is-size-4-mobile has-text-centered has-text-weight-bold has-text-white">
-                Projects
-              </h1>
-            </div>
+            <ParallelogramHeader text="Projects" backgroundColor="primary" textColor="white"/>
           </div>
         </div>
         <div className="container">
@@ -147,12 +139,7 @@ const IndexPage = ({pageContext}) => {
       <section className="secondary">
         <div className="lowerPadding">
           <div className="column is-one-third">
-            <div className="parallelogram has-background-white">
-              
-                <h1 className="is-size-2-desktop is-size-3-tablet is-size-4-mobile has-text-centered has-text-weight-bold">
-                  News
-                </h1>
-            </div>
+          <ParallelogramHeader text="News" backgroundColor="white" textColor="black"/>
           </div>
         </div>
 
