@@ -81,8 +81,10 @@ const Project = ({pageContext}) => {
                 root ={`/research/projects`}
               />
 
-              <div className="container">
-                <br></br>
+              
+              <div className="lowerPadding">
+                </div>
+                
               <h2 className ="subtitle">{startCase(camelCase("All ACTIVE PROJECTS"))}</h2>
                 
                     {data.active.nodes.map((projectentry) => (
@@ -101,7 +103,7 @@ const Project = ({pageContext}) => {
                         </Link>
                     ))}
                 
-              </div>
+             
                
                <div className="container">
                 <br></br>
