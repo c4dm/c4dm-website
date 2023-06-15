@@ -4,6 +4,7 @@ import Layout from "../../components/layout";
 import {StaticImage} from "gatsby-plugin-image";
 import ParallelogramHeader from "../../components/parallelogramHeader";
 
+// THIS IS A HOT MESS!!!! THE CARDS SHOULD BE ABSTRACTED AS COMPONENTS AND IMAGES SHOULD BE IMPORTED THROUGH GRAPHQL AND NOT STATICALLY [Sebastian]
 
 // TODO: I think we should change this to dynamically create the links from gatsby nodes [ANH]
 const Research = ({pageContext}) => {
