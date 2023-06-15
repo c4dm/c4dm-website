@@ -24,7 +24,7 @@ const socialMediaItems = [
 const Layout = ({children, crumbs, name, hero}) => {
     const data = useStaticQuery(graphql`
     {
-    c4dmlogo: file(absolutePath: {regex: "/images/.*c4dm.*/"}, extension: {eq: "png"}) {
+    c4dmlogo: file(absolutePath: {regex: "/images/.*c4dmwhite.*/"}, extension: {eq: "png"}) {
       id
       publicURL
       childImageSharp {
@@ -121,9 +121,9 @@ const Layout = ({children, crumbs, name, hero}) => {
 
     return (
       <>
-      {hero}
-        {navBar}
-
+      
+      {navBar}
+        {hero}
         {/* Breadcrumbs and children*/}
         <main className="container">
          {crumbs ? (
