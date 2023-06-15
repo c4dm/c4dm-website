@@ -55,6 +55,7 @@ main.container {
     // Divide navbar items with a slash
     .navitem-divider {
         @extend .navbar-item;
+        pointer-events: none;
         margin: 0;
         padding: 0;
         &::after {
