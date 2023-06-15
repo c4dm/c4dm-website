@@ -43,7 +43,7 @@ const IndexPage = ({pageContext}) => {
             frontmatter {
               image {
                 childImageSharp {
-                  gatsbyImageData(layout: CONSTRAINED)
+                  gatsbyImageData(layout: CONSTRAINED, aspectRatio: 1)
                 }
               }
               title
@@ -66,7 +66,7 @@ const IndexPage = ({pageContext}) => {
             frontmatter {
               image {
                 childImageSharp {
-                  gatsbyImageData(layout: CONSTRAINED)
+                  gatsbyImageData(layout: CONSTRAINED, aspectRatio: 1)
                 }
               }
               title
@@ -103,8 +103,8 @@ const IndexPage = ({pageContext}) => {
     ));
 
     const homeHero = (
-      <section class="hero is-link is-fullheight-with-navbar">
-        <div class="hero-body has-background-primary">
+      <section className="hero is-link is-fullheight">
+        <div className="hero-body has-background-primary">
           <div className="column is-one-third">
             <div className="parallelogram">
               <h1 className="textp">
