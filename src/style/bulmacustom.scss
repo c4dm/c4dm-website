@@ -27,6 +27,7 @@ $family-sans-serif: 'Source Sans Pro';
 // Make sure main content is not wider than page
 main.container {
     max-width: 100%;
+    margin: 0 0 0 0;
 }
 
 .blog-card-text {
@@ -162,7 +163,7 @@ main.container {
   
 
 .section {
-    padding: 3rem 3rem;
+    padding: 3rem 3rem 3rem 3em;
 
 
 }
@@ -191,6 +192,11 @@ main.container {
 }
 
 .row {
+    width: 100%;
+    margin-bottom: 2vw;
+}
 
+.newsContainer {
+    width: 100%;
     margin-bottom: 2vw;
 }

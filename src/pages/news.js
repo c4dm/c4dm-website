@@ -50,15 +50,22 @@ const News = ({pageContext}) => {
   return (
     <Layout name="News" crumbs={crumbs}>
       <section className="section">
+
         <ParallelogramHeader
           text="News"
           backgroundColor="primary"
           textColor="white"
           className="mb-6"
         />
-        <TagSelector data={data} filterTemplate={"/newstags/"} root={`/news`} />
+        <TagSelector
+                data = {data}
+                filterTemplate = {'/newstags/'}
+                root ={`/news`}
+              />
 
-        <div class="card is-horizontal rows">
+          <div className="lowerPadding"> </div>
+           
+
           {data.news.nodes.map((blogentry) => (
             <Link to={blogentry.fields.slug}>
               <NewsCard
@@ -73,7 +80,7 @@ const News = ({pageContext}) => {
               />
             </Link>
           ))}
-        </div>
+
       </section>
     </Layout>
   );

@@ -31,7 +31,11 @@ const ProjectTags = ({ pageContext, data }) => {
                 root ={`/research/projects`}
                 selected={tag}
               />
+       <div className="lowerPadding">
+        
+        </div>
       <h2>{startCase(camelCase(tagName))+ " Projects"}</h2>
+     
           
             {edges.map(({ node })  => {
                 const { slug } = node.fields
