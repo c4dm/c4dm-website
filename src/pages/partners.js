@@ -2,7 +2,7 @@ import React from "react";
 import { graphql, Link, useStaticQuery } from "gatsby";
 import Layout from "../components/layout";
 import PartnerCard from "../components/partnerCard";
-
+import ParallelogramHeader from "../components/parallelogramHeader";
 
 const Partners = ({pageContext}) => {
   const {
@@ -32,24 +32,34 @@ const Partners = ({pageContext}) => {
     `);
 
     return (
-     
-        <Layout name="Partners" crumbs={crumbs}>
-          <section className="section">
-              <h1 class="title">Partners</h1>
-              <div class="columns is-multiline">
-                {data.active.nodes.map((partnerentry) => (
-                  <div className="column is-one-quarter-desktop is-one-third-tablet is-full-mobile is-flex" key={partnerentry.id}>
-                    <Link to={partnerentry.frontmatter.link}>
-                        <PartnerCard
-                            title={partnerentry.frontmatter.title}
-                            image={partnerentry.frontmatter.image.childImageSharp.gatsbyImageData}
-                        />
-                    </Link>
-                    </div>
-                ))}
+      <Layout name="Partners" crumbs={crumbs}>
+        <section className="section">
+          <ParallelogramHeader
+            text="Partners"
+            backgroundColor="primary"
+            textColor="white"
+            className="mb-6"
+          />
+          <div class="columns is-multiline">
+            {data.active.nodes.map((partnerentry) => (
+              <div
+                className="column is-one-quarter-desktop is-one-third-tablet is-full-mobile is-flex"
+                key={partnerentry.id}
+              >
+                <Link to={partnerentry.frontmatter.link}>
+                  <PartnerCard
+                    title={partnerentry.frontmatter.title}
+                    image={
+                      partnerentry.frontmatter.image.childImageSharp
+                        .gatsbyImageData
+                    }
+                  />
+                </Link>
               </div>
-          </section>
-        </Layout>
+            ))}
+          </div>
+        </section>
+      </Layout>
     );
 }
 

@@ -3,6 +3,7 @@ import { Link, graphql, useStaticQuery } from "gatsby";
 import Layout from "../../components/layout";
 import BlogCard from "../../components/blogCard";
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
+import ParallelogramHeader from "../../components/parallelogramHeader";
 
 const Research = ({pageContext}) => {
   const {
@@ -13,11 +14,7 @@ const Research = ({pageContext}) => {
             <section className="section">
             <div className="lowerPadding">
             <div className="column is-one-third">
-                <div className="parallelogram2">
-                    <h1 className="textp2">
-                    Research Groups
-                    </h1>
-                </div>
+                <ParallelogramHeader text="Research Groups" backgroundColor="primary" textColor="white"/>
             </div>
             </div>
                 <div className="columns is-multiline">
