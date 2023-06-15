@@ -5,10 +5,10 @@ import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
 const ProjectCard = (props) => {
   return (
     <div
-      className="card is-flex is-flex-direction-row"
+      className="card columns is-flex is-flex-direction-row"
       key={props.slug}
     >
-        <div className="card-image is-128x128">
+        <div className="card-image column is-one-fifth">
           <figure className="image is-128x128">
             {props.image ? (
               <GatsbyImage alt="picture of event" image={props.image} />
@@ -21,7 +21,7 @@ const ProjectCard = (props) => {
           </figure>
         </div>
 
-        <div className="card-content">
+        <div className="card-content column is-four-fifths">
           <div className="media">
             <div className="media-content">
               <p className="title is-6">{props.title || "Name"} </p>

@@ -187,8 +187,14 @@ main.container {
 
 .card-content {
     vertical-align: bottom;
+    width: 100%;
 }
 
 .lowerPadding {
     padding: 0 0 5vw 0;
+}
+
+.row {
+
+    margin-bottom: 2vw;
 }

@@ -11,7 +11,7 @@ const Research = ({pageContext}) => {
   } = pageContext
     return (
         <Layout name="Research" crumbs={crumbs}>
-            <section className="secondary">
+            <section className="section">
             <div className="lowerPadding">
             <div className="column is-one-third">
                 <div className="parallelogram2">

@@ -13,7 +13,7 @@ const Project = ({pageContext}) => {
       {
         active: allMarkdownRemark(
           filter: { fields: { category: { eq: "projects" } }, frontmatter: { status: { eq: "active" } } }
-          sort: { frontmatter: { date: DESC } }
+          sort: { frontmatter: { end: DESC } }
         ) {
           nodes {
             frontmatter {
@@ -84,7 +84,7 @@ const Project = ({pageContext}) => {
               <div className="container">
                 <br></br>
               <h2 className ="subtitle">{startCase(camelCase("All ACTIVE PROJECTS"))}</h2>
-              <div class="card is-horizontal rows">
+                
                     {data.active.nodes.map((projectentry) => (
                        <Link to={projectentry.frontmatter.link}>
                         <div class="card-image row is-three-fifths pt-3" key={projectentry.id}> 
@@ -100,7 +100,7 @@ const Project = ({pageContext}) => {
                         </div>
                         </Link>
                     ))}
-                </div>
+                
               </div>
                
                <div className="container">
