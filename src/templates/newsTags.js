@@ -26,7 +26,9 @@ const NewsTags = ({ pageContext, data }) => {
                 filterTemplate = {'/newstags/'}
                 root ={`/news`}
               />
-      <div class="card is-horizontal rows">
+     
+     <div className="lowerPadding"></div>
+     
             {edges.map(({ node })  => {
                 const { slug } = node.fields
                 const {title,author,date,image} = node.frontmatter
@@ -45,7 +47,7 @@ const NewsTags = ({ pageContext, data }) => {
                 
                 }
             )}
-      </div> 
+    
       </section>
     </Layout>
     
