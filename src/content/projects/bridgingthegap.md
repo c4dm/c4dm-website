@@ -8,6 +8,6 @@ grant: "AHRC Grant AH/V011340/1"
 amount: "£576,879"
 status: "active"
 tags: ["academic"]
-image: "./rudiments.png"
+image: "./bridgingthegap.png"
 ---
 

@@ -7,5 +7,5 @@ end: "2022"
 grant: "British Academy, BA/Leverhulme Small Research Grants scheme, SRG1920/101673"
 amount: "£10,000"
 status: "complete"
-image: "./rudiments.png"
+image: "./metaphors.png"
 ---
