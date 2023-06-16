@@ -97,7 +97,7 @@ const IndexPage = ({pageContext}) => {
         author={news.frontmatter.author}
         date={news.frontmatter.date}
         image={news.frontmatter.image.childImageSharp.gatsbyImageData}
-        html={news.html}
+        
         slug={news.fields.slug}
       />
     ));
@@ -130,7 +130,7 @@ const IndexPage = ({pageContext}) => {
     <Layout name="Homepage" hero={homeHero}>
     
       <section className="section">
-        <div className="lowerPadding">
+        <div className="lowerPadding ">
         <div className="column is-one-third">
           <div className="parallelogram2">
             <h1 className="textp2">

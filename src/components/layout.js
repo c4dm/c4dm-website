@@ -125,7 +125,7 @@ const Layout = ({children, crumbs, name, hero}) => {
       {navBar}
         {hero}
         {/* Breadcrumbs and children*/}
-        <main className="container">
+        <main className="container is-link m-0 is-flex-direction-column is-fullhd">
          {crumbs ? (
           <nav class="breadcrumb is-6 is-left" aria-label="breadcrumbs">
             <ul>
