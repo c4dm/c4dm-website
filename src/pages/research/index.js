@@ -13,7 +13,7 @@ const Research = ({pageContext}) => {
   } = pageContext
     return (
         <Layout name="Research" crumbs={crumbs}>
-            <section className="section">
+            <section className="section ">
             <div className="lowerPadding">
             <div className="column is-one-third">
                 <ParallelogramHeader text="Research" backgroundColor="primary" textColor="white"/>
