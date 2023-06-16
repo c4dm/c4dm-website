@@ -2,6 +2,7 @@ import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import Layout from "../components/layout";
 import PeopleCard from "../components/peopleCard";
+import ParallelogramHeader from "../components/parallelogramHeader";
 
 // Keys for the elements of the table
 const keys = ["name", "url", "acadposition", "blurb", "themes", "role"];
@@ -55,35 +56,40 @@ const People = ({pageContext}) => {
       }
     `);
     return (
-        <Layout name="People" crumbs={crumbs}>
-            <section className="section">
-              <h1 className="title">People</h1>
-              <table class="table has-sticky-header">
-                <thead>
-                  <tr>
-                    {keys.map((key)=>(
-                      <th>{headings[key]}</th>
-                      )
-                    )
-                    }
-                  </tr>
-                </thead>
-                <tbody>
-                  {data.allMarkdownRemark.nodes.map((peopleentry) => (
-                            <PeopleCard
-                                headings = {keys}
-                                person = {peopleentry.frontmatter}
-                                name={peopleentry.frontmatter.name}
-                                role={peopleentry.frontmatter.role}
-                                topic={peopleentry.frontmatter.topic}
-                                image={peopleentry.frontmatter.image.childImageSharp.gatsbyImageData}
-                            />
-                    )
-                    )}
-                </tbody>
-              </table>
-            </section>
-        </Layout>
+      <Layout name="People" crumbs={crumbs}>
+        <section className="section">
+          <ParallelogramHeader
+            text="People"
+            backgroundColor="primary"
+            textColor="white"
+            className="mb-6"
+          />
+          <table className="table has-sticky-header">
+            <thead>
+              <tr>
+                {keys.map((key) => (
+                  <th>{headings[key]}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {data.allMarkdownRemark.nodes.map((peopleentry) => (
+                <PeopleCard
+                  headings={keys}
+                  person={peopleentry.frontmatter}
+                  name={peopleentry.frontmatter.name}
+                  role={peopleentry.frontmatter.role}
+                  topic={peopleentry.frontmatter.topic}
+                  image={
+                    peopleentry.frontmatter.image.childImageSharp
+                      .gatsbyImageData
+                  }
+                />
+              ))}
+            </tbody>
+          </table>
+        </section>
+      </Layout>
     );
 }
 

@@ -2,7 +2,7 @@ import React from "react";
 import { graphql, Link, useStaticQuery } from "gatsby";
 import Layout from "../../components/layout";
 import PatentCard from "../../components/patentCard";
-
+import ParallelogramHeader from "../../components/parallelogramHeader";
 
 const Patents = ({pageContext}) => {
   const {
@@ -41,7 +41,12 @@ const Patents = ({pageContext}) => {
      
         <Layout name="Patents" crumbs={crumbs}>
             <section className="section">
-              <h1 className="title">Patents</h1>
+              <ParallelogramHeader 
+                text="Patents" 
+                backgroundColor="primary" 
+                textColor="white"
+                className="mb-6"
+                />
               <div class="card is-horizontal rows">
                     {data.active.nodes.map((patentEntry) => (
                        <Link to={patentEntry.frontmatter.link}>

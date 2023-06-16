@@ -4,12 +4,14 @@ import Layout from "../../components/layout";
 import ProjectCard from "../../components/projectCard";
 import {startCase, camelCase} from 'lodash';
 import TagSelector from "../../components/tagSelector";
+import ParallelogramHeader from "../../components/parallelogramHeader";
 
 const Project = ({pageContext}) => {
-  const {
-    breadcrumb: { crumbs },
-  } = pageContext
-    const data = useStaticQuery(graphql`
+      const {
+        breadcrumb: { crumbs },
+      } = pageContext;
+
+      const data = useStaticQuery(graphql`
       {
         active: allMarkdownRemark(
           filter: { fields: { category: { eq: "projects" } }, frontmatter: { status: { eq: "active" } } }
@@ -69,67 +71,101 @@ const Project = ({pageContext}) => {
       }
     `);
 
-   
+      const test = "test";
 
-    return (
+      return (
         <Layout name="Project" crumbs={crumbs}>
-            <section className="section">
-              <h1 className="title">Research Projects</h1>
-              <TagSelector
-                data = {data}
-                filterTemplate = {'/projectstags/'}
-                root ={`/research/projects`}
-              />
+          <section className="section">
+            <ParallelogramHeader
+              text="Research Projects"
+              backgroundColor="primary"
+              textColor="white"
+              className="mb-6"
+            />
+            <TagSelector
+              data={data}
+              filterTemplate={"/projectstags/"}
+              root={`/research/projects`}
+            />
+            <div className="lowerPadding"></div>
+            <h2 className="subtitle">
+              {startCase(camelCase("All ACTIVE PROJECTS"))}
+            </h2>
 
-              
-              <div className="lowerPadding">
+            {data.active.nodes.map((projectentry) => (
+              <Link to={projectentry.frontmatter.link}>
+                <div
+                  class="card-image row is-three-fifths pt-3"
+                  key={projectentry.id}
+                >
+                  <ProjectCard
+                    title={projectentry.frontmatter.title}
+                    author={projectentry.frontmatter.author}
+                    begin={projectentry.frontmatter.begin}
+                    end={projectentry.frontmatter.end}
+                    grant={projectentry.frontmatter.grant}
+                    amount={projectentry.frontmatter.amount}
+                    image={
+                      projectentry.frontmatter.image.childImageSharp
+                        .gatsbyImageData
+                    }
+                  />
                 </div>
-                
-              <h2 className ="subtitle">{startCase(camelCase("All ACTIVE PROJECTS"))}</h2>
-                
-                    {data.active.nodes.map((projectentry) => (
-                       <Link to={projectentry.frontmatter.link}>
-                        <div class="card-image row is-three-fifths pt-3" key={projectentry.id}> 
-                            <ProjectCard
-                                title={projectentry.frontmatter.title}
-                                author={projectentry.frontmatter.author}
-                                begin={projectentry.frontmatter.begin}
-                                end={projectentry.frontmatter.end}
-                                grant= {projectentry.frontmatter.grant}
-                                amount={projectentry.frontmatter.amount}
-                                image={projectentry.frontmatter.image.childImageSharp.gatsbyImageData}
-                            />
-                        </div>
-                        </Link>
-                    ))}
-                
-             
-               
-               <div className="container">
-                <br></br>
-                <h2 className="subtitle">{startCase(camelCase("All COMPLETED PROJECTS"))}</h2>
+              </Link>
+            ))}
+            <div className="container">
+              <br></br>
+              <h2 className="subtitle">
+                {startCase(camelCase("All COMPLETED PROJECTS"))}
+              </h2>
               <div class="card is-horizontal rows">
-                    {data.completed.nodes.map((projectentry) => (
-                        <Link to={projectentry.frontmatter.link}>
-                        <div class="card-image row is-three-fifths pt-3" key={projectentry.id}> 
-                            <ProjectCard
-                                title={projectentry.frontmatter.title}
-                                author={projectentry.frontmatter.author}
-                                begin={projectentry.frontmatter.begin}
-                                end={projectentry.frontmatter.end}
-                                grant= {projectentry.frontmatter.grant}
-                                amount={projectentry.frontmatter.amount}
-                                image={projectentry.frontmatter.image.childImageSharp.gatsbyImageData}
-                            />
-                        </div>
-                        </Link>
-
-                    ))}
-                </div>
-                </div>
-            </section>
+                {data.completed.nodes.map((projectentry) => (
+                  <Link to={projectentry.frontmatter.link}>
+                    <div
+                      class="card-image row is-three-fifths pt-3"
+                      key={projectentry.id}
+                    >
+                      <ProjectCard
+                        title={projectentry.frontmatter.title}
+                        author={projectentry.frontmatter.author}
+                        begin={projectentry.frontmatter.begin}
+                        end={projectentry.frontmatter.end}
+                        grant={projectentry.frontmatter.grant}
+                        amount={projectentry.frontmatter.amount}
+                        image={
+                          projectentry.frontmatter.image.childImageSharp
+                            .gatsbyImageData
+                        }
+                      />
+                    </div>
+                  </Link>
+                ))}
+                {data.active.nodes.map((projectentry) => (
+                  <Link to={projectentry.frontmatter.link}>
+                    <div
+                      class="card-image row is-three-fifths pt-3"
+                      key={projectentry.id}
+                    >
+                      <ProjectCard
+                        title={projectentry.frontmatter.title}
+                        author={projectentry.frontmatter.author}
+                        begin={projectentry.frontmatter.begin}
+                        end={projectentry.frontmatter.end}
+                        grant={projectentry.frontmatter.grant}
+                        amount={projectentry.frontmatter.amount}
+                        image={
+                          projectentry.frontmatter.image.childImageSharp
+                            .gatsbyImageData
+                        }
+                      />
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
         </Layout>
-    );
+      );
 }
 
 export default Project;
