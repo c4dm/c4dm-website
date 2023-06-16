@@ -95,7 +95,7 @@ const IndexPage = ({pageContext}) => {
         author={news.frontmatter.author}
         date={news.frontmatter.date}
         image={news.frontmatter.image.childImageSharp.gatsbyImageData}
-        html={news.html}
+        
         slug={news.fields.slug}
       />
     ));
@@ -129,6 +129,7 @@ const IndexPage = ({pageContext}) => {
         <div className="lowerPadding">
           <div className="column is-one-third">
             <ParallelogramHeader text="Projects" backgroundColor="primary" textColor="white"/>
+
           </div>
         </div>
         <div className="container">

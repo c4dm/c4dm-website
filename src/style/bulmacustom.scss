@@ -26,8 +26,8 @@ $family-sans-serif: 'Source Sans Pro';
 
 // Make sure main content is not wider than page
 main.container {
-    max-width: 100%;
-    margin: 0 0 0 0;
+    max-width: 2000px;
+    width: 100%;
 }
 
 .blog-card-text {

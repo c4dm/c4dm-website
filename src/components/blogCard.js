@@ -27,12 +27,12 @@ const BlogCard = (props) => {
       <div className="card-content is-flex is-flex-direction-column is-flex-grow-1">
         <div className="media is-flex-grow-1">
           <div className="media-content">
-            <p className="subtitle is-6">{props.date || null}</p>
-            <p className="title is-4">{props.title || "New Blog Entry"} </p>
-            <p className="subtitle is-6"> by {props.author}</p>
+            <p className="subtitle is-7">{props.date || null}</p>
+            <p className="title is-6">{props.title || "New Blog Entry"} </p>
+            <p className="is-size-7"> by {props.author}</p>
           </div>
         </div>
-        <div className="content">
+        <div className="content is-size-7">
           <div
             className="blog-card-text"
             dangerouslySetInnerHTML={{ __html: props.html }}
