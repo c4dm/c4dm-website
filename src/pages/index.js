@@ -129,15 +129,16 @@ const IndexPage = ({pageContext}) => {
   return (
     <Layout name="Homepage" hero={homeHero}>
       <section className="section">
-        <div className="lowerPadding">
-          <div className="column is-one-third">
-            <ParallelogramHeader text="Projects" backgroundColor="primary" textColor="white"/>
 
+          <div className="lowerPadding">
+            <div className="column is-one-third">
+              <ParallelogramHeader text="Projects" backgroundColor="primary" textColor="white"/>
+            </div>
           </div>
-        </div>
-        <div className="container">
-          <Carousel content={projectCards} />
-        </div>
+          <div className="container">
+            <Carousel content={projectCards} />
+          </div>
+
       </section>
 
       <section className="secondary">
