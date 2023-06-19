@@ -1,0 +1,9 @@
+---
+name: "Tyler Howard McIntosh"
+url: ""
+acadposition: ""
+blurb: "Expressive Performance Rendering for Music Generation Systems"
+themes: ["mcog","mir"]
+role: "phd"
+image: "./defaultprofile.png"
+---

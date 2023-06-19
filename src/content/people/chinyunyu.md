@@ -1,0 +1,9 @@
+---
+name: "Chin-Yun Yu"
+url: "https://yoyololicon.github.io/"
+acadposition: ""
+blurb: "Neural Audio Synthesis with Expressiveness Control"
+themes: ["audioeng","mir","soundsynthesis"]
+role: "phd"
+image: "./defaultprofile.png"
+---

@@ -1,0 +1,9 @@
+---
+name: "Maryam Torshizi"
+url: ""
+acadposition: ""
+blurb: "Music emotion modelling using graph analysis"
+themes: ["comma","mir"]
+role: "phd"
+image: "./defaultprofile.png"
+---

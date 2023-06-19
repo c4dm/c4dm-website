@@ -1,0 +1,9 @@
+---
+name: "Gary Bromham"
+url: ""
+acadposition: ""
+blurb: "The role of nostalga in music production"
+themes: ["mir","audioeng"]
+role: "phd"
+image: "./defaultprofile.png"
+---

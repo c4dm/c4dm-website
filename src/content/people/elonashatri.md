@@ -1,0 +1,9 @@
+---
+name: "Elona Shatri"
+url: "http://eecs.qmul.ac.uk/profiles/shatrielona-1.html"
+acadposition: ""
+blurb: "Optical music recognition using deep learning"
+themes: ["mir"]
+role: "phd"
+image: "./defaultprofile.png"
+---

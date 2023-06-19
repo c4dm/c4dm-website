@@ -1,0 +1,9 @@
+---
+name: "Nelly Garcia"
+url: ""
+acadposition: ""
+blurb: "An investigation evaluating realism in sound design"
+themes: ["comma","audioeng"]
+role: "phd"
+image: "./defaultprofile.png"
+---

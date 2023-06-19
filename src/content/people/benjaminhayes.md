@@ -1,0 +1,9 @@
+---
+name: "Benjamin Hayes"
+url: "http://eecs.qmul.ac.uk/profiles/hayesbenjaminjames.html"
+acadposition: ""
+blurb: "Perceptually motivated deep learning approaches to creative sound synthesis"
+themes: ["soundsynthesis","mcog"]
+role: "phd"
+image: "./defaultprofile.png"
+---

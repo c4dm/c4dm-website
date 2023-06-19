@@ -1,0 +1,9 @@
+---
+name: "Pedro Sarmento"
+url: "https://otnemrasordep.github.io/"
+acadposition: ""
+blurb: "Guitar-Oriented Neural Music Generation in Symbolic Format"
+themes: ["mir"]
+role: "phd"
+image: "./defaultprofile.png"
+---

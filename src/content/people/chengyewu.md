@@ -1,0 +1,9 @@
+---
+name: "Chengye Wu"
+url: ""
+acadposition: ""
+blurb: "Leveraging cross-sensory associations in communication"
+themes: ["comma"]
+role: "phd"
+image: "./defaultprofile.png"
+---

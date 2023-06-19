@@ -1,0 +1,9 @@
+---
+name: "James Bolt"
+url: ""
+acadposition: ""
+blurb: "Intelligent audio and music editing with deep learning "
+themes: ["mir"]
+role: "phd"
+image: "./defaultprofile.png"
+---

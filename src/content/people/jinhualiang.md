@@ -1,0 +1,9 @@
+---
+name: "Jinhua Liang"
+url: "https://jinhualiang.github.io/"
+acadposition: ""
+blurb: "AI for everyday sounds"
+themes: ["mlist"]
+role: "phd"
+image: "./defaultprofile.png"
+---

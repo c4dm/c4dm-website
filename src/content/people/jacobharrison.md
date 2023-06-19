@@ -1,0 +1,9 @@
+---
+name: "Dr Jacob Harrison"
+url: ""
+acadposition: ""
+blurb: "Bridging the gap: visually impaired and sighted music industry professionals working side by side"
+themes: ["augmi"]
+role: "postdoc"
+image: "./defaultprofile.png"
+---
