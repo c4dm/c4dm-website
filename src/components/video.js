@@ -4,8 +4,8 @@ const Video = ({ videoSrcURL, videoTitle, ...props }) => {
   const containerStyle = {
     position: "relative",
     overflow: "hidden",
-    width: "100%",
-    paddingTop: "56.25%" /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */,
+    width: "90%",
+    paddingTop: "50.63%" /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) then * 90% = 50.63 */,
   };
 
   const iFrameStyle = {

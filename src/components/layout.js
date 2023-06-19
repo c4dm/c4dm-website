@@ -121,11 +121,11 @@ const Layout = ({children, crumbs, name, hero}) => {
 
     return (
       <>
-      
+      <body className="has-navbar-fixed-top">
       {navBar}
         {hero}
         {/* Breadcrumbs and children*/}
-        <main className="container is-fullhd">
+        <main className=" has-navbar-fixed-top container is-fullhd">
          {crumbs ? (
           <nav class="breadcrumb is-6 is-left" aria-label="breadcrumbs">
             <ul>
@@ -153,7 +153,7 @@ const Layout = ({children, crumbs, name, hero}) => {
           {children}
           </main>
         {footer}
-
+      </body>
       </>
     );
 }

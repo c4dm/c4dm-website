@@ -16,7 +16,7 @@ const IndexPage = ({pageContext}) => {
       {
         about: markdownRemark(
           fields: { category: { eq: "about" } }
-          fileAbsolutePath: { regex: "/about-long.md/" }
+          fileAbsolutePath: { regex: "/about-short.md/" }
         ) {
           html
           frontmatter {
@@ -101,24 +101,27 @@ const IndexPage = ({pageContext}) => {
     ));
 
     const homeHero = (
-      <section className="hero is-link is-fullheight">
-        <div className="hero-body has-background-primary">
-          <div className="columns is-multiline">
-            <div className="column is-one-third-desktop is-full-tablet">
-              <ParallelogramHeader text="About Us" backgroundColor="white" textColor="primary"/>
-
-              <div
-                dangerouslySetInnerHTML={{ __html: data.about.html }}
-                className="pt-6 pr-6 is-size-4-desktop is-size-5-mobile has-text-justified has-text-white"
-              ></div>
-            </div>
-            <div className="column is-two-thirds-desktop is-full-tablet">
-              <Video videoSrcURL={data.about.frontmatter.video} />
+      <section className="hero is-fullheight-with-navbar">
+        <div className="hero-body has-text-centered has-background-primary">
+          <div className="container">
+            <div className="columns is-multiline is-centered">
+              <div className="column is-one-third-desktop is-full-tablet">
+                <Link to="/about">
+                  <div
+                    dangerouslySetInnerHTML={{ __html: data.about.html }}
+                    className="pt-6 pr-6 is-size-4-desktop is-size-5-mobile has-text-left has-text-white"
+                  ></div>
+                  <div className="has-text-left">
+                    <br></br>
+                    <p class="subtitle is-size-7"> Read More </p>
+                  </div>
+                </Link>
+              </div>
+              <div className="column is-two-thirds-desktop is-full-tablet">
+                <Video videoSrcURL={data.about.frontmatter.video} />
+              </div>
             </div>
           </div>
-          {/* ADD HERO IMAGE! */}
-          {/* <br></br>
-          <p class="subtitle">C4DM</p> */}
         </div>
       </section>
     );

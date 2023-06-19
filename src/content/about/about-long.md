@@ -6,6 +6,8 @@ image: "c4dm.png"
 
 The Centre for Digital Music is a world-leading, multidisciplinary research group in the field of Music & Audio Technology. Since its founding members joined Queen Mary in 2001, the Centre has grown to become arguably the UK’s leading Digital Music research group. 
 
+More description....
+
 
 <!-- <p style="color: red">**THIS SEEMS TO BE THE ONLY SUPPORTED WAY OF IMPORTING TWITTER TWEETS IN GATSBY 5 AT THE MOMENT, AFAIK IT MEANS THAT EACH 
 TWEET HAS TO BE MANUALLY IMPORTED INTO AN MD FILE...**</p>
