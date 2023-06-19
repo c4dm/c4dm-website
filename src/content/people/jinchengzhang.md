@@ -1,0 +1,9 @@
+---
+name: "Jincheng Zhang"
+url: ""
+acadposition: ""
+blurb: "Emotion-specific Music Generation Using Deep Learning"
+themes: ["mir"]
+role: "phd"
+image: "./defaultprofile.png"
+---

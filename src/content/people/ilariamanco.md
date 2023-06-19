@@ -1,0 +1,9 @@
+---
+name: "Ilaria Manco"
+url: "http://eecs.qmul.ac.uk/profiles/mancoilaria.html"
+acadposition: ""
+blurb: "Multimodal Deep Learning for Music Information Retrieval"
+themes: ["mir","mlist"]
+role: "phd"
+image: "./defaultprofile.png"
+---

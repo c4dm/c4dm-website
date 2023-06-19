@@ -1,0 +1,9 @@
+---
+name: "Andrew (Drew) Edwards"
+url: "http://eecs.qmul.ac.uk/profiles/edwardsandrewcharles.html"
+acadposition: ""
+blurb: "Deep Learning for Jazz Piano: Transcription + Generative Modeling"
+themes: ["mir","mlist","mcog"]
+role: "phd"
+image: "./defaultprofile.png"
+---

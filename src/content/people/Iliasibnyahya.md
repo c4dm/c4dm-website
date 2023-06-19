@@ -1,0 +1,9 @@
+---
+name: "Ilias Ibnyahya"
+url: "https://ilias-audio.github.io/"
+acadposition: ""
+blurb: "Audio Effects design optimization"
+themes: ["audioeng"]
+role: "phd"
+image: "./defaultprofile.png"
+---

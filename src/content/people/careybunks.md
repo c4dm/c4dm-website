@@ -1,0 +1,9 @@
+---
+name: "Carey Bunks"
+url: ""
+acadposition: ""
+blurb: "Cover Song Identification"
+themes: ["mir"]
+role: "phd"
+image: "./defaultprofile.png"
+---

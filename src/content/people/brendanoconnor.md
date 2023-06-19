@@ -1,0 +1,9 @@
+---
+name: "Brendan O'Connor"
+url: "https://trebolium.github.io/"
+acadposition: ""
+blurb: "Singing Voice Attribute Transformation"
+themes: ["soundsynthesis","audioeng","mir"]
+role: "phd"
+image: "./defaultprofile.png"
+---

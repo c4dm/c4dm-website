@@ -1,0 +1,9 @@
+---
+name: "David Foster"
+url: "http://eecs.qmul.ac.uk/profiles/fosterdavid.html"
+acadposition: ""
+blurb: "Modelling the Creative Process of Jazz Improvisation"
+themes: ["mir"]
+role: "phd"
+image: "./defaultprofile.png"
+---

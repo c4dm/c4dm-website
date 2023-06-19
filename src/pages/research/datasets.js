@@ -3,6 +3,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import "../../style/bulmacustom.scss"
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Layout from "../../components/layout.js";
+import ParallelogramHeader from "../../components/parallelogramHeader";
 
 
 const IndexPage = ({pageContext}) => {
@@ -36,14 +37,21 @@ const IndexPage = ({pageContext}) => {
   return (
     <Layout name="Datasets" crumbs={crumbs}>
       <section className="section">
-        <h1 className="title">{data.software.frontmatter.title}</h1>
+      <div className="column is-one-third">
+                <ParallelogramHeader text={data.software.frontmatter.title} backgroundColor="primary" textColor="white"/>
+      </div>
+      <div className="lowerPadding"></div>
+       
         <div
             className="content"
             dangerouslySetInnerHTML={{ __html: data.software.html }}
         ></div>
       </section>
       <section className="section">
-        <h2 className="title">{data.datasets.frontmatter.title}</h2>
+      <div className="column is-one-third">
+                <ParallelogramHeader text={data.datasets.frontmatter.title} backgroundColor="primary" textColor="white"/>
+      </div>
+      <div className="lowerPadding"></div>
         <div
             className="content"
             dangerouslySetInnerHTML={{ __html: data.datasets.html }}

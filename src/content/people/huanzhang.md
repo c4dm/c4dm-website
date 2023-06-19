@@ -1,0 +1,9 @@
+---
+name: "Huan Zhang"
+url: "http://eecs.qmul.ac.uk/people/profiles/zhanghuan.html"
+acadposition: ""
+blurb: "Computational Modelling of Expressive Piano Performance"
+themes: ["mir"]
+role: "phd"
+image: "./defaultprofile.png"
+---

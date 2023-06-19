@@ -1,0 +1,9 @@
+---
+name: "Aditya Bhattacharjee"
+url: "https://www.linkedin.com/in/adibh/"
+acadposition: ""
+blurb: "Self-supervision in Audio Fingerprinting"
+themes: ["mir","mlist"]
+role: "phd"
+image: "./defaultprofile.png"
+---

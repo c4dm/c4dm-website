@@ -1,0 +1,9 @@
+---
+name: "Giacomo Lepri"
+url: "http://www.giacomolepri.com/"
+acadposition: ""
+blurb: "Exploring the role of culture and community in the design of new musical instruments"
+themes: ["augmi"]
+role: "phd"
+image: "./defaultprofile.png"
+---

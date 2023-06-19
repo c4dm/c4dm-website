@@ -1,0 +1,9 @@
+---
+name: "Xavier Riley"
+url: "http://eecs.qmul.ac.uk/profiles/rileyjohnxavier.html"
+acadposition: ""
+blurb: "Pitch tracking for music applications - beyond 99% accuracy"
+themes: ["mir","audioeng"]
+role: "phd"
+image: "./defaultprofile.png"
+---

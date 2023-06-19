@@ -1,0 +1,9 @@
+---
+name: "Thomas Kaplan"
+url: "https://kappers.github.io/"
+acadposition: ""
+blurb: "Probabilistic modelling of rhythm perception and production"
+themes: ["mir"]
+role: "phd"
+image: "./defaultprofile.png"
+---

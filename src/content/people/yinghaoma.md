@@ -1,0 +1,9 @@
+---
+name: "Yinghao Ma"
+url: "https://nicolaus625.github.io/"
+acadposition: ""
+blurb: "Self-supervision in machine listening"
+themes: ["mir","mlist"]
+role: "phd"
+image: "./defaultprofile.png"
+---
