@@ -5,4 +5,10 @@ image: "c4dm.png"
 category: "siteCopy"
 ---
 
-copy about datasets "we make data like....[thing 2](http://www.randomsite2.org)"
+Our [C4DM Zenodo community page](https://zenodo.org/communities/c4dm/) hosts public datasets created as part of our research.
+
+The [C4DM Research Data Repository](https://c4dm.eecs.qmul.ac.uk/rdr/) hosts datasets created between 2010-2015.
+
+Several C4DM datasets are also available on [isophonics.org](http://isophonics.org/) .
+
+
