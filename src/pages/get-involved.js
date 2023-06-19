@@ -11,19 +11,13 @@ const NewsPage = ({pageContext}) => {
   } = pageContext
     const data = useStaticQuery(graphql`
       {
-        participate: markdownRemark(
+        getInvolved: markdownRemark(
           fields: { category: { eq: "get-involved" } }
-          fileAbsolutePath: { regex: "/participate.md/" }
+          fileAbsolutePath: { regex: "/getInvolved.md/" }
         ) {
           html
           frontmatter {
             title
-            video
-            image {
-              childImageSharp {
-                gatsbyImageData(layout: CONSTRAINED, width: 400)
-              }
-            }
           }
         }
       }
@@ -33,14 +27,14 @@ const NewsPage = ({pageContext}) => {
     <Layout name="get-involved" crumbs={crumbs}>
       <section className="section">
         <ParallelogramHeader
-          text="Get Involved"
+          text={data.getInvolved.frontmatter.title}
           backgroundColor="primary"
           textColor="white"
           className="mb-6"
         />
         <div
           className="content"
-          dangerouslySetInnerHTML={{ __html: data.participate.html }}
+          dangerouslySetInnerHTML={{ __html: data.getInvolved.html }}
         ></div>
       </section>
     </Layout>
