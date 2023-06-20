@@ -127,21 +127,25 @@ const Layout = ({children, crumbs, name, hero}) => {
         {/* Breadcrumbs and children*/}
         <main className=" has-navbar-fixed-top container is-fullhd">
          {crumbs ? (
-          <nav class="breadcrumb is-6 is-left" aria-label="breadcrumbs">
+          <nav className="breadcrumb is-6 is-left" aria-label="breadcrumbs">
             <ul>
               {crumbs.map((crumb, index) => (
                   (crumb.crumbLabel=='tags') ? 
                   ( //if we have a tag filter on, ignore that link
                     <li>{" " +startCase(camelCase(crumb.crumbLabel))+ " "}</li>
                     ):
-                  (
-                    (index==crumbs.length-1) ? 
-                    ( // similarly ignore the link to our current page
-                      // comment out the below line to remove current page from breadcrumb
-                    <li class="is-active"><a href={crumb.pathname} aria-current="page">{startCase(camelCase(crumb.crumbLabel))}</a></li>
-                    ):
-                    (
-                    <li><a href={crumb.pathname}>{startCase(camelCase(crumb.crumbLabel))}</a></li>
+                  ( (crumb.crumbLabel=='role') ? 
+                    ( //if we have a role filter on, ignore that link
+                      <li>{" " +startCase(camelCase(crumb.crumbLabel))+ " "}</li>
+                      ):(
+                      (index==crumbs.length-1) ? 
+                      ( // similarly ignore the link to our current page
+                        // comment out the below line to remove current page from breadcrumb
+                      <li className="is-active"><a href={crumb.pathname} aria-current="page">{startCase(camelCase(crumb.crumbLabel))}</a></li>
+                      ):
+                      (
+                      <li><a href={crumb.pathname}>{startCase(camelCase(crumb.crumbLabel))}</a></li>
+                      )
                     )
                   )
                 ))

@@ -1,6 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Layout from "../components/layout";
+import ParallelogramHeader from "../components/parallelogramHeader";
 import ProjectCard from "../components/projectCard";
 import {startCase, camelCase} from 'lodash';
 import TagSelector from "../components/tagSelector";
@@ -24,7 +25,12 @@ const ProjectTags = ({ pageContext, data }) => {
   return (
     <Layout name={startCase(camelCase(tagName))+ " Projects"} crumbs={crumbs}>
     <section className="section">
-      <h1 className="title">Research Projects</h1>
+       <ParallelogramHeader
+            text="Research Projects"
+            backgroundColor="primary"
+            textColor="white"
+            className="mb-6"
+          />
       <TagSelector
                 data = {data}
                 // filterTemplate = {'/projectstags/'}
@@ -35,8 +41,8 @@ const ProjectTags = ({ pageContext, data }) => {
         
         </div>
       <h2>{startCase(camelCase(tagName))+ " Projects"}</h2>
-     
-          
+     {/* {edges} */}
+          {console.log(edges)}
             {edges.map(({ node })  => {
                 const { slug } = node.fields
                 const { title } = node.frontmatter
