@@ -8,5 +8,5 @@ grant: "AIM CDT PhD studentship"
 partner: "Steinberg Media Technologies GmbH"
 amount: "£109,649"
 status: "active"
-image: "./rudiments.png"
+image: "./Steinberg-Logo.png"
 ---

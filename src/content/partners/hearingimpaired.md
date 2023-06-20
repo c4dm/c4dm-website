@@ -9,6 +9,6 @@ amount: "£83,300 (standard stipend) + £27,600 (contribution from BBC)"
 status: "complete"
 partner: "BBC"
 tags: ["industry"]
-image: "./rudiments.png"
+image: "./bbc.png"
 ---
 

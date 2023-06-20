@@ -11,7 +11,10 @@ const Partners = ({pageContext}) => {
     const data = useStaticQuery(graphql`
       {
         active: allMarkdownRemark(
-          filter: { fields: { category: { eq: "partners" } }, frontmatter: { status: { eq: "active" } } }
+          filter: {
+            fields: { category: { eq: "partners" } }
+            frontmatter: { status: { eq: "active" } }
+          }
           sort: { frontmatter: { date: DESC } }
           limit: 400
         ) {
@@ -19,7 +22,11 @@ const Partners = ({pageContext}) => {
             frontmatter {
               image {
                 childImageSharp {
-                  gatsbyImageData(layout: CONSTRAINED)
+                  gatsbyImageData(
+                    layout: CONSTRAINED
+                    aspectRatio: 1
+                    transformOptions: { fit: CONTAIN }
+                  )
                 }
               }
               title
