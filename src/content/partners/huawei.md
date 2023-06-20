@@ -9,6 +9,6 @@ amount: "£252,000"
 status: "active"
 tags: ["industry"]
 partner: "Huawei"
-image: "./rudiments.png"
+image: "./Huawei.png"
 ---
 

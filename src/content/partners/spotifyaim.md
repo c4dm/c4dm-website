@@ -8,5 +8,5 @@ grant: "AIM CDT PhD studentship"
 partner: "Spotify Ltd"
 amount: "£108,000"
 status: "active"
-image: "./rudiments.png"
+image: "./spotify.png"
 ---

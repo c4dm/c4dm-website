@@ -8,6 +8,6 @@ grant: "RAEng Senior Research Fellowship"
 amount: "£208,776"
 status: "active"
 tags: ["industry"]
-image: "./rudiments.png"
+image: "./RAE_Logo_Black_RGB.png"
 ---
 
