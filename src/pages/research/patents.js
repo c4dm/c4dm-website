@@ -11,7 +11,7 @@ const Patents = ({pageContext}) => {
     const data = useStaticQuery(graphql`
       {
         active: allMarkdownRemark(
-          filter: { fields: { category: { eq: "research/patents/projects" } }, frontmatter: { status: { eq: "active" } } }
+          filter: { fields: { category: { eq: "research/patents/projects" } } }
           sort: { frontmatter: { date: DESC } }
         ) {
           nodes {
@@ -22,15 +22,20 @@ const Patents = ({pageContext}) => {
                 }
               }
               title
-              author
               begin
-              end
               grant
-              amount
               link
             }
             id
           }
+        }
+
+      
+        about: markdownRemark(
+            fields: { category: { eq: "research/patents" } }
+            fileAbsolutePath: { regex: "/about.md/" }
+          ) {
+          html
         }
       }
     `);
@@ -47,19 +52,24 @@ const Patents = ({pageContext}) => {
                 textColor="white"
                 className="mb-6"
                 />
-              <div class="card is-horizontal rows">
+              <div
+                className="content"
+                dangerouslySetInnerHTML={{ __html: data.about.html }}
+              ></div>
+
+              
                     {data.active.nodes.map((patentEntry) => (
                        <Link to={patentEntry.frontmatter.link}>
                         <div class="card-image row is-three-fifths pt-3" key={patentEntry.id}> 
                             <PatentCard
                                 title={patentEntry.frontmatter.title}
-                                applicationNumber={patentEntry.frontmatter.author}
+                                applicationNumber={patentEntry.frontmatter.grant}
                                 filingDate={patentEntry.frontmatter.begin}
                             />
                         </div>
                         </Link>
                     ))}
-                </div>
+                
             </section>
         </Layout>
     );
