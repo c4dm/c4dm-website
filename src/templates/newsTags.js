@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout";
 import NewsCard from "../components/newsCard";
 import TagSelector from "../components/tagSelector";
-
+import ParallelogramHeader from "../components/parallelogramHeader";
 // Components
 import { Link, graphql } from "gatsby"
 
@@ -20,11 +20,17 @@ const NewsTags = ({ pageContext, data }) => {
   return (
     <Layout name="NewsTag" crumbs={crumbs}>
     <section className="section">
-      <h1 class="title">News With Tag: {tagName}</h1>
+      <ParallelogramHeader
+          text="News"
+          backgroundColor="primary"
+          textColor="white"
+          className="mb-6"
+        />
       <TagSelector
                 data = {data}
                 filterTemplate = {'/newstags/'}
                 root ={`/news`}
+                selected={tag}
               />
      
      <div className="lowerPadding"></div>

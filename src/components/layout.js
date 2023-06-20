@@ -126,17 +126,18 @@ const Layout = ({children, crumbs, name, hero}) => {
         {hero}
         {/* Breadcrumbs and children*/}
         <main className=" has-navbar-fixed-top container is-fullhd">
+          <div classname="container">
          {crumbs ? (
-          <nav className="breadcrumb is-6 is-left" aria-label="breadcrumbs">
+          <nav className="is-subtitle breadcrumb is-7 is-left" aria-label="breadcrumbs">
             <ul>
               {crumbs.map((crumb, index) => (
                   (crumb.crumbLabel=='tags') ? 
                   ( //if we have a tag filter on, ignore that link
-                    <li>{" " +startCase(camelCase(crumb.crumbLabel))+ " "}</li>
+                    <li className="is-active"> <a href={crumb.pathname} aria-current="page"> {" " +startCase(camelCase(crumb.crumbLabel))+ " "}</a></li>
                     ):
                   ( (crumb.crumbLabel=='role') ? 
                     ( //if we have a role filter on, ignore that link
-                      <li>{" " +startCase(camelCase(crumb.crumbLabel))+ " "}</li>
+                      <li className="is-active"><a href={crumb.pathname} aria-current="page">{" " +startCase(camelCase(crumb.crumbLabel))+ " "}</a></li>
                       ):(
                       (index==crumbs.length-1) ? 
                       ( // similarly ignore the link to our current page
@@ -151,9 +152,11 @@ const Layout = ({children, crumbs, name, hero}) => {
                 ))
                 }
           </ul>
-        </nav>)
+        </nav>
+        )
         : (console.log("Page has no breadcrumbs *gasp*")
                 )} 
+                </div>
           {children}
           </main>
         {footer}
