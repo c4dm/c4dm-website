@@ -25,6 +25,7 @@ const Partners = ({pageContext}) => {
                   gatsbyImageData(
                     layout: CONSTRAINED
                     aspectRatio: 1
+                    backgroundColor: "transparent"
                     transformOptions: { fit: CONTAIN }
                   )
                 }
