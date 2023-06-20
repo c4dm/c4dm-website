@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql, Link, useStaticQuery } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
 import Layout from "../components/layout";
 import PartnerCard from "../components/partnerCard";
 import ParallelogramHeader from "../components/parallelogramHeader";
@@ -54,15 +54,14 @@ const Partners = ({pageContext}) => {
                 className="column is-one-quarter-desktop is-one-third-tablet is-full-mobile is-flex"
                 key={partnerentry.id}
               >
-                <Link to={partnerentry.frontmatter.link}>
                   <PartnerCard
                     title={partnerentry.frontmatter.title}
+                    link={partnerentry.frontmatter.link}
                     image={
                       partnerentry.frontmatter.image.childImageSharp
                         .gatsbyImageData
                     }
                   />
-                </Link>
               </div>
             ))}
           </div>
