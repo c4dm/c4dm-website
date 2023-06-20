@@ -35,6 +35,7 @@ exports.createPages = async ({ graphql, actions }) => {
     const projectPostTemplate = path.resolve("./src/templates/projectPost.js");
     const projectTagTemplate = path.resolve("src/templates/projectTags.js")
     const newsTagTemplate = path.resolve("src/templates/newsTags.js")
+    const peopleTagTemplate = path.resolve("src/templates/peopleTags.js")
     const yearTemplate = path.resolve("src/templates/years.js")
 
     const result = await graphql(`
@@ -47,6 +48,8 @@ exports.createPages = async ({ graphql, actions }) => {
                     }
                 }
             }
+
+
 
             newsTagsGroup: allMarkdownRemark(
                 filter: {fields: {category: {eq: "news"}}}
@@ -71,6 +74,25 @@ exports.createPages = async ({ graphql, actions }) => {
                 limit: 2000) 
                 {
                 group(field: { frontmatter: { tags: SELECT }}) {
+                  fieldValue
+                }
+            }
+
+
+            people: allMarkdownRemark ( filter: {fields: {category: {eq: "people"}}})
+            {   
+                nodes {
+                    fields {
+                        slug
+                    }
+                }
+            }
+
+            peopleTagsGroup: allMarkdownRemark(
+                filter: { fields: { category: { eq: "people" } }}
+                limit: 2000) 
+                {
+                group(field: { frontmatter: { role: SELECT }}) {
                   fieldValue
                 }
             }
@@ -104,6 +126,20 @@ exports.createPages = async ({ graphql, actions }) => {
     createPage({
       path: `/news/tags/${_.kebabCase(tag.fieldValue)}/`,
       component: newsTagTemplate,
+      context: {
+        tag: tag.fieldValue,
+      },
+    })
+    })
+
+    // Extract people tag data from query
+    const peopleTags = result.data.peopleTagsGroup.group
+
+    // Make one page for each tag (only tags inside news)
+    peopleTags.forEach(tag => {
+    createPage({
+      path: `/people/role/${_.kebabCase(tag.fieldValue)}/`,
+      component: peopleTagTemplate,
       context: {
         tag: tag.fieldValue,
       },

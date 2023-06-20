@@ -14,11 +14,10 @@ const Research = ({pageContext}) => {
     return (
         <Layout name="Research" crumbs={crumbs}>
             <section className="section ">
-            <div className="lowerPadding">
-            <div className="column is-one-third">
-                <ParallelogramHeader text="Research" backgroundColor="primary" textColor="white"/>
-            </div>
-            </div>
+            
+            <ParallelogramHeader text="Research" backgroundColor="primary" textColor="white"/>
+
+<div className="lowerPadding"> </div>
            
             <div className="columns is-flex">
                         <div className="column is-one-third">
