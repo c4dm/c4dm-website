@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useMemo} from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import Layout from "../components/layout";
 import PartnerCard from "../components/partnerCard";
@@ -8,7 +8,8 @@ const Partners = ({pageContext}) => {
   const {
     breadcrumb: { crumbs },
   } = pageContext
-    const data = useStaticQuery(graphql`
+
+  const data = useStaticQuery(graphql`
       {
         active: allMarkdownRemark(
           filter: {
@@ -20,6 +21,7 @@ const Partners = ({pageContext}) => {
         ) {
           nodes {
             frontmatter {
+              partner
               image {
                 childImageSharp {
                   gatsbyImageData(
@@ -38,6 +40,19 @@ const Partners = ({pageContext}) => {
         }
       }
     `);
+
+      const uniquePartners = useMemo(
+        () =>
+          data.active.nodes.reduce(
+            (partners, e) => {
+              const newPartner = !partners.includes(e.frontmatter.partner) ? e.frontmatter.partner : null;
+              if (newPartner) partners.push(newPartner);
+              return partners;
+            },
+            []
+          ),
+        [data]
+      );
 
     return (
       <Layout name="Partners" crumbs={crumbs}>
