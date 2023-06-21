@@ -1,4 +1,4 @@
-import React, {useMemo} from "react";
+import React, {useMemo, useEffect} from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import Layout from "../components/layout";
 import PartnerCard from "../components/partnerCard";
@@ -45,15 +45,18 @@ const Partners = ({pageContext}) => {
         () =>
           data.active.nodes.reduce(
             (partners, e) => {
-              const newPartner = !partners.includes(e.frontmatter.partner) ? e.frontmatter.partner : null;
-              if (newPartner) partners.push(newPartner);
+              const partnerKeys = Object.keys(partners);
+              const newPartner = !partnerKeys.includes(e.frontmatter.partner) ? e.frontmatter.partner : null;
+              if (newPartner) partners[newPartner] = e;
               return partners;
             },
-            []
+            {}
           ),
         [data]
       );
 
+    useEffect(() => console.log(uniquePartners), [uniquePartners]);
+    
     return (
       <Layout name="Partners" crumbs={crumbs}>
         <section className="section">
@@ -64,13 +67,13 @@ const Partners = ({pageContext}) => {
             className="mb-6"
           />
           <div class="columns is-multiline">
-            {data.active.nodes.map((partnerentry) => (
+            {Object.values(uniquePartners).map((partnerentry) => (
               <div
                 className="column is-one-quarter-desktop is-one-third-tablet is-full-mobile is-flex"
                 key={partnerentry.id}
               >
                   <PartnerCard
-                    title={partnerentry.frontmatter.title}
+                    // title={partnerentry.frontmatter.title}
                     link={partnerentry.frontmatter.link}
                     image={
                       partnerentry.frontmatter.image.childImageSharp

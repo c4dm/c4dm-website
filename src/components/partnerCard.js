@@ -21,13 +21,14 @@ const PartnerCard = (props) => {
             )}
           </figure>
         </div>
+        { props.title ? 
         <div className="card-content">
           <div className="media">
             <div className="media-content">
-              <p className="title">{props.title || "Name"}</p>
+              <p className="title">{props.title}</p>
             </div>
           </div>
-        </div>
+        </div> : null }
       </Link>
     </div>
   );
