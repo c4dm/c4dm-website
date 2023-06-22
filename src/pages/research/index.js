@@ -22,7 +22,7 @@ const Research = ({pageContext}) => {
             <div className="columns is-flex">
                         <div className="column is-one-third">
                             <div className="card is-flex is-flex-direction-column is-flex-grow-1">
-                                <Link to="./groups">
+                                <Link to="./labs">
                                 <div className="card-image is-256x256">
                                     <figure className="image ">
                                         <StaticImage
@@ -34,7 +34,7 @@ const Research = ({pageContext}) => {
                                 <div className="card-content">
                                     <div className="media">
                                         <div className="media-content">
-                                            <p className="title is-4">Research Groups </p>
+                                            <p className="title is-4">Research Labs </p>
                                             
                                         </div>
                                     </div>
