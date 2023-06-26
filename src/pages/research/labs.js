@@ -14,7 +14,7 @@ const Research = ({pageContext}) => {
             <section className="section">
             <div className="lowerPadding">
             <div className="column is-one-third">
-                <ParallelogramHeader text="Research Groups" backgroundColor="primary" textColor="white"/>
+                <ParallelogramHeader text="Research Labs" backgroundColor="primary" textColor="white"/>
             </div>
             </div>
                 <div className="columns is-multiline">
