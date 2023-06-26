@@ -3,13 +3,16 @@ import { Link } from "gatsby";
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
 
 const BlogCard = (props) => {
+  // define if link is internal or external
+  const link = props.link ? (content) => (<a href={props.link}>{content}</a>) : (content) => (<Link to={`${props.slug}/#header`}>{content}</Link>);
+
   return (
     <div
       className="card is-flex is-flex-direction-column is-flex-grow-1"
       key={props.slug}
     >
       <div className="card-image">
-        <Link to={`${props.slug}/#header`}>
+        {link(
           <figure className="image">
             {props.image ? (
               <GatsbyImage alt="picture of event" image={props.image} />
@@ -20,7 +23,7 @@ const BlogCard = (props) => {
               />
             )}
           </figure>
-        </Link>
+        )}
       </div>
 
       {!props.date &&
@@ -55,12 +58,7 @@ const BlogCard = (props) => {
           </div>
           {!props.html ? undefined : (
             <div className="card-footer p-2 has-text-centered is-align-self-center">
-              <Link
-                to={`${props.slug}/#header`}
-                className="has-text-link has-text-weight-bold"
-              >
-                Read More
-              </Link>
+                {link("Read More")}
             </div>
           )}
         </div>
