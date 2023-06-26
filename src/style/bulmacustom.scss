@@ -37,6 +37,8 @@ main.container {
     text-overflow: ellipsis;
 }
 
+// Card styling
+
 // Add a gradient to the bottom of the text
 .blog-card-text::after {
     content: "";
@@ -48,11 +50,18 @@ main.container {
     background-image: linear-gradient(180deg, transparent 0, white 100%);
 }
 
+// Make sure titles alwa
+
 
 .card-footer.stick-to-bottom {
         position: absolute;
         bottom: 0;
     }
+
+.card-image {
+    width: 100%;
+   
+  }
 
 
 .navbar {
@@ -175,10 +184,7 @@ main.container {
 
 }
 
-.card-image {
-    width: 100%;
-   
-  }
+
 
 
 
