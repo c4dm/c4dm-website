@@ -33,9 +33,9 @@ exports.createPages = async ({ graphql, actions }) => {
     const { createPage } = actions
     const newsPostTemplate = path.resolve("./src/templates/newsPost.js");
     const projectPostTemplate = path.resolve("./src/templates/projectPost.js");
-    const projectTagTemplate = path.resolve("src/templates/projectTags.js")
-    const newsTagTemplate = path.resolve("src/templates/newsTags.js")
-    const peopleTagTemplate = path.resolve("src/templates/peopleTags.js")
+    // const projectTagTemplate = path.resolve("src/templates/projectTags.js")
+    // const newsTagTemplate = path.resolve("src/templates/newsTags.js")
+    // const peopleTagTemplate = path.resolve("src/templates/peopleTags.js")
     const yearTemplate = path.resolve("src/templates/years.js")
 
     const result = await graphql(`
@@ -49,17 +49,6 @@ exports.createPages = async ({ graphql, actions }) => {
                 }
             }
 
-
-
-            newsTagsGroup: allMarkdownRemark(
-                filter: {fields: {category: {eq: "news"}}}
-                limit: 2000) 
-                {
-                group(field: { frontmatter: { tags: SELECT }}) {
-                  fieldValue
-                }
-            }
-
             projects: allMarkdownRemark ( filter: {fields: {category: {eq: "projects"}}})
             {
                 nodes {
@@ -68,16 +57,6 @@ exports.createPages = async ({ graphql, actions }) => {
                     }
                 }
             }
-
-            projectsTagsGroup: allMarkdownRemark(
-                filter: { fields: { category: { eq: "projects" } }}
-                limit: 2000) 
-                {
-                group(field: { frontmatter: { tags: SELECT }}) {
-                  fieldValue
-                }
-            }
-
 
             people: allMarkdownRemark ( filter: {fields: {category: {eq: "people"}}})
             {   
@@ -88,16 +67,6 @@ exports.createPages = async ({ graphql, actions }) => {
                 }
             }
 
-            peopleTagsGroup: allMarkdownRemark(
-                filter: { fields: { category: { eq: "people" } }}
-                limit: 2000) 
-                {
-                group(field: { frontmatter: { role: SELECT }}) {
-                  fieldValue
-                }
-            }
-
-    
             yearsGroup: allReference(limit: 2000) {
                 group(field:  { year: SELECT }) {
                   fieldValue
@@ -118,34 +87,6 @@ exports.createPages = async ({ graphql, actions }) => {
         })
     })
 
-    // Extract news tag data from query
-    const newsTags = result.data.newsTagsGroup.group
-
-    // Make one page for each tag (only tags inside news)
-    newsTags.forEach(tag => {
-    createPage({
-      path: `/news/tags/${_.kebabCase(tag.fieldValue)}/`,
-      component: newsTagTemplate,
-      context: {
-        tag: tag.fieldValue,
-      },
-    })
-    })
-
-    // Extract people tag data from query
-    const peopleTags = result.data.peopleTagsGroup.group
-
-    // Make one page for each tag (only tags inside news)
-    peopleTags.forEach(tag => {
-    createPage({
-      path: `/people/role/${_.kebabCase(tag.fieldValue)}/`,
-      component: peopleTagTemplate,
-      context: {
-        tag: tag.fieldValue,
-      },
-    })
-    })
-
 
     // Create project pages
     result.data.projects.nodes.forEach((node) => {
@@ -157,20 +98,6 @@ exports.createPages = async ({ graphql, actions }) => {
         },
         });
     });
-
-    // Extract project tag data from query
-    const projectTags = result.data.projectsTagsGroup.group
-
-    // Make one page for each tag (only tags inside projects)
-    projectTags.forEach(tag => {
-    createPage({
-      path: `/research/projects/tags/${_.kebabCase(tag.fieldValue)}/`,
-      component: projectTagTemplate,
-      context: {
-        tag: tag.fieldValue,
-      },
-    })
-    })
 
     const years = result.data.yearsGroup.group
 
