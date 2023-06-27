@@ -1,6 +1,6 @@
 import React, {useState, useEffect, useMemo} from "react";
 import {Link} from "gatsby";
-import {startCase, camelCase, kebabCase} from 'lodash';
+import {startCase, camelCase} from 'lodash';
 
 const filterData = (nodes, filter) => nodes.filter((node) => !filter ? true : node.frontmatter.tags?.includes(filter));
 
@@ -11,8 +11,6 @@ const TagSelector = ({tags,nodes,callback}) => {
     const memoFilter = useMemo(() => filterData(nodes,selected), [nodes,selected])
 
     useEffect(() => {callback(memoFilter)}, [selected,filterData,memoFilter])
-
-    useEffect(() => console.log(nodes), [nodes])
 
     return (
         <div>
