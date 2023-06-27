@@ -3,13 +3,16 @@ import { Link } from "gatsby";
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
 
 const BlogCard = (props) => {
+  // define if link is internal or external
+  const link = props.link ? (content) => (<a href={props.link}>{content}</a>) : (content) => (<Link to={`${props.slug}/#header`}>{content}</Link>);
+
   return (
     <div
       className="card is-flex is-flex-direction-column is-flex-grow-1"
       key={props.slug}
     >
       <div className="card-image">
-        <Link to={`${props.slug}/#header`}>
+        {link(
           <figure className="image">
             {props.image ? (
               <GatsbyImage alt="picture of event" image={props.image} />
@@ -20,33 +23,46 @@ const BlogCard = (props) => {
               />
             )}
           </figure>
-        </Link>
+        )}
       </div>
 
-
-      <div className="card-content is-flex is-flex-direction-column is-flex-grow-1">
-        <div className="media is-flex-grow-1">
-          <div className="media-content">
-            <p className="subtitle is-7">{props.date || null}</p>
-            <p className="title is-6">{props.title || "New Blog Entry"} </p>
-            <p className="is-size-7"> by {props.author}</p>
+      {!props.date &&
+      !props.title &&
+      !props.author &&
+      !props.html ? undefined : (
+        <div className="card-content is-flex is-flex-direction-column is-flex-grow-1">
+          <div className="media is-flex-grow-1">
+            <div className="media-content">
+              {props.date ? (
+                <p className="subtitle is-7">{props.date}</p>
+              ) : undefined}
+              {props.title ? (
+                <p
+                  className={`title is-${
+                    props.largeTitle ? "4" : "6"
+                  } is-capitalized`}
+                >
+                  {props.title}{" "}
+                </p>
+              ) : undefined}
+              {props.author ? (
+                <p className="is-size-7"> by {props.author}</p>
+              ) : undefined}
+            </div>
           </div>
+          <div className="content is-size-7">
+            <div
+              className="blog-card-text"
+              dangerouslySetInnerHTML={{ __html: props.html }}
+            ></div>
+          </div>
+          {!props.html ? undefined : (
+            <div className="card-footer p-2 has-text-centered is-align-self-center">
+                {link("Read More")}
+            </div>
+          )}
         </div>
-        <div className="content is-size-7">
-          <div
-            className="blog-card-text"
-            dangerouslySetInnerHTML={{ __html: props.html }}
-          ></div>
-        </div>
-        <div className="card-footer p-2 has-text-centered is-align-self-center">
-          <Link
-            to={`${props.slug}/#header`}
-            className="has-text-link has-text-weight-bold"
-          >
-            Read More
-          </Link>
-        </div>
-      </div>
+      )}
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import React, {useMemo, useEffect} from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import Layout from "../components/layout";
-import PartnerCard from "../components/partnerCard";
+import BlogCard from "../components/blogCard";
 import ParallelogramHeader from "../components/parallelogramHeader";
 
 const Partners = ({pageContext}) => {
@@ -72,7 +72,7 @@ const Partners = ({pageContext}) => {
                 className="column is-one-quarter-desktop is-one-third-tablet is-full-mobile is-flex"
                 key={partnerentry.id}
               >
-                  <PartnerCard
+                  <BlogCard
                     // title={partnerentry.frontmatter.title}
                     link={partnerentry.frontmatter.link}
                     image={

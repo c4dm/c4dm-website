@@ -1,10 +1,12 @@
 import React from "react";
 import { graphql, useStaticQuery, Link } from "gatsby";
+import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";
 import PeopleCard from "../components/peopleCard";
 import {startCase, camelCase} from 'lodash';
 import PeopleSelector from "../components/peopleSelector";
 import ParallelogramHeader from "../components/parallelogramHeader";
+import TableCard from "../components/tableCard";
 
 // Keys for the elements of the table
 const keys = ["name", "acadposition", "blurb"];
@@ -15,16 +17,29 @@ const headingNames = ["Name", "Academic Position", "Description" ];
 var headings = {};
 keys.forEach((key, i) => headings[key] = headingNames[i]);
 
-// table is of format {
-// "name": "Adán Benito", 
-// "url": "", 
-// "acadposition": "", 
-// "blurb": "Beyond the fret: gesture analysis on fretted instruments and its applications to instrument augmentation", 
-// "themes": [
-// "augmi"
-// ], 
-// "role": "phd"
-// }
+
+// Functions to return strucutred content for table card
+const firstColumn = (image) => (
+  <>
+    {image ? (
+      <GatsbyImage alt="picture of event" image={image} />
+    ) : (
+      <StaticImage
+        alt="default event picture as no event picture was specified"
+        src="../../static/defaultevent.png"
+      />
+    )}
+  </>
+);
+
+const secondColumn = (name, acadposition) => (          
+                  <>
+                    <p className="title is-4">{name || "Name"}</p>
+                    <p className="subtitle is-7">{acadposition || "Academic Position"}</p>
+                  </>
+                );
+
+const thirdColumn = (blurb) => (<p className="is-3">{blurb || "description"}  </p>);
 
 const People = ({pageContext}) => {
   const {
@@ -40,7 +55,7 @@ const People = ({pageContext}) => {
             frontmatter {
               image {
                 childImageSharp {
-                  gatsbyImageData(layout: CONSTRAINED)
+                  gatsbyImageData(layout: CONSTRAINED, aspectRatio: 1)
                 }
               }
               name
@@ -49,18 +64,17 @@ const People = ({pageContext}) => {
               url
               acadposition
               blurb
-              themes  
+              themes
               role
             }
             id
           }
-        
         }
-  allTags: allMarkdownRemark(
+        allTags: allMarkdownRemark(
           limit: 2000
-          filter: { fields: { category: { eq: "people" } }}
-          ) {
-          group(field: { frontmatter: { role: SELECT }}) {
+          filter: { fields: { category: { eq: "people" } } }
+        ) {
+          group(field: { frontmatter: { role: SELECT } }) {
             fieldValue
             totalCount
           }
@@ -91,58 +105,14 @@ const People = ({pageContext}) => {
                   class="card-image row is-three-fifths pt-3"
                   key={peopleentry.id}
                 >
-                <PeopleCard
-                  headings={keys}
-                  person={peopleentry.frontmatter}
-                  name={peopleentry.frontmatter.name}
-                  role={peopleentry.frontmatter.role}
-                  topic={peopleentry.frontmatter.topic}
-                  image={
-                    peopleentry.frontmatter.image.childImageSharp
-                      .gatsbyImageData
-                  }
+                <TableCard 
+                    first={firstColumn(peopleentry.frontmatter.image.childImageSharp.gatsbyImageData)} 
+                    second={secondColumn(peopleentry.frontmatter.name, peopleentry.frontmatter.acadposition)} 
+                    third={thirdColumn(peopleentry.frontmatter.blurb)} 
                 />
                 </div>
                 </Link>
               ))}
-
-            
-            {/* <div className="container">
-              <br></br>
-              <h2 className="subtitle">
-                {startCase(camelCase("All COMPLETED PROJECTS"))}
-              </h2>
-              <div class="card is-horizontal rows">
-                {data.completed.nodes.map((projectentry) => (
-                  <Link to={projectentry.frontmatter.link}>
-                    <div
-                      class="card-image row is-three-fifths pt-3"
-                      key={projectentry.id}
-                    >  */}
-          {/* <table className="table has-sticky-header is-hoverable">
-            <thead>
-              <tr>
-                {keys.map((key) => (
-                  <th>{headings[key]}</th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {data.allMarkdownRemark.nodes.map((peopleentry) => (
-                <PeopleCard
-                  headings={keys}
-                  person={peopleentry.frontmatter}
-                  name={peopleentry.frontmatter.name}
-                  role={peopleentry.frontmatter.role}
-                  topic={peopleentry.frontmatter.topic}
-                  image={
-                    peopleentry.frontmatter.image.childImageSharp
-                      .gatsbyImageData
-                  }
-                />
-              ))}
-            </tbody>
-          </table> */}
         </section>
       </Layout>
     );

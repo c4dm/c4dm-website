@@ -11,9 +11,7 @@ const PatentCard = (props) => {
         <div className="card-content">
           <div className="media">
             <div className="media-content">
-              <p className="title is-6">{props.title || "Name"} </p>
-              <p className="is-3">Filing Date: {props.filingDate || "Date"} </p>
-              <p>Application Number: {props.applicationNumber}</p>
+
             </div>
           </div>
          
