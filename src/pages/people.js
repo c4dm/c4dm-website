@@ -18,6 +18,7 @@ var headings = {};
 keys.forEach((key, i) => headings[key] = headingNames[i]);
 
 
+// Functions to return strucutred content for table card
 const firstColumn = (image) => (
   <>
     {image ? (
@@ -54,7 +55,7 @@ const People = ({pageContext}) => {
             frontmatter {
               image {
                 childImageSharp {
-                  gatsbyImageData(layout: FIXED, width: 128, aspectRatio: 1)
+                  gatsbyImageData(layout: CONSTRAINED, aspectRatio: 1)
                 }
               }
               name

@@ -39,6 +39,7 @@ main.container {
 
 // Card styling
 
+// Blog cards
 // Add a gradient to the bottom of the text
 .blog-card-text::after {
     content: "";
@@ -62,6 +63,13 @@ main.container {
     width: 100%;
    
   }
+
+
+// Table Cards
+.table-card .gatsby-image-wrapper {
+    width: 128px;
+    height: 128px;
+}
 
 
 .navbar {

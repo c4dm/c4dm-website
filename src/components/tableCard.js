@@ -6,7 +6,7 @@ import { Link } from "gatsby";
 const TableCard = (props) => {
     const length = Object.keys(props).length;
     return (
-      <div className="card columns is-flex is-flex-direction-row">
+      <div className="card table-card columns is-flex is-flex-direction-row">
         <div
           className={`card-image column ${
             length > 1 ? "is-one-fifth" : "is-full"
