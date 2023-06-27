@@ -1,37 +1,45 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, useMemo} from "react";
 import {Link} from "gatsby";
 import {startCase, camelCase, kebabCase} from 'lodash';
 
-const TagSelector = (props) => {
-  const [selected, setSelected] = useState(false);
-//   useEffect(() => {props.callback(selected)}, [selected])
+const filterData = (nodes, filter) => nodes.filter((node) => !filter ? true : node.frontmatter.tags?.includes(filter));
 
-  return (
-    <div>
-      <div className="buttons are-small">
-        {props.data.allTags.group.map((tag) => (
-          // If selected=='tag', then grey it out
-            <button
-                className="button is-grey"
-                key={tag.fieldValue}
-                onClick={() => setSelected(tag.fieldValue)}
-                disabled={selected === tag.fieldValue}
+
+const TagSelector = ({tags,nodes,callback}) => {
+    const [selected, setSelected] = useState(false);
+
+    const memoFilter = useMemo(() => filterData(nodes,selected), [nodes,selected])
+
+    useEffect(() => {callback(memoFilter)}, [selected,filterData,memoFilter])
+
+    useEffect(() => console.log(nodes), [nodes])
+
+    return (
+        <div>
+        <div className="buttons are-small">
+            {tags.group.map((tag) => (
+            // If selected=='tag', then grey it out
+                <button
+                    className="button is-grey"
+                    key={tag.fieldValue}
+                    onClick={() => setSelected(tag.fieldValue)}
+                    disabled={selected === tag.fieldValue}
+                >
+                    {startCase(camelCase(tag.fieldValue))} ({tag.totalCount})
+                </button>
+            ))}
+
+            {/* // If selected==False, then grey this out */}
+            <button 
+                className="button" 
+                onClick={() => setSelected(false)}
+                disabled={!selected}
             >
-                {startCase(camelCase(tag.fieldValue))} ({tag.totalCount})
+                Clear Tags (x)
             </button>
-        ))}
-
-        {/* // If selected==False, then grey this out */}
-        <button 
-            className="button" 
-            onClick={() => setSelected(false)}
-            disabled={!selected}
-        >
-            Clear Tags (x)
-        </button>
-      </div>
-    </div>
-  );
+        </div>
+        </div>
+    );
 };
 
 export default TagSelector;
