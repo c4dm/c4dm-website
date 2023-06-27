@@ -1,7 +1,4 @@
 import React from "react";
-import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
-import { Link } from "gatsby";
-
 
 const TableCard = (props) => {
     const length = Object.keys(props).length;

@@ -1,8 +1,17 @@
 import React from "react";
 import { graphql, Link, useStaticQuery } from "gatsby";
 import Layout from "../../components/layout";
-import PatentCard from "../../components/patentCard";
+import TableCard from "../../components/tableCard";
 import ParallelogramHeader from "../../components/parallelogramHeader";
+
+// Return structured content for table card
+const firstColumn = (title, filingDate, applicationNumber) => (
+    <>
+      <p className="title is-6">{title || "Name"} </p>
+      <p className="is-3">Filing Date: {filingDate || "Date"} </p>
+      <p>Application Number: {applicationNumber}</p>
+    </>
+);
 
 const Patents = ({pageContext}) => {
   const {
@@ -40,38 +49,37 @@ const Patents = ({pageContext}) => {
       }
     `);
 
-   
-
     return (
-     
-        <Layout name="Patents" crumbs={crumbs}>
-            <section className="section">
-              <ParallelogramHeader 
-                text="Patents" 
-                backgroundColor="primary" 
-                textColor="white"
-                className="mb-6"
-                />
-              <div
-                className="content"
-                dangerouslySetInnerHTML={{ __html: data.about.html }}
-              ></div>
+      <Layout name="Patents" crumbs={crumbs}>
+        <section className="section">
+          <ParallelogramHeader
+            text="Patents"
+            backgroundColor="primary"
+            textColor="white"
+            className="mb-6"
+          />
+          <div
+            className="content"
+            dangerouslySetInnerHTML={{ __html: data.about.html }}
+          ></div>
 
-              
-                    {data.active.nodes.map((patentEntry) => (
-                       <Link to={patentEntry.frontmatter.link}>
-                        <div class="card-image row is-three-fifths pt-3" key={patentEntry.id}> 
-                            <PatentCard
-                                title={patentEntry.frontmatter.title}
-                                applicationNumber={patentEntry.frontmatter.grant}
-                                filingDate={patentEntry.frontmatter.begin}
-                            />
-                        </div>
-                        </Link>
-                    ))}
-                
-            </section>
-        </Layout>
+          {data.active.nodes.map((patentEntry) => (
+            <Link to={patentEntry.frontmatter.link}>
+              <div
+                class="card-image row is-three-fifths pt-3"
+                key={patentEntry.id}
+              >
+                <TableCard
+                  first={firstColumn(
+                    patentEntry.frontmatter.title,
+                    patentEntry.frontmatter.begin, patentEntry.frontmatter.grant
+                  )}
+                />
+              </div>
+            </Link>
+          ))}
+        </section>
+      </Layout>
     );
 }
 

@@ -2,9 +2,22 @@ import React from "react";
 import { graphql, Link, useStaticQuery } from "gatsby";
 import Layout from "../components/layout";
 import NewsCard from "../components/newsCard";
+import TableCard from "../components/tableCard";
 import kebabCase from "lodash/kebabCase";
 import TagSelector from "../components/tagSelector";
 import ParallelogramHeader from "../components/parallelogramHeader";
+
+// Return structured content for table card
+const firstColumn = (date) => <p className="subtitle is-6">{date || null}</p>;
+
+const secondColumn = (title) => (
+    <>               
+      <p className="title is-4">{title || "New Blog Entry"} </p>
+      <div className="card-footer p-2 has-text-centered is-align-self-center">
+        Read More
+      </div>
+    </>
+)
 
 const News = ({pageContext}) => {
   const {
@@ -22,16 +35,9 @@ const News = ({pageContext}) => {
           slug
         }
         frontmatter {
-          image {
-            childrenImageSharp {
-              gatsbyImageData(layout: CONSTRAINED)
-            }
-          }
           title
-          author
           date(formatString: "ddd DD MMM yy")
         }
-        html
         id
       }
     }
@@ -50,37 +56,29 @@ const News = ({pageContext}) => {
   return (
     <Layout name="News" crumbs={crumbs}>
       <section className="section">
-
         <ParallelogramHeader
           text="News"
           backgroundColor="primary"
           textColor="white"
           className="mb-6"
         />
-        <TagSelector
-                data = {data}
-                filterTemplate = {'/newstags/'}
-                root ={`/news`}
-              />
+        <TagSelector data={data} filterTemplate={"/newstags/"} root={`/news`} />
 
-          <div className="lowerPadding"> </div>
-           
+        <div className="lowerPadding"> </div>
 
-          {data.news.nodes.map((blogentry) => (
+        {data.news.nodes.map((blogentry) => (
+          <div
+            className="card-image row is-three-fifths pt-3"
+            key={blogentry.id}
+          >
             <Link to={blogentry.fields.slug}>
-              <NewsCard
-                title={blogentry.frontmatter.title}
-                author={blogentry.frontmatter.author}
-                date={blogentry.frontmatter.date}
-                image={
-                  blogentry.frontmatter.image.childrenImageSharp[0]
-                    .gatsbyImageData
-                }
-                html={blogentry.html}
+              <TableCard
+                first={firstColumn(blogentry.frontmatter.date)}
+                second={secondColumn(blogentry.frontmatter.title)}
               />
             </Link>
-          ))}
-
+          </div>
+        ))}
       </section>
     </Layout>
   );

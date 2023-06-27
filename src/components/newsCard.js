@@ -14,10 +14,7 @@ const NewsCard = (props) => {
 
         <div className="media-content column is-four-fifth">
             
-              <p className="title is-4">{props.title || "New Blog Entry"} </p>
-              <div className="card-footer p-2 has-text-centered is-align-self-center">
-              Read More
-        </div>
+
           
           </div>
         </div>
