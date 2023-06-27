@@ -1,10 +1,8 @@
-import React from "react";
+import React, {useState, useCallback, useEffect} from "react";
 import { graphql, Link, useStaticQuery } from "gatsby";
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
 import Layout from "../../components/layout";
-import ProjectCard from "../../components/projectCard";
 import TableCard from "../../components/tableCard";
-import {startCase, camelCase} from 'lodash';
 import TagSelector from "../../components/tagSelector";
 import ParallelogramHeader from "../../components/parallelogramHeader";
 
@@ -13,6 +11,37 @@ const sections = [
   { key: "active", title: "All Active Projects" },
   { key: "completed", title: "All Completed Projects" },
 ];
+
+// Create project card
+const createProjectCard = (projectentry) => (
+  <Link to={projectentry.frontmatter.link}>
+    <div className="card-image row is-three-fifths pt-3" key={projectentry.id}>
+      <TableCard
+        first={firstColumn(
+          projectentry.frontmatter.image.childImageSharp.gatsbyImageData
+        )}
+        second={secondColumn(
+          projectentry.frontmatter.title,
+          projectentry.frontmatter.author,
+          projectentry.frontmatter.begin,
+          projectentry.frontmatter.end,
+          projectentry.frontmatter.grant,
+          projectentry.frontmatter.amount,
+          projectentry.frontmatter.link
+        )}
+      />
+    </div>
+  </Link>
+);
+
+// Separate active and completed projects
+const separateProjects = (projects) => {
+  const active = [];
+  const completed = [];
+  projects.forEach((project) => {project.frontmatter.status === "active" ? active.push(createProjectCard(project)) : completed.push(createProjectCard(project))});
+
+  return {active,completed};
+}
 
 // Return structured content for table card
 const firstColumn = (image) => (
@@ -43,8 +72,8 @@ const Project = ({pageContext}) => {
 
       const data = useStaticQuery(graphql`
       {
-        active: allMarkdownRemark(
-          filter: { fields: { category: { eq: "projects" } }, frontmatter: { status: { eq: "active" } } }
+        projects: allMarkdownRemark(
+          filter: { fields: { category: { eq: "projects" } }}
           sort: { frontmatter: { end: DESC } }
         ) {
           nodes {
@@ -54,29 +83,8 @@ const Project = ({pageContext}) => {
                   gatsbyImageData(layout: CONSTRAINED)
                 }
               }
-              title
-              author
-              begin
-              end
-              grant
-              amount
-              link
-            }
-            id
-          }
-        }
-
-        completed: allMarkdownRemark(
-          filter: { fields: { category: { eq: "projects" } }, frontmatter: { status: { eq: "complete" } } }
-          sort: { frontmatter: { date: DESC } }
-        ) {
-          nodes {
-            frontmatter {
-              image {
-                childImageSharp {
-                  gatsbyImageData(layout: CONSTRAINED)
-                }
-              }
+              status
+              tags
               title
               author
               begin
@@ -101,54 +109,44 @@ const Project = ({pageContext}) => {
       }
     `);
 
-      return (
-        <Layout name="Project" crumbs={crumbs}>
-          <section className="section">
-            <ParallelogramHeader
-              text="Research Projects"
-              backgroundColor="primary"
-              textColor="white"
-              className="mb-6"
-            />
-            <TagSelector
-              data={data}
-              filterTemplate={"/projectstags/"}
-              root={`/research/projects`}
-            />
+    const [filteredProjects, setFilteredProjects] = useState(separateProjects(data.projects.nodes));
 
-            {sections.map((section) => (
-              <>
-                <div className="lowerPadding"></div>
-                <h2 className="subtitle">{section.title}</h2>
-                {data[section.key].nodes.map((projectentry) => (
-                  <Link to={projectentry.frontmatter.link}>
-                    <div
-                      className="card-image row is-three-fifths pt-3"
-                      key={projectentry.id}
-                    >
-                      <TableCard
-                        first={firstColumn(
-                          projectentry.frontmatter.image.childImageSharp
-                            .gatsbyImageData
-                        )}
-                        second={secondColumn(
-                          projectentry.frontmatter.title,
-                          projectentry.frontmatter.author,
-                          projectentry.frontmatter.begin,
-                          projectentry.frontmatter.end,
-                          projectentry.frontmatter.grant,
-                          projectentry.frontmatter.amount,
-                          projectentry.frontmatter.link
-                        )}
-                      />
-                    </div>
-                  </Link>
-                ))}
-              </>
-            ))}
-          </section>
-        </Layout>
-      );
+    const getFilteredNodes = useCallback((nodes) => {
+      setFilteredProjects(separateProjects(nodes));
+    }, [setFilteredProjects]);
+
+    return (
+      <Layout name="Project" crumbs={crumbs}>
+        <section className="section">
+          <ParallelogramHeader
+            text="Research Projects"
+            backgroundColor="primary"
+            textColor="white"
+            className="mb-6"
+          />
+          <TagSelector
+            tags={data.allTags}
+            nodes={data.projects.nodes}
+            callback={getFilteredNodes}
+          />
+          {filteredProjects.active.length ? (
+            <>
+              <div className="lowerPadding"></div>
+              <h2 className="subtitle">All Active Projects</h2>
+              {filteredProjects.active}
+            </>
+          ) : undefined}
+
+          {filteredProjects.completed.length ? (
+            <>
+              <div className="lowerPadding"></div>
+              <h2 className="subtitle">All Completed Projects</h2>
+              {filteredProjects.completed}
+            </> ) : undefined}
+            
+        </section>
+      </Layout>
+    );
 }
 
 export default Project;
