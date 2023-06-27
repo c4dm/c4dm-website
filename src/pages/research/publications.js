@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState, useCallback } from "react";
 import { graphql, useStaticQuery, Link } from "gatsby";
 import Layout from "../../components/layout";
 import TableCard from "../../components/tableCard";
-import kebabCase from "lodash/kebabCase"
+import kebabCase from "lodash/kebabCase";
 import ParallelogramHeader from "../../components/parallelogramHeader";
+import TagSelector from "../../components/tagSelector";
 
 // Return structured content for table card
 const firstColumn = (title, author, medium, year) => (
@@ -17,75 +18,72 @@ const firstColumn = (title, author, medium, year) => (
   </>
 );
 
-const Publications = ({pageContext}) => {
+const Publications = ({ pageContext }) => {
   const {
     breadcrumb: { crumbs },
-  } = pageContext
-    const data = useStaticQuery(graphql`
+  } = pageContext;
+  const data = useStaticQuery(graphql`
     query {
-      pubs:  allReference (
-          limit: 2000
-          sort: {year: DESC}){
-          edges {
-            node {
-                title
-                author
-                journal
-                booktitle
-                year
-            }
-          }
+      pubs: allReference(limit: 2000, sort: { year: DESC }) {
+        nodes {
+          title
+          author
+          journal
+          booktitle
+          year
         }
-      years: allReference(
-        limit: 2000
-        ) {
-        group(field: {year: SELECT}) {
+      }
+      years: allReference(limit: 2000) {
+        group(field: { year: SELECT }) {
           fieldValue
           totalCount
         }
       }
-    }  
-    `);
+    }
+  `);
 
-    return (
-      <Layout name="Groups" crumbs={crumbs}>
-        <section className="section">
-          <ParallelogramHeader
-            text="Publications"
-            backgroundColor="primary"
-            textColor="white"
-            className="mb-6"
-          />
+  const [filteredNodes, setFilteredNodes] = useState(data.pubs.nodes);
 
-          <div>
-            <h1>Year: </h1>
+  const getFilteredNodes = useCallback(
+    (nodes) => {
+      setFilteredNodes(nodes);
+    },
+    [setFilteredNodes]
+  );
 
-            {data.years.group.map((year) => (
-              <Link to={`/years/${kebabCase(year.fieldValue)}/`}>
-                {year.fieldValue}
-              </Link>
-            ))}
+  return (
+    <Layout name="Groups" crumbs={crumbs}>
+      <section className="section">
+        <ParallelogramHeader
+          text="Publications"
+          backgroundColor="primary"
+          textColor="white"
+          className="mb-6"
+        />
+
+        <TagSelector
+          tags={data.years}
+          nodes={data.pubs.nodes}
+          callback={getFilteredNodes}
+        />
+
+        <div className="lowerPadding"></div>
+
+        {filteredNodes.map((pub) => (
+          <div className="card-image row is-three-fifths pt-3" key={pub.title}>
+            <TableCard
+              first={firstColumn(
+                pub.title,
+                pub.author,
+                pub.journal || pub.booktitle || pub.conference,
+                pub.year
+              )}
+            />
           </div>
-              {data.pubs.edges.map((pub) => (
-                <div
-                  className="card-image row is-three-fifths pt-3"
-                  key={pub.node.title}
-                >
-                  <TableCard
-                    first={firstColumn(
-                      pub.node.title,
-                      pub.node.author,
-                      pub.node.journal ||
-                        pub.node.booktitle ||
-                        pub.node.conference,
-                      pub.node.year
-                    )}
-                  />
-                </div>
-                ))}
-        </section>
-      </Layout>
-    );
-}
+        ))}
+      </section>
+    </Layout>
+  );
+};
 
 export default Publications;

@@ -33,10 +33,6 @@ exports.createPages = async ({ graphql, actions }) => {
     const { createPage } = actions
     const newsPostTemplate = path.resolve("./src/templates/newsPost.js");
     const projectPostTemplate = path.resolve("./src/templates/projectPost.js");
-    // const projectTagTemplate = path.resolve("src/templates/projectTags.js")
-    // const newsTagTemplate = path.resolve("src/templates/newsTags.js")
-    // const peopleTagTemplate = path.resolve("src/templates/peopleTags.js")
-    const yearTemplate = path.resolve("src/templates/years.js")
 
     const result = await graphql(`
         {
@@ -67,11 +63,6 @@ exports.createPages = async ({ graphql, actions }) => {
                 }
             }
 
-            yearsGroup: allReference(limit: 2000) {
-                group(field:  { year: SELECT }) {
-                  fieldValue
-                }
-            }
         }
     `);
 
@@ -98,19 +89,6 @@ exports.createPages = async ({ graphql, actions }) => {
         },
         });
     });
-
-    const years = result.data.yearsGroup.group
-
-    // Make one page for each year (for publications)
-    years.forEach(year => {
-    createPage({
-      path: `/years/${_.kebabCase(year.fieldValue)}/`,
-      component: yearTemplate,
-      context: {
-        year: year.fieldValue,
-      },
-    })
-    })
 
 }
 

@@ -2,7 +2,6 @@ import React, {useState, useCallback} from "react";
 import { graphql, useStaticQuery, Link } from "gatsby";
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";
-import PeopleSelector from "../components/peopleSelector";
 import ParallelogramHeader from "../components/parallelogramHeader";
 import TableCard from "../components/tableCard";
 import TagSelector from "../components/tagSelector";
