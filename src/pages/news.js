@@ -1,9 +1,7 @@
 import React from "react";
 import { graphql, Link, useStaticQuery } from "gatsby";
 import Layout from "../components/layout";
-import NewsCard from "../components/newsCard";
 import TableCard from "../components/tableCard";
-import kebabCase from "lodash/kebabCase";
 import TagSelector from "../components/tagSelector";
 import ParallelogramHeader from "../components/parallelogramHeader";
 
