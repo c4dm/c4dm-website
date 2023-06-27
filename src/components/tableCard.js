@@ -3,11 +3,11 @@ import React from "react";
 const TableCard = (props) => {
     const length = Object.keys(props).length;
     return (
-      <div className="card table-card columns is-flex is-flex-direction-row">
+      <div className="card table-card columns">
         <div
           className={`card-image column ${
             length > 1 ? "is-one-fifth" : "is-full"
-          }`}
+          } is-full-mobile`}
         >
           <div className="media">
             <div className="media-content">{props.first}</div>
@@ -17,7 +17,7 @@ const TableCard = (props) => {
           <div
             className={`card-content column ${
               length > 2 ? "is-one-fifth" : "is-four-fifths"
-            }`}
+            } is-full-mobile`}
           >
             <div className="media">
               <div className="media-content">{props.second}</div>
@@ -25,7 +25,7 @@ const TableCard = (props) => {
           </div>
         ) : undefined}
         {length > 2 ? (
-          <div className="card-content is-three-fifths">
+          <div className="card-content is-three-fifths is-full-mobile">
             <div className="media">
                 <div className="media-content">
                     {props.third}
