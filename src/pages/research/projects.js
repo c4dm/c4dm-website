@@ -123,7 +123,7 @@ const Project = ({pageContext}) => {
                 {data[section.key].nodes.map((projectentry) => (
                   <Link to={projectentry.frontmatter.link}>
                     <div
-                      class="card-image row is-three-fifths pt-3"
+                      className="card-image row is-three-fifths pt-3"
                       key={projectentry.id}
                     >
                       <TableCard

@@ -1,9 +1,21 @@
 import React from "react";
 import { graphql, useStaticQuery, Link } from "gatsby";
 import Layout from "../../components/layout";
-import PublicationCard from "../../components/publicationCard";
+import TableCard from "../../components/tableCard";
 import kebabCase from "lodash/kebabCase"
 import ParallelogramHeader from "../../components/parallelogramHeader";
+
+// Return structured content for table card
+const firstColumn = (title, author, medium, year) => (
+  <>
+    <strong className="is-6">{title || "Name"} </strong>
+    <p className="is-3">{author} </p>
+
+    <em>
+      {medium}, {year}
+    </em>
+  </>
+);
 
 const Publications = ({pageContext}) => {
   const {
@@ -24,9 +36,6 @@ const Publications = ({pageContext}) => {
             }
           }
         }
-      
-
- 
       years: allReference(
         limit: 2000
         ) {
@@ -36,11 +45,8 @@ const Publications = ({pageContext}) => {
         }
       }
     }  
-   
-
     `);
 
-    
     return (
       <Layout name="Groups" crumbs={crumbs}>
         <section className="section">
@@ -60,30 +66,23 @@ const Publications = ({pageContext}) => {
               </Link>
             ))}
           </div>
-
-          <div class="card is-horizontal rows">
-            {data.pubs.edges.map(({ node }) => {
-              const { title } = node;
-              const { author } = node;
-              const { journal } = node;
-              const { conference } = node;
-              const { booktitle } = node;
-              const { year } = node;
-
-              return (
-                <div class="pt-3">
-                  <PublicationCard
-                    title={title}
-                    author={author}
-                    journal={journal}
-                    conference={conference}
-                    booktitle={booktitle}
-                    year={year}
+              {data.pubs.edges.map((pub) => (
+                <div
+                  className="card-image row is-three-fifths pt-3"
+                  key={pub.node.title}
+                >
+                  <TableCard
+                    first={firstColumn(
+                      pub.node.title,
+                      pub.node.author,
+                      pub.node.journal ||
+                        pub.node.booktitle ||
+                        pub.node.conference,
+                      pub.node.year
+                    )}
                   />
                 </div>
-              );
-            })}
-          </div>
+                ))}
         </section>
       </Layout>
     );
