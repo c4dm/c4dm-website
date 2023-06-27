@@ -1,32 +1,43 @@
-import React from "react";
+import React, {useState, useEffect, useMemo} from "react";
 import {Link} from "gatsby";
-import {startCase, camelCase, kebabCase} from 'lodash';
+import {startCase, camelCase} from 'lodash';
 
-const TagSelector = (props) => {
-  return (
-    
-    <div>
-        
+const filterData = (nodes, filter) => nodes.filter((node) => !filter ? true : node.frontmatter?.tags?.includes(filter) || node.frontmatter?.role?.includes(filter) || node.year?.includes(filter));
+
+
+const TagSelector = ({tags,nodes,callback}) => {
+    const [selected, setSelected] = useState(false);
+
+    const memoFilter = useMemo(() => filterData(nodes,selected), [nodes,selected])
+
+    useEffect(() => {callback(memoFilter)}, [selected,filterData,memoFilter])
+
+    return (
+        <div>
         <div className="buttons are-small">
-            {/* <h3 className="subtitle">tags:</h3> */}
-            {props.data.allTags.group.map(tag => (
-                // If selected=='tag', then grey it out
-            <button className="button" key={tag.fieldValue}>
-                <Link to={`${props.root}/tags/${kebabCase(tag.fieldValue)}/`}>
-                {startCase(camelCase(tag.fieldValue))} ({tag.totalCount})
-                </Link>
-            </button>
+            {tags.group.map((tag) => (
+            // If selected=='tag', then grey it out
+                <button
+                    className="button is-grey"
+                    key={tag.fieldValue}
+                    onClick={() => setSelected(tag.fieldValue)}
+                    disabled={selected === tag.fieldValue}
+                >
+                    {startCase(camelCase(tag.fieldValue))} ({tag.totalCount})
+                </button>
             ))}
 
             {/* // If selected==False, then grey this out */}
-            <button className="button">
-                <Link to={props.root}>
+            <button 
+                className="button" 
+                onClick={() => setSelected(false)}
+                disabled={!selected}
+            >
                 Clear Tags (x)
-                </Link>
             </button>
         </div>
-    </div>
-  );
+        </div>
+    );
 };
 
 export default TagSelector;

@@ -1,12 +1,10 @@
-import React from "react";
+import React, {useState, useCallback} from "react";
 import { graphql, useStaticQuery, Link } from "gatsby";
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";
-import PeopleCard from "../components/peopleCard";
-import {startCase, camelCase} from 'lodash';
-import PeopleSelector from "../components/peopleSelector";
 import ParallelogramHeader from "../components/parallelogramHeader";
 import TableCard from "../components/tableCard";
+import TagSelector from "../components/tagSelector";
 
 // Keys for the elements of the table
 const keys = ["name", "acadposition", "blurb"];
@@ -47,7 +45,7 @@ const People = ({pageContext}) => {
   } = pageContext
     const data = useStaticQuery(graphql`
       {
-        allMarkdownRemark(
+        people: allMarkdownRemark(
           filter: { fields: { category: { eq: "people" } } }
           sort: { frontmatter: { role: DESC } }
         ) {
@@ -82,6 +80,15 @@ const People = ({pageContext}) => {
       }
     `);
 
+    const [filteredNodes, setFilteredNodes] = useState(data.people.nodes);
+
+    const getFilteredNodes = useCallback(
+      (nodes) => {
+        setFilteredNodes(nodes);
+      },
+      [setFilteredNodes]
+    );
+
     // some of the students have no academic role, the markdown frontmatters need to be updated, removing role and putting them in academic position
 
     return (
@@ -93,13 +100,13 @@ const People = ({pageContext}) => {
             textColor="white"
             className="mb-6"
           />
-          <PeopleSelector
-              data={data}
-              filterTemplate={"/peopletags/"}
-              root={`/people`}
+          <TagSelector
+              tags={data.allTags}
+              nodes={data.people.nodes}
+              callback={getFilteredNodes}
             />
             <div className="lowerPadding"></div>
-            {data.allMarkdownRemark.nodes.map((peopleentry) => (
+            {filteredNodes.map((peopleentry) => (
               <Link to={peopleentry.frontmatter.url}>
                 <div
                   class="card-image row is-three-fifths pt-3"

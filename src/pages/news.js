@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useCallback} from "react";
 import { graphql, Link, useStaticQuery } from "gatsby";
 import Layout from "../components/layout";
 import TableCard from "../components/tableCard";
@@ -18,6 +18,9 @@ const secondColumn = (title) => (
 )
 
 const News = ({pageContext}) => {
+
+
+
   const {
     breadcrumb: { crumbs },
   } = pageContext
@@ -34,6 +37,7 @@ const News = ({pageContext}) => {
         }
         frontmatter {
           title
+          tags
           date(formatString: "ddd DD MMM yy")
         }
         id
@@ -51,6 +55,13 @@ const News = ({pageContext}) => {
         }
   }
   `);
+
+    const [filteredNodes, setFilteredNodes] = useState(data.news.nodes);
+
+    const getFilteredNodes = useCallback((nodes) => {
+      setFilteredNodes(nodes);
+    }, [setFilteredNodes]);
+
   return (
     <Layout name="News" crumbs={crumbs}>
       <section className="section">
@@ -60,23 +71,24 @@ const News = ({pageContext}) => {
           textColor="white"
           className="mb-6"
         />
-        <TagSelector data={data} filterTemplate={"/newstags/"} root={`/news`} />
+        <TagSelector tags={data.allTags} nodes={data.news.nodes} data={data} callback={getFilteredNodes}/>
 
         <div className="lowerPadding"> </div>
 
-        {data.news.nodes.map((blogentry) => (
-          <div
-            className="card-image row is-three-fifths pt-3"
-            key={blogentry.id}
-          >
-            <Link to={blogentry.fields.slug}>
-              <TableCard
-                first={firstColumn(blogentry.frontmatter.date)}
-                second={secondColumn(blogentry.frontmatter.title)}
-              />
-            </Link>
-          </div>
-        ))}
+        {filteredNodes.map((blogentry) => (
+              <div
+                className="card-image row is-three-fifths pt-3"
+                key={blogentry.id}
+              >
+                <Link to={blogentry.fields.slug}>
+                  <TableCard
+                    first={firstColumn(blogentry.frontmatter.date)}
+                    second={secondColumn(blogentry.frontmatter.title)}
+                  />
+                </Link>
+              </div>
+          )
+        )}
       </section>
     </Layout>
   );
