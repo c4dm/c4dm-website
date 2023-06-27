@@ -1,30 +1,35 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import {Link} from "gatsby";
 import {startCase, camelCase, kebabCase} from 'lodash';
 
 const TagSelector = (props) => {
-  return (
-    
-    <div>
-        
-        <div className="buttons are-small">
-            {/* <h3 className="subtitle">tags:</h3> */}
-            {props.data.allTags.group.map(tag => (
-                // If selected=='tag', then grey it out
-            <button className="button" key={tag.fieldValue}>
-                <Link to={`${props.root}/tags/${kebabCase(tag.fieldValue)}/`}>
-                {startCase(camelCase(tag.fieldValue))} ({tag.totalCount})
-                </Link>
-            </button>
-            ))}
+  const [selected, setSelected] = useState(false);
+//   useEffect(() => {props.callback(selected)}, [selected])
 
-            {/* // If selected==False, then grey this out */}
-            <button className="button">
-                <Link to={props.root}>
-                Clear Tags (x)
-                </Link>
+  return (
+    <div>
+      <div className="buttons are-small">
+        {props.data.allTags.group.map((tag) => (
+          // If selected=='tag', then grey it out
+            <button
+                className="button is-grey"
+                key={tag.fieldValue}
+                onClick={() => setSelected(tag.fieldValue)}
+                disabled={selected === tag.fieldValue}
+            >
+                {startCase(camelCase(tag.fieldValue))} ({tag.totalCount})
             </button>
-        </div>
+        ))}
+
+        {/* // If selected==False, then grey this out */}
+        <button 
+            className="button" 
+            onClick={() => setSelected(false)}
+            disabled={!selected}
+        >
+            Clear Tags (x)
+        </button>
+      </div>
     </div>
   );
 };
