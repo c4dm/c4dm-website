@@ -1,16 +1,10 @@
-import React, {useState, useCallback, useEffect} from "react";
+import React, {useState, useCallback} from "react";
 import { graphql, Link, useStaticQuery } from "gatsby";
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
 import Layout from "../../components/layout";
 import TableCard from "../../components/tableCard";
 import TagSelector from "../../components/tagSelector";
 import ParallelogramHeader from "../../components/parallelogramHeader";
-
-// Active and completed sections
-const sections = [
-  { key: "active", title: "All Active Projects" },
-  { key: "completed", title: "All Completed Projects" },
-];
 
 // Create project card
 const createProjectCard = (projectentry) => (
