@@ -1,9 +1,9 @@
 {
-  "name": "anne-website",
+  "name": "c4dm-website",
   "version": "1.0.0",
   "private": true,
-  "description": "anne-website",
-  "author": "SFRL",
+  "description": "c4dm-website",
+  "author": "ash-seb-teo",
   "keywords": [
     "gatsby"
   ],

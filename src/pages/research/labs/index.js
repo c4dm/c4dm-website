@@ -1,8 +1,8 @@
 import React from "react";
 import {graphql, useStaticQuery } from "gatsby";
-import Layout from "../../components/layout";
-import BlogCard from "../../components/blogCard";
-import ParallelogramHeader from "../../components/parallelogramHeader";
+import Layout from "../../../components/layout";
+import BlogCard from "../../../components/blogCard";
+import ParallelogramHeader from "../../../components/parallelogramHeader";
 
 const Research = ({pageContext}) => {
   const {

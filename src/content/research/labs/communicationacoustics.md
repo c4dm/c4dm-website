@@ -1,5 +1,21 @@
 ---
 name: "Communication Acoustics"
-link: "https://c4dm.eecs.qmul.ac.uk/communicationacoustics.html"
+link: "./communicationacoustics"
 image: "groups3.png"
 ---
+
+The Communication Acoustics Lab at the Centre for Digital Music conducts cutting edge research into the ways we perceive sound and technologies for improving communication. We work across disciplines of music, engineering, psychology, and cognitive science to study communication between humans and between humans and machines.
+
+Topics of interest include:
+
+* Perception, cognition & aesthetics of sound
+* Cross-sensory perception involving sound
+* Enabling digital audio systems with an understanding of how we listen
+* Modelling human values (& biases) with multimodal music data
+* Digital tools for education, outreach, & research 
+
+
+For more information, please visit the lab webpage (under construction)
+
+Members
+----
