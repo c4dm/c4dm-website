@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Deep Learning methods for Multi-Instrument Music Transcription"
 themes: ["mir"]
 role: "PhD"
-image: "./marypilataki.png"
+image: "./defaultprofile.png"
 ---

@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Physiological Responses to Ensemble Interaction"
 themes: ["mupae"]
 role: "PhD"
-image: "./sebastianruiz.png"
+image: "./defaultprofile.png"
 ---

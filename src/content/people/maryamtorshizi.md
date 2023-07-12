@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Music emotion modelling using graph analysis"
 themes: ["comma","mir"]
 role: "PhD"
-image: "./maryamtorshizi.png"
+image: "./defaultprofile.png"
 ---

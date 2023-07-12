@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Pitch tracking for music applications - beyond 99% accuracy"
 themes: ["mir","audioeng"]
 role: "PhD"
-image: "./xavierriley.png"
+image: "./defaultprofile.png"
 ---

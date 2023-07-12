@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Space and Intelligibility of Musical Performance"
 themes: ["mupae"]
 role: "PhD"
-image: "./jamesweaver.png"
+image: "./defaultprofile.png"
 ---

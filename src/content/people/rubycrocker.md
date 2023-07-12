@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Continuous mood recognition in film music"
 themes: ["mir","mcog"]
 role: "PhD"
-image: "./rubycrocker.png"
+image: "./defaultprofile.png"
 ---

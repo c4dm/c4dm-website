@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Predicting demographics, personalities, and global values from digital media behaviours"
 themes: ["mir","mcog"]
 role: "PhD"
-image: "./vjosapreniqi.png"
+image: "./defaultprofile.png"
 ---

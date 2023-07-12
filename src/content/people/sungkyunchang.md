@@ -5,5 +5,5 @@ acadposition: "Research Assistant"
 blurb: "Deep learning technologies for multi-instrument automatic music transcription"
 themes: ["mir","mlist"]
 role: "Research Assistant"
-image: "./sungkyunchang.png"
+image: "./defaultprofile.png"
 ---

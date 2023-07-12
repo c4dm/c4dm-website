@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Lyrics Alignment For Polyphonic Music"
 themes: ["mir","mlist"]
 role: "PhD"
-image: "./jiawenhuang.png"
+image: "./defaultprofile.png"
 ---

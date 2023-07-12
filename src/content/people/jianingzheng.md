@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Tangibility and Materiality in Digital Musical Instrument Design"
 themes: ["augmi","soundsynthesis"]
 role: "PhD"
-image: "./jianingzheng.png"
+image: "./defaultprofile.png"
 ---

@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Multimodal Deep Learning for Music Information Retrieval"
 themes: ["mir","mlist"]
 role: "PhD"
-image: "./ilariamanco.png"
+image: "./defaultprofile.png"
 ---

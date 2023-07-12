@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Emotion-specific Music Generation Using Deep Learning"
 themes: ["mir"]
 role: "PhD"
-image: "./jinchengzhang.png"
+image: "./defaultprofile.png"
 ---

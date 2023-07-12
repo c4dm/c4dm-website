@@ -5,5 +5,5 @@ acadposition: "Research Programme Manager"
 blurb: "Project: Centre for Doctoral Training in Media and Arts Technology"
 themes: []
 role: "Support"
-image: "./jonathanwinfield.png"
+image: "./defaultprofile.png"
 ---

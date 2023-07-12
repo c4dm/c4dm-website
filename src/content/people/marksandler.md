@@ -5,5 +5,5 @@ acadposition: "C4DM Director, Turing Fellow, Royal Society Wolfson Research Meri
 blurb: "Digital Signal Processing, Digital Audio, Music Informatics, Audio Features, Semantic Audio, Immersive Audio, Studio Science, Music Data Science, Music Linked Data."
 themes: ["mir"]
 role: "Academic"
-image: "./marksandler.png"
+image: "./defaultprofile.png"
 ---

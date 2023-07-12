@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Generative Models For Music Audio Representation And Understanding"
 themes: ["mir","mcog","soundsynthesis"]
 role: "PhD"
-image: "./ningzhiwang.png"
+image: "./defaultprofile.png"
 ---

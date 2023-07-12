@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Machine learning applied to sound synthesis models"
 themes: ["audioeng","soundsynthesis"]
 role: "PhD"
-image: "./marcocomunita.png"
+image: "./defaultprofile.png"
 ---

@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Towards an automatic acoustic identification of individuals in the wild"
 themes: ["mlist"]
 role: "PhD"
-image: "./inesnolasco.png"
+image: "./defaultprofile.png"
 ---

@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Gender-coded sound: A multimodal data-driven analysis of gender encoding strategies in sound and music for advertising"
 themes: ["mlist"]
 role: "PhD"
-image: "./lucamarinelli.png"
+image: "./defaultprofile.png"
 ---

@@ -61,7 +61,6 @@ const Research = ({pageContext}) => {
             }
             name
             role
-            topic
             url
             acadposition
             blurb

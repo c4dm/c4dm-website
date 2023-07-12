@@ -58,7 +58,6 @@ const People = ({pageContext}) => {
               }
               name
               role
-              topic
               url
               acadposition
               blurb

@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Automatic music transcription with end-to-end deep neural networks"
 themes: ["mir","mlist"]
 role: "PhD"
-image: "./leleliu.png"
+image: "./defaultprofile.png"
 ---

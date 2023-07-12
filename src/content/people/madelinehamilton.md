@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Improving AI-generated Music with Pleasure Models"
 themes: ["mcog"]
 role: "PhD"
-image: "./madelinehamilton.png"
+image: "./defaultprofile.png"
 ---

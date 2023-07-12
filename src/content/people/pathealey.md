@@ -5,5 +5,5 @@ acadposition: "Professor of Human Interaction, Turing Fellow"
 blurb: ""
 themes: ["isam"]
 role: "Academic Associate"
-image: "./pathealey.png"
+image: "./defaultprofile.png"
 ---

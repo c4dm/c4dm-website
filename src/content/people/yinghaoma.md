@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Self-supervision in machine listening"
 themes: ["mir","mlist"]
 role: "PhD"
-image: "./yinghaoma.png"
+image: "./defaultprofile.png"
 ---

@@ -5,5 +5,5 @@ acadposition: "Visiting Academic"
 blurb: "music transcription (chords, beats, drums, melody, ...), interactive music annotation, singing research, research in the evolution of musical styles"
 themes: ["mir"]
 role: "Visitor"
-image: "./matthiasmauch.png"
+image: "./defaultprofile.png"
 ---

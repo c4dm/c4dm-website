@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "End-to-End System Design for Music Style Transfer with Neural Networks"
 themes: ["audioeng","mcog"]
 role: "PhD"
-image: "./jingjingtang.png"
+image: "./defaultprofile.png"
 ---

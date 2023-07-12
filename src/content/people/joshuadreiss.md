@@ -5,5 +5,5 @@ acadposition: "Professor of Audio Engineering"
 blurb: "sound engineering, intelligent audio production, sound synthesis, audio effects, automatic mixing"
 themes: ["audioeng","soundsynthesis"]
 role: "Academic"
-image: "./joshuadreiss.png"
+image: "./defaultprofile.png"
 ---

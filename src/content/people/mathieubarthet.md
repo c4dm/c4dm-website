@@ -5,5 +5,5 @@ acadposition: "Senior Lecturer in Digital Media"
 blurb: "Music information research, Internet of musical things, Extended reality, New interfaces for musical expression, Semantic audio, Music perception (timbre, emotions), Audience-Performer interaction, Participatory art"
 themes: ["mir","augmi","isam","mupae"]
 role: "Academic"
-image: "./mathieubarthet.png"
+image: "./defaultprofile.png"
 ---

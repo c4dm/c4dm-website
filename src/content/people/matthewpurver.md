@@ -5,5 +5,5 @@ acadposition: "Professor of Computational Linguistics, Turing Fellow"
 blurb: "computational linguistics including models of language and music"
 themes: []
 role: "Academic Associate"
-image: "./matthewpurver.png"
+image: "./defaultprofile.png"
 ---

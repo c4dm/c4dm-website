@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Sensor mesh as performance interface"
 themes: ["augmi"]
 role: "PhD"
-image: "./pelinskiteresa.png"
+image: "./defaultprofile.png"
 ---

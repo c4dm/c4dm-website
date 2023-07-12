@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Music Interestingness in the Brain"
 themes: ["mcog"]
 role: "PhD"
-image: "./chriswinnard.png"
+image: "./defaultprofile.png"
 ---

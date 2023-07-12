@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Probabilistic modelling of rhythm perception and production"
 themes: ["mir"]
 role: "PhD"
-image: "./thomaskaplan.png"
+image: "./defaultprofile.png"
 ---

@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Audio Applications of Novel Mathematical Methods in Deep Learning"
 themes: ["soundsynthesis","mlist"]
 role: "PhD"
-image: "./shubhrsingh.png"
+image: "./defaultprofile.png"
 ---

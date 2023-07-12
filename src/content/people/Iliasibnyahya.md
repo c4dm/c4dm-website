@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Audio Effects design optimization"
 themes: ["audioeng"]
 role: "PhD"
-image: "./Iliasibnyahya.png"
+image: "./defaultprofile.png"
 ---

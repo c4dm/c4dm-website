@@ -5,5 +5,5 @@ acadposition: "Postdoctoral Researcher"
 blurb: "Machine transcription of wildlife bird sound scenes"
 themes: ["mlist"]
 role: "Postdoc"
-image: "./veronicamorfi.png"
+image: "./defaultprofile.png"
 ---
