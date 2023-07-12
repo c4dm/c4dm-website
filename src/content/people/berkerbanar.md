@@ -1,9 +1,9 @@
 ---
 name: "Berker Banar"
 url: "http://eecs.qmul.ac.uk/profiles/banarberker.html"
-acadposition: ""
+acadposition: "PhD Student"
 blurb: "Towards Composing Contemporary Classical Music using Generative Deep Learning"
 themes: ["mir","soundsynthesis"]
-role: "phd"
-image: "./defaultprofile.png"
+role: "PhD"
+image: "./berkerbanar.png"
 ---

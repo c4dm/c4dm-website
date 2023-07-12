@@ -1,9 +1,9 @@
 ---
 name: "Lewis Wolstanholme"
 url: "http://lewiswolstanholme.co.uk"
-acadposition: ""
+acadposition: "PhD Student"
 blurb: "Meta-Physical Modelling"
 themes: ["sounsynthesis","augmi"]
-role: "phd"
-image: "./defaultprofile.png"
+role: "PhD"
+image: "./lewiswolstanholme.png"
 ---

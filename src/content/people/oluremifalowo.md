@@ -1,8 +1,8 @@
 ---
 name: "Oluremi Falowo"
-acadposition: ""
+acadposition: "PhD Student"
 blurb: "E-AIM - Embodied Cognition in Intelligent Musical Systems"
 themes: ["comma","mcog"]
-role: "phd"
-image: "./defaultprofile.png"
+role: "PhD"
+image: "./oluremifalowo.png"
 ---

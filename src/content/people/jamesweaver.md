@@ -1,9 +1,9 @@
 ---
 name: "James Weaver"
 url: ""
-acadposition: ""
+acadposition: "PhD Student"
 blurb: "Space and Intelligibility of Musical Performance"
 themes: ["mupae"]
-role: "phd"
-image: "./defaultprofile.png"
+role: "PhD"
+image: "./jamesweaver.png"
 ---

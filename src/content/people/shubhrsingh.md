@@ -1,9 +1,9 @@
 ---
 name: "Shubhr Singh"
 url: "http://eecs.qmul.ac.uk/profiles/singhshubhr.html"
-acadposition: ""
+acadposition: "PhD Student"
 blurb: "Audio Applications of Novel Mathematical Methods in Deep Learning"
 themes: ["soundsynthesis","mlist"]
-role: "phd"
-image: "./defaultprofile.png"
+role: "PhD"
+image: "./shubhrsingh.png"
 ---

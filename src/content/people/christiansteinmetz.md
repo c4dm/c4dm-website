@@ -1,9 +1,9 @@
 ---
 name: "Christian Steinmetz"
 url: "https://www.christiansteinmetz.com/"
-acadposition: ""
+acadposition: "PhD Student"
 blurb: "End-to-end generative modeling of multitrack mixing with non-parallel data and adversarial networks"
 themes: ["audioeng"]
-role: "phd"
-image: "./defaultprofile.png"
+role: "PhD"
+image: "./christiansteinmetz.png"
 ---

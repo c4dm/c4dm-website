@@ -1,9 +1,9 @@
 ---
 name: "Antonella Torrisi"
 url: "https://www.researchgate.net/profile/Antonella-Torrisi"
-acadposition: ""
+acadposition: "PhD Student"
 blurb: "Computational analysis of chick vocalisations: from categorisation to live feedback"
 themes: ["mlist"]
-role: "phd"
-image: "./defaultprofile.png"
+role: "PhD"
+image: "./antonellatorrisi.png"
 ---

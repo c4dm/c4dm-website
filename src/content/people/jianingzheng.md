@@ -1,9 +1,9 @@
 ---
 name: "Jianing Zheng"
 url: "http://eecs.qmul.ac.uk/profiles/zhengjianing.html"
-acadposition: ""
+acadposition: "PhD Student"
 blurb: "Tangibility and Materiality in Digital Musical Instrument Design"
 themes: ["augmi","soundsynthesis"]
-role: "phd"
-image: "./defaultprofile.png"
+role: "PhD"
+image: "./jianingzheng.png"
 ---

@@ -1,9 +1,9 @@
 ---
 name: "Chris Winnard"
 url: "http://eecs.qmul.ac.uk/profiles/winnardchristopherjames.html"
-acadposition: ""
+acadposition: "PhD Student"
 blurb: "Music Interestingness in the Brain"
 themes: ["mcog"]
-role: "phd"
-image: "./defaultprofile.png"
+role: "PhD"
+image: "./chriswinnard.png"
 ---

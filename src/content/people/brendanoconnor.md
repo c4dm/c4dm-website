@@ -1,9 +1,9 @@
 ---
 name: "Brendan O'Connor"
 url: "https://trebolium.github.io/"
-acadposition: ""
+acadposition: "PhD Student"
 blurb: "Singing Voice Attribute Transformation"
 themes: ["soundsynthesis","audioeng","mir"]
-role: "phd"
-image: "./defaultprofile.png"
+role: "PhD"
+image: "./brendanoconnor.png"
 ---

@@ -1,9 +1,9 @@
 ---
 name: "Nelly Garcia"
 url: ""
-acadposition: ""
+acadposition: "PhD Student"
 blurb: "An investigation evaluating realism in sound design"
 themes: ["comma","audioeng"]
-role: "phd"
-image: "./defaultprofile.png"
+role: "PhD"
+image: "./nellygarcia.png"
 ---

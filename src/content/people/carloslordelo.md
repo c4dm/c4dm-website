@@ -1,9 +1,9 @@
 ---
 name: "Carlos Lordelo"
 url: "https://cpvlordelo.github.io/"
-acadposition: ""
+acadposition: "PhD Student"
 blurb: "Instrument modelling to aid polyphonic transcription"
 themes: ["mir","mlist"]
-role: "phd"
-image: "./defaultprofile.png"
+role: "PhD"
+image: "./carloslordelo.png"
 ---
