@@ -1,9 +1,9 @@
 ---
 name: "James Bolt"
 url: ""
-acadposition: ""
+acadposition: "PhD Student"
 blurb: "Intelligent audio and music editing with deep learning "
 themes: ["mir"]
-role: "phd"
+role: "PhD"
 image: "./defaultprofile.png"
 ---

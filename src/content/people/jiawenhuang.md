@@ -1,9 +1,9 @@
 ---
 name: "Jiawen Huang"
 url: "http://eecs.qmul.ac.uk/profiles/huangjiawen.html"
-acadposition: ""
+acadposition: "PhD Student"
 blurb: "Lyrics Alignment For Polyphonic Music"
 themes: ["mir","mlist"]
-role: "phd"
+role: "PhD"
 image: "./defaultprofile.png"
 ---

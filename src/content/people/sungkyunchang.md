@@ -1,9 +1,9 @@
 ---
 name: "Sungkyun Chang"
 url: "http://eecs.qmul.ac.uk/profiles/sungkyun-chang.html"
-acadposition: ""
+acadposition: "Research Assistant"
 blurb: "Deep learning technologies for multi-instrument automatic music transcription"
 themes: ["mir","mlist"]
-role: "ra"
+role: "Research Assistant"
 image: "./defaultprofile.png"
 ---

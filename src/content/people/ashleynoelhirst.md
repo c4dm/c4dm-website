@@ -1,9 +1,9 @@
 ---
 name: "Ashley Noel-Hirst"
 url: "https://ashleynoelhirst.co.uk/"
-acadposition: ""
+acadposition: "PhD Student"
 blurb: "Latent Spaces for Human-AI music generation"
 themes: ["mir","isam"]
-role: "phd"
+role: "PhD"
 image: "./defaultprofile.png"
 ---

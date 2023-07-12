@@ -1,9 +1,9 @@
 ---
 name: "Yin-Jyun Luo"
 url: "http://eecs.qmul.ac.uk/profiles/luoyin-jyun.html"
-acadposition: ""
+acadposition: "PhD Student"
 blurb: "Industry-scale Machine Listening for Music and Audio Data"
 themes: ["soundsynthesis","mlist"]
-role: "phd"
+role: "PhD"
 image: "./defaultprofile.png"
 ---

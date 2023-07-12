@@ -4,6 +4,6 @@ url: "https://ai.vub.ac.be/team/geraint-wiggins/?utm_source=www.google.com&utm_m
 acadposition: "Professor of Computational Creativity"
 blurb: "Computational Creativity, Artificial Intelligence, Music Cognition"
 themes: ["mcog"]
-role: "acad-associate"
+role: "Academic"
 image: "./defaultprofile.png"
 ---

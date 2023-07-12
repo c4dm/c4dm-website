@@ -1,9 +1,9 @@
 ---
 name: "Maryam Torshizi"
 url: ""
-acadposition: ""
+acadposition: "PhD Student"
 blurb: "Music emotion modelling using graph analysis"
 themes: ["comma","mir"]
-role: "phd"
+role: "PhD"
 image: "./defaultprofile.png"
 ---

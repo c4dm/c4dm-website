@@ -1,9 +1,9 @@
 ---
 name: "Carey Bunks"
 url: ""
-acadposition: ""
+acadposition: "PhD Student"
 blurb: "Cover Song Identification"
 themes: ["mir"]
-role: "phd"
+role: "PhD"
 image: "./defaultprofile.png"
 ---

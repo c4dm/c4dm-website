@@ -1,9 +1,9 @@
 ---
 name: "Ilias Ibnyahya"
 url: "https://ilias-audio.github.io/"
-acadposition: ""
+acadposition: "PhD Student"
 blurb: "Audio Effects design optimization"
 themes: ["audioeng"]
-role: "phd"
+role: "PhD"
 image: "./defaultprofile.png"
 ---

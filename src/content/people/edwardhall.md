@@ -1,9 +1,9 @@
 ---
 name: "Edward Hall"
 url: "https://mat.qmul.ac.uk/students/edward-hall"
-acadposition: ""
+acadposition: "PhD Student"
 blurb: "Probabilistic modelling of thematic development and structural coherence in music"
 themes: ["mir"]
-role: "phd"
+role: "PhD"
 image: "./defaultprofile.png"
 ---

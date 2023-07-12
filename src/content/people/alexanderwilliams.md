@@ -1,9 +1,9 @@
 ---
 name: "Alexander Williams"
 url: ""
-acadposition: ""
+acadposition: "PhD Student"
 blurb: "User-driven deep music generation in digital audio workstations"
 themes: ["mir","audioeng"]
-role: "phd"
+role: "PhD"
 image: "./defaultprofile.png"
 ---

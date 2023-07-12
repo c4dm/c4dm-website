@@ -1,9 +1,9 @@
 ---
 name: "Dr Jacob Harrison"
 url: ""
-acadposition: ""
+acadposition: "Postdoctoral Researcher"
 blurb: "Bridging the gap: visually impaired and sighted music industry professionals working side by side"
 themes: ["augmi"]
-role: "postdoc"
+role: "Postdoc"
 image: "./defaultprofile.png"
 ---

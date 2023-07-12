@@ -1,9 +1,9 @@
 ---
 name: "Sebastián Ruiz"
 url: ""
-acadposition: ""
+acadposition: "PhD Student"
 blurb: "Physiological Responses to Ensemble Interaction"
 themes: ["mupae"]
-role: "phd"
+role: "PhD"
 image: "./defaultprofile.png"
 ---

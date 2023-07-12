@@ -1,9 +1,9 @@
 ---
 name: "Chengye Wu"
 url: ""
-acadposition: ""
+acadposition: "PhD Student"
 blurb: "Leveraging cross-sensory associations in communication"
 themes: ["comma"]
-role: "phd"
+role: "PhD"
 image: "./defaultprofile.png"
 ---

@@ -1,9 +1,9 @@
 ---
 name: "Mary Pilataki"
 url: "https://github.com/marypilataki"
-acadposition: ""
+acadposition: "PhD Student"
 blurb: "Deep Learning methods for Multi-Instrument Music Transcription"
 themes: ["mir"]
-role: "phd"
+role: "PhD"
 image: "./defaultprofile.png"
 ---

@@ -1,9 +1,9 @@
 ---
 name: "Christopher Mitcheltree"
 url: "https://christhetr.ee"
-acadposition: ""
+acadposition: "PhD Student"
 blurb: "Representation Learning for Audio Production Style and Modulations"
 themes: ["mlist","audioeng","mir"]
-role: "phd"
+role: "PhD"
 image: "./defaultprofile.png"
 ---

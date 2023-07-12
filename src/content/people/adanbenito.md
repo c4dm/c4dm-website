@@ -1,9 +1,9 @@
 ---
 name: "Adán Benito"
 url: ""
-acadposition: ""
+acadposition: "PhD Student"
 blurb: "Beyond the fret: gesture analysis on fretted instruments and its applications to instrument augmentation"
 themes: ["augmi"]
-role: "phd"
+role: "PhD"
 image: "./defaultprofile.png"
 ---

@@ -1,9 +1,9 @@
 ---
 name: "Yinghao Ma"
 url: "https://nicolaus625.github.io/"
-acadposition: ""
+acadposition: "PhD Student"
 blurb: "Self-supervision in machine listening"
 themes: ["mir","mlist"]
-role: "phd"
+role: "PhD"
 image: "./defaultprofile.png"
 ---

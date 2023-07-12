@@ -1,9 +1,9 @@
 ---
 name: "Arjun Pankajakshan"
 url: "https://sites.google.com/view/arjunpc4dm/home"
-acadposition: ""
+acadposition: "PhD Student"
 blurb: "Computational sound scene analysis"
 themes: ["mlist"]
-role: "phd"
+role: "PhD"
 image: "./defaultprofile.png"
 ---

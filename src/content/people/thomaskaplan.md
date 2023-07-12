@@ -1,9 +1,9 @@
 ---
 name: "Thomas Kaplan"
 url: "https://kappers.github.io/"
-acadposition: ""
+acadposition: "PhD Student"
 blurb: "Probabilistic modelling of rhythm perception and production"
 themes: ["mir"]
-role: "phd"
+role: "PhD"
 image: "./defaultprofile.png"
 ---

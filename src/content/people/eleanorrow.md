@@ -1,9 +1,9 @@
 ---
 name: "Eleanor Row"
 url: "http://eecs.qmul.ac.uk/profiles/roweleanorroxannevictoria.html"
-acadposition: ""
+acadposition: "PhD Student"
 blurb: "Automatic micro-composition for professional/novice composers using generative models as creativity support tools"
 themes: ["soundsynthesis"]
-role: "phd"
+role: "PhD"
 image: "./defaultprofile.png"
 ---

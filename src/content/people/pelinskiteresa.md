@@ -1,9 +1,9 @@
 ---
 name: "Teresa Pelinski"
 url: "https://www.teresapelinski.com/"
-acadposition: ""
+acadposition: "PhD Student"
 blurb: "Sensor mesh as performance interface"
 themes: ["augmi"]
-role: "phd"
+role: "PhD"
 image: "./defaultprofile.png"
 ---

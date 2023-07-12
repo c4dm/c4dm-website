@@ -4,6 +4,6 @@ url: "https://domenicostefani.com/"
 acadposition: "University of Trento, Italy"
 blurb: "Embedded machine learning for smart musical instruments"
 themes: ["mir"]
-role: "visitor"
+role: "Visitor"
 image: "./defaultprofile.png"
 ---

@@ -4,6 +4,6 @@ url: "http://www.eecs.qmul.ac.uk/people/view/4741/dr-emmanouil-benetos"
 acadposition: "Reader in Machine Listening, Turing Fellow"
 blurb: "Machine listening, music information retrieval, computational sound scene analysis, machine learning for audio analysis, language models for music and audio, computational musicology"
 themes: ["mir","mlist"]
-role: "acad"
+role: "Academic"
 image: "./defaultprofile.png"
 ---

@@ -1,9 +1,9 @@
 ---
 name: "Jincheng Zhang"
 url: ""
-acadposition: ""
+acadposition: "PhD Student"
 blurb: "Emotion-specific Music Generation Using Deep Learning"
 themes: ["mir"]
-role: "phd"
+role: "PhD"
 image: "./defaultprofile.png"
 ---

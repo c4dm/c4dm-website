@@ -1,9 +1,9 @@
 ---
 name: "Chin-Yun Yu"
 url: "https://yoyololicon.github.io/"
-acadposition: ""
+acadposition: "PhD Student"
 blurb: "Neural Audio Synthesis with Expressiveness Control"
 themes: ["audioeng","mir","soundsynthesis"]
-role: "phd"
+role: "PhD"
 image: "./defaultprofile.png"
 ---

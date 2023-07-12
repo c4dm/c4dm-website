@@ -1,9 +1,9 @@
 ---
 name: "David Südholt"
 url: "https://dsuedholt.github.io/"
-acadposition: ""
+acadposition: "PhD Student"
 blurb: "Machine Learning of Physical Models for Voice Synthesis"
 themes: ["soundsynthesis","audioeng"]
-role: "phd"
+role: "PhD"
 image: "./defaultprofile.png"
 ---

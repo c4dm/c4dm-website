@@ -1,9 +1,9 @@
 ---
 name: "Gary Bromham"
 url: ""
-acadposition: ""
+acadposition: "PhD Student"
 blurb: "The role of nostalga in music production"
 themes: ["mir","audioeng"]
-role: "phd"
+role: "PhD"
 image: "./defaultprofile.png"
 ---

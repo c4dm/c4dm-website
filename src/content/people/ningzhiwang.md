@@ -1,9 +1,9 @@
 ---
 name: "Ningzhi Wang"
 url: ""
-acadposition: ""
+acadposition: "PhD Student"
 blurb: "Generative Models For Music Audio Representation And Understanding"
 themes: ["mir","mcog","soundsynthesis"]
-role: "phd"
+role: "PhD"
 image: "./defaultprofile.png"
 ---

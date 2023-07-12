@@ -1,9 +1,9 @@
 ---
 name: "Elizabeth Wilson"
 url: "https://lwlsn.github.io"
-acadposition: ""
+acadposition: "PhD Student"
 blurb: "Co-creative Algorithmic Composition Based on Models of Affective Response"
 themes: ["mir","isam"]
-role: "phd"
+role: "PhD"
 image: "./defaultprofile.png"
 ---

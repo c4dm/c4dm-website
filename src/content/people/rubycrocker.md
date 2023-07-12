@@ -1,9 +1,9 @@
 ---
 name: "Ruby Crocker"
 url: ""
-acadposition: ""
+acadposition: "PhD Student"
 blurb: "Continuous mood recognition in film music"
 themes: ["mir","mcog"]
-role: "phd"
+role: "PhD"
 image: "./defaultprofile.png"
 ---

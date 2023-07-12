@@ -1,9 +1,9 @@
 ---
 name: "Lele Liu"
 url: "http://eecs.qmul.ac.uk/profiles/liulele.html"
-acadposition: ""
+acadposition: "PhD Student"
 blurb: "Automatic music transcription with end-to-end deep neural networks"
 themes: ["mir","mlist"]
-role: "phd"
+role: "PhD"
 image: "./defaultprofile.png"
 ---

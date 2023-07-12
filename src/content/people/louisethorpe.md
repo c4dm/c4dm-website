@@ -1,9 +1,9 @@
 ---
 name: "Louise Thorpe"
 url: ""
-acadposition: ""
+acadposition: "PhD Student"
 blurb: "Using Signal-informed Source Separation (SISS) principles to improve instrument separation from legacy recordings"
 themes: ["mir","audioeng"]
-role: "phd"
+role: "PhD"
 image: "./defaultprofile.png"
 ---

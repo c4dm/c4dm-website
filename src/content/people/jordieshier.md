@@ -1,9 +1,9 @@
 ---
 name: "Jordie Shier"
 url: "https://jordieshier.com/"
-acadposition: ""
+acadposition: "PhD Student"
 blurb: "Real-time timbral mapping for synthesized percussive performance"
 themes: ["comma","augmi"]
-role: "phd"
+role: "PhD"
 image: "./defaultprofile.png"
 ---

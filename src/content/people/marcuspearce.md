@@ -4,6 +4,6 @@ url: "https://www.marcus-pearce.com"
 acadposition: "Senior Lecturer in Sound & Music Processing"
 blurb: "Music Cognition, Auditory Perception, Empirical Aesthetics, Statistical Learning, Probabilistic Modelling."
 themes: ["mcog"]
-role: "acad-associate"
+role: "Academic"
 image: "./defaultprofile.png"
 ---
