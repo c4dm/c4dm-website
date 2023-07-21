@@ -6,16 +6,6 @@ import ParallelogramHeader from "../components/parallelogramHeader";
 import TableCard from "../components/tableCard";
 import TagSelector from "../components/tagSelector";
 
-// Keys for the elements of the table
-const keys = ["name", "acadposition", "blurb"];
-
-// Actual Titles for the table
-const headingNames = ["Name", "Academic Position", "Description" ];
-
-var headings = {};
-keys.forEach((key, i) => headings[key] = headingNames[i]);
-
-
 // Functions to return strucutred content for table card
 const firstColumn = (image) => (
   <>
@@ -44,18 +34,19 @@ const People = ({pageContext}) => {
     breadcrumb: { crumbs },
   } = pageContext
     const data = useStaticQuery(graphql`
-      {
-        people: allMarkdownRemark(
+      {people: allMarkdownRemark(
           filter: { fields: { category: { eq: "people" } } }
-          sort: { frontmatter: { role: DESC } }
-        ) {
-          nodes {
+          sort: { frontmatter: { blurb: ASC } }) {
+					group(field: { frontmatter: { role: SELECT } }) {
+      fieldValue    
+      nodes {
             frontmatter {
               image {
                 childImageSharp {
                   gatsbyImageData(layout: CONSTRAINED, aspectRatio: 1)
                 }
               }
+              
               name
               role
               url
@@ -67,8 +58,10 @@ const People = ({pageContext}) => {
             id
           }
         }
+  }
+  
         allTags: allMarkdownRemark(
-          limit: 2000
+          limit: 20000
           filter: { fields: { category: { eq: "people" } } }
         ) {
           group(field: { frontmatter: { role: SELECT } }) {
@@ -79,14 +72,16 @@ const People = ({pageContext}) => {
       }
     `);
 
-    const [filteredNodes, setFilteredNodes] = useState(data.people.nodes);
+const groups = data.people;
 
-    const getFilteredNodes = useCallback(
-      (nodes) => {
-        setFilteredNodes(nodes);
-      },
-      [setFilteredNodes]
-    );
+    // const [filteredNodes, setFilteredNodes] = useState(data.people.nodes);
+
+    // const getFilteredNodes = useCallback(
+    //   (nodes) => {
+    //     setFilteredNodes(nodes);
+    //   },
+    //   [setFilteredNodes]
+    // );
 
     // some of the students have no academic role, the markdown frontmatters need to be updated, removing role and putting them in academic position
 
@@ -99,13 +94,17 @@ const People = ({pageContext}) => {
             textColor="white"
             className="mb-6"
           />
-          <TagSelector
+          {/* <TagSelector
               tags={data.allTags}
               nodes={data.people.nodes}
               callback={getFilteredNodes}
-            />
+            /> */}
             <div className="lowerPadding"></div>
-            {filteredNodes.map((peopleentry) => (
+            {/* Loop through every category, make a title, then map the people within them */}
+            {data.people.group.map((tag)=> (
+              <div className="lowerPadding">
+              <p class="title">{tag.fieldValue}</p>
+              {tag.nodes.map((peopleentry) => (
               <Link to={peopleentry.frontmatter.url}>
                 <div
                   class="card-image row is-three-fifths pt-3"
@@ -119,6 +118,8 @@ const People = ({pageContext}) => {
                 </div>
                 </Link>
               ))}
+              </div>
+            ))}
         </section>
       </Layout>
     );
