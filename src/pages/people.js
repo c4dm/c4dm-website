@@ -20,11 +20,11 @@ keys.forEach((key, i) => headings[key] = headingNames[i]);
 const firstColumn = (image) => (
   <>
     {image ? (
-      <GatsbyImage alt="picture of event" image={image} />
+      <GatsbyImage alt="picture of event" image={image.childImageSharp.gatsbyImageData} />
     ) : (
       <StaticImage
         alt="default event picture as no event picture was specified"
-        src="../../static/defaultevent.png"
+        src="/defaultprofile.png"
       />
     )}
   </>
@@ -112,7 +112,7 @@ const People = ({pageContext}) => {
                   key={peopleentry.id}
                 >
                 <TableCard 
-                    first={firstColumn(peopleentry.frontmatter.image.childImageSharp.gatsbyImageData)} 
+                    first={firstColumn(peopleentry.frontmatter.image)} 
                     second={secondColumn(peopleentry.frontmatter.name, peopleentry.frontmatter.acadposition)} 
                     third={thirdColumn(peopleentry.frontmatter.blurb)} 
                 />
