@@ -6,7 +6,6 @@ import ParallelogramHeader from "../components/parallelogramHeader";
 import TableCard from "../components/tableCard";
 import TagSelector from "../components/tagSelector";
 
-// Functions to return strucutred content for table card
 const firstColumn = (image) => (
   <>
     {image ? (
@@ -36,10 +35,9 @@ const People = ({pageContext}) => {
     const data = useStaticQuery(graphql`
       {people: allMarkdownRemark(
           filter: { fields: { category: { eq: "people" } } }
-          sort: { frontmatter: { blurb: ASC } }) {
-					group(field: { frontmatter: { role: SELECT } }) {
-      fieldValue    
-      nodes {
+          sort: { frontmatter: { role: ASC } }
+        ) {
+          nodes {
             frontmatter {
               image {
                 childImageSharp {
@@ -100,11 +98,19 @@ const groups = data.people;
               callback={getFilteredNodes}
             /> */}
             <div className="lowerPadding"></div>
-            {/* Loop through every category, make a title, then map the people within them */}
-            {data.people.group.map((tag)=> (
-              <div className="lowerPadding">
-              <p class="title">{tag.fieldValue}</p>
-              {tag.nodes.map((peopleentry) => (
+
+            {filteredNodes.map((peopleentry,index) => {
+
+              let heading;
+              if (index === 0 || peopleentry.frontmatter.role !== filteredNodes[index-1].frontmatter.role) {
+                heading = 
+                <div>
+                  <p className="title" >{peopleentry.frontmatter.role}</p>
+                </div>;
+              }
+              return (
+              <>
+                {heading}
               <Link to={peopleentry.frontmatter.url}>
                 <div
                   class="card-image row is-three-fifths pt-3"
@@ -117,9 +123,12 @@ const groups = data.people;
                 />
                 </div>
                 </Link>
-              ))}
-              </div>
-            ))}
+                </>
+              )
+              }
+              )
+              }
+
         </section>
       </Layout>
     );
