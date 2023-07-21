@@ -113,7 +113,7 @@ const IndexPage = ({pageContext}) => {
                   ></div>
                   <div className="has-text-left">
                     <br></br>
-                    <p class="subtitle is-size-7">Read More</p>
+                    <p class="subtitle is-size-7 has-text-white">Read More</p>
                   </div>
                 </Link>
               </div>

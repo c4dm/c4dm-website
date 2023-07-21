@@ -96,7 +96,6 @@ const People = ({pageContext}) => {
               nodes={data.people.nodes}
               callback={getFilteredNodes}
             />
-            <div className="lowerPadding"></div>
 
             {filteredNodes.map((peopleentry,index) => {
 
@@ -104,7 +103,7 @@ const People = ({pageContext}) => {
               if (index === 0 || peopleentry.frontmatter.role !== filteredNodes[index-1].frontmatter.role) {
                 heading = 
                 <div>
-                  <p className="title" >{peopleentry.frontmatter.role}</p>
+                  <p className="title is-4 pt-5" >{peopleentry.frontmatter.role}</p>
                 </div>;
               }
               return (
