@@ -121,7 +121,6 @@ const Layout = ({children, crumbs, name, hero}) => {
 
     return (
       <>
-        {/* <body className="has-navbar-fixed-top">x */}
           {navBar}
           {hero}
           {/* Breadcrumbs and children*/}
@@ -175,7 +174,6 @@ const Layout = ({children, crumbs, name, hero}) => {
             {children}
           </main>
           {footer}
-        {/* </body> */}
       </>
     );
 }
