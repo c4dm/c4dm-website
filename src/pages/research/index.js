@@ -30,29 +30,33 @@ const Research = ({pageContext}) => {
       }
     `);
     return (
-        <Layout name="Research" crumbs={crumbs}>
-            <section className="section ">
-                <ParallelogramHeader text="Research" backgroundColor="primary" textColor="white"/>
+      <Layout name="Research" crumbs={crumbs}>
+        <section className="section ">
+          <ParallelogramHeader
+            text="Research"
+            backgroundColor="primary"
+            textColor="white"
+          />
 
-                <div className="lowerPadding"></div>
-           
-                <div className="columns is-flex is-multiline">
-                    {
-                        data.pages.nodes.map((page) => (
-                            <div className="column is-one-third" key={page.id}>
-                                <BlogCard 
-                                    title={page.frontmatter.name} 
-                                    slug={page.frontmatter.slug} 
-                                    image={page.frontmatter.image.childImageSharp.gatsbyImageData} 
-                                    largeTitle={true}
-                                />
-                            </div>
-                        ))
-                    }
-                </div>
-                
-            </section>
-        </Layout>
+          <div className="lowerPadding"></div>
+
+          <div className="columns is-flex is-multiline">
+            {data.pages.nodes.map((page) => (
+              <div
+                className="column is-one-quarter-desktop is-one-third-tablet is-full-mobile is-flex"
+                key={page.id}
+              >
+                <BlogCard
+                  title={page.frontmatter.name}
+                  slug={page.frontmatter.slug}
+                  image={page.frontmatter.image.childImageSharp.gatsbyImageData}
+                  largeTitle={true}
+                />
+              </div>
+            ))}
+          </div>
+        </section>
+      </Layout>
     );
 }
 
