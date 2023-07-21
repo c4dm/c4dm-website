@@ -105,7 +105,17 @@ const People = ({pageContext}) => {
               callback={getFilteredNodes}
             />
             <div className="lowerPadding"></div>
-            {filteredNodes.map((peopleentry) => (
+            {filteredNodes.map((peopleentry,index) => {
+
+              let heading;
+              if (index === 0 || peopleentry.frontmatter.role !== filteredNodes[index-1].frontmatter.role) {
+                heading = <h1>{peopleentry.frontmatter.role}</h1>;
+              }
+
+              return (
+              <>
+                {heading}
+              
               <Link to={peopleentry.frontmatter.url}>
                 <div
                   class="card-image row is-three-fifths pt-3"
@@ -118,7 +128,11 @@ const People = ({pageContext}) => {
                 />
                 </div>
                 </Link>
-              ))}
+                </>
+              )
+              }
+              )
+              }
         </section>
       </Layout>
     );
