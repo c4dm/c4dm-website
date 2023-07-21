@@ -17,6 +17,12 @@ $grey: rgb(167, 167, 167);
 $font-family: 'Source Sans Pro';
 $family-sans-serif: 'Source Sans Pro';
 
+
+// Make sure that top of page is displayed correctly with fixed navbar
+body {
+    @extend .has-navbar-fixed-top;
+}
+
 // Make sure that page takes up whole vertical space
 #gatsby-focus-wrapper {
     min-height: 100vh;
@@ -109,6 +115,18 @@ main.container {
     }
 }
 
+// Make sure that the white gap between navbar and hero is never visible (even when scrolling up)
+section.hero::before {
+    background-color: $primary;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
 
 // CSS for carousel
 .carousel {
@@ -169,7 +187,6 @@ main.container {
 }
 
 .aboutText {
-
     padding: 30px 0 0 0;
     text-align: justify;
     text-justify: inter-character;
@@ -180,8 +197,6 @@ main.container {
 
 .section {
     padding: 3rem 3rem 3rem 3em;
-
-
 }
 
 .secondary {
