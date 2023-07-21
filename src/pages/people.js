@@ -6,17 +6,7 @@ import ParallelogramHeader from "../components/parallelogramHeader";
 import TableCard from "../components/tableCard";
 import TagSelector from "../components/tagSelector";
 
-// Keys for the elements of the table
-const keys = ["name", "acadposition", "blurb"];
-
-// Actual Titles for the table
-const headingNames = ["Name", "Academic Position", "Description" ];
-
-var headings = {};
-keys.forEach((key, i) => headings[key] = headingNames[i]);
-
-
-// Functions to return strucutred content for table card
+// Functions to return structured content for table card
 const firstColumn = (image) => (
   <>
     {image ? (
@@ -47,7 +37,7 @@ const People = ({pageContext}) => {
       {
         people: allMarkdownRemark(
           filter: { fields: { category: { eq: "people" } } }
-          sort: { frontmatter: { role: DESC } }
+          sort: { frontmatter: { role: ASC } }
         ) {
           nodes {
             frontmatter {
@@ -109,7 +99,10 @@ const People = ({pageContext}) => {
 
               let heading;
               if (index === 0 || peopleentry.frontmatter.role !== filteredNodes[index-1].frontmatter.role) {
-                heading = <h1>{peopleentry.frontmatter.role}</h1>;
+                heading = 
+                <div>
+                  <p className="title" >{peopleentry.frontmatter.role}</p>
+                </div>;
               }
 
               return (
