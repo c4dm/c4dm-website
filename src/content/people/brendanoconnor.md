@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Singing Voice Attribute Transformation"
 themes: ["soundsynthesis","audioeng","mir"]
 role: "PhD"
-image: "./defaultprofile.png"
+image: "./brendanoconnor.png"
 ---

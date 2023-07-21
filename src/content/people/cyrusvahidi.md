@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Perceptual end to end learning for music understanding"
 themes: ["mir"]
 role: "PhD"
-image: "./defaultprofile.png"
+image: "./cyrusvahidi.png"
 ---

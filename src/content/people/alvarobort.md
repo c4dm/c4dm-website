@@ -5,5 +5,5 @@ acadposition: "Research Programme Manager"
 blurb: "Projects: UKRI Centre for Doctoral Training in Artificial Intelligence and Music, New Frontiers in Music Information Processing (MIP-Frontiers)"
 themes: []
 role: "Support"
-image: "./defaultprofile.png"
+image: "./alvarobort.png"
 ---

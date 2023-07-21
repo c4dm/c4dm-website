@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Informed source separation for multi-mic production"
 themes: ["mir","mlist"]
 role: "PhD"
-image: "./defaultprofile.png"
+image: "./harnickkhera.png"
 ---

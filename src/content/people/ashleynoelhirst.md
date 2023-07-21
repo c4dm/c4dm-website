@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Latent Spaces for Human-AI music generation"
 themes: ["mir","isam"]
 role: "PhD"
-image: "./defaultprofile.png"
+image: "./ashleynoelhirst.png"
 ---

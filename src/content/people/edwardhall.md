@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Probabilistic modelling of thematic development and structural coherence in music"
 themes: ["mir"]
 role: "PhD"
-image: "./defaultprofile.png"
+image: "./edwardhall.png"
 ---

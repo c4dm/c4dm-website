@@ -5,5 +5,5 @@ acadposition: "Honorary Lecturer"
 blurb: "Integrating sound and context recognition for acoustic scene analysis"
 themes: ["mlist"]
 role: "Visitor"
-image: "./defaultprofile.png"
+image: "./helenbear.png"
 ---

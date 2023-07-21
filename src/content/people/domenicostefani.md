@@ -5,5 +5,5 @@ acadposition: "University of Trento, Italy"
 blurb: "Embedded machine learning for smart musical instruments"
 themes: ["mir"]
 role: "Visitor"
-image: "./defaultprofile.png"
+image: "./domenicostefani.png"
 ---

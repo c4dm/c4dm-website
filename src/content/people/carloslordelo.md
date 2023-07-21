@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Instrument modelling to aid polyphonic transcription"
 themes: ["mir","mlist"]
 role: "PhD"
-image: "./defaultprofile.png"
+image: "./carloslordelo.png"
 ---
