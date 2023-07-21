@@ -55,7 +55,6 @@ const Partners = ({pageContext}) => {
         [data]
       );
 
-    useEffect(() => console.log(uniquePartners), [uniquePartners]);
     
     return (
       <Layout name="Partners" crumbs={crumbs}>
