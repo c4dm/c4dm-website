@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Machine Learning of Physical Models for Voice Synthesis"
 themes: ["soundsynthesis","audioeng"]
 role: "PhD"
-image: "./defaultprofile.png"
+image: "./davidsudholt.png"
 ---

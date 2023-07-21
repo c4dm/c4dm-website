@@ -6,15 +6,14 @@ import ParallelogramHeader from "../components/parallelogramHeader";
 import TableCard from "../components/tableCard";
 import TagSelector from "../components/tagSelector";
 
-// Functions to return structured content for table card
 const firstColumn = (image) => (
   <>
     {image ? (
-      <GatsbyImage alt="picture of event" image={image} />
+      <GatsbyImage alt="picture of person" image={image.childImageSharp.gatsbyImageData} />
     ) : (
       <StaticImage
-        alt="default event picture as no event picture was specified"
-        src="../../static/defaultevent.png"
+        alt="default picture as no picture was specified"
+        src="../content/people/defaultprofile.png"
       />
     )}
   </>
@@ -34,8 +33,7 @@ const People = ({pageContext}) => {
     breadcrumb: { crumbs },
   } = pageContext
     const data = useStaticQuery(graphql`
-      {
-        people: allMarkdownRemark(
+      {people: allMarkdownRemark(
           filter: { fields: { category: { eq: "people" } } }
           sort: { frontmatter: { role: ASC } }
         ) {
@@ -46,6 +44,7 @@ const People = ({pageContext}) => {
                   gatsbyImageData(layout: CONSTRAINED, aspectRatio: 1)
                 }
               }
+              
               name
               role
               url
@@ -57,8 +56,10 @@ const People = ({pageContext}) => {
             id
           }
         }
+  }
+  
         allTags: allMarkdownRemark(
-          limit: 2000
+          limit: 20000
           filter: { fields: { category: { eq: "people" } } }
         ) {
           group(field: { frontmatter: { role: SELECT } }) {
@@ -69,14 +70,16 @@ const People = ({pageContext}) => {
       }
     `);
 
-    const [filteredNodes, setFilteredNodes] = useState(data.people.nodes);
+const groups = data.people;
 
-    const getFilteredNodes = useCallback(
-      (nodes) => {
-        setFilteredNodes(nodes);
-      },
-      [setFilteredNodes]
-    );
+    // const [filteredNodes, setFilteredNodes] = useState(data.people.nodes);
+
+    // const getFilteredNodes = useCallback(
+    //   (nodes) => {
+    //     setFilteredNodes(nodes);
+    //   },
+    //   [setFilteredNodes]
+    // );
 
     // some of the students have no academic role, the markdown frontmatters need to be updated, removing role and putting them in academic position
 
@@ -89,12 +92,13 @@ const People = ({pageContext}) => {
             textColor="white"
             className="mb-6"
           />
-          <TagSelector
+          {/* <TagSelector
               tags={data.allTags}
               nodes={data.people.nodes}
               callback={getFilteredNodes}
-            />
+            /> */}
             <div className="lowerPadding"></div>
+
             {filteredNodes.map((peopleentry,index) => {
 
               let heading;
@@ -104,18 +108,16 @@ const People = ({pageContext}) => {
                   <p className="title" >{peopleentry.frontmatter.role}</p>
                 </div>;
               }
-
               return (
               <>
                 {heading}
-              
               <Link to={peopleentry.frontmatter.url}>
                 <div
                   class="card-image row is-three-fifths pt-3"
                   key={peopleentry.id}
                 >
                 <TableCard 
-                    first={firstColumn(peopleentry.frontmatter.image.childImageSharp.gatsbyImageData)} 
+                    first={firstColumn(peopleentry.frontmatter.image)} 
                     second={secondColumn(peopleentry.frontmatter.name, peopleentry.frontmatter.acadposition)} 
                     third={thirdColumn(peopleentry.frontmatter.blurb)} 
                 />
@@ -126,6 +128,7 @@ const People = ({pageContext}) => {
               }
               )
               }
+
         </section>
       </Layout>
     );

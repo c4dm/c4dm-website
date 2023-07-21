@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Design for auditory imagery"
 themes: ["mir"]
 role: "PhD"
-image: "./defaultprofile.png"
+image: "./andreaguidi.png"
 ---

@@ -5,5 +5,5 @@ acadposition: "Professor of Computational Creativity"
 blurb: "Computational Creativity, Artificial Intelligence, Music Cognition"
 themes: ["mcog"]
 role: "Academic"
-image: "./defaultprofile.png"
+image: "./geraintwiggins.png"
 ---

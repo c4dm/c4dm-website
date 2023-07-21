@@ -5,5 +5,5 @@ acadposition: "Reader in Machine Listening, Turing Fellow"
 blurb: "Machine listening, music information retrieval, computational sound scene analysis, machine learning for audio analysis, language models for music and audio, computational musicology"
 themes: ["mir","mlist"]
 role: "Academic"
-image: "./defaultprofile.png"
+image: "./emmanouilbenetos.png"
 ---
