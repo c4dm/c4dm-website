@@ -20,11 +20,11 @@ keys.forEach((key, i) => headings[key] = headingNames[i]);
 const firstColumn = (image) => (
   <>
     {image ? (
-      <GatsbyImage alt="picture of event" image={image.childImageSharp.gatsbyImageData} />
+      <GatsbyImage alt="picture of person" image={image.childImageSharp.gatsbyImageData} />
     ) : (
       <StaticImage
-        alt="default event picture as no event picture was specified"
-        src="/defaultprofile.png"
+        alt="default picture as no picture was specified"
+        src="../content/people/defaultprofile.png"
       />
     )}
   </>
