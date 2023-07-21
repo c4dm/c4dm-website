@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Towards Composing Contemporary Classical Music using Generative Deep Learning"
 themes: ["mir","soundsynthesis"]
 role: "PhD"
-image: "./defaultprofile.png"
+image: "./berkerbanar.png"
 ---

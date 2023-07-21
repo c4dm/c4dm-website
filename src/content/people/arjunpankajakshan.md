@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Computational sound scene analysis"
 themes: ["mlist"]
 role: "PhD"
-image: "./defaultprofile.png"
+image: "./arjunpankajakshan.png"
 ---

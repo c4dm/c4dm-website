@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Computational analysis of chick vocalisations: from categorisation to live feedback"
 themes: ["mlist"]
 role: "PhD"
-image: "./defaultprofile.png"
+image: "./antonellatorrisi.png"
 ---

@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Perceptually motivated deep learning approaches to creative sound synthesis"
 themes: ["soundsynthesis","mcog"]
 role: "PhD"
-image: "./defaultprofile.png"
+image: "./benjaminhayes.png"
 ---

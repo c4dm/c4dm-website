@@ -5,5 +5,5 @@ acadposition: "Professor of Musical Interaction"
 blurb: "new interfaces for musical expression, augmented instruments, performance study, human-computer interaction, embedded hardware"
 themes: ["augmi","soundsynthesis"]
 role: "Academic"
-image: "./defaultprofile.png"
+image: "./andrewmcpherson.png"
 ---

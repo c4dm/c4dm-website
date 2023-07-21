@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Computational Modelling of Expressive Piano Performance"
 themes: ["mir"]
 role: "PhD"
-image: "./defaultprofile.png"
+image: "./huanzhang.png"
 ---

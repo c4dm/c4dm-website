@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Optical music recognition using deep learning"
 themes: ["mir"]
 role: "PhD"
-image: "./defaultprofile.png"
+image: "./elonashatri.png"
 ---
