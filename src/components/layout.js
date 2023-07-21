@@ -121,46 +121,59 @@ const Layout = ({children, crumbs, name, hero}) => {
 
     return (
       <>
-      <body className="has-navbar-fixed-top">
-      {navBar}
-        {hero}
-        {/* Breadcrumbs and children*/}
-        <main className=" has-navbar-fixed-top container is-fullhd">
-          <div classname="container">
-         {crumbs ? (
-          <nav className="is-subtitle breadcrumb is-7 is-left" aria-label="breadcrumbs">
-            <ul>
-              {crumbs.map((crumb, index) => (
-                  (crumb.crumbLabel=='tags') ? 
-                  ( //if we have a tag filter on, ignore that link
-                    <li className="is-active"> <a href={crumb.pathname} aria-current="page"> {" " +startCase(camelCase(crumb.crumbLabel))+ " "}</a></li>
-                    ):
-                  ( (crumb.crumbLabel=='role') ? 
-                    ( //if we have a role filter on, ignore that link
-                      <li className="is-active"><a href={crumb.pathname} aria-current="page">{" " +startCase(camelCase(crumb.crumbLabel))+ " "}</a></li>
-                      ):(
-                      (index==crumbs.length-1) ? 
-                      ( // similarly ignore the link to our current page
+          {navBar}
+          {hero}
+          {/* Breadcrumbs and children*/}
+          <main className="container is-fullhd">
+            <div classname="container">
+              {crumbs ? (
+                <nav
+                  className="is-subtitle breadcrumb is-7 is-left"
+                  aria-label="breadcrumbs"
+                >
+                  <ul>
+                    {crumbs.map((crumb, index) =>
+                      crumb.crumbLabel == "tags" ? (
+                        //if we have a tag filter on, ignore that link
+                        <li className="is-active">
+                          {" "}
+                          <a href={crumb.pathname} aria-current="page">
+                            {" "}
+                            {" " + startCase(camelCase(crumb.crumbLabel)) + " "}
+                          </a>
+                        </li>
+                      ) : crumb.crumbLabel == "role" ? (
+                        //if we have a role filter on, ignore that link
+                        <li className="is-active">
+                          <a href={crumb.pathname} aria-current="page">
+                            {" " + startCase(camelCase(crumb.crumbLabel)) + " "}
+                          </a>
+                        </li>
+                      ) : index == crumbs.length - 1 ? (
+                        // similarly ignore the link to our current page
                         // comment out the below line to remove current page from breadcrumb
-                      <li className="is-active"><a href={crumb.pathname} aria-current="page">{startCase(camelCase(crumb.crumbLabel))}</a></li>
-                      ):
-                      (
-                      <li><a href={crumb.pathname}>{startCase(camelCase(crumb.crumbLabel))}</a></li>
+                        <li className="is-active">
+                          <a href={crumb.pathname} aria-current="page">
+                            {startCase(camelCase(crumb.crumbLabel))}
+                          </a>
+                        </li>
+                      ) : (
+                        <li>
+                          <a href={crumb.pathname}>
+                            {startCase(camelCase(crumb.crumbLabel))}
+                          </a>
+                        </li>
                       )
-                    )
-                  )
-                ))
-                }
-          </ul>
-        </nav>
-        )
-        : (console.log("Page has no breadcrumbs *gasp*")
-                )} 
-                </div>
-          {children}
+                    )}
+                  </ul>
+                </nav>
+              ) : (
+                console.log("Page has no breadcrumbs *gasp*")
+              )}
+            </div>
+            {children}
           </main>
-        {footer}
-      </body>
+          {footer}
       </>
     );
 }

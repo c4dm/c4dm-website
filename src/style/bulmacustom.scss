@@ -9,7 +9,6 @@
 $primary: #092350;
 $grey: rgb(167, 167, 167);
 
-
 @import url('https://fonts.googleapis.com/css?family=Source Sans Pro');
 @import "~bulma/bulma.sass";
 
@@ -17,8 +16,10 @@ $grey: rgb(167, 167, 167);
 $font-family: 'Source Sans Pro';
 $family-sans-serif: 'Source Sans Pro';
 
+
 // Make sure that page takes up whole vertical space
 #gatsby-focus-wrapper {
+    padding-top: 3.5rem; // Add padding to make sure navbar does not cover content
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -109,6 +110,17 @@ main.container {
     }
 }
 
+// Make sure that the white gap between navbar and hero is never visible (even when scrolling up)
+section.hero::before {
+    background-color: $primary;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
 
 // CSS for carousel
 .carousel {
@@ -154,7 +166,6 @@ main.container {
     }
 }
 
-
 // Parallelogram headers
 .parallelogram {
     padding: 0.5rem 3rem;
@@ -169,7 +180,6 @@ main.container {
 }
 
 .aboutText {
-
     padding: 30px 0 0 0;
     text-align: justify;
     text-justify: inter-character;
@@ -177,11 +187,8 @@ main.container {
     width: 90%;
 }
   
-
 .section {
     padding: 3rem 3rem 3rem 3em;
-
-
 }
 
 .secondary {
@@ -190,10 +197,6 @@ main.container {
     background-color: $grey;
 
 }
-
-
-
-
 
 .card-content {
     vertical-align: bottom;
