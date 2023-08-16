@@ -88,17 +88,8 @@ const Layout = ({children, crumbs, name, hero}) => {
       <footer className="footer">
         <div className="columns">
           <div className="column is-one-third">
-            <p className="has-text-centered is-size-7">
-              School of Electronic Engineering and Computer Science <br/> 
-              Queen Mary University of London <br/>
-              Mile End Road <br/>
-              London <br/>
-              E1 4NS <br/>
-              United Kingdom <br/>
-            </p>
-          </div>
-          <div className="column is-one-third">
-            <p className="has-text-centered is-size-3">
+            <p className="has-text-centered">
+              TODO: address <br/>
               {socialMediaItems.map((item) => (
                 <a
                   key={item.iconName}
@@ -110,7 +101,11 @@ const Layout = ({children, crumbs, name, hero}) => {
                     <i className={`fab ${item.iconName}`}></i>
                   </span>
                 </a>
-              ))}</p>
+              ))}
+            </p>
+          </div>
+          <div className="column is-one-third">
+            <p className="has-text-centered">TODO: site search</p>
           </div>
           <div className="column is-one-third">
             <div className="container is-flex is-justify-content-center">
@@ -130,7 +125,7 @@ const Layout = ({children, crumbs, name, hero}) => {
           {hero}
           {/* Breadcrumbs and children*/}
           <main className="container is-fullhd">
-            {/* <div classname="container">
+            <div classname="container">
               {crumbs ? (
                 <nav
                   className="is-subtitle breadcrumb is-7 is-left"
@@ -175,7 +170,7 @@ const Layout = ({children, crumbs, name, hero}) => {
               ) : (
                 console.log("Page has no breadcrumbs *gasp*")
               )}
-            </div> */}
+            </div>
             {children}
           </main>
           {footer}
