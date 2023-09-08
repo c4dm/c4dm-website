@@ -14,7 +14,7 @@ const firstColumn = (image) => (
     ) : (
       <StaticImage
         alt="default event picture as no event picture was specified"
-        src="../../static/defaultevent.png"
+        src="../../../../static/defaultevent.png"
       />
     )}
   </>
@@ -96,7 +96,7 @@ const Research = ({pageContext}) => {
                   key={peopleentry.id}
                 >
                 <TableCard 
-                    first={firstColumn(peopleentry.frontmatter.image.childImageSharp.gatsbyImageData)} 
+                    first={firstColumn(peopleentry.frontmatter.image?.childImageSharp.gatsbyImageData)} 
                     second={secondColumn(peopleentry.frontmatter.name, peopleentry.frontmatter.acadposition)} 
                     third={thirdColumn(peopleentry.frontmatter.blurb)} 
                 />

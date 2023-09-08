@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Neural Audio Synthesis with Expressiveness Control"
 themes: ["audioeng","mir","soundsynthesis"]
 role: "PhD"
-image: "./chinyunyu.png"
+image: "./defaultprofile.png"
 ---

@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: ": Probabilistic learning of sequential structures in music cognition"
 themes: ["mcog"]
 role: "PhD"
-image: "./adamgarrow.png"
+image: "./defaultprofile.png"
 ---

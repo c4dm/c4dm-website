@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Deep Learning for Jazz Piano: Transcription + Generative Modeling"
 themes: ["mir","mlist","mcog"]
 role: "PhD"
-image: "./andrewedwards.png"
+image: "./defaultprofile.png"
 ---

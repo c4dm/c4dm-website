@@ -44,9 +44,7 @@ const People = ({pageContext}) => {
                   gatsbyImageData(layout: CONSTRAINED, aspectRatio: 1)
                 }
               }
-              
               name
-              role
               url
               acadposition
               blurb
