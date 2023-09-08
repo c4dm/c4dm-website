@@ -14,7 +14,7 @@ const firstColumn = (image) => (
     ) : (
       <StaticImage
         alt="default event picture as no event picture was specified"
-        src="../../static/defaultevent.png"
+        src="../../../../static/defaultevent.png"
       />
     )}
   </>
