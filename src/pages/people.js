@@ -56,8 +56,6 @@ const People = ({pageContext}) => {
             id
           }
         }
-  }
-  
         allTags: allMarkdownRemark(
           limit: 20000
           filter: { fields: { category: { eq: "people" } } }
@@ -72,14 +70,14 @@ const People = ({pageContext}) => {
 
 const groups = data.people;
 
-    // const [filteredNodes, setFilteredNodes] = useState(data.people.nodes);
+    const [filteredNodes, setFilteredNodes] = useState(data.people.nodes);
 
-    // const getFilteredNodes = useCallback(
-    //   (nodes) => {
-    //     setFilteredNodes(nodes);
-    //   },
-    //   [setFilteredNodes]
-    // );
+    const getFilteredNodes = useCallback(
+      (nodes) => {
+        setFilteredNodes(nodes);
+      },
+      [setFilteredNodes]
+    );
 
     // some of the students have no academic role, the markdown frontmatters need to be updated, removing role and putting them in academic position
 
@@ -92,11 +90,11 @@ const groups = data.people;
             textColor="white"
             className="mb-6"
           />
-          {/* <TagSelector
+          <TagSelector
               tags={data.allTags}
               nodes={data.people.nodes}
               callback={getFilteredNodes}
-            /> */}
+            />
             <div className="lowerPadding"></div>
 
             {filteredNodes.map((peopleentry,index) => {
