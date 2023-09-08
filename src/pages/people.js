@@ -56,8 +56,6 @@ const People = ({pageContext}) => {
             id
           }
         }
-  }
-  
         allTags: allMarkdownRemark(
           limit: 20000
           filter: { fields: { category: { eq: "people" } } }
