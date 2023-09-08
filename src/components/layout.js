@@ -88,13 +88,24 @@ const Layout = ({children, crumbs, name, hero}) => {
       <footer className="footer">
         <div className="columns">
           <div className="column is-one-third">
-            <p className="has-text-centered is-size-7">
+            <p className="has-text-left is-size-7">
               School of Electronic Engineering and Computer Science <br/> 
               Queen Mary University of London <br/>
               Mile End Road <br/>
               London <br/>
               E1 4NS <br/>
               United Kingdom <br/>
+              <br/>
+
+              <a
+                  href="https://github.com/SFRL/c4dm-website"
+                  target="_blank"
+                  rel="Internal Site Link"
+                >Internal Site</a>
+              {/* Tel: +44 (0)20 7882 3400 <br/>
+              Undergraduate Enquiries:  Tel: +44 (0)20 7882 7332 <br/>
+              Postgraduate Enquiries:  Tel: +44 (0)20 7882 7333  */}
+
             </p>
           </div>
           <div className="column is-one-third">
@@ -113,12 +124,16 @@ const Layout = ({children, crumbs, name, hero}) => {
               ))}</p>
           </div>
           <div className="column is-one-third">
-            <div className="container is-flex is-justify-content-center">
+            <div className="container is-flex is-justify-content-right">
               <GatsbyImage
                 alt="QMUL logo"
                 image={data.qmullogo.childImageSharp.gatsbyImageData}
               />
             </div>
+            <p className="has-text-right is-size-7">
+              <br/>
+              © Queen Mary University of London.
+              </p>
           </div>
         </div>
       </footer>
