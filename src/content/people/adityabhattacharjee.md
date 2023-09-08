@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Self-supervision in Audio Fingerprinting"
 themes: ["mir","mlist"]
 role: "PhD"
-image: "./adityabhattacharjee.png"
+image: "./defaultprofile.png"
 ---

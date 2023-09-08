@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Leveraging cross-sensory associations in communication"
 themes: ["comma"]
 role: "PhD"
-image: "./chengyewu.png"
+image: "./defaultprofile.png"
 ---

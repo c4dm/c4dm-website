@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Cover Song Identification"
 themes: ["mir"]
 role: "PhD"
-image: "./careybunks.png"
+image: "./defaultprofile.png"
 ---
