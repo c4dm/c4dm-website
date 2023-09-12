@@ -7,42 +7,19 @@
   Gatsby Minimal Starter
 </h1>
 
-## 🚀 Quick start
+## Developing c4dm site:
 
-1.  **Create a Gatsby site.**
+1 - Clone repo (you'll need git or something for this)
+2 - Install Node (you can use homebrew for this if you like, more info covered in the following: https://www.gatsbyjs.com/docs/tutorial/getting-started/part-0/ )
+3 - Navigate to the repo root folder, run npm install (this should add all the project dependencies to the local folder)
+4 - Install Gatsby-cli globally (or run all Gatsby commands using npx – tools like autonpx: https://marketplace.visualstudio.com/items?itemName=antfu.auto-npx are great for this)
+ 
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+## Deploying on GitHub pages:
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/how-gatsby-works-with-github-pages/
 
-2.  **Start developing.**
-
-    Navigate into your new site’s directory and start it up.
-
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
-
-3.  **Open the code and start customizing!**
-
-    Your site is now running at http://localhost:8000!
-
-    Edit `src/pages/index.js` to see your site update in real-time!
-
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Netlify)
+## Deploying on Netifly:
 
 Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
 
