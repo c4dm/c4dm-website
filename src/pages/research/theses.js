@@ -26,7 +26,7 @@ const Theses = ({ pageContext }) => {
 
   
   return (
-    <Layout name="Theses" crumbs={crumbs}>
+    <Layout name="Theses" >
       <section className="section">
         <ParallelogramHeader
           text="PhD Theses"
