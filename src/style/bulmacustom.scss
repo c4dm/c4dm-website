@@ -216,3 +216,16 @@ section.hero::before {
     width: 100%;
     margin-bottom: 2vw;
 }
+
+.news-image {
+    float: left;
+    width: 400px;
+    margin-right: 2rem;
+
+    @media (max-width: $tablet) {
+          float: none;
+          width: 100%;
+          height: auto;
+          margin: 0 0 2rem 0; 
+    }
+  }
