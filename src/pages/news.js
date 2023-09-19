@@ -85,8 +85,10 @@ const News = ({pageContext}) => {
           dangerouslySetInnerHTML={{ __html: data.about.html }}
         ></div>
 
-        <div className="lowerPadding"> </div>
+        <p className="title is-4 pt-5" >Latest News and Events</p>
 
+      
+        
         <TagSelector tags={data.allTags} nodes={data.news.nodes} data={data} callback={getFilteredNodes}/>
 
 

@@ -39,6 +39,14 @@ const Publications = ({ pageContext }) => {
           totalCount
         }
       }
+
+      about: markdownRemark(
+        fields: { category: { eq: "about" } }
+        fileAbsolutePath: { regex: "/publications.md/" }
+      ) {
+      html
+      }
+    
     }
   `);
 
@@ -61,13 +69,20 @@ const Publications = ({ pageContext }) => {
           className="mb-6"
         />
 
+        <div
+          className="content"
+          dangerouslySetInnerHTML={{ __html: data.about.html }}
+        ></div>
+        
+        <div className="lowerPadding"></div>
+
+
         <TagSelector
           tags={data.years}
           nodes={data.pubs.nodes}
           callback={getFilteredNodes}
         />
 
-        <div className="lowerPadding"></div>
 
         {filteredNodes.map((pub) => (
           <div className="card-image row is-three-fifths pt-3" key={pub.title}>
