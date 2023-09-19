@@ -37,7 +37,7 @@ const Research = ({pageContext}) => {
   `);
 
     return (
-        <Layout name="Research" crumbs={crumbs}>
+        <Layout name="Groups" crumbs={crumbs}>
             <section className="section">
             <div className="lowerPadding">
                 <div className="column is-one-third">

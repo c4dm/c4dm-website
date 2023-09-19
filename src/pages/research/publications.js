@@ -60,7 +60,7 @@ const Publications = ({ pageContext }) => {
   );
 
   return (
-    <Layout name="Groups" crumbs={crumbs}>
+    <Layout name="Publications" crumbs={crumbs}>
       <section className="section">
         <ParallelogramHeader
           text="Publications"

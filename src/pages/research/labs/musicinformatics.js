@@ -75,7 +75,7 @@ const Research = ({pageContext}) => {
   `);
 
     return (
-        <Layout name="AudioEng" crumbs={crumbs}>
+        <Layout name="musInf" crumbs={crumbs}>
             <section className="section">
             <div className="lowerPadding">
                 <div className="column is-one-half">
