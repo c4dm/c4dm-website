@@ -10,9 +10,7 @@ import TagSelector from "../../components/tagSelector";
 
 
 const Theses = ({ pageContext }) => {
-  const {
-    breadcrumb: { crumbs },
-  } = pageContext;
+
   const data = useStaticQuery(graphql`
     query {
       
