@@ -53,6 +53,14 @@ const News = ({pageContext}) => {
             totalCount
           }
         }
+      
+    about: markdownRemark(
+        fields: { category: { eq: "about" } }
+        fileAbsolutePath: { regex: "/news.md/" }
+      ) {
+      html
+      }  
+
   }
   `);
 
@@ -66,14 +74,21 @@ const News = ({pageContext}) => {
     <Layout name="News" crumbs={crumbs}>
       <section className="section">
         <ParallelogramHeader
-          text="News"
+          text="News and Events"
           backgroundColor="primary"
           textColor="white"
           className="mb-6"
         />
-        <TagSelector tags={data.allTags} nodes={data.news.nodes} data={data} callback={getFilteredNodes}/>
+
+        <div
+          className="content"
+          dangerouslySetInnerHTML={{ __html: data.about.html }}
+        ></div>
 
         <div className="lowerPadding"> </div>
+
+        <TagSelector tags={data.allTags} nodes={data.news.nodes} data={data} callback={getFilteredNodes}/>
+
 
         {filteredNodes.map((blogentry) => (
               <div
