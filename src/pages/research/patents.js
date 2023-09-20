@@ -3,6 +3,8 @@ import { graphql, Link, useStaticQuery } from "gatsby";
 import Layout from "../../components/layout";
 import TableCard from "../../components/tableCard";
 import ParallelogramHeader from "../../components/parallelogramHeader";
+import "../../style/bulmacustom.scss"
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 // Return structured content for table card
 const firstColumn = (title, filingDate, applicationNumber) => (

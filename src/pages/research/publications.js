@@ -5,6 +5,8 @@ import TableCard from "../../components/tableCard";
 import kebabCase from "lodash/kebabCase";
 import ParallelogramHeader from "../../components/parallelogramHeader";
 import TagSelector from "../../components/tagSelector";
+import "../../style/bulmacustom.scss"
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 // Return structured content for table card
 const firstColumn = (title, author, medium, year) => (
