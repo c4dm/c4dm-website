@@ -5,7 +5,7 @@ import Layout from "../../../components/layout";
 import BlogCard from "../../../components/blogCard";
 import ParallelogramHeader from "../../../components/parallelogramHeader";
 import TableCard from "../../../components/tableCard";
-import "../../style/bulmacustom.scss"
+import "../../../style/bulmacustom.scss"
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 // Functions to return strucutred content for table card
