@@ -4,6 +4,8 @@ import Layout from "../components/layout";
 import TableCard from "../components/tableCard";
 import TagSelector from "../components/tagSelector";
 import ParallelogramHeader from "../components/parallelogramHeader";
+import "../style/bulmacustom.scss"
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 // Return structured content for table card
 const firstColumn = (date) => <p className="subtitle is-6">{date || null}</p>;
@@ -85,8 +87,10 @@ const News = ({pageContext}) => {
           dangerouslySetInnerHTML={{ __html: data.about.html }}
         ></div>
 
-        <div className="lowerPadding"> </div>
+        <p className="title is-4 pt-5" >Latest News and Events</p>
 
+      
+        
         <TagSelector tags={data.allTags} nodes={data.news.nodes} data={data} callback={getFilteredNodes}/>
 
 

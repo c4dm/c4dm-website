@@ -3,6 +3,8 @@ import {graphql,useStaticQuery} from "gatsby";
 import Layout from "../../components/layout";
 import ParallelogramHeader from "../../components/parallelogramHeader";
 import BlogCard from "../../components/blogCard";
+import "../../style/bulmacustom.scss"
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Research = ({pageContext}) => {
   const {

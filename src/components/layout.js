@@ -8,7 +8,7 @@ import {startCase, camelCase} from 'lodash';
 const navItems = [
     {name: "Research", link: "/research"},
     {name: "People", link: "/people"},
-    {name: "News", link: "/news"},
+    {name: "News & Events", link: "/news"},
     {name: "Partners", link: "/partners"},
     {name: "Get Involved", link: "/get-involved"},
 ]
