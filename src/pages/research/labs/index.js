@@ -3,6 +3,8 @@ import {graphql, useStaticQuery } from "gatsby";
 import Layout from "../../../components/layout";
 import BlogCard from "../../../components/blogCard";
 import ParallelogramHeader from "../../../components/parallelogramHeader";
+import "../../../style/bulmacustom.scss"
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Research = ({pageContext}) => {
   const {
@@ -37,7 +39,7 @@ const Research = ({pageContext}) => {
   `);
 
     return (
-        <Layout name="Research" crumbs={crumbs}>
+        <Layout name="Groups" crumbs={crumbs}>
             <section className="section">
             <div className="lowerPadding">
                 <div className="column is-one-third">

@@ -5,6 +5,8 @@ import TableCard from "../../components/tableCard";
 import kebabCase from "lodash/kebabCase";
 import ParallelogramHeader from "../../components/parallelogramHeader";
 import TagSelector from "../../components/tagSelector";
+import "../../style/bulmacustom.scss"
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 // Return structured content for table card
 const firstColumn = (title, author, medium, year) => (
@@ -39,6 +41,14 @@ const Publications = ({ pageContext }) => {
           totalCount
         }
       }
+
+      about: markdownRemark(
+        fields: { category: { eq: "about" } }
+        fileAbsolutePath: { regex: "/publications.md/" }
+      ) {
+      html
+      }
+    
     }
   `);
 
@@ -52,7 +62,7 @@ const Publications = ({ pageContext }) => {
   );
 
   return (
-    <Layout name="Groups" crumbs={crumbs}>
+    <Layout name="Publications" crumbs={crumbs}>
       <section className="section">
         <ParallelogramHeader
           text="Publications"
@@ -61,13 +71,20 @@ const Publications = ({ pageContext }) => {
           className="mb-6"
         />
 
+        <div
+          className="content"
+          dangerouslySetInnerHTML={{ __html: data.about.html }}
+        ></div>
+        
+        <div className="lowerPadding"></div>
+
+
         <TagSelector
           tags={data.years}
           nodes={data.pubs.nodes}
           callback={getFilteredNodes}
         />
 
-        <div className="lowerPadding"></div>
 
         {filteredNodes.map((pub) => (
           <div className="card-image row is-three-fifths pt-3" key={pub.title}>

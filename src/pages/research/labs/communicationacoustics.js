@@ -5,6 +5,8 @@ import Layout from "../../../components/layout";
 import BlogCard from "../../../components/blogCard";
 import ParallelogramHeader from "../../../components/parallelogramHeader";
 import TableCard from "../../../components/tableCard";
+import "../../../style/bulmacustom.scss"
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 // Functions to return strucutred content for table card
 const firstColumn = (image) => (
@@ -75,7 +77,7 @@ const Research = ({pageContext}) => {
   `);
 
     return (
-        <Layout name="AudioEng" crumbs={crumbs}>
+        <Layout name="comm" crumbs={crumbs}>
             <section className="section">
             <div className="lowerPadding">
                 <div className="column is-one-half">
