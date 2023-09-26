@@ -6,7 +6,10 @@
 This guide provides you with all the information needed to update and maintain content for the [c4dm website](https://c4dmwebsitemain.gatsbyjs.io/). Most of the tasks can be directly performed directly within the [c4dm Github repository](https://github.com/SFRL/c4dm-website). The only folder that you have to focus on is [src/content](./src/content). In this guide we explain how to update the following content from the website:
 
 - [Updating or adding patents](#updating-patents)
-- [Updating or addinf projects ](#updating-projects)
+- [Updating or adding projects ](#updating-projects)
+- [Updating or adding publications ](#updating-publications)
+- [Updating or adding people ](#updating-people)
+
 
 
 
@@ -48,20 +51,42 @@ image: "./rudiments.jpeg"
 ---
 ```
 
+For adding a new project, similar to [patents](#updating-patents), create a new file and fill in the content following the same format shown above. In the ``author`` entry, add the PI for the project and any other involved investigators, if applies.\
+For the ``status`` entry, add ``"active"`` if ther project is still in development, and add ``"complete"`` is the project has closed. This will help to organize projects when navigating. \
+Feel free to add tags for your project, they must be added as an array, each element in quotes, and separated by a comma (e.g. ``tags: ["academic","AI","musical-instrument"]``).\
+If you want to add an image to be displayed along the project, please upload the image to the same folder where the `.md` file is. Then, in the ``image`` entry, add the file name following the format above. \ 
+**Important:** If no image is available, use the default image by adding ``"./placeholder.png"``for the ``image`` entry.
+
+## Updating Publications
+Publications are structured as `.bib` files. If you go to [/src/content/publications](./src/content/publications) in the Github repository, you will see one `.bib` file per year. For adding new entries, you can either modify an existing year file or adding a new year if needed. \
+
+**Important:** Make sure that the `.bib` file is "clean" enough, meaning that:
+- It doesn't contain empty categories, such as ``conference = {}``
+- Each entry should contain a non-empty year (e.g. ``year = {2019}``)
+- Remove duplicate entries. This is very likely to occur if you import .bib from QM Elements. 
+
+
+
+
 For adding a new project, similar to [patents](#updating-patents), create a new file and fill in the content following the same format shown above. In the ``author`` entry, add the PI for the project and any other involved investigators, if applies.
 For the ``status`` entry, add ``"active"`` if ther project is still in development, and add ``"complete"`` is the project has closed. This will help to organize projects when navigating. 
-If you want to add an image to be displayed along the project, please upload the image to the same folder where the `.md` file is. Then, in the ``image`` entry, add the file name following the format above. If no image is available, use the default image by adding ``"./placeholder.png"``for the ``image`` entry.
+If you want to add an image to be displayed along the project, please upload the image to the same folder where the `.md` file is. Then, in the ``image`` entry, add the file name following the format above. \ 
+**Important:** If no image is available, use the default image by adding ``"./placeholder.png"``for the ``image`` entry.
 
 
-## People
-For adding a new member of c4dm (to be displayed in the [People page](https://c4dmwebsitemain.gatsbyjs.io/people/)), go to [/src/content/research/patents/projects](./src/content/research/patents/projects) in the Github repository. 
-You will find a list of .md (markdown) files. You will see that each of the files has a structure similar to the following example:
+## Updating People
+For adding a new member of c4dm (to be displayed in the [People page](https://c4dmwebsitemain.gatsbyjs.io/people/)), go to [/src/content/people](./src/content/people) in the Github repository. 
+You will find a list of .md (markdown) files, one for each member. Each file has a structure similar to the following example:
 
 ```
 ---
-title: "Music Collection Navigation"
-begin: "22 August 2008 "
-grant: "0815362.9 (UK), 09784979.8 (Europe), 13/060090 (USA)"
+name: "Teodoro Dannemann"
+url: "https://teodannemann.wordpress.com/"
+acadposition: "PhD Student"
+blurb: "Sabotaging, errors and other mistakes as a source of new techniques in music improvisation"
+themes: ["augmi"]
+role: "PhD"
+image: "./teodannemann.png"
 ---
 ```
 
