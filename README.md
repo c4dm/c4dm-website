@@ -90,11 +90,10 @@ image: "./teodannemann.png"
 ---
 ```
 
-For adding a new patent, go to the `Add file > Create new file` option at the upper right corner.
+If you want to add an image of the member to be displayed, please upload the image to the same folder where the `.md` file is. Then, in the ``image`` entry, add the file name following the format above. \ 
+**Important:** If no image is available, use the default image by adding ``"./defaultprofile.png"``for the ``image`` entry.
 
-<img src="readme_pics/add_file.png" alt="Add files focused" width="300"/>
 
-Now fill in the content following the same format shown above, making sure you include a ``title`` entry with the progect's name, a ``begin`` entry with the date of the project and a ``grant`` entry with the corresponding patent number. If you don't know a aprticular entry like the patent number, you can add something like ``"Unknown patent number"`` or a similar text. Make sure to add quote marks for the content. 
 
 ## Markdown 
 For this website, you will write all of your content in markdown. [Markdown](https://en.wikipedia.org/wiki/Markdown) is a simple language for creating formatted text. Markdown files usually end with a `.md` extension. The most important things to remember about markdown syntax are: 
