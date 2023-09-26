@@ -1,4 +1,4 @@
-# The cIDA official website
+# C4DM website maintaining guide
 
 
 # Introduction
