@@ -5,13 +5,56 @@
 
 This guide provides you with all the information needed to update and maintain content for the [c4dm website](https://c4dmwebsitemain.gatsbyjs.io/). Most of the tasks can be directly performed directly within the [c4dm Github repository](https://github.com/SFRL/c4dm-website). The only folder that you have to focus on is [src/content](./src/content). In this guide we explain how to update the following content from the website:
 
-- [Adding new patents](#updating-patents)
-- [Adding or editing c4dm members](#updating-people)
+- [Updating or adding patents](#updating-patents)
+- [Updating or addinf projects ](#updating-projects)
 
 
 
 ## Updating Patents
 For adding a new patent or editing existing ones, go to [/src/content/research/patents/projects](./src/content/research/patents/projects) in the Github repository. 
+You will find a list of .md (markdown) files, one for each patent entry. You will see that each of the files has a structure similar to the following example:
+
+```
+---
+title: "Music Collection Navigation"
+begin: "22 August 2008 "
+grant: "0815362.9 (UK), 09784979.8 (Europe), 13/060090 (USA)"
+---
+```
+
+For adding a new patent, go to the `Add file > Create new file` option at the upper right corner. 
+
+<img src="readme_pics/add_file.png" alt="Add files focused" width="300"/>
+
+You can name the file as you like, but make sure it ends with `.md` and that the name is unique in the folder. 
+Now fill in the content following the same format shown above, making sure you include a ``title`` entry with the progect's name, a ``begin`` entry with the date of the project and a ``grant`` entry with the corresponding patent number. If you don't know a aprticular entry like the patent number, you can add something like ``"Unknown patent number"`` or a similar text. Make sure to add quote marks for the content. 
+
+## Updating Projects
+Adding a new project works similar than for [patents](#updating-patents). To add a new project go to [/src/content/projects](./src/content/projects) in the Github repository. 
+You will find a list of .md (markdown) files, one per project. The format for each project is similar to the following example:
+
+```
+---
+title: "RUDIMENTS: Reflective Understanding of Digital Instruments as Musical Entanglements"
+link: "https://gtr.ukri.org/projects?ref=EP%2FX023478%2F1"
+author: "Prof Andrew McPherson"
+begin: "2022"
+end: "2027"
+grant: "ERC Consolidator Grant / UKRI Research Grant EP/X023478/1"
+amount: "£1,723,185"
+status: "active"
+tags: ["academic"]
+image: "./rudiments.jpeg"
+---
+```
+
+For adding a new project, similar to [patents](#updating-patents), create a new file and fill in the content following the same format shown above. In the ``author`` entry, add the PI for the project and any other involved investigators, if applies.
+For the ``status`` entry, add ``"active"`` if ther project is still in development, and add ``"complete"`` is the project has closed. This will help to organize projects when navigating. 
+If you want to add an image to be displayed along the project, please upload the image to the same folder where the `.md` file is. Then, in the ``image`` entry, add the file name following the format above. If no image is available, use the default image by adding ``"./placeholder.png"``for the ``image`` entry.
+
+
+## People
+For adding a new member of c4dm (to be displayed in the [People page](https://c4dmwebsitemain.gatsbyjs.io/people/)), go to [/src/content/research/patents/projects](./src/content/research/patents/projects) in the Github repository. 
 You will find a list of .md (markdown) files. You will see that each of the files has a structure similar to the following example:
 
 ```
@@ -26,8 +69,7 @@ For adding a new patent, go to the `Add file > Create new file` option at the up
 
 <img src="readme_pics/add_file.png" alt="Add files focused" width="300"/>
 
-Now fill in the content following the same format shown above, making sure you include a ``title`` entry with the progect's name, a ``begin`` entry with the date of the project and a ``grant`` entry with the corresponding patent number. If patent number is not available you can add ``"Unknown patent number"``. Make sure to add quote marks for the content. 
-
+Now fill in the content following the same format shown above, making sure you include a ``title`` entry with the progect's name, a ``begin`` entry with the date of the project and a ``grant`` entry with the corresponding patent number. If you don't know a aprticular entry like the patent number, you can add something like ``"Unknown patent number"`` or a similar text. Make sure to add quote marks for the content. 
 
 ## Markdown 
 For this website, you will write all of your content in markdown. [Markdown](https://en.wikipedia.org/wiki/Markdown) is a simple language for creating formatted text. Markdown files usually end with a `.md` extension. The most important things to remember about markdown syntax are: 
