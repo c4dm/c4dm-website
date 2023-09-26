@@ -3,19 +3,23 @@
 
 # Introduction
 
-This guide provides you with all the information needed to update and maintain content for the [c4dm website](https://c4dmwebsitemain.gatsbyjs.io/). The only folder that you have to focus on is [src/content](./src/content). In this guide we explain how to update the following content from the website:
+This guide provides you with all the information needed to update and maintain content for the [c4dm website](https://c4dmwebsitemain.gatsbyjs.io/). Most of the tasks can be directly performed directly within the [c4dm Github repository](https://github.com/SFRL/c4dm-website). The only folder that you have to focus on is [src/content](./src/content). In this guide we explain how to update the following content from the website:
 
--[Updating Projects](#updating-projects)
+- [Adding new patents](#updating-patents)
+- [Adding or editing c4dm members](#updating-people)
+- []
 
 
-
-- **about:** the *About* section 
-- **hero:** the full-screen image (called a hero image in webdesign) and caption that you see on the landing page 
-- **logos:** a collection of logos that are used throughout the website
-- **members:** the *Members* section 
-- **projects:** the *What's On* and *Archive* section. When content expires it automatically moves from What's On to *Archive*
-- **publications:** the *Publications* section
-
+## Updating Patents
+For adding a new patent or editing existing ones, go to [/src/content/research/patents/projects](./src/content/research/patents/projects) in the Github repository. 
+You will find a list of .md (markdown) files. You will see that each of the files has a structure similar to the following example:
+``
+---
+title: "Music Collection Navigation"
+begin: "22 August 2008 "
+grant: "0815362.9 (UK), 09784979.8 (Europe), 13/060090 (USA)"
+---
+``
 
 ## Markdown 
 For this website, you will write all of your content in markdown. [Markdown](https://en.wikipedia.org/wiki/Markdown) is a simple language for creating formatted text. Markdown files usually end with a `.md` extension. The most important things to remember about markdown syntax are: 
