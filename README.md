@@ -24,9 +24,10 @@ grant: "0815362.9 (UK), 09784979.8 (Europe), 13/060090 (USA)"
 
 For adding a new patent, go to the `Add file > Create new file` option at the upper right corner.
 
-<img src="readme_pics/add_file.png" alt="Add files focused" width="200"/>
+<img src="readme_pics/add_file.png" alt="Add files focused" width="300"/>
 
-![Screenshot of add file suboptions on GitHub](readme_pics/add_file.png "Add files focused")
+Now fill in the content following the same format shown above, making sure you include a ``title`` entry with the progect's name, a ``begin`` entry with the date of the project and a ``grant`` entry with the corresponding patent number. If patent number is not available you can add ``"Unknown patent number"``. Make sure to add quote marks for the content. 
+
 
 ## Markdown 
 For this website, you will write all of your content in markdown. [Markdown](https://en.wikipedia.org/wiki/Markdown) is a simple language for creating formatted text. Markdown files usually end with a `.md` extension. The most important things to remember about markdown syntax are: 
