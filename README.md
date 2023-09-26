@@ -22,6 +22,10 @@ grant: "0815362.9 (UK), 09784979.8 (Europe), 13/060090 (USA)"
 ---
 ```
 
+For adding a new patent, go to the `Add file > Create new file` option at the upper right corner.
+
+![Screenshot of add file suboptions on GitHub](readme_pics/add_file.png "Add files focused")
+
 ## Markdown 
 For this website, you will write all of your content in markdown. [Markdown](https://en.wikipedia.org/wiki/Markdown) is a simple language for creating formatted text. Markdown files usually end with a `.md` extension. The most important things to remember about markdown syntax are: 
 
