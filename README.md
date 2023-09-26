@@ -24,7 +24,7 @@ grant: "0815362.9 (UK), 09784979.8 (Europe), 13/060090 (USA)"
 
 For adding a new patent, go to the `Add file > Create new file` option at the upper right corner.
 
-<img src="readme_pics/add_file.png" alt="Add files focused" width="20"/>
+<img src="readme_pics/add_file.png" alt="Add files focused" width="200"/>
 
 ![Screenshot of add file suboptions on GitHub](readme_pics/add_file.png "Add files focused")
 
