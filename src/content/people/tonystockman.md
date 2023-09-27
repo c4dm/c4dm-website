@@ -5,5 +5,5 @@ acadposition: "Senior Lecturer"
 blurb: "Interaction Design, auditory displays, Data Sonification, Collaborative Systems, Cross-modal Interaction, Assistive Technology, Accessibility"
 themes: ["isam"]
 role: "Academic"
-image: "./defaultprofile.png"
+image: "./tonystockman.jpeg"
 ---

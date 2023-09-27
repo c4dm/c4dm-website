@@ -5,5 +5,5 @@ acadposition: "Senior Lecturer in Sound & Music Processing"
 blurb: "Music Cognition, Auditory Perception, Empirical Aesthetics, Statistical Learning, Probabilistic Modelling."
 themes: ["mcog"]
 role: "Academic"
-image: "./defaultprofile.png"
+image: "./marcuspearce.jpeg"
 ---
