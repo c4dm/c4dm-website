@@ -6,6 +6,7 @@ module.exports = {
     title: `C4DM website`,
     siteUrl: `https://www.yourdomain.tld`,
   },
+  pathPrefix: "/c4dm-website",
   plugins: [
     "gatsby-plugin-styled-components",
     "gatsby-plugin-image",
@@ -45,7 +46,7 @@ module.exports = {
       resolve: `gatsby-plugin-breadcrumb`,
       options: {
         useAutoGen: true, // useAutoGen: required 'true' to use autogen
-        }
+      },
     },
     `gatsby-transformer-remark`,
     "gatsby-plugin-sass",
@@ -78,6 +79,6 @@ module.exports = {
         path: `${__dirname}/src/content/publications`,
       },
     },
-    'gatsby-transformer-bibtex',
+    "gatsby-transformer-bibtex",
   ],
 };
