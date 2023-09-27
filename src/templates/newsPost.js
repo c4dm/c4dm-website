@@ -2,6 +2,8 @@ import React from "react";
 import { graphql} from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";
+import "../style/bulmacustom.scss"
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const NewsPost = ({ data, pageContext }) => {
   const {
