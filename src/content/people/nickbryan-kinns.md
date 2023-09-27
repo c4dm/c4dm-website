@@ -6,5 +6,5 @@ blurb: "Interaction Design with Audio #IDwA.
 Interactive Art, Interactive Music, Interactive Sonification. Design, Evaluation. Collaboration, Multi-person Interaction. Cross-Modal Interaction, Tangible Interaction."
 themes: ["isam"]
 role: "Academic"
-image: "./defaultprofile.png"
+image: "./nickbryan-kinns.png"
 ---
