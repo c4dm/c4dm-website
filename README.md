@@ -103,6 +103,8 @@ If you want to add an image of the member to be displayed, please upload the ima
 ## Updating News & Events
 For adding news and events entries, go to [/src/content/news](./src/content/news) in the Github repository. 
 You will find a list of .md (markdown) files, one for each news & events entry. To create a new entry, create a new .md file, as explain in [patents section](#updating-patents). The file should start with the following format:
+
+```
 ---
 title: " C4DM Seminar: Axel Marmoret"
 author: "Admin"
@@ -110,6 +112,7 @@ date: "2022-03-16"
 image: "./placeholder.png"
 tags: ["seminars", "events"]
 ---
+```
 
 `title` and `author` don't have any restrictions in format. 
 `date` has to follow the `yyyy-mm-dd` format.\
