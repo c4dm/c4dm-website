@@ -5,11 +5,17 @@
 
 This guide provides you with all the information needed to update and maintain content for the [c4dm website](https://c4dmwebsitemain.gatsbyjs.io/). Most of the tasks can be directly performed directly within the [c4dm Github repository](https://github.com/SFRL/c4dm-website). The only folder that you have to focus on is [src/content](./src/content). In this guide we explain how to update the following content from the website:
 
-- [Updating patents](#updating-patents)
-- [Updating projects ](#updating-projects)
-- [Updating publications ](#updating-publications)
-- [Updating people ](#updating-people)
-- [Updating news & events](#updating-news-&-events)
+- [C4DM website maintaining guide](#c4dm-website-maintaining-guide)
+- [Introduction](#introduction)
+  - [Updating Patents](#updating-patents)
+  - [Updating Projects](#updating-projects)
+  - [Updating Publications](#updating-publications)
+  - [Updating People](#updating-people)
+  - [Updating News \& Events](#updating-news--events)
+- [Technical Setup](#technical-setup)
+- [Developing Locally](#developing-locally)
+  - [With Develop](#with-develop)
+  - [With Build](#with-build)
 
 
 
@@ -128,3 +134,19 @@ A quick technical perspective on how the website was created and how it is hoste
 The website was created with the [Gatsby](https://www.gatsbyjs.com/) framework. Gatsby is a react-based static site generator. It further uses the CSS framework [Bulma](https://bulma.io/) for styling.
 
 The source code is hosted and built here on GitHub. Every time, changes are committed to GitHub a rebuilt is triggered on Github Pages.
+
+
+# Developing Locally
+
+## With Develop
+
+Typically, you can run an updating server with the `gatsby develop` command
+
+## With Build
+
+However, there are some plugins (such as Create Redirects), which only run upon building. If you want to preview changes of these (its much slower), you can do the following:
+
+build the site with `gatsby build`
+navigate to the built site with `cd public`
+run a local server using `http-server -g`
+then navigate to the url provided by the CLI

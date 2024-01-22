@@ -80,5 +80,6 @@ module.exports = {
       },
     },
     "gatsby-transformer-bibtex",
+    "gatsby-plugin-client-side-redirect" // keep it in last in list
   ],
 };
