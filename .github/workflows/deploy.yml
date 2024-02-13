@@ -16,7 +16,7 @@ jobs:
           npm install
       - name: Github Config
         run: |
-            git config --global user.name "c4dm"
-            git config --global user.email dan.stowell@qmul.ac.uk
+            git config --global user.name "teo523"
+            git config --global user.email "teodoro.dan@gmail.com"
       - name: Deploy
         run: npm run deploy:ci
