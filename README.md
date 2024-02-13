@@ -21,7 +21,7 @@ This guide provides you with all the information needed to update and maintain c
 
 ## Updating Patents
 For adding a new patent or editing existing ones, go to [/src/content/research/patents/projects](./src/content/research/patents/projects) in the Github repository. 
-You will find a list of .md (markdown) files, one for each patent entry. You will see that each of the files has a structure similar to the following example:
+You will find a list of .md (markdown) files, one for each patent entry. You will see that each of the files has a structure similar to the following example: 
 
 ```
 ---
