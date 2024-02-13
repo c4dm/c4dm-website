@@ -13,8 +13,8 @@ jobs:
     steps:
       - name: GitHub Config
         run: |
-          git config --global user.email "sebastian.lobbers@googlemail.com"
-          git config --global user.name "SFRL"
+          git config --global user.email "teodoro.dan@gmail.com"
+          git config --global user.name "teo523"
       - name: Checkout
         uses: actions/checkout@v3
       - name: Install dependencies
