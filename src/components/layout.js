@@ -98,7 +98,7 @@ const Layout = ({children, crumbs, name, hero}) => {
               <br/>
 
               <a
-                  href="https://github.com/SFRL/c4dm-website"
+                  href="https://github.com/c4dm/c4dm-website"
                   target="_blank"
                   rel="Internal Site Link"
                 >Internal Site</a>
