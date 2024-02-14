@@ -6,6 +6,7 @@ module.exports = {
     title: `C4DM website`,
     siteUrl: `https://www.yourdomain.tld`,
   },
+  pathPrefix: "/c4dm-website",
   plugins: [
     "gatsby-plugin-styled-components",
     "gatsby-plugin-image",
