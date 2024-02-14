@@ -12,14 +12,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Github Config
+        run: |
+            git config --global user.name "c4dm"
+            git config --global user.email "teodoro.dan@gmail.com"
       - name: Checkout
         uses: actions/checkout@v3
       - name: Install dependencies
         run: |
           npm install
-      - name: Github Config
-        run: |
-            git config --global user.name "c4dm"
-            git config --global user.email "teodoro.dan@gmail.com"
       - name: Deploy
         run: npm run deploy:ci
