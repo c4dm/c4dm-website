@@ -5,5 +5,5 @@ acadposition: "Senior Lecturer in Sound and Music Computing"
 blurb: "new interfaces for musical expression, performance study, human-computer interaction, interaction design"
 themes: ["augmi","mir","isam"]
 role: "acad"
-image: "./AnnaXambo.jpeg"
+image: "./annaxambo.jpeg"
 ---
