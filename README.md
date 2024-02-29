@@ -3,7 +3,7 @@
 
 # Introduction
 
-This guide provides you with all the information needed to update and maintain content for the [c4dm website](https://c4dmwebsitemain.gatsbyjs.io/). Most of the tasks can be directly performed directly within the [c4dm Github repository](https://github.com/SFRL/c4dm-website). The only folder that you have to focus on is [src/content](./src/content). In this guide we explain how to update the following content from the website:
+This guide provides you with all the information needed to update and maintain content for the [c4dm website](https://c4dmwebsitemain.gatsbyjs.io/). Most of the tasks can be directly performed directly within the [c4dm Github repository](https://github.com/c4dm/c4dm-website). The only folder that you have to focus on is [src/content](./src/content). In this guide we explain how to update the following content from the website:
 
 - [C4DM website maintaining guide](#c4dm-website-maintaining-guide)
 - [Introduction](#introduction)
