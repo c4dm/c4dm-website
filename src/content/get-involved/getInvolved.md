@@ -4,7 +4,16 @@ title: "Get Involved"
 
 There are several ways to get involved with us, from studying a PhD or Masters Programme to job opportunities. We are also in continuous collaboration with industry, NGOs, and academic and public sector partners.
 
-## Study a PhD 
+## Study for an MSc in Sound and Music Computing (SMC) 
+
+The Centre for Digital Music is strongly involved in developing and running QMUL’s Master in Sound and Music Computing programme. The MSc allows you to become an expert in sound and music computing by developing new tools or products, like audio processors or instruments, and contribute to the expanding music and media technology sector. Prepare for your career by merging your interest in music with technology and align your passion for music with technology through two specialised streams:  
+
+- AI and Music Data Science stream, focusing on music distribution and data analytics, and the
+- Audio and Music Engineering stream, dedicated to crafting innovative music hardware and more.
+
+For more information please visit the SMC programme website: <a href="https://www.qmul.ac.uk/postgraduate/taught/coursefinder/courses/sound-and-music-computing-msc/" target="_blank" rel="noopener noreferrer">https://www.qmul.ac.uk/postgraduate/taught/coursefinder/courses/sound-and-music-computing-msc/</a>
+
+## Study for a PhD 
 
 The Centre for Digital Music at Queen Mary University of London is a world-leading research group in the field of Music & Audio Technology. Our research covers everything in digital music and audio: from analysis, understanding and retrieval to delivery, synthesis, sound rendering, music interaction and digital musical instruments. The Centre has invested more than £6M in new state-of-the-art studios and computing facilities.
 
