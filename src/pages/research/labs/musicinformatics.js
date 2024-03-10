@@ -40,7 +40,7 @@ const Research = ({pageContext}) => {
   const data = useStaticQuery(graphql`
   {
     text: markdownRemark(
-      fileAbsolutePath: {regex: "research/labs/communicationacoustics.md/"}
+      fileAbsolutePath: {regex: "research/labs/musicinformatics.md/"}
     ) {
       html
       frontmatter {
