@@ -35,7 +35,7 @@ const Layout = ({children, crumbs, name, hero}) => {
         gatsbyImageData(layout: FIXED, height: 30)
         }
       }
-    qmullogo: file(absolutePath: {regex: "/images/.*QMUL_black.*/"}, extension: {eq: "png"}) {
+    qmullogo: file(absolutePath: {regex: "/images/.*QMUL_logo_old_blue.*/"}, extension: {eq: "png"}) {
       id
       childImageSharp {
         gatsbyImageData(layout: CONSTRAINED, height: 50)
