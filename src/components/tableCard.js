@@ -25,7 +25,7 @@ const TableCard = (props) => {
           </div>
         ) : undefined}
         {length > 2 ? (
-          <div className="card-content is-three-fifths is-full-mobile">
+          <div className="card-content column is-three-fifths is-full-mobile">
             <div className="media">
                 <div className="media-content">
                     {props.third}

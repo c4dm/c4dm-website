@@ -27,7 +27,7 @@ const secondColumn = (name, acadposition) => (
                     <p className="subtitle is-7">{acadposition || "Academic Position"}</p>
                   </>
                 );
-
+                
 const thirdColumn = (blurb) => (<p className="is-3">{blurb || "description"}  </p>);
 
 const People = ({pageContext}) => {
@@ -78,6 +78,8 @@ const groups = data.people;
       },
       [setFilteredNodes]
     );
+
+    
 
     // some of the students have no academic role, the markdown frontmatters need to be updated, removing role and putting them in academic position
 
