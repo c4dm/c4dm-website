@@ -23,7 +23,7 @@ const TagSelector = ({tags,nodes,callback}) => {
                     onClick={() => setSelected(tag.fieldValue)}
                     disabled={selected === tag.fieldValue}
                 >
-                    {startCase(camelCase(tag.fieldValue))} ({tag.totalCount})
+                    {(tag.fieldValue == 'PhD') ? tag.fieldValue : startCase(camelCase(tag.fieldValue))} ({tag.totalCount})
                 </button>
             ))}
 
