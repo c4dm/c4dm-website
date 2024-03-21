@@ -6,7 +6,7 @@ const TableCard = (props) => {
       <div className="card table-card columns">
         <div
           className={`card-image column ${
-            length > 1 ? "is-one-fifth" : "is-full"
+            length > 1 ? "is-2" : "is-full" //is 2 6ths
           } is-full-mobile`}
         >
           <div className="media">
