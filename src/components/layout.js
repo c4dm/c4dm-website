@@ -18,6 +18,10 @@ const socialMediaItems = [
     iconName: "fa-twitter",
     link: "https://twitter.com/c4dm",
   },
+  {
+    iconName: "fa-youtube",
+    link: "https://www.youtube.com/@C4DM",
+  },
 ];
 
 
@@ -118,7 +122,7 @@ const Layout = ({children, crumbs, name, hero}) => {
                   rel="noreferrer noopener"
                 >
                   <span className="icon is-large">
-                    <i className={`fab ${item.iconName}`}></i>
+                    <i className={`fab ${item.iconName} is-`}></i>
                   </span>
                 </a>
               ))}</p>
