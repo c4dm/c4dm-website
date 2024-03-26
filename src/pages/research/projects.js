@@ -16,7 +16,7 @@ const createProjectCard = (projectentry) => (
         first={firstColumn(
           projectentry.frontmatter.image.childImageSharp.gatsbyImageData
         )}
-        second={secondColumn(
+        second={projectInfo(
           projectentry.frontmatter.title,
           projectentry.frontmatter.author,
           projectentry.frontmatter.begin,
@@ -53,11 +53,15 @@ const firstColumn = (image) => (
   </>
 );
 
-const secondColumn = (title, author, begin, end, grant, amount, link) => (
+// Post the info from query into project card
+const projectInfo = (title, author, begin, end, grant, amount, link) => (
               <>
                 <p className="title is-6">{title || "Name"} </p>
+                <p className="subtitle is-6">{begin}-{end}</p>
                 <p className="is-3">{author}  </p>
-                <p>{grant}</p>  
+                <br></br>
+                <p className="subtitle is-6 has-text-grey-light">{grant}</p>  
+                
               </>
             );
 
@@ -70,7 +74,7 @@ const Project = ({pageContext}) => {
       {
         projects: allMarkdownRemark(
           filter: { fields: { category: { eq: "projects" } }}
-          sort: { frontmatter: { end: DESC } }
+          sort: { frontmatter: { begin: DESC } }
         ) {
           nodes {
             frontmatter {

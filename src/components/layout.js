@@ -18,6 +18,10 @@ const socialMediaItems = [
     iconName: "fa-twitter",
     link: "https://twitter.com/c4dm",
   },
+  {
+    iconName: "fa-youtube",
+    link: "https://www.youtube.com/@C4DM",
+  },
 ];
 
 
@@ -31,10 +35,10 @@ const Layout = ({children, crumbs, name, hero}) => {
         gatsbyImageData(layout: FIXED, height: 30)
         }
       }
-    qmullogo: file(absolutePath: {regex: "/images/.*QMUL_black.*/"}, extension: {eq: "png"}) {
+    qmullogo: file(absolutePath: {regex: "/images/.*QMUL_logo_old_blue.*/"}, extension: {eq: "png"}) {
       id
       childImageSharp {
-        gatsbyImageData(layout: FIXED, height: 50)
+        gatsbyImageData(layout: CONSTRAINED, height: 50)
         }
       }
     }
@@ -86,7 +90,7 @@ const Layout = ({children, crumbs, name, hero}) => {
 
     const footer = (
       <footer className="footer">
-        <div className="columns">
+        <div className="columns is-mobile">
           <div className="column is-one-third">
             <p className="has-text-left is-size-7">
               School of Electronic Engineering and Computer Science <br/> 
@@ -118,7 +122,7 @@ const Layout = ({children, crumbs, name, hero}) => {
                   rel="noreferrer noopener"
                 >
                   <span className="icon is-large">
-                    <i className={`fab ${item.iconName}`}></i>
+                    <i className={`fab ${item.iconName} is-`}></i>
                   </span>
                 </a>
               ))}</p>
