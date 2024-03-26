@@ -2,7 +2,7 @@ This is a list of past PhDs successfully completed in the Centre for Digital Mus
 
 Our [current students are listed here](/people). Would you like to [study with us](/get-involved)?
 
-##2023
+## 2023
 
 * Angeliki Mourgela, "Perceptually Motivated, Intelligent Audio Mixing Approaches for Hearing Loss" (Supervisor: Josh Reiss)
 * Arjun Pankajakshan, "Sound Event Detection by Exploring Audio Sequence Modelling" (Supervisor: Emmanouil Benetos)
@@ -16,7 +16,7 @@ Our [current students are listed here](/people). Would you like to [study with u
 * Lia MICE, "[Go large: the impact of size on gestural interaction in digital musical instrument design](https://qmro.qmul.ac.uk/xmlui/handle/123456789/91160)" (Supervisor: Andrew McPherson)
 * Courtney REED, "[Imagining & Sensing: Understanding and Extending the Vocalist-Voice Relationship Through Biosignal Feedback](https://qmro.qmul.ac.uk/xmlui/handle/123456789/89579)" (Supervisor: Andrew McPherson)
 
-##2022
+## 2022
 
 * Vinod Subramanian, "Understanding Audio Deep Learning Classifiers Through Adversarial Attacks and Interpretability" (Supervisor: Mark Sandler)
 * Alejandro Delgado Luezas, "[Data-Driven Query by Vocal Percussion](https://qmro.qmul.ac.uk/xmlui/handle/123456789/89252)" (Supervisor: Mark Sandler) 
@@ -30,7 +30,7 @@ Our [current students are listed here](/people). Would you like to [study with u
 * Ruchit AGRAWAL, "[Towards Context-Aware Neural Performance-Score Synchronisation](https://qmro.qmul.ac.uk/xmlui/handle/123456789/79323)" (Supervisor: Simon Dixon)
 * Fred BRUFORD, "[Intelligent Tools for Drum Loop Retrieval and Generation](https://qmro.qmul.ac.uk/xmlui/handle/123456789/82117)" (Supervisor: Mark Sandler)
 
-##2021
+## 2021
 
 * Hazar TEZ, "[Exploring Collaborative Music Making Through Design Constraints and Collaboration-Driven Digital Music Instruments](https://qmro.qmul.ac.uk/xmlui/handle/123456789/79820)" (Supervisor: Nick Bryan-Kinns)
 * Jack ARMITAGE, "[Subtlety and Detail in Digital Musical Instrument Design](https://qmro.qmul.ac.uk/xmlui/handle/123456789/79852)" (Supervisor: Andrew McPherson)
@@ -38,7 +38,7 @@ Our [current students are listed here](/people). Would you like to [study with u
 * Changhong WANG, "[Scattering transform for playing technique recognition](https://qmro.qmul.ac.uk/xmlui/handle/123456789/76559)" (Supervisors: Elaine Chew and Emmanouil Benetos)
 * Callum GODARD, "[Virtuosity in Computationally Creative Musical Performance for Bass Guitar](https://qmro.qmul.ac.uk/xmlui/handle/123456789/89059)" (Supervisors: Geraint Wiggins and Mathieu Barthet)
 
-##2020
+## 2020
 
 * Thomas DEACON, "[Shaping Sounds in Space: Exploring the Design of Collaborative Virtual Reality Audio Production Tools](https://qmro.qmul.ac.uk/xmlui/handle/123456789/72743)" (Supervisor: Mathieu Barthet)
 * Vanessa POPE, "That's What She Said: A computational approach to analysing structure and timing in stand-up comedy" (Supervisors: Becky Stewart, Elaine Chew, Nick Bryan-Kinns)
