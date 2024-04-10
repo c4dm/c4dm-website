@@ -105,7 +105,12 @@ const Layout = ({children, crumbs, name, hero}) => {
                   href="https://github.com/c4dm/c4dm-website"
                   target="_blank"
                   rel="Internal Site Link"
-                >Internal Site</a>
+                >Internal Site</a><br/>
+		<a
+                  href="https://c4dm.eecs.qmul.ac.uk/wiki/doku.php?id=start"
+                  target="_blank"
+                  rel="C4DM wiki Link"
+                >C4DM Wiki</a>                
               {/* Tel: +44 (0)20 7882 3400 <br/>
               Undergraduate Enquiries:  Tel: +44 (0)20 7882 7332 <br/>
               Postgraduate Enquiries:  Tel: +44 (0)20 7882 7333  */}
