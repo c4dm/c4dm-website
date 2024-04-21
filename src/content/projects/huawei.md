@@ -4,7 +4,7 @@ link: "https://huawei.eu/"
 author: "Dr Emmanouil Benetos (PI), Prof Simon Dixon (CI)"
 begin: "2022"
 end: "2023"
-grant: "Huawei Technologies Düsseldorf"
+grant: "Huawei Technologies Düsseldorf, Contract research"
 amount: "£252,000"
 status: "complete"
 tags: ["Industry funding"]
