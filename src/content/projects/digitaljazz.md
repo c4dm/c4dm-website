@@ -6,7 +6,7 @@ begin: "2021"
 end: "2023"
 grant: "AHRC grant AH/V009699/1"
 amount: "£50,845 (QMUL), £202,566 (total)"
-status: "active"
+status: "complete"
 image: "./digitaljazz.jpeg"
 ---
 
