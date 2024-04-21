@@ -7,7 +7,7 @@ end: "2028"
 grant: "EPSRC Training Grant EP/V519935/1"
 amount: "£1,629,373"
 status: "active"
-tags: ["academic"]
+tags: ["UKRI funding"]
 image: "./cdtdata.png"
 ---
 

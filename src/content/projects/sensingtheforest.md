@@ -7,5 +7,6 @@ end: "2025"
 grant: "AHRC Grant AH/X011585/1"
 amount: "£207,479"
 status: "active"
+tags: ["UKRI funding"]
 image: "./sensingtheforest.png"
 ---

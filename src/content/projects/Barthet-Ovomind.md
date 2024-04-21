@@ -8,5 +8,6 @@ grant: "PhD studentship"
 partner: "OVOMIND SA"
 amount: "£33,500"
 status: "active"
+tags: ["Industry funding"]
 image: "./rudiments.png"
 ---

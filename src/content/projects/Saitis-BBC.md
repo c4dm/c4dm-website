@@ -8,5 +8,6 @@ grant: "PhD internship"
 partner: "BBC R&D"
 amount: "£9,834"
 status: "complete"
+tags: ["Industry funding"]
 image: "./rudiments.png"
 ---

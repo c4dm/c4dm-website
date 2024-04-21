@@ -8,5 +8,6 @@ grant: "Contract research"
 partner: "Ableton AG"
 amount: "£97,000"
 status: "complete"
+tags: ["Industry funding"]
 image: "./rudiments.png"
 ---

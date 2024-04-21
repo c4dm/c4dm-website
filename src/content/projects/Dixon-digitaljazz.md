@@ -7,6 +7,7 @@ end: "2024"
 grant: "AHRC grant AH/V009699/1"
 amount: "£50,845 (QMUL), £202,566 (total)"
 status: "complete"
+tags: ["UKRI funding"]
 image: "./digitaljazz.jpeg"
 ---
 

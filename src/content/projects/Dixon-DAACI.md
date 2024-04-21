@@ -8,5 +8,6 @@ grant: "PhD studentship"
 partner: "DAACI Ltd"
 amount: "£140,000"
 status: "active"
+tags: ["Industry funding"]
 image: "./rudiments.png"
 ---

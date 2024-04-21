@@ -8,5 +8,6 @@ grant: "Universal Music Group International Limited, PhD studentship"
 partner: "Universal Music Group International Limited"
 amount: "£61,268"
 status: "active"
+tags: ["Industry funding"]
 image: "./rudiments.png"
 ---

@@ -8,5 +8,6 @@ grant: "Spotify Ltd, PhD studentship"
 partner: "Spotify Ltd"
 amount: "£33,000"
 status: "active"
+tags: ["Industry funding"]
 image: "./rudiments.png"
 ---

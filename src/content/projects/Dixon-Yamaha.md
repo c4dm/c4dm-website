@@ -8,5 +8,6 @@ grant: "PhD studentship"
 partner: "Yamaha Corporation"
 amount: "£60,000"
 status: "active"
+tags: ["Industry funding"]
 image: "./rudiments.png"
 ---

@@ -7,7 +7,7 @@ end: "2024"
 grant: "AHRC Grant AH/W010429/1"
 amount: "£29,812"
 status: "active"
-tags: ["academic"]
+tags: ["UKRI funding"]
 image: "./rudiments.png"
 ---
 

@@ -7,6 +7,7 @@ end: "2027"
 grant: "EPSRC Grant EP/S022694/1"
 amount: "£6,240,207"
 status: "active"
+tags: ["UKRI funding"]
 image: "./aimcdt.png"
 ---
 

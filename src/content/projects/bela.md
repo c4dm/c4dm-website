@@ -7,7 +7,7 @@ end: "2026"
 grant: "RAEng Senior Research Fellowship"
 amount: "£208,776"
 status: "active"
-tags: ["industry"]
+tags: ["Industry funding"]
 image: "./bela.jpeg"
 ---
 

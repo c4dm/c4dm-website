@@ -7,7 +7,7 @@ end: "2024"
 grant: "AHRC Grant AH/V011340/1"
 amount: "£576,879"
 status: "active"
-tags: ["academic"]
+tags: ["UKRI funding"]
 image: "./bridgingthegap.png"
 ---
 

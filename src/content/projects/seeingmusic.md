@@ -7,5 +7,6 @@ end: "2022"
 grant: "QMUL Centre for Public Engagement Large Grant"
 amount: "£9,783"
 status: "complete"
+tags: ["Internal funding"]
 image: "./rudiments.png"
 ---

@@ -7,7 +7,7 @@ end: "2023"
 grant: "Huawei Technologies Düsseldorf"
 amount: "£252,000"
 status: "complete"
-tags: ["industry"]
+tags: ["Industry funding"]
 partner: "Huawei"
 image: "./rudiments.png"
 ---

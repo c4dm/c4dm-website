@@ -7,6 +7,7 @@ end: "2023"
 grant: "EPSRC Grant EP/T022205/1"
 amount: "£5,539,933"
 status: "complete"
+tags: ["UKRI funding"]
 image: "./jade.jpeg"
 ---
 

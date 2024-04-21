@@ -8,5 +8,6 @@ grant: "Sony Europe B.V., PhD studentship"
 partner: "Sony Europe B.V."
 amount: "£150,000"
 status: "active"
+tags: ["Industry funding"]
 image: "./rudiments.png"
 ---
