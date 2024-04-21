@@ -1,7 +1,7 @@
 ---
 name: Music Informatics
 link: "./musicinformatics"
-image: "groups5.png"
+image: "groups6.png"
 ---
 
 With online music stores offering millions of songs to choose from, users need assistance. Using digital signal processing, machine learning, and the semantic web, our research explores new ways of intelligently analysing musical data, and assists people in finding the music they want.
