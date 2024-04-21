@@ -9,5 +9,5 @@ partner: "Royal Academy of Engineering"
 amount: "£52,455"
 status: "active"
 tags: ["UK national academy funding"]
-image: "./rudiments.png"
+image: "./RAEng.png"
 ---

@@ -8,6 +8,6 @@ grant: "Royal Society International Exchanges grant IEC/NSFC/201382"
 amount: "£3,800"
 status: "complete"
 tags: ["UK national academy funding"]
-image: "./unsuperviseddetection.jpeg"
+image: "./RS.png"
 ---
 
