@@ -2,23 +2,30 @@ This is a list of past PhDs successfully completed in the Centre for Digital Mus
 
 Our [current students are listed here](/people). Would you like to [study with us](/get-involved)?
 
+## 2024
+
+* Brendan O'Connor, "[Analysis, Disentanglement, and Conversion of Singing Voice Attributes](https://qmro.qmul.ac.uk/xmlui/handle/123456789/95685)" (Supervisor: Simon Dixon)
+* Saurjya Sarkar, "[Time-domain Music Source Separation for Choirs and Ensembles](https://qmro.qmul.ac.uk/xmlui/handle/123456789/95818)" (Supervisor: Mark Sandler)
+* Jon Pigrem, "The role of materials in digitally mediated musical interactions" (Supervisor: Nick Bryan-Kinns)
+
+
 ## 2023
 
-* Angeliki Mourgela, "Perceptually Motivated, Intelligent Audio Mixing Approaches for Hearing Loss" (Supervisor: Josh Reiss)
-* Arjun Pankajakshan, "Sound Event Detection by Exploring Audio Sequence Modelling" (Supervisor: Emmanouil Benetos)
-* Syed RAFEE, "Unveiling the Art of Piano Performance: A Study of Pianist Identification through Statistical and Hierarchical Models" (Supervisors: George Fazekas, Geraint Wiggins)
+* Angeliki Mourgela, "[Perceptually Motivated, Intelligent Audio Mixing Approaches for Hearing Loss](https://qmro.qmul.ac.uk/xmlui/handle/123456789/92959)" (Supervisor: Josh Reiss)
+* Arjun Pankajakshan, "[Sound Event Detection by Exploring Audio Sequence Modelling](https://qmro.qmul.ac.uk/xmlui/handle/123456789/94640)" (Supervisor: Emmanouil Benetos)
+* Syed RAFEE, "[Unveiling the Art of Piano Performance: A Study of Pianist Identification through Statistical and Hierarchical Models](https://qmro.qmul.ac.uk/xmlui/handle/123456789/91863)" (Supervisors: George Fazekas, Geraint Wiggins)
 * Carlos LORDELO, "[Deep Learning Methods for Instrument Separation and Recognition](https://qmro.qmul.ac.uk/xmlui/handle/123456789/92140)" (Supervisors: Emmanouil Benetos and Simon Dixon)
-* Edward HALL, "Modelling Perception of Large-Scale Thematic Structure in Music" (Supervisor: Marcus Pearce)
+* Edward HALL, "[Modelling Perception of Large-Scale Thematic Structure in Music](https://qmro.qmul.ac.uk/xmlui/handle/123456789/92282)" (Supervisor: Marcus Pearce)
 * Ben WHITE, "Archival Engineering: Computational Art Practice in the Archive" (Supervisor: Mark Sandler)
-* Dalia Senvaityte, "Informed Source Separation for Monotimbral Musical Instruments" (Supervisor: Mark Sandler)
+* Dalia Senvaityte, "[Informed Source Separation for Monotimbral Musical Instruments](https://qmro.qmul.ac.uk/xmlui/handle/123456789/94131)" (Supervisor: Mark Sandler)
 * Joseph Taylor (JT) Colonel, "[Music Production Behaviour Modelling](https://qmro.qmul.ac.uk/xmlui/handle/123456789/89253)" (Supervisor: Josh Reiss)
-* Andrea Guidi, "Evaluating embodiment in musical instrument modification and augmentation" (Supervisor: Andrew McPherson)
+* Andrea Guidi, "[Evaluating embodiment in musical instrument modification and augmentation](https://qmro.qmul.ac.uk/xmlui/handle/123456789/91747)" (Supervisor: Andrew McPherson)
 * Lia MICE, "[Go large: the impact of size on gestural interaction in digital musical instrument design](https://qmro.qmul.ac.uk/xmlui/handle/123456789/91160)" (Supervisor: Andrew McPherson)
 * Courtney REED, "[Imagining & Sensing: Understanding and Extending the Vocalist-Voice Relationship Through Biosignal Feedback](https://qmro.qmul.ac.uk/xmlui/handle/123456789/89579)" (Supervisor: Andrew McPherson)
 
 ## 2022
 
-* Vinod Subramanian, "Understanding Audio Deep Learning Classifiers Through Adversarial Attacks and Interpretability" (Supervisor: Mark Sandler)
+* Vinod Subramanian, "[Understanding Audio Deep Learning Classifiers Through Adversarial Attacks and Interpretability](https://qmro.qmul.ac.uk/xmlui/handle/123456789/92683)" (Supervisor: Mark Sandler)
 * Alejandro Delgado Luezas, "[Data-Driven Query by Vocal Percussion](https://qmro.qmul.ac.uk/xmlui/handle/123456789/89252)" (Supervisor: Mark Sandler) 
 * An LIANG, "[Design of an E-Textile Sensing System for Dance Applications](https://qmro.qmul.ac.uk/xmlui/handle/123456789/86118)" (Supervisors: Becky Stewart, Nick Bryan-Kinns)
 * Rémi DE FLEURIAN, "[Modelling chills in music](https://qmro.qmul.ac.uk/xmlui/handle/123456789/80798)" (Supervisor: Marcus Pearce)
@@ -49,7 +56,7 @@ Our [current students are listed here](/people). Would you like to [study with u
 * Jacob HARRISON, "[Instruments and Access: the Role of Instruments in Music and Disability](https://qmro.qmul.ac.uk/xmlui/handle/123456789/67358)" (Supervisor: Andrew McPherson)
 * Daniel STOLLER, "[Deep Learning for Music Information Retrieval in Limited Data Scenarios](https://qmro.qmul.ac.uk/xmlui/handle/123456789/68513)" (Supervisors: Simon Dixon and Sebastian Ewert)
 * Francisco RODRIGUEZ-ALGARRA, "[A Critical Look at the Music Classification Experiment Pipeline: Using Interventions to Detect and Account for Confounding Effects](http://www.eecs.qmul.ac.uk/~simond/phd/FranciscoRodriguez-Algarra-PhD-Thesis.pdf)" (Supervisors: Simon Dixon and Bob Sturm)
-* Simin YANG, "Understanding Agreement and Disagreement in Listeners’ Perceived Emotion in Live Music Performance" (Supervisors: Mathieu Barthet and Elaine Chew)
+* Simin YANG, "[Understanding Agreement and Disagreement in Listeners’ Perceived Emotion in Live Music Performance](https://qmro.qmul.ac.uk/xmlui/handle/123456789/91666)" (Supervisors: Mathieu Barthet and Elaine Chew)
 * Emmanouil CHOURDAKIS "[Computational Methods for Assisting Radio Drama Production](https://qmro.qmul.ac.uk/xmlui/handle/123456789/72681)"(Supervisor: Josh Reiss)
 * Saumitra MISHRA, "[Interpretable Machine Learning for Machine Listening](https://theses.eurasip.org/theses/874/interpretable-machine-learning-for-machine/)" (Supervisor: Simon Dixon)
 * Adrien YCART, "[Music language models for automatic music transcription](https://theses.eurasip.org/theses/873/music-language-models-for-automatic-music/)" (Supervisor: Emmanouil Benetos)
