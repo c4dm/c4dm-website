@@ -60,8 +60,7 @@ const projectInfo = (title, author, begin, end, grant, amount, link) => (
                 <p className="subtitle is-6">{begin}-{end}</p>
                 <p className="is-3">{author}  </p>
                 <br></br>
-                <p className="subtitle is-6 has-text-grey-light">{grant}</p>
-                <p className="subtitle is-6 has-text-grey-light">{amount}</p>                  
+                <p className="subtitle is-6 has-text-grey-light">{grant}&#44; {amount}</p>                
                 
               </>
             );
