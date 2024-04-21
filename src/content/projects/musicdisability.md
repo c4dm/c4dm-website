@@ -8,7 +8,7 @@ grant: "AHRC Grant AH/W010429/1"
 amount: "£29,812"
 status: "active"
 tags: ["UKRI funding"]
-image: "./rudiments.png"
+image: "./AHRC.png"
 ---
 
 

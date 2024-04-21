@@ -8,5 +8,5 @@ grant: "Innovate UK ICURe Programme DSMAR24-06 / 521975189"
 amount: "£2,500"
 status: "active"
 tags: ["UKRI funding"]
-image: "./rudiments.png"
+image: "./IUK.png"
 ---
