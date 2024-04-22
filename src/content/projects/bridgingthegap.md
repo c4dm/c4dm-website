@@ -5,7 +5,7 @@ author: "Prof Franziska Schroeder (PI, QUB), Prof Andrew McPherson (CI, QMUL)"
 begin: "2021"
 end: "2024"
 grant: "AHRC Grant AH/V011340/1"
-amount: "£576,879"
+amount: "£576,879 (total), £174,448 (QMUL)"
 status: "active"
 tags: ["UKRI funding"]
 image: "./bridgingthegap.png"
