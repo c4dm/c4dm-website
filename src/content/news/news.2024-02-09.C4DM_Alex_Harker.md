@@ -1,3 +1,12 @@
+---
+title: "C4DM Seminar: Alex Harker"
+author: "Admin"
+date: "2024-02-09"
+image: "./placeholder.png"
+tags: ["seminars", "events"]
+---
+
+
 ### C4DM Seminar: Alex Harker - Bespoke Musical Programming: A Field Report
 -----------------
 

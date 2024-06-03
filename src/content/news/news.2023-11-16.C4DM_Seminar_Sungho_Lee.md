@@ -1,3 +1,11 @@
+---
+title: "C4DM Seminar: Sungho Lee"
+author: "Admin"
+date: "2023-11-16"
+image: "./placeholder.png"
+tags: ["seminars", "events"]
+---
+
 ### C4DM Seminar: Sungho Lee
 -----------------
 

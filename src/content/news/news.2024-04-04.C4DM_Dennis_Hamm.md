@@ -1,3 +1,12 @@
+---
+title: "C4DM Seminar: Dennis Hamm"
+author: "Admin"
+date: "2024-04-04"
+image: "./placeholder.png"
+tags: ["seminars", "events"]
+---
+
+
 ### C4DM Seminar: Dennis Hamm - Sentisonics: A new emotion-centric genre-neutral music theory
 -----------------
 

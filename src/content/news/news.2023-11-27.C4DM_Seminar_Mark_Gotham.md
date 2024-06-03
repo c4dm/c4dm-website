@@ -1,3 +1,12 @@
+---
+title: "C4DM Seminar: Mark Gotham"
+author: "Admin"
+date: "2023-11-27"
+image: "./placeholder.png"
+tags: ["seminars", "events"]
+---
+
+
 ### C4DM Seminar: Mark Gotham - Chromatic chords in theory and practice
 -----------------
 

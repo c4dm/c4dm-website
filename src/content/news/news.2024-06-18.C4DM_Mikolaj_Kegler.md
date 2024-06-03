@@ -1,3 +1,11 @@
+---
+title: "C4DM Seminar: Mikolaj Kegler"
+author: "Admin"
+date: "2024-06-18"
+image: "./placeholder.png"
+tags: ["seminars", "events"]
+---
+
 ### C4DM Seminar: Mikolaj Kegler: Hear What You Want, towards seamless, immersive AI experiences for wearable audio devices
 -----------------
 

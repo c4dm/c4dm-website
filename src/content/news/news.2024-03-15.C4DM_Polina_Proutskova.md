@@ -1,11 +1,11 @@
-<!--
- * @Author: nicolaus625 ma_nicolaus@163.com
- * @Date: 2024-03-12 17:03:37
- * @LastEditors: nicolaus625 ma_nicolaus@163.com
- * @LastEditTime: 2024-03-12 17:09:08
- * @FilePath: /c4dmpoole/input/news/news.2024-03-15.C4DM_Polina_Proutskova.md
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
--->
+---
+title: "C4DM Seminar: Polina Proutskova"
+author: "Admin"
+date: "2024-03-15"
+image: "./placeholder.png"
+tags: ["seminars", "events"]
+---
+
 ### C4DM Seminar: Polina Proutskova - VocalNotes: Investigating the Perception of Note Pitch and Boundaries through Varying Transcriptions of Vocal Performances from Five Musical Cultures
 -----------------
 

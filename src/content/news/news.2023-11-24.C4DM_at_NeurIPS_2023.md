@@ -1,3 +1,11 @@
+---
+title: "C4DM at NeurIPS 2023"
+author: "admin"
+date: "2023-11-24"
+image: "./placeholder.png"
+tags: ["conferences"]
+---
+
 title: C4DM at NeurIPS 2023
 
 -------------------

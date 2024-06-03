@@ -1,3 +1,11 @@
+---
+title: "C4DM Seminar: Sebastian Gonzalez"
+author: "Admin"
+date: "2023-11-02"
+image: "./placeholder.png"
+tags: ["seminars", "events"]
+---
+
 ### C4DM Seminar: Sebastian Gonzalez - Musical acoustic research at the Cremona Lab: making AI and craft work together
 -----------------
 

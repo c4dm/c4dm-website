@@ -1,3 +1,12 @@
+---
+title: "C4DM Seminar: Oliver Bown"
+author: "Admin"
+date: "2023-11-29"
+image: "./placeholder.png"
+tags: ["seminars", "events"]
+---
+
+
 ### C4DM Seminar: Oliver Bown - Understanding Advances in Creative AI through a Sociotechnical Framework
 -----------------
 
