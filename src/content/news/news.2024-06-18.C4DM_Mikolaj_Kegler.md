@@ -18,8 +18,8 @@ tags: ["seminars", "events"]
 
 **Date/time:  Tuesday, 18th June 2024, 15pm**
 
-**Location: TBA, Engineering Building, QMUL, E1 4NS **
-Zoom: TBA
+**Location: GC205, Greduate Centre, QMUL, E1 4NS **
+Zoom: https://qmul-ac-uk.zoom.us/j/9798452959
 
 
 <b>Title</b>: Hear What You Want, towards seamless, immersive AI experiences for wearable audio devices
