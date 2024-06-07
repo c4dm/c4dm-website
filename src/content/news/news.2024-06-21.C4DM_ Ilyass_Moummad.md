@@ -16,7 +16,7 @@ tags: ["seminars", "events"]
 **Seminar by:**   
    Ilyass Moummad
 
-**Date/time:  Tuesday, 18th June 2024, 15pm**
+**Date/time:  Friday, 21st June 2024, 2pm**
 
 **Location: TBA, Greduate Centre, QMUL, E1 4NS **
 Zoom: https://qmul-ac-uk.zoom.us/j/9798452959
