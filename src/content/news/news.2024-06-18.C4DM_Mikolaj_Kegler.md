@@ -16,7 +16,7 @@ tags: ["seminars", "events"]
 **Seminar by:**   
    Mikolaj Kegler
 
-**Date/time:  Tuesday, 18th June 2024, 15pm**
+**Date/time:  Tuesday, 18th June 2024, 3pm**
 
 **Location: GC205, Greduate Centre, QMUL, E1 4NS **
 Zoom: https://qmul-ac-uk.zoom.us/j/9798452959
