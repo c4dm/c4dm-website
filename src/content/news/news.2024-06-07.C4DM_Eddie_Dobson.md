@@ -1,7 +1,7 @@
 ---
 title: "C4DM Seminar: Eddie Dobson"
 author: "Admin"
-date: "2024-06-18"
+date: "2024-06-07"
 image: "./placeholder.png"
 tags: ["seminars", "events"]
 ---
