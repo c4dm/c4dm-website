@@ -18,7 +18,7 @@ tags: ["seminars", "events"]
 
 **Date/time:  Friday, 21st June 2024, 2pm**
 
-**Location: TBA, Greduate Centre, QMUL, E1 4NS **
+**Location: G2, ENG, Mile End Campus, QMUL, E1 4NS **
 Zoom: https://qmul-ac-uk.zoom.us/j/9798452959
 
 
