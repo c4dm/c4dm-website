@@ -31,3 +31,7 @@ Zoom: https://qmul-ac-uk.zoom.us/j/9798452959
 
 <b>Bio</b>: Mikolaj “Miko” Kegler is an Audio Machine Learning Scientist at Bose Corporation. His research at the interface of ML and DSP is focused on developing methods for lightweight, low-latency, on-device speech and audio signal processing. Before joining Bose, Miko was awarded a PhD from the Department of Bioengineering & Centre for Neurotechnology, Imperial College London, where he has been investigating neural mechanisms underlying perception and comprehension of speech, especially in challenging listening conditions. During his PhD, he completed multiple audio ML research placements, including at Amazon Lab126 and Logitech, where he also served as a long-term scientific consultant.
 
+<b>Presentation</b>: 
+<a href="https://drive.google.com/file/d/1nR0uuj8AEb9YF7XbUqL3ixsAPgI6Eh-T/view?usp=sharing">[PDF Slides]</a> 
+<a href="https://www.youtube.com/watch?v=tUi4ER2dXjQ">[Video Recording]</a>
+
