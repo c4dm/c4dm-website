@@ -32,3 +32,7 @@ Zoom: https://qmul-ac-uk.zoom.us/j/9798452959
 
 <b>Bio</b>: MA Yinghao (马英浩) is a Ph.D. student in Artificial Intelligence and Music (AIM) program at Centre for Digital Music (C4DM), School of EECS, Queen Mary University of London, supervised by Dr. Emmanouil Benetos, Dr. Chris Donahue (secondary), and Prof. Simon Dixon (independent assessor). He is one of the co-founders of the Multimodal Art Projection (MAP) community. Together with his colleague, he proposed an acoustic Music undERstanding model with large-scale self-supervised Training (MERT), with more than 50k downloads on the Huggingfac page, and established a Music Audio Representation Benchmark for universaL Evaluation (MRABLE). He is also interested in music-related multimodality and developed MusiLingo, a music captioning and query response model based on the alignment of single-modality pre-trained models.
 
+
+<b>Presentation</b>: 
+<a href="https://www.youtube.com/watch?v=9eLlyiIjowg">[Video Recording]</a>
+
