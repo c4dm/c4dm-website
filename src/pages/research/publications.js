@@ -8,14 +8,23 @@ import TagSelector from "../../components/tagSelector";
 import "../../style/bulmacustom.scss";
 
 // Return structured content for table card
-const firstColumn = (title, author, medium, year) => (
+// Display DOI if available, otherwise display URL, otherwise none
+const firstColumn = (title, author, medium, year, doi, url) => (
   <>
     <strong className="is-6">{title || "Name"} </strong>
     <p className="is-3">{author} </p>
-
     <em>
       {medium}, {year}
     </em>
+    {doi ? (
+      <p>
+        DOI: <a href={`https://doi.org/${doi}`} target="_blank" rel="noopener noreferrer">{doi}</a>
+      </p>
+    ) : url ? (
+      <p>
+        URL: <a href={url} target="_blank" rel="noopener noreferrer">{url}</a>
+      </p>
+    ) : null}
   </>
 );
 
@@ -32,6 +41,8 @@ const Publications = ({ pageContext }) => {
           journal
           booktitle
           year
+          doi
+          url
         }
       }
       years: allReference(limit: 2000) {
@@ -95,7 +106,9 @@ const Publications = ({ pageContext }) => {
                 pub.title,
                 pub.author,
                 pub.journal || pub.booktitle || pub.conference,
-                pub.year
+                pub.year,
+                pub.doi,
+                pub.url
               )}
             />
           </div>
