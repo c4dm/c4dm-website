@@ -32,7 +32,7 @@ Some relevant, recent publications describing our work include;
 * S. Hendry and J. D. Reiss, [Physical Modeling and Synthesis of Motor Noise for Replication of a Sound Effects Library](http://www.eecs.qmul.ac.uk/~josh/documents/HendryReiss-AES129.pdf), 129th AES Convention, San Francisco, Nov. 4-7, 2010.
 
 
-[PhD Study](study.html) - interested in joining the team? We are currently accepting PhD applications.
+[PhD Study](/get-involved) - interested in joining the team? We are currently accepting PhD applications.
 
 Members
 -------------
