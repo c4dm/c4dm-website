@@ -26,7 +26,7 @@ Some of our current and recent research projects include;
 * [Intelligent dynamic range compression](http://c4dm.eecs.qmul.ac.uk/intelligentsoundengineering/compressors/index.html)
 * [Microphone shoot-out](http://www.brechtdeman.com/blog/microphone-shootout.html) (pairwise and multi-stimuli evaluation)
  
-[PhD Study](study.html) - interested in joining the team? We are currently accepting PhD applications.
+[PhD Study](/get-involved/) - interested in joining the team? We are currently accepting PhD applications.
 
 Aims
 ----
