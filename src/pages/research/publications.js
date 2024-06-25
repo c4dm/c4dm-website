@@ -1,12 +1,11 @@
-import React, { useState, useCallback } from "react";
-import { graphql, useStaticQuery, Link } from "gatsby";
-import Layout from "../../components/layout";
-import TableCard from "../../components/tableCard";
-import kebabCase from "lodash/kebabCase";
-import ParallelogramHeader from "../../components/parallelogramHeader";
-import TagSelector from "../../components/tagSelector";
-import "../../style/bulmacustom.scss"
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import { graphql, useStaticQuery } from "gatsby";
+import React, { useCallback, useState } from "react";
+import Layout from "../../components/layout";
+import ParallelogramHeader from "../../components/parallelogramHeader";
+import TableCard from "../../components/tableCard";
+import TagSelector from "../../components/tagSelector";
+import "../../style/bulmacustom.scss";
 
 // Return structured content for table card
 const firstColumn = (title, author, medium, year) => (
@@ -41,14 +40,12 @@ const Publications = ({ pageContext }) => {
           totalCount
         }
       }
-
       about: markdownRemark(
         fields: { category: { eq: "about" } }
         fileAbsolutePath: { regex: "/publications.md/" }
       ) {
-      html
+        html
       }
-    
     }
   `);
 
@@ -60,6 +57,11 @@ const Publications = ({ pageContext }) => {
     },
     [setFilteredNodes]
   );
+
+  const sortedYears = {
+    ...data.years,
+    group: [...data.years.group].sort((a, b) => b.fieldValue - a.fieldValue)
+  };
 
   return (
     <Layout name="Publications" crumbs={crumbs}>
@@ -80,7 +82,7 @@ const Publications = ({ pageContext }) => {
 
 
         <TagSelector
-          tags={data.years}
+          tags={sortedYears}
           nodes={data.pubs.nodes}
           callback={getFilteredNodes}
         />
