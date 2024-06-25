@@ -1,12 +1,12 @@
-import * as React from "react";
-import { graphql, useStaticQuery, Link } from "gatsby";
-import "../style/bulmacustom.scss"
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import Layout from "../components/layout.js";
-import Carousel from "../components/carousel";
+import { Link, graphql, useStaticQuery } from "gatsby";
+import * as React from "react";
 import BlogCard from "../components/blogCard";
-import Video from "../components/video";
+import Carousel from "../components/carousel";
+import Layout from "../components/layout.js";
 import ParallelogramHeader from "../components/parallelogramHeader";
+import Video from "../components/video";
+import "../style/bulmacustom.scss";
 
 const IndexPage = ({pageContext}) => {
   const {
@@ -31,7 +31,7 @@ const IndexPage = ({pageContext}) => {
         }
         projects: allMarkdownRemark(
           filter: { fields: { category: { eq: "projects" } } }
-          sort: { frontmatter: { end: DESC } }
+          sort: { frontmatter: { begin: DESC } }
           limit: 6
         ) {
           nodes {
