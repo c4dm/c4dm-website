@@ -32,7 +32,7 @@ const IndexPage = ({pageContext}) => {
         projects: allMarkdownRemark(
           filter: { fields: { category: { eq: "projects" } } }
           sort: { frontmatter: { begin: DESC } }
-          limit: 6
+          limit: 8
         ) {
           nodes {
             fields {
@@ -47,6 +47,7 @@ const IndexPage = ({pageContext}) => {
               title
               author
               date(formatString: "ddd DD MMM yy")
+              link
             }
             html
             id
@@ -78,16 +79,20 @@ const IndexPage = ({pageContext}) => {
       }
     `);
 
-    const projectCards = data.projects.nodes.map((project) => (
-      <BlogCard
-        title={project.frontmatter.title}
-        author={project.frontmatter.author}
-        date={project.frontmatter.date}
-        image={project.frontmatter.image.childImageSharp.gatsbyImageData}
-        html={project.html}
-        slug={project.fields.slug}
-      />
-    ));
+    const projectCards = data.projects.nodes.map((project) => {
+      const projectLink = project.frontmatter.link || "/research/projects/";
+      return (
+          <BlogCard
+            title={project.frontmatter.title}
+            author={project.frontmatter.author}
+            date={project.frontmatter.date}
+            image={project.frontmatter.image.childImageSharp.gatsbyImageData}
+            html={project.html}
+            slug={project.fields.slug}
+            link={projectLink}
+          />
+      );
+    });
 
     const newsCards = data.news.nodes.map((news) => (
       <BlogCard
