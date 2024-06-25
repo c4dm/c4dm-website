@@ -2,6 +2,7 @@
 name: Sound Synthesis
 link: "./soundsynthesis"
 image: "groups8.png"
+status: "ex-lab"
 ---
 
 Sound synthesis is the generation of sounds using algorithms, whether implemented in analogue or digital forms. It is an important application for cinema, multimedia, games and sound installations. It fits within the wider context of sound design, which is the discipline of acquiring, creating and manipulating sounds to achieve a desired effect or mood.

@@ -2,6 +2,7 @@
 name: Intelligent Sound Engineering
 link: "./intelligentsoundengineering"
 image: "groups1.png"
+status: "active"
 ---
 
 
