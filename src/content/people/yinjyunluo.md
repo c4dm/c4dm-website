@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Industry-scale Machine Listening for Music and Audio Data"
 themes: ["soundsynthesis","mlist"]
 role: "PhD"
-image: "./defaultprofile.png"
+image: "./yinjyunluo.png"
 ---

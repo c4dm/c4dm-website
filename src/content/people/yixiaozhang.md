@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Machine Learning Methods for Artificial Musicality"
 themes: ["mir"]
 role: "PhD"
-image: "./defaultprofile.png"
+image: "./yixiaozhang.png"
 ---

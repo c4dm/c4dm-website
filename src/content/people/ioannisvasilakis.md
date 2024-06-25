@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Active Learning for Interactive Music Transcription"
 themes: ["mlist","mir"]
 role: "PhD"
-image: "./defaultprofile.png"
+image: "./ioannisvasilakis.jpg"
 ---

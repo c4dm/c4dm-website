@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Music Production Style Transfer and Mix Similarity"
 themes: ["audioeng","mir"]
 role: "PhD"
-image: "./defaultprofile.png"
+image: "./soumyavanka.jpeg"
 ---
