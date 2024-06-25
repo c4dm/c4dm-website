@@ -1,6 +1,6 @@
 ---
 name: "Sungkyun Chang"
-url: "http://eecs.qmul.ac.uk/profiles/sungkyun-chang.html"
+url: "https://mimbres.github.io/home/"
 acadposition: "Research Assistant"
 blurb: "Deep learning technologies for multi-instrument automatic music transcription"
 themes: ["mir","mlist"]
