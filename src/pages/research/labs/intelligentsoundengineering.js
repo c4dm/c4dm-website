@@ -1,12 +1,11 @@
-import React from "react";
-import {graphql, useStaticQuery, Link } from "gatsby";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import { Link, graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
+import React from "react";
 import Layout from "../../../components/layout";
-import BlogCard from "../../../components/blogCard";
 import ParallelogramHeader from "../../../components/parallelogramHeader";
 import TableCard from "../../../components/tableCard";
-import "../../../style/bulmacustom.scss"
-import "@fortawesome/fontawesome-free/css/all.min.css";
+import "../../../style/bulmacustom.scss";
 
 // Functions to return strucutred content for table card
 const firstColumn = (image) => (
@@ -40,7 +39,7 @@ const Research = ({pageContext}) => {
   const data = useStaticQuery(graphql`
   {
     text: markdownRemark(
-      fileAbsolutePath: {regex: "research/labs/audioengineering.md/"}
+      fileAbsolutePath: {regex: "research/labs/intelligentsoundengineering.md/"}
     ) {
       html
       frontmatter {
@@ -81,7 +80,7 @@ const Research = ({pageContext}) => {
             <section className="section">
             <div className="lowerPadding">
                 <div className="column is-one-half">
-                    <ParallelogramHeader text="Audio Engineering Lab" backgroundColor="primary" textColor="white"/>
+                    <ParallelogramHeader text="Intelligent Sound Engineering Lab" backgroundColor="primary" textColor="white"/>
                 </div>
             </div>
             <div 

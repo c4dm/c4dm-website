@@ -5,7 +5,7 @@ image: "groups8.png"
 ---
 
 Sound synthesis is the generation of sounds using algorithms, whether implemented in analogue or digital forms. It is an important application for cinema, multimedia, games and sound installations. It fits within the wider context of sound design, which is the discipline of acquiring, creating and manipulating sounds to achieve a desired effect or mood.
-Sound synthesis research within the Centre for Digital Music crosses several themes, including [Audio Engineering](http://c4dm.eecs.qmul.ac.uk/audioengineering.html) and [Augmented Instruments](http://www.eecs.qmul.ac.uk/~andrewm/). We seek to uncover new synthesis techniques, as well as enhance existing approaches and adapt them to new applications. With a strong emphasis on performance, expression and evaluation, much of our research is focused on real world applications, empowering users and bringing sound synthesis to the forefront of sound design in the creative industries.
+Sound synthesis research within the Centre for Digital Music crosses several themes, including [Intelligent Sound Engineering](http://c4dm.eecs.qmul.ac.uk/intelligentsoundengineering.html) and [Augmented Instruments](http://www.eecs.qmul.ac.uk/~andrewm/). We seek to uncover new synthesis techniques, as well as enhance existing approaches and adapt them to new applications. With a strong emphasis on performance, expression and evaluation, much of our research is focused on real world applications, empowering users and bringing sound synthesis to the forefront of sound design in the creative industries.
 
 Some of our current and recent research projects include;
 

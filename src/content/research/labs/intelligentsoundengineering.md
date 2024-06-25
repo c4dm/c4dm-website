@@ -1,11 +1,11 @@
 ---
-name: Audio Engineering
-link: "./audioengineering"
+name: Intelligent Sound Engineering
+link: "./intelligentsoundengineering"
 image: "groups1.png"
 ---
 
 
-* [**News and reporting**](http://c4dm.eecs.qmul.ac.uk/audioengineering/news/index.html) on our research
+* [**News and reporting**](http://c4dm.eecs.qmul.ac.uk/intelligentsoundengineering/news/index.html) on our research
 * **Demonstration videos** on [YouTube Channel: Intelligent Sound Engineering](http://www.youtube.com/user/IntelligentSoundEng)
 * Check out our [**blog, Intelligent Sound Engineering**](https://intelligentsoundengineering.wordpress.com/)
 * [**Academic publications**](http://www.eecs.qmul.ac.uk/~josh/publications.htm)
@@ -14,16 +14,16 @@ Some of our current and recent research projects include;
 
 * [Web Audio Evaluation Tool](https://github.com/BrechtDeMan/WebAudioEvaluationTool)- a browser-based listening test environment. See the [Web Audio Conference](http://www.eecs.qmul.ac.uk/~josh/documents/2016/Jillings%20-%20WAET%20-%202016.pdf) and [Sound and Music Computing](http://www.eecs.qmul.ac.uk/~josh/documents/2015/Jillings%20-%20SMC10%202015.pdf) publications and [this demo video](https://youtu.be/aHmgSSVaPRY)
 * [The Open Multitrack Testbed](http://multitrack.eecs.qmul.ac.uk/)
-* [Automatic mixing](http://c4dm.eecs.qmul.ac.uk/audioengineering/automaticmixing/index.html) - Methods for automatic multitrack audio production in real-time
+* [Automatic mixing](http://c4dm.eecs.qmul.ac.uk/intelligentsoundengineering/automaticmixing/index.html) - Methods for automatic multitrack audio production in real-time
 * [Sound synthesis](soundsynthesis.html)
-* [Spatial audio production and reproduction](http://c4dm.eecs.qmul.ac.uk/audioengineering/spatialaudio/index.html)
-* [Reverse engineering the mix - a targeted mixing and mastering tool](http://c4dm.eecs.qmul.ac.uk/audioengineering/reverseengineering/index.html)
-* [Reducing Artifacts Between Source and Microphone in Live Sound](http://c4dm.eecs.qmul.ac.uk/audioengineering/microphoneartifacts/index.html)
-* [Transient modification](http://c4dm.eecs.qmul.ac.uk/audioengineering/transientmodification/index.html)
-* [Source separation for live sound](http://c4dm.eecs.qmul.ac.uk/audioengineering/sourceseparation/index.html) - Crosstalk, bleed and interference reduction techniques
-* [Gesture-controlled mixing of multichannel audio](http://c4dm.eecs.qmul.ac.uk/audioengineering/gesturecontrol/index.html)
+* [Spatial audio production and reproduction](http://c4dm.eecs.qmul.ac.uk/intelligentsoundengineering/spatialaudio/index.html)
+* [Reverse engineering the mix - a targeted mixing and mastering tool](http://c4dm.eecs.qmul.ac.uk/intelligentsoundengineering/reverseengineering/index.html)
+* [Reducing Artifacts Between Source and Microphone in Live Sound](http://c4dm.eecs.qmul.ac.uk/intelligentsoundengineering/microphoneartifacts/index.html)
+* [Transient modification](http://c4dm.eecs.qmul.ac.uk/intelligentsoundengineering/transientmodification/index.html)
+* [Source separation for live sound](http://c4dm.eecs.qmul.ac.uk/intelligentsoundengineering/sourceseparation/index.html) - Crosstalk, bleed and interference reduction techniques
+* [Gesture-controlled mixing of multichannel audio](http://c4dm.eecs.qmul.ac.uk/intelligentsoundengineering/gesturecontrol/index.html)
 * [Multitrack segmentation](http://www.eecs.qmul.ac.uk/~stevenh/multi_seg.html)
-* [Intelligent dynamic range compression](http://c4dm.eecs.qmul.ac.uk/audioengineering/compressors/index.html)
+* [Intelligent dynamic range compression](http://c4dm.eecs.qmul.ac.uk/intelligentsoundengineering/compressors/index.html)
 * [Microphone shoot-out](http://www.brechtdeman.com/blog/microphone-shootout.html) (pairwise and multi-stimuli evaluation)
  
 [PhD Study](study.html) - interested in joining the team? We are currently accepting PhD applications.
