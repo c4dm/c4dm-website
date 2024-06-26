@@ -14,4 +14,3 @@ Other C4DM software is available on [isophonics.org](http://isophonics.org/) and
 We also run the [SoundSoftware code repository](https://code.soundsoftware.ac.uk/) which hosts software projects for audio and music researchers.
 
 Finally, we maintain a [C4DM group in GitHub](https://github.com/c4dm/), hosting public-facing code releases from the group.
-
