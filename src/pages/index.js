@@ -32,7 +32,7 @@ const IndexPage = ({pageContext}) => {
         projects: allMarkdownRemark(
           filter: { fields: { category: { eq: "projects" } } }
           sort: { frontmatter: { begin: DESC } }
-          limit: 8
+          limit: 6
         ) {
           nodes {
             fields {
