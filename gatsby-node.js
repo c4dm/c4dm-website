@@ -34,6 +34,7 @@ exports.createPages = async ({ graphql, actions }) => {
     const { createRedirect } = actions
     const newsPostTemplate = path.resolve("./src/templates/newsPost.js");
     const projectPostTemplate = path.resolve("./src/templates/projectPost.js");
+    const archivePostTemplate = path.resolve("./src/templates/archivePost.js");
 
     const result = await graphql(`
         {
@@ -64,6 +65,15 @@ exports.createPages = async ({ graphql, actions }) => {
                 }
             }
 
+            archive: allMarkdownRemark ( filter: {fields: {category: {eq: "archive"}}})
+            {
+                nodes {
+                    fields {
+                        slug
+                    }
+                }
+            }
+
         }
     `);
 
@@ -83,14 +93,24 @@ exports.createPages = async ({ graphql, actions }) => {
     // Create project pages
     result.data.projects.nodes.forEach((node) => {
         createPage({
-        path: node.fields.slug,
-        component: projectPostTemplate,
-        context: {
-            slug: node.fields.slug,
-        },
-        });
-    });
+            path: node.fields.slug,
+            component: projectPostTemplate,
+            context: {
+                slug: node.fields.slug,
+            },
+        })
+    })
 
+    // Create archive pages
+    result.data.archive.nodes.forEach((node) => {
+        createPage({
+            path: node.fields.slug,
+            component: archivePostTemplate,
+            context: {
+                slug: node.fields.slug,
+            },
+        })
+    });
 
     // Define Redirects
     const legacyServer = 'http://c4dm-legacy.eecs.qmul.ac.uk'

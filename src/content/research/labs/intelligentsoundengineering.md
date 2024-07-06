@@ -6,7 +6,7 @@ status: "active"
 ---
 
 
-* [**News and reporting**](http://c4dm.eecs.qmul.ac.uk/intelligentsoundengineering/news/index.html) on our research
+<!-- * [**News and reporting**](http://c4dm.eecs.qmul.ac.uk/intelligentsoundengineering/news/index.html) on our research -->
 * **Demonstration videos** on [YouTube Channel: Intelligent Sound Engineering](http://www.youtube.com/user/IntelligentSoundEng)
 * Check out our [**blog, Intelligent Sound Engineering**](https://intelligentsoundengineering.wordpress.com/)
 * [**Academic publications**](http://www.eecs.qmul.ac.uk/~josh/publications.htm)
@@ -14,7 +14,7 @@ status: "active"
 Some of our current and recent research projects include;
 
 * [Web Audio Evaluation Tool](https://github.com/BrechtDeMan/WebAudioEvaluationTool)- a browser-based listening test environment. See the [Web Audio Conference](http://www.eecs.qmul.ac.uk/~josh/documents/2016/Jillings%20-%20WAET%20-%202016.pdf) and [Sound and Music Computing](http://www.eecs.qmul.ac.uk/~josh/documents/2015/Jillings%20-%20SMC10%202015.pdf) publications and [this demo video](https://youtu.be/aHmgSSVaPRY)
-* [The Open Multitrack Testbed](http://multitrack.eecs.qmul.ac.uk/)
+* [The Open Multitrack Testbed](https://www.semanticaudio.ac.uk/blog/the-open-multitrack-testbed/)
 * [Automatic mixing](http://c4dm.eecs.qmul.ac.uk/intelligentsoundengineering/automaticmixing/index.html) - Methods for automatic multitrack audio production in real-time
 * [Sound synthesis](soundsynthesis.html)
 * [Spatial audio production and reproduction](http://c4dm.eecs.qmul.ac.uk/intelligentsoundengineering/spatialaudio/index.html)
