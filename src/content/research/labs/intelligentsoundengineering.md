@@ -16,7 +16,7 @@ Some of our current and recent research projects include;
 * [Web Audio Evaluation Tool](https://github.com/BrechtDeMan/WebAudioEvaluationTool)- a browser-based listening test environment. See the [Web Audio Conference](http://www.eecs.qmul.ac.uk/~josh/documents/2016/Jillings%20-%20WAET%20-%202016.pdf) and [Sound and Music Computing](http://www.eecs.qmul.ac.uk/~josh/documents/2015/Jillings%20-%20SMC10%202015.pdf) publications and [this demo video](https://youtu.be/aHmgSSVaPRY)
 * [The Open Multitrack Testbed](https://www.semanticaudio.ac.uk/blog/the-open-multitrack-testbed/)
 * [Automatic mixing](http://c4dm.eecs.qmul.ac.uk/intelligentsoundengineering/automaticmixing/index.html) - Methods for automatic multitrack audio production in real-time
-* [Sound synthesis](soundsynthesis.html)
+* [Sound synthesis](../../../archive/soundsynthesis/)
 * [Spatial audio production and reproduction](http://c4dm.eecs.qmul.ac.uk/intelligentsoundengineering/spatialaudio/index.html)
 * [Reverse engineering the mix - a targeted mixing and mastering tool](http://c4dm.eecs.qmul.ac.uk/intelligentsoundengineering/reverseengineering/index.html)
 * [Reducing Artifacts Between Source and Microphone in Live Sound](http://c4dm.eecs.qmul.ac.uk/intelligentsoundengineering/microphoneartifacts/index.html)
@@ -41,6 +41,8 @@ Audio engineering for **live sound production** represents a field with strong p
 We develop and test techniques to **convert audio mixes** between formats. We are working to devise methods to automatically create a surround sound mix, which minimise the masking of sources and places sources in positions that are most subjectively pleasing to the listener.
 
 We investigate **methodologies of audio editing** used by professional sound engineers, in order to better establish best practices and specify the metadata which will be used to enable automation of audio editing.
+
+We develop **sound synthesis algorithms** in both analogue and digital forms. It is an important application for cinema, multimedia, games and sound installations. It fits within the wider context of sound design, which is the discipline of acquiring, creating and manipulating sounds to achieve a desired effect or mood. Sound synthesis research within the Centre for Digital Music crosses several themes, including Intelligent Sound Engineering and Augmented Instruments. We seek to uncover new synthesis techniques, as well as enhance existing approaches and adapt them to new applications. With a strong emphasis on performance, expression and evaluation, much of our research is focused on real world applications, empowering users and bringing sound synthesis to the forefront of sound design in the creative industries.
 
 The benefits of these techniques are demonstrated by developing, evaluating and deploying prototype systems for intelligent recording and sound reproduction.
 Personnel

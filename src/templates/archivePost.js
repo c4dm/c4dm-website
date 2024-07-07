@@ -10,21 +10,22 @@ const ArchivePost = ({ data, pageContext }) => {
     breadcrumb: { crumbs },
   } = pageContext;
   const { markdownRemark } = data;
-  const { frontmatter, fields, html } = markdownRemark;
+  const { frontmatter, html } = markdownRemark;
 
   return (
     <Layout name="Blog" crumbs={crumbs}>
       <section className="section" id="header">
         <div className="container">
           <h1 className="title">{frontmatter.title}</h1>
-          {/* Removed the "by Author" field */}
-          <div className="lowerPadding"> </div>
+          <div className="lowerPadding"></div>
 
-          <GatsbyImage
-            className="news-image"
-            alt="Blogpost header image"
-            image={frontmatter.image.childImageSharp.gatsbyImageData}
-          />
+          {frontmatter.image && frontmatter.image.childImageSharp && (
+            <GatsbyImage
+              className="news-image"
+              alt="Blogpost header image"
+              image={frontmatter.image.childImageSharp.gatsbyImageData}
+            />
+          )}
         </div>
         
         <div className="container">
@@ -36,7 +37,7 @@ const ArchivePost = ({ data, pageContext }) => {
       </section>
     </Layout>
   );
-}
+};
 
 export default ArchivePost;
 

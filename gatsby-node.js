@@ -116,7 +116,8 @@ exports.createPages = async ({ graphql, actions }) => {
     const legacyServer = 'http://c4dm-legacy.eecs.qmul.ac.uk'
 
     // Add more paths here for redirects
-    const legacyPages = ['smdmrd-test', 'rdr', 'semanticmedia', 'dmrn', 'soundscape', 'wiki', 'multitrack', 'dead', 'mirrors/omras2.org', 'preceedings', 'research/worldmusicoutliers', 'shapetones', 'datasets', '20thanniversary', 'auda-hpss', 'EnsembleSet']
+    // const legacyPages = ['smdmrd-test', 'rdr', 'semanticmedia', 'dmrn', 'soundscape', 'wiki', 'multitrack', 'dead', 'mirrors/omras2.org', 'preceedings', 'research/worldmusicoutliers', 'shapetones', 'datasets', '20thanniversary', 'auda-hpss', 'EnsembleSet']
+    const legacyPages = ['smdmrd-test', 'rdr', 'semanticmedia', 'dmrn', 'soundscape', 'wiki', 'multitrack', 'dead', 'mirrors/omras2.org', 'preceedings', 'research/worldmusicoutliers', 'shapetones', 'datasets']
 
     // Create Redirects
     legacyPages.forEach((pageName) => {
@@ -129,4 +130,3 @@ exports.createPages = async ({ graphql, actions }) => {
     
 
 }
-
