@@ -73,7 +73,7 @@ const Layout = ({children, crumbs, name, hero}) => {
         </div>
         <div
           className={`navbar-end ${
-            !showMobileMenu ? "is-hidden-touch" : undefined
+            !showMobileMenu ? "is-hidden-touch" : "is-active-touch"
           }`}
         >
           {navItems.map((item) => (
