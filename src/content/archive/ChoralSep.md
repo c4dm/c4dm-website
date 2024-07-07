@@ -1,4 +1,6 @@
-# ChoralSep
+---
+    title: "ChoralSep"
+---
 
 ## Vocal Harmony Separation using Time-domain Neural Networks
 
