@@ -12,6 +12,6 @@ Our [C4DM Zenodo community page](https://zenodo.org/communities/c4dm/) hosts pub
 
 The [C4DM Research Data Repository](https://c4dm.eecs.qmul.ac.uk/rdr/) hosts datasets created between 2010-2015.
 
-Several C4DM datasets are also available on [isophonics.org](http://isophonics.org/) .
+Several C4DM datasets are also available on [isophonics.org](http://isophonics.org/).
 
 
