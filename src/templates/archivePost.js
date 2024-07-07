@@ -16,7 +16,7 @@ const ArchivePost = ({ data, pageContext }) => {
     <Layout name="Blog" crumbs={crumbs}>
       
       <section className="section" id="header">
-        <p style={{ color: 'orange' }}>📚 This is an archive page! Some information might not be up to date.</p><br />
+        <p style={{ color: 'orange' }}>🗂️ This is an archive page! Some information might not be up to date.</p><br />
         <div className="container">
           <h1 className="title">{frontmatter.title}</h1>
           <div className="lowerPadding"></div>
