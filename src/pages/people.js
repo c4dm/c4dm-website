@@ -1,12 +1,12 @@
-import React, {useState, useCallback} from "react";
-import { graphql, useStaticQuery, Link } from "gatsby";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import { Link, graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
+import React, { useCallback, useState } from "react";
 import Layout from "../components/layout";
 import ParallelogramHeader from "../components/parallelogramHeader";
 import TableCard from "../components/tableCard";
 import TagSelector from "../components/tagSelector";
-import "../style/bulmacustom.scss"
-import "@fortawesome/fontawesome-free/css/all.min.css";
+import "../style/bulmacustom.scss";
 
 const firstColumn = (image) => (
   <>
@@ -37,7 +37,7 @@ const People = ({pageContext}) => {
     const data = useStaticQuery(graphql`
       {people: allMarkdownRemark(
           filter: { fields: { category: { eq: "people" } } }
-          sort: { frontmatter: { role: ASC } }
+          sort: { fields: [frontmatter___role, frontmatter___name], order: [ASC, ASC] }
         ) {
           nodes {
             frontmatter {

@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "New perspectives in instrument-based audio source separation"
 themes: ["mir"]
 role: "PhD"
-image: "./defaultprofile.png"
+image: "./saurjyasarkar.jpg"
 ---

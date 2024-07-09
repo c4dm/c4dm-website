@@ -5,5 +5,5 @@ acadposition: "PhD Student"
 blurb: "Meta-Physical Modelling"
 themes: ["sounsynthesis","augmi"]
 role: "PhD"
-image: "./defaultprofile.png"
+image: "./lewiswolstanholme.jpg"
 ---

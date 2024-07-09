@@ -92,7 +92,7 @@ image: "./teodannemann.png"
 The ``acadposition`` should be a very short (2-3 words) description of the position of the member. /
 The ``themes`` entry corresponds to the lab(s) that the member is taking part. Current labels for labs are:
 
-- Audio Engineering --> "audioeng"
+- Intelligent Sound Engineering --> "audioeng"
 - Augmented Instruments --> "augmi"
 - Communication Acoustics --> "comma"
 - Machine Listening --> "mlist"

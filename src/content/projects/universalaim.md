@@ -1,6 +1,5 @@
 ---
 title: "Deep learning and multi-modal models for the music industry"
-link: "https://www.aim.qmul.ac.uk/"
 author: "Dr George Fazekas (PI)"
 begin: "2019"
 end: "2023"

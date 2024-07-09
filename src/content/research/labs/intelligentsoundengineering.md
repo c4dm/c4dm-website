@@ -1,0 +1,51 @@
+---
+name: Intelligent Sound Engineering
+link: "./intelligentsoundengineering"
+image: "groups1.png"
+status: "active"
+---
+
+
+<!-- * [**News and reporting**](http://c4dm.eecs.qmul.ac.uk/intelligentsoundengineering/news/index.html) on our research -->
+* **Demonstration videos** on [YouTube Channel: Intelligent Sound Engineering](http://www.youtube.com/user/IntelligentSoundEng)
+* Check out our [**blog, Intelligent Sound Engineering**](https://intelligentsoundengineering.wordpress.com/)
+* [**Academic publications**](http://www.eecs.qmul.ac.uk/~josh/publications.htm)
+
+Some of our current and recent research projects include;
+
+* [Web Audio Evaluation Tool](https://github.com/BrechtDeMan/WebAudioEvaluationTool)- a browser-based listening test environment. See the [Web Audio Conference](http://www.eecs.qmul.ac.uk/~josh/documents/2016/Jillings%20-%20WAET%20-%202016.pdf) and [Sound and Music Computing](http://www.eecs.qmul.ac.uk/~josh/documents/2015/Jillings%20-%20SMC10%202015.pdf) publications and [this demo video](https://youtu.be/aHmgSSVaPRY)
+* [The Open Multitrack Testbed](https://www.semanticaudio.ac.uk/blog/the-open-multitrack-testbed/)
+* [Automatic mixing](http://c4dm.eecs.qmul.ac.uk/intelligentsoundengineering/automaticmixing/index.html) - Methods for automatic multitrack audio production in real-time
+* [Sound synthesis](../../../archive/soundsynthesis/)
+* [Spatial audio production and reproduction](http://c4dm.eecs.qmul.ac.uk/intelligentsoundengineering/spatialaudio/index.html)
+* [Reverse engineering the mix - a targeted mixing and mastering tool](http://c4dm.eecs.qmul.ac.uk/intelligentsoundengineering/reverseengineering/index.html)
+* [Reducing Artifacts Between Source and Microphone in Live Sound](http://c4dm.eecs.qmul.ac.uk/intelligentsoundengineering/microphoneartifacts/index.html)
+* [Transient modification](http://c4dm.eecs.qmul.ac.uk/intelligentsoundengineering/transientmodification/index.html)
+* [Source separation for live sound](http://c4dm.eecs.qmul.ac.uk/intelligentsoundengineering/sourceseparation/index.html) - Crosstalk, bleed and interference reduction techniques
+* [Gesture-controlled mixing of multichannel audio](http://c4dm.eecs.qmul.ac.uk/intelligentsoundengineering/gesturecontrol/index.html)
+* [Multitrack segmentation](http://www.eecs.qmul.ac.uk/~stevenh/multi_seg.html)
+* [Intelligent dynamic range compression](http://c4dm.eecs.qmul.ac.uk/intelligentsoundengineering/compressors/index.html)
+* [Microphone shoot-out](http://www.brechtdeman.com/blog/microphone-shootout.html) (pairwise and multi-stimuli evaluation)
+ 
+[PhD Study](/get-involved/) - interested in joining the team? We are currently accepting PhD applications.
+
+Aims
+----
+
+We develop **intelligent recording techniques**, for use by audio editors, mixers and sound engineers, which speed up the recording process, minimise preparation for live performance, and enable easy preparation and transmission of high resolution audio.
+
+Advances in signal processing, machine learning and adaptive systems, have rarely been applied to the professional audio market. This is partly because most digital signal processing applications in these areas have remained focused on replicating or improving those techniques which could be applied in the analogue domain. And until recently, mixing consoles and audio workstations did not have the computing power to allow the introduction of multi-input, multi-output processing tools. Thus audio effects have traditionally been limited to those which operate only on single or stereo channels. There is now an opportunity to develop **advanced audio effects** which analyse all input channels in order to produce the ideal mix.
+
+Audio engineering for **live sound production** represents a field with strong potential for improvement and automation. Much of the effort of a sound engineer in preparation for a live performance is consumed by tedious, repetitive tasks. Levels must be set to avoid feedback, input channels must be panned to stereo or surround sound, equalisation, normalisation and compression must be applied to each channel, and all equipment must be tested along with establishing an optimal choice of microphone placement. Only after these tasks have been performed, if time and resources permit, may the sound engineer refine these choices to produce an aesthetically pleasing mix which best captures the intended sound. There is a need for tools which minimise sound-checks by automating complex but non-artistic tasks, establish recommended settings based on the input signals and acoustics, and identifying and avoid issues such as acoustic feedback and microphone crossover.
+
+We develop and test techniques to **convert audio mixes** between formats. We are working to devise methods to automatically create a surround sound mix, which minimise the masking of sources and places sources in positions that are most subjectively pleasing to the listener.
+
+We investigate **methodologies of audio editing** used by professional sound engineers, in order to better establish best practices and specify the metadata which will be used to enable automation of audio editing.
+
+We develop **sound synthesis algorithms** in both analogue and digital forms. It is an important application for cinema, multimedia, games and sound installations. It fits within the wider context of sound design, which is the discipline of acquiring, creating and manipulating sounds to achieve a desired effect or mood. Sound synthesis research within the Centre for Digital Music crosses several themes, including Intelligent Sound Engineering and Augmented Instruments. We seek to uncover new synthesis techniques, as well as enhance existing approaches and adapt them to new applications. With a strong emphasis on performance, expression and evaluation, much of our research is focused on real world applications, empowering users and bringing sound synthesis to the forefront of sound design in the creative industries.
+
+The benefits of these techniques are demonstrated by developing, evaluating and deploying prototype systems for intelligent recording and sound reproduction.
+Personnel
+
+Members
+----

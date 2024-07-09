@@ -1,12 +1,12 @@
-import React, {useState, useCallback} from "react";
-import { graphql, Link, useStaticQuery } from "gatsby";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import { Link, graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
+import React, { useCallback, useState } from "react";
 import Layout from "../../components/layout";
+import ParallelogramHeader from "../../components/parallelogramHeader";
 import TableCard from "../../components/tableCard";
 import TagSelector from "../../components/tagSelector";
-import ParallelogramHeader from "../../components/parallelogramHeader";
-import "../../style/bulmacustom.scss"
-import "@fortawesome/fontawesome-free/css/all.min.css";
+import "../../style/bulmacustom.scss";
 
 // Create project card
 const createProjectCard = (projectentry) => (
