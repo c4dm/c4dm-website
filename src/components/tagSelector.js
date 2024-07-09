@@ -18,9 +18,6 @@ const TagSelector = ({tags,nodes,callback}) => {
 
     useEffect(() => {callback(memoFilter)}, [selected,filterData,memoFilter])
 
-    // Get current path
-    const currentPath = window.location.pathname;
-
     return (
         <div>
         <div className="buttons are-small">
