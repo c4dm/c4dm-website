@@ -1,6 +1,12 @@
-import React, {useState, useEffect, useMemo} from "react";
-import {Link} from "gatsby";
-import {startCase, camelCase} from 'lodash';
+import React, { useEffect, useMemo, useState } from "react";
+
+// Custom function to apply title case without affecting existing uppercase letters
+function titleCaseWithoutAffectingUppercase(str) {
+    return str
+      .split(' ')
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ');
+  }
 
 const filterData = (nodes, filter) => nodes.filter((node) => !filter ? true : node.frontmatter?.tags?.includes(filter) || node.frontmatter?.role?.includes(filter) || node.year?.includes(filter));
 
@@ -23,8 +29,11 @@ const TagSelector = ({tags,nodes,callback}) => {
                     onClick={() => setSelected(tag.fieldValue)}
                     disabled={selected === tag.fieldValue}
                 >
-                    {(tag.fieldValue == 'PhD') ? tag.fieldValue : startCase(camelCase(tag.fieldValue))} ({tag.totalCount})
-                </button>
+            {
+                // Apply titleCaseWithoutAffectingUppercase to all pages
+                titleCaseWithoutAffectingUppercase(tag.fieldValue)
+            } ({tag.totalCount})
+            </button>
             ))}
 
             {/* // If selected==False, then grey this out */}

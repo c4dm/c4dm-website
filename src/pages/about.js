@@ -1,9 +1,10 @@
-import * as React from "react";
-import { graphql, useStaticQuery } from "gatsby";
-import "../style/bulmacustom.scss"
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import { graphql, useStaticQuery } from "gatsby";
+import * as React from "react";
 import Layout from "../components/layout.js";
-import ParallelogramHeader from "../components/parallelogramHeader"; 
+import ParallelogramHeader from "../components/parallelogramHeader";
+import Video from "../components/video";
+import "../style/bulmacustom.scss";
 
 const AboutPage = ({pageContext}) => {
   const {
@@ -42,6 +43,9 @@ const AboutPage = ({pageContext}) => {
           className="content"
           dangerouslySetInnerHTML={{ __html: data.about.html }}
         ></div>
+        <div className="content">
+          <Video videoSrcURL={data.about.frontmatter.video} />
+        </div>
       </section>
     </Layout>
   );

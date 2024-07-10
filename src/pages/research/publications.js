@@ -1,22 +1,30 @@
-import React, { useState, useCallback } from "react";
-import { graphql, useStaticQuery, Link } from "gatsby";
-import Layout from "../../components/layout";
-import TableCard from "../../components/tableCard";
-import kebabCase from "lodash/kebabCase";
-import ParallelogramHeader from "../../components/parallelogramHeader";
-import TagSelector from "../../components/tagSelector";
-import "../../style/bulmacustom.scss"
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import { graphql, useStaticQuery } from "gatsby";
+import React, { useCallback, useState } from "react";
+import Layout from "../../components/layout";
+import ParallelogramHeader from "../../components/parallelogramHeader";
+import TableCard from "../../components/tableCard";
+import TagSelector from "../../components/tagSelector";
+import "../../style/bulmacustom.scss";
 
 // Return structured content for table card
-const firstColumn = (title, author, medium, year) => (
+// Display DOI if available, otherwise display URL, otherwise none
+const firstColumn = (title, author, medium, year, doi, url) => (
   <>
     <strong className="is-6">{title || "Name"} </strong>
     <p className="is-3">{author} </p>
-
     <em>
       {medium}, {year}
     </em>
+    {doi ? (
+      <p>
+        DOI: <a href={`https://doi.org/${doi}`} target="_blank" rel="noopener noreferrer">{doi}</a>
+      </p>
+    ) : url ? (
+      <p>
+        URL: <a href={url} target="_blank" rel="noopener noreferrer">{url}</a>
+      </p>
+    ) : null}
   </>
 );
 
@@ -33,6 +41,8 @@ const Publications = ({ pageContext }) => {
           journal
           booktitle
           year
+          doi
+          url
         }
       }
       years: allReference(limit: 2000) {
@@ -41,14 +51,12 @@ const Publications = ({ pageContext }) => {
           totalCount
         }
       }
-
       about: markdownRemark(
         fields: { category: { eq: "about" } }
         fileAbsolutePath: { regex: "/publications.md/" }
       ) {
-      html
+        html
       }
-    
     }
   `);
 
@@ -60,6 +68,11 @@ const Publications = ({ pageContext }) => {
     },
     [setFilteredNodes]
   );
+
+  const sortedYears = {
+    ...data.years,
+    group: [...data.years.group].sort((a, b) => b.fieldValue - a.fieldValue)
+  };
 
   return (
     <Layout name="Publications" crumbs={crumbs}>
@@ -80,7 +93,7 @@ const Publications = ({ pageContext }) => {
 
 
         <TagSelector
-          tags={data.years}
+          tags={sortedYears}
           nodes={data.pubs.nodes}
           callback={getFilteredNodes}
         />
@@ -93,7 +106,9 @@ const Publications = ({ pageContext }) => {
                 pub.title,
                 pub.author,
                 pub.journal || pub.booktitle || pub.conference,
-                pub.year
+                pub.year,
+                pub.doi,
+                pub.url
               )}
             />
           </div>

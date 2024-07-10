@@ -1,12 +1,12 @@
-import * as React from "react";
-import { graphql, useStaticQuery, Link } from "gatsby";
-import "../style/bulmacustom.scss"
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import Layout from "../components/layout.js";
-import Carousel from "../components/carousel";
+import { Link, graphql, useStaticQuery } from "gatsby";
+import * as React from "react";
 import BlogCard from "../components/blogCard";
-import Video from "../components/video";
+import Carousel from "../components/carousel";
+import Layout from "../components/layout.js";
 import ParallelogramHeader from "../components/parallelogramHeader";
+import Video from "../components/video";
+import "../style/bulmacustom.scss";
 
 const IndexPage = ({pageContext}) => {
   const {
@@ -31,7 +31,7 @@ const IndexPage = ({pageContext}) => {
         }
         projects: allMarkdownRemark(
           filter: { fields: { category: { eq: "projects" } } }
-          sort: { frontmatter: { end: DESC } }
+          sort: { frontmatter: { begin: DESC } }
           limit: 6
         ) {
           nodes {
@@ -47,6 +47,7 @@ const IndexPage = ({pageContext}) => {
               title
               author
               date(formatString: "ddd DD MMM yy")
+              link
             }
             html
             id
@@ -78,16 +79,20 @@ const IndexPage = ({pageContext}) => {
       }
     `);
 
-    const projectCards = data.projects.nodes.map((project) => (
-      <BlogCard
-        title={project.frontmatter.title}
-        author={project.frontmatter.author}
-        date={project.frontmatter.date}
-        image={project.frontmatter.image.childImageSharp.gatsbyImageData}
-        html={project.html}
-        slug={project.fields.slug}
-      />
-    ));
+    const projectCards = data.projects.nodes.map((project) => {
+      const projectLink = project.frontmatter.link || "/research/projects/";
+      return (
+          <BlogCard
+            title={project.frontmatter.title}
+            author={project.frontmatter.author}
+            date={project.frontmatter.date}
+            image={project.frontmatter.image.childImageSharp.gatsbyImageData}
+            html={project.html}
+            slug={project.fields.slug}
+            link={projectLink}
+          />
+      );
+    });
 
     const newsCards = data.news.nodes.map((news) => (
       <BlogCard

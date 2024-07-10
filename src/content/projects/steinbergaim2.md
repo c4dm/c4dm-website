@@ -1,6 +1,5 @@
 ---
 title: "Optical music recognition using deep learning"
-link: "https://www.aim.qmul.ac.uk/"
 author: "Dr George Fazekas (PI)"
 begin: "2019"
 end: "2024"

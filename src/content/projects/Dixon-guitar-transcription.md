@@ -1,6 +1,5 @@
 ---
 title: "High Resolution Guitar Transcription"
-link: "https://www.c4dm.eecs.qmul.ac.uk/"
 author: "Prof Simon Dixon (PI)"
 begin: "2024"
 end: "2024"

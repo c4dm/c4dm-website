@@ -1,7 +1,7 @@
 ---
-name: "Dr Veronica Morfi"
-url: "https://scholar.google.co.uk/citations?user=8izRvu4AAAAJ&hl=en"
-acadposition: "Postdoctoral Researcher"
+name: "Veronica Morfi"
+url: "http://www.eecs.qmul.ac.uk/profiles/morfignostotheaveroniki.html"
+acadposition: "Postdoctoral Research Assistant"
 blurb: "Machine transcription of wildlife bird sound scenes"
 themes: ["mlist"]
 role: "Postdoc"

@@ -2,10 +2,11 @@
 name: Sound Synthesis
 link: "./soundsynthesis"
 image: "groups8.png"
+status: "ex-lab"
 ---
 
 Sound synthesis is the generation of sounds using algorithms, whether implemented in analogue or digital forms. It is an important application for cinema, multimedia, games and sound installations. It fits within the wider context of sound design, which is the discipline of acquiring, creating and manipulating sounds to achieve a desired effect or mood.
-Sound synthesis research within the Centre for Digital Music crosses several themes, including [Audio Engineering](http://c4dm.eecs.qmul.ac.uk/audioengineering.html) and [Augmented Instruments](http://www.eecs.qmul.ac.uk/~andrewm/). We seek to uncover new synthesis techniques, as well as enhance existing approaches and adapt them to new applications. With a strong emphasis on performance, expression and evaluation, much of our research is focused on real world applications, empowering users and bringing sound synthesis to the forefront of sound design in the creative industries.
+Sound synthesis research within the Centre for Digital Music crosses several themes, including [Intelligent Sound Engineering](http://c4dm.eecs.qmul.ac.uk/intelligentsoundengineering.html) and [Augmented Instruments](http://www.eecs.qmul.ac.uk/~andrewm/). We seek to uncover new synthesis techniques, as well as enhance existing approaches and adapt them to new applications. With a strong emphasis on performance, expression and evaluation, much of our research is focused on real world applications, empowering users and bringing sound synthesis to the forefront of sound design in the creative industries.
 
 Some of our current and recent research projects include;
 
@@ -32,7 +33,7 @@ Some relevant, recent publications describing our work include;
 * S. Hendry and J. D. Reiss, [Physical Modeling and Synthesis of Motor Noise for Replication of a Sound Effects Library](http://www.eecs.qmul.ac.uk/~josh/documents/HendryReiss-AES129.pdf), 129th AES Convention, San Francisco, Nov. 4-7, 2010.
 
 
-[PhD Study](study.html) - interested in joining the team? We are currently accepting PhD applications.
+[PhD Study](/get-involved) - interested in joining the team? We are currently accepting PhD applications.
 
 Members
 -------------

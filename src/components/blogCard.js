@@ -1,11 +1,13 @@
-import React from "react";
 import { Link } from "gatsby";
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
+import React from "react";
 
 const BlogCard = (props) => {
   // define if link is internal or external
-  const link = props.link ? (content) => (<a href={props.link}>{content}</a>) : (content) => (<Link to={`${props.slug}/#header`}>{content}</Link>);
-
+  const link = props.link 
+    ? (content) => (<a href={props.link}>{content}</a>) 
+    : (content) => (<Link to={props.slug ? `${props.slug}/#header` : "/research/projects/"}>{content}</Link>);
+  
   return (
     <div
       className="card is-flex is-flex-direction-column is-flex-grow-1"

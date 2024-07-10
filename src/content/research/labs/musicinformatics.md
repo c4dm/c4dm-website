@@ -2,6 +2,7 @@
 name: Music Informatics
 link: "./musicinformatics"
 image: "groups6.png"
+status: "active"
 ---
 
 With online music stores offering millions of songs to choose from, users need assistance. Using digital signal processing, machine learning, and the semantic web, our research explores new ways of intelligently analysing musical data, and assists people in finding the music they want.
@@ -17,7 +18,7 @@ This area is led by [Dr Simon Dixon](http://www.eecs.qmul.ac.uk/~simond/). Proje
 * linking music-related information and audio data
 * interactive auralisation with room impulse responses
 
-[PhD Study](study.html) - interested in joining the team? We are currently accepting PhD applications. 
+[PhD Study](/get-involved/) - interested in joining the team? We are currently accepting PhD applications. 
 
 Members
 ----

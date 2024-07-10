@@ -1,6 +1,5 @@
 ---
 title: "Smart Channel Strip using Neural Audio Processing"
-link: "https://www.aim.qmul.ac.uk/"
 author: "Dr George Fazekas (PI)"
 begin: "2021"
 end: "2025"

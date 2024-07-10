@@ -1,5 +1,5 @@
 ---
-name: Datasets & Code
+name: Datasets
 slug: "datasets"
 image: "datasets.png"
 ---
