@@ -22,7 +22,7 @@ const filterData = (nodes, filter) => nodes.filter((node) => {
   if (!filter) return true;
   const normalizedFilter = filter.toLowerCase();
   return node.frontmatter?.tags?.some(tag => tag.toLowerCase() === normalizedFilter) ||
-         node.frontmatter?.role?.some(role => role.toLowerCase() === normalizedFilter) ||
+         node.frontmatter?.role?.toLowerCase() === normalizedFilter ||
          (node.year && node.year.toLowerCase().includes(normalizedFilter));
 });
 
