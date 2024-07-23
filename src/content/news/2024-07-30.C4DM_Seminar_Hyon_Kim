@@ -1,0 +1,31 @@
+---
+title: "C4DM Seminar:  Hyon Kim"
+author: "Admin"
+date: "2024-07-30"
+image: "./placeholder.png"
+tags: ["seminars", "events"]
+---
+
+### C4DM Seminar: Hyon Kim: Score Informed Note-level MIDI Velocity Estimation and Its Transcription into Symbolics
+-----------------
+
+#### QMUL, School of Electronic Engineering and Computer Science
+
+#### Centre for Digital Music Seminar Series
+
+**Seminar by:**   
+   Hyon Kim
+
+**Date/time:  Tuesday, 30th July 2024, 3pm**
+
+**Location: G2, ENG, Mile End Campus, QMUL, E1 4NS **
+Zoom: https://qmul-ac-uk.zoom.us/j/9798452959
+
+
+<b>Title</b>: Score Informed Note-level MIDI Velocity Estimation and Its Transcription into Symbolics
+-----------------
+
+<b>Abstract</b>: It is a well known fact that the dynamics in piano performance gives significant effect in expressiveness. Taking the polyphonic nature of the instrument into account, analysing information to form dynamics for each performed note has significant meaning to understand piano performance in a quantitative way. It is also a key element in an education context for piano learners.　
+In this study, we developed a model for estimating MIDI velocity for each note, as one of indicators to represent loudness, with a condition of score by a Deep Neural Network (DNN) and Feature-wise Linear Modulation (FiLM) conditioning. Additionally, we have conducted research to map MIDI velocities to dynamics markings by combining performance MIDI roll and MusicXML information into one sequence.
+
+<b>Bio</b>: Hyon Kim is a PhD student at Music Technology Group, Universitat Pompeu Fabra under the supervision of Prof. Xavier Serra. Currently, Hyon is a Visiting Researcher at C4DM, QMUL, working under the supervision of Dr. Emmanouil Benetos. His research interests include modeling the dynamic information of piano performance and transcribing it into MIDI roll and symbolic representations using various DNN methods in a multimodal fashion, incorporating both score and audio data.
