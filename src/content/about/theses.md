@@ -4,6 +4,12 @@ Our [current students are listed here](/people). Would you like to [study with u
 
 ## 2024
 
+* Pedro Sarmento, "Guitar Tablature Generation with Deep Learning" (Supervisor: Mathieu Barthet)
+* Mei Zhang, "Supporting Textile and Fashion Designers in Designing with Interactive Technology Through a Material Lens" (Supervisors: Nick Bryan-Kinns and Becky Stewart)
+* Tim Kirby, "Towards Real-time Synthesis of Percussive Instruments" (Supervisor: Mark Sandler)
+* Jianing Zheng, "The Role of Materials in Musical Interaction" (Supervisor: Andrew McPherson)
+* Elizabeth Wilson, "Affective Live Coding: Fostering Human-Machine Collaboration with Autonomous Agents" (Supervisors: George Fazekas, Geraint Wiggins, Elaine Chew)
+* Charlotte Nordmoen, "From rational to relational: more-than-human perspectives on crafting technology" (Supervisor: Andrew McPherson)
 * Brendan O'CONNOR, "[Analysis, Disentanglement, and Conversion of Singing Voice Attributes](https://qmro.qmul.ac.uk/xmlui/handle/123456789/95685)" (Supervisor: Simon Dixon)
 * Saurjya SARKAR, "[Time-domain Music Source Separation for Choirs and Ensembles](https://qmro.qmul.ac.uk/xmlui/handle/123456789/95818)" (Supervisor: Mark Sandler)
 * Jon PIGREM, "The role of materials in digitally mediated musical interactions" (Supervisor: Nick Bryan-Kinns)
