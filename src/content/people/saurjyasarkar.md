@@ -1,9 +1,9 @@
 ---
-name: "Saurjya Sarkar"
+name: "Dr Saurjya Sarkar"
 url: "http://eecs.qmul.ac.uk/profiles/sarkarsaurjya-1.html"
-acadposition: "PhD Student"
-blurb: "New perspectives in instrument-based audio source separation"
+acadposition: "Postdoctoral Researcher"
+blurb: "Audio Source Separation, Music Information Retrieval, Sample Detection"
 themes: ["mir"]
-role: "PhD"
+role: "postdoc"
 image: "./saurjyasarkar.jpg"
 ---
