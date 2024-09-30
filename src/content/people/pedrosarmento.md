@@ -1,9 +1,9 @@
 ---
-name: "Pedro Sarmento"
+name: "Dr Pedro Sarmento"
 url: "https://otnemrasordep.github.io/"
-acadposition: "PhD Student"
-blurb: "Guitar-Oriented Neural Music Generation in Symbolic Format"
+acadposition: "Postdoctoral Researcher"
+blurb: "music information retrieval, language models for music generation, guitar tablature generation, automatic guitar transcription, deep learning"
 themes: ["mir"]
-role: "PhD"
+role: "Postdoc"
 image: "./pedrosarmento.jpeg"
 ---
