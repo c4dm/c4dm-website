@@ -2,7 +2,7 @@
 name: "Yorgos Velissaridis"
 url: "https://github.com/GeorgeVeliss"
 acadposition: "PhD Student"
-blurb: "Probabilistic learning of sequential structures in music cognition"
+blurb: "Personalizing Audio with Context-aware AI using Listener Preferences and Psychological Factors"
 themes: ["mcog", "comma"]
 role: "PhD"
 image: "./yorgosvelissaridis.jpg"
