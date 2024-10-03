@@ -4,7 +4,7 @@ Our [current students are listed here](/people). Would you like to [study with u
 
 ## 2024
 
-* Pedro SARMENTO, "Guitar Tablature Generation with Deep Learning" (Supervisor: Mathieu Barthet)
+* Pedro SARMENTO, "[Guitar Tablature Generation with Deep Learning](https://qmro.qmul.ac.uk/xmlui/handle/123456789/98872)" (Supervisor: Mathieu Barthet)
 * Mei ZHANG, "Supporting Textile and Fashion Designers in Designing with Interactive Technology Through a Material Lens" (Supervisors: Nick Bryan-Kinns and Becky Stewart)
 * Tim KIRBY, "Towards Real-time Synthesis of Percussive Instruments" (Supervisor: Mark Sandler)
 * Jianing ZHENG, "The Role of Materials in Musical Interaction" (Supervisor: Andrew McPherson)
