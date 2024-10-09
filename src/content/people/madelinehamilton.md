@@ -2,8 +2,8 @@
 name: "Madeline Hamilton"
 url: "http://eecs.qmul.ac.uk/profiles/hamiltonmadelineann.html"
 acadposition: "PhD Student"
-blurb: "Improving AI-generated Music with Pleasure Models"
+blurb: "Perception and analysis of 20th and 21st century popular music"
 themes: ["mcog"]
 role: "PhD"
-image: "./defaultprofile.png"
+image: "./madelinehamilton.png"
 ---
