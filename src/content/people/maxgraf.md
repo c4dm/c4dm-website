@@ -1,9 +1,9 @@
 ---
 name: "Max Graf"
-url: "http://eecs.qmul.ac.uk/profiles/grafmax.html"
+url: "https://maxgraf.space/"
 acadposition: "PhD Student"
-blurb: "PERFORM-AI (Provide Extended Realities for Musical Performance using AI)"
-themes: ["augmi","isam","soundsynthesis"]
+blurb: "When XR Meets AI: Machine Learning for Gesture Control Mechanisms in XR Musical Instruments"
+themes: ["extended reality", "mixed reality", "musical instrument design", "NIME"]
 role: "PhD"
 image: "./maxgraf.jpg"
 ---

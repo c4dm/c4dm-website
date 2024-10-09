@@ -1,8 +1,7 @@
----
 name: "Bradley Aldous"
+url: "https://bradleyaldous.co.uk"
 acadposition: "PhD Student"
-blurb: "Advancing music generation via accelerated deep learning"
+blurb: "Enabling Efficient Training and Inference of Large Audio Models"
 themes: []
 role: "PhD"
-image: "./bradleyaldous.jpg"
----
+image: "./bradleyaldous.jpeg"

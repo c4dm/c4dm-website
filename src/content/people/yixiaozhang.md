@@ -1,9 +1,9 @@
 ---
 name: "Yixiao Zhang"
-url: "http://eecs.qmul.ac.uk/profiles/zhangyixiao.html"
+url: "https://ldzhangyx.github.io/"
 acadposition: "PhD Student"
-blurb: "Machine Learning Methods for Artificial Musicality"
-themes: ["mir"]
+blurb: "Improving Controllability and Editability for Pretrained Text-to-Music Generation Models"
+themes: []
 role: "PhD"
-image: "./yixiaozhang.png"
+image: "./yixiaozhang.jpg"
 ---

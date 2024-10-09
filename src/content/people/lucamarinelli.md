@@ -1,9 +1,9 @@
 ---
 name: "Luca Marinelli"
-url: "http://eecs.qmul.ac.uk/profiles/marinelliluca.html"
+url: "https://comma.eecs.qmul.ac.uk/people/luca/"
 acadposition: "PhD Student"
-blurb: "Gender-coded sound: A multimodal data-driven analysis of gender encoding strategies in sound and music for advertising"
-themes: ["mlist"]
+blurb: "Gender-Coded Sound: A multimodal analysis of gender encoding strategies in music for advertising"
+themes: []
 role: "PhD"
-image: "./lucamarinelli.png"
+image: "./lucamarinelli.jpg"
 ---
