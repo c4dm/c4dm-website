@@ -1,9 +1,17 @@
 ---
+
 name: "Gary Bromham"
-url: ""
+
+url: "https://garybromham.com/"
+
 acadposition: "PhD Student"
-blurb: "The role of nostalga in music production"
-themes: ["mir","audioeng"]
+
+blurb: "Analysis of Retro Aesthetics in Music Production"
+
+themes: []
+
 role: "PhD"
-image: "./defaultprofile.png"
+
+image: "./garybromham.jpg"
+
 ---
