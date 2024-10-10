@@ -1,9 +1,7 @@
----
-name: "Lele Liu"
-url: "http://eecs.qmul.ac.uk/profiles/liulele.html"
+name: "Charis Saitis"
+url: "https://cheriell.github.io"
 acadposition: "PhD Student"
-blurb: "Automatic music transcription with end-to-end deep neural networks"
-themes: ["mir","mlist"]
+blurb: "Automatic audio-to-score piano transcription with deep neural networks"
+themes: []
 role: "PhD"
 image: "./leleliu.jpg"
----
