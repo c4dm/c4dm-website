@@ -5,5 +5,5 @@ acadposition: "Research Assistant"
 blurb: "Music Performance Assessment and Feedback"
 themes: []
 role: "Research Assistant"
-image: "./sugkyunchang.jpg"
+image: "./sungkyunchang.jpg"
 ---
