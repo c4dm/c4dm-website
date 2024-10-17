@@ -1,6 +1,6 @@
 ---
 name: "Chin-Yun Yu"
-url: "https://yoyololicon.github.io/"
+url: "https://www.qmul.ac.uk/eecs/people/profiles/chinyunyu.html"
 acadposition: "PhD Student"
 blurb: "Neural Audio Synthesis with Expressiveness Control"
 themes: ["audioeng","mir","soundsynthesis"]
