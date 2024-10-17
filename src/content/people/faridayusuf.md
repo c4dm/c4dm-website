@@ -1,7 +1,8 @@
 ---
 name: "Farida Yusuf"
+url: ""
 acadposition: "PhD Student"
-blurb: "Information-theoretic neural networks for online perception of auditory objects"
+blurb: "Neural computing for auditory object analysis"
 themes: []
 role: "PhD"
 image: "./faridayusuf.jpg"
