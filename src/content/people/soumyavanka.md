@@ -1,9 +1,7 @@
----
 name: "Soumya Sai Vanka"
-url: "http://eecs.qmul.ac.uk/profiles/vankasaisoumya.html"
+url: "https://sai-soum.github.io/"
 acadposition: "PhD Student"
-blurb: "Music Production Style Transfer and Mix Similarity"
-themes: ["audioeng","mir"]
+blurb: "User-Centric Intelligent Context-Aware Multitrack Music Mixing"
+themes: []
 role: "PhD"
-image: "./soumyavanka.jpeg"
----
+image: "./soumyavanka.jpg"
