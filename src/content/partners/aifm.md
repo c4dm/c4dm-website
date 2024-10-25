@@ -8,5 +8,5 @@ grant: ""
 partner: "AI For Music"
 amount: ""
 status: ""
-image: "./AIFM_logo_BL.png"
+image: "./aifm.png"
 ---
