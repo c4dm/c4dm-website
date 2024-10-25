@@ -1,9 +1,9 @@
 ---
 name: "Christopher Mitcheltree"
-url: "https://christhetr.ee"
+url: "https://x.com/frozenmango"
 acadposition: "PhD Student"
-blurb: "Representation Learning for Audio Production Style and Modulations"
-themes: ["mlist","audioeng","mir"]
+blurb: "Deep Learning for Time-varying Audio Systems and Spectrotemporal Modulations"
+themes: []
 role: "PhD"
 image: "./christophermitcheltree.jpg"
 ---
