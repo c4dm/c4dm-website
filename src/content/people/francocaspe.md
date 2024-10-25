@@ -1,8 +1,8 @@
 ---
 name: "Franco Caspe"
-url: "https://www.qmul.ac.uk/eecs/people/profiles/caspefrancosantiago.html"
+url: "https://fcaspe.github.io"
 acadposition: "PhD Student"
-blurb: "AI-assisted FM synthesis for sound design and control mapping"
+blurb: "AI Timbre Transfer for Low-Latency Musical Interaction"
 themes: []
 role: "PhD"
 image: "./francocaspe.jpg"
