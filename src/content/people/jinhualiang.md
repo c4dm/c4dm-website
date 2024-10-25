@@ -2,8 +2,8 @@
 name: "Jinhua Liang"
 url: "https://jinhualiang.github.io/"
 acadposition: "PhD Student"
-blurb: "AI for everyday sounds"
-themes: ["mlist"]
+blurb: "Everyday Sound Recognition with Limited Annotations"
+themes: []
 role: "PhD"
-image: "./defaultprofile.png"
+image: "./jinhualiang.jpg"
 ---
