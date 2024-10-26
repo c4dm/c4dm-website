@@ -1,6 +1,6 @@
 ---
 title: "Bela / Royal Academy of Engineering Senior Research Fellow in Embedded Music Computing"
-link: "https://www.raeng.org.uk/grants-prizes/grants/support-for-research/research-chairs/current-and-recent-awards"
+link: "https://bela.io/"
 author: "Prof Andrew McPherson (PI)"
 begin: "2021"
 end: "2026"
@@ -8,6 +8,6 @@ grant: "RAEng Senior Research Fellowship"
 amount: "£208,776"
 status: "active"
 tags: ["industry"]
-image: "./RAE_Logo_Black_RGB.png"
+image: "./bela.png"
 ---
 
