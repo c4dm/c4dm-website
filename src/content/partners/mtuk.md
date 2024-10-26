@@ -1,6 +1,6 @@
 ---
 title: "Music Technology UK"
-link: "https://aiformusic.info/"
+link: "https://musictechnology.uk/"
 author: "none"
 begin: "2024"
 end: "2024"
