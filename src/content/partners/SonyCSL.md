@@ -1,13 +1,12 @@
 ---
-title: "Bela"
-link: "https://bela.io/"
+title: "Sony CSL"
+link: "https://csl.sony.fr/"
 author: "none"
 begin: "2024"
 end: "2024"
 grant: "none"
-partner: "Bela"
+partner: "Sony CSL"
 amount: "0"
 status: "active"
-image: "./bela.png"
+image: "./SonyCSL.webp"
 ---
-
