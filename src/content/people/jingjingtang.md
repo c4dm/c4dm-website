@@ -1,9 +1,9 @@
 ---
 name: "Jingjing Tang"
-url: "https://www.qmul.ac.uk/eecs/people/profiles/tangjingjing.html"
+url: "https://tangjjbetsy.github.io/"
 acadposition: "PhD Student"
-blurb: "End-to-End System Design for Music Style Transfer with Neural Networks"
-themes: ["mcog", "audioeng"]
+blurb: "Deep Generative Modelling for Expressive Piano Performance: From Symbolic Interpretation to Audio Realisation"
+themes: []
 role: "PhD"
-image: "./jingjingtang.jpeg"
+image: "./jingjingtang.jpg"
 ---
