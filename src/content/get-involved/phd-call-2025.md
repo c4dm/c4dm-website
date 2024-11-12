@@ -1,0 +1,162 @@
+---
+title: "PhD Studentships at the Centre for Digital Music - Autumn 2025 start"
+---
+
+
+The Centre for Digital Music at Queen Mary University of London is inviting applications for PhD study for Autumn 2025 start across various funding schemes. Below are suggested PhD topics offered by academics; interested applicants can apply for a PhD under one of those topics, or can propose their own topic. In all cases, prospective applicants are strongly encouraged to contact academics at C4DM to informally discuss prospective research topics.
+
+Opportunities include internally and externally funded positions for PhD projects to start in Autumn 2025. It is also possible to apply as a self-funded student or with funding from another source. Applicants can apply for a 3-year PhD degree in Computer Science or Electronic Engineering, or for a 4-year [PhD in AI and Music](https://www.aim.qmul.ac.uk/apply/). Studentship opportunities include: 
+
+* [S&E Doctoral Research Studentships for Underrepresented Groups](https://www.seresearch.qmul.ac.uk/content/phdstudents/files/S%26E%20UnderRep%20studentships%202025_Public.pdf) (UK home applicants, Autumn 2025 start, 6 positions funded across the Faculty of Science & Engineering) 
+
+* [CSC PhD Studentships in Electronic Engineering and Computer Science](https://www.qmul.ac.uk/eecs/phd/phd-studentships/csc-phd-studentships-in-electronic-engineering-and-computer-science/) (Autumn 2025 start, Chinese applicants, up to 8 nominations allocated for the Centre for Digital Music) 
+
+* [International PhD Funding Schemes](https://www.qmul.ac.uk/postgraduate/research/funding_phd/studentships/) (Autumn 2025 start, numerous international funding agencies)
+
+<hr>
+
+**AI Models of Music Understanding**
+
+Supervisor: [Simon Dixon](https://www.seresearch.qmul.ac.uk/cmai/people/sdixon/)
+
+Eligible funding schemes: S&E Studentships for Underrepresented Groups, CSC PhD Studentships, International PhD Funding Scheme
+
+Music information retrieval (MIR) applies computing and engineering technologies to musical data to satisfy users' information needs. This topic involves the application of artificial intelligence technologies to the processing of music, either in audio or symbolic (score, MIDI) form. The application could be e.g. for software to enhance the listening experience, for music education, for musical practice or for the scientific study of music. Examples of topics of particular interest are automatic transcription of multi-instrumental music, providing feedback to music learners, incorporation of musical knowledge into data-driven deep learning approaches, and tracing the transmission of musical styles, ideas or influences across time or locations.
+
+It is intentional that this topic description is very general, but it is expected that applicants choose your own specific project within this broad area of research, according to your interests and experience. The research proposal should define the scope of the project, the relationship to the state of the art, the data and methods that you plan to use, and the expected outputs and means of evaluation.
+
+<hr>
+
+**Audio-visual sensing for machine intelligence**
+
+Supervisor: [Lin Wang](https://www.seresearch.qmul.ac.uk/cmai/people/lwang/)
+
+Eligible funding schemes: S&E Studentships for Underrepresented Groups, CSC PhD Studentships, International PhD Funding Scheme
+
+The project aims to develop novel audio-visual signal processing and machine learning algorithms that help improve machine intelligence and autonomy in an unknown environment, and to understand human behaviours interacting with robots. The project will investigate the application of AI algorithms for audio-visual scene analysis in real-life environments. One example is to employ multimodal sensors e.g. microphones and cameras, for analysing various sources and events present in the acoustic environment. Tasks to be considered include audio-visual source separation, localization/tracking, audio-visual event detection/recognition, audio-visual scene understanding.  
+
+<hr>
+
+**Automated machine learning for music understanding**
+
+Supervisor: [Emmanouil Benetos](https://www.seresearch.qmul.ac.uk/cmai/people/ebenetos/)
+
+Eligible funding schemes: S&E Studentships for Underrepresented Groups, CSC PhD Studentships, International PhD Funding Scheme
+
+The field of music information retrieval (MIR) has been growing for more than 20 years, with recent advances in deep learning having revolutionised the way machines can make sense of music data. At the same time, research in the field is still constrained by laborious tasks involving data preparation, feature extraction, model selection, architecture optimisation, hyperparameter optimisation, and transfer learning, to name but a few. Some of the model and experimental design choices made by MIR researchers also reflect their own biases.
+
+Inspired by recent developments in machine learning and automation, this PhD project will investigate and develop automated machine learning methods which can be applied at any stage in the MIR pipeline as to build music understanding models ready for deployment across a wide range of tasks. This project will also compare the automated decisions made on every step in the MIR pipeline, as compared with manual model design choices made by researchers. The successful candidate will investigate, propose and develop novel deep learning methods for automating music understanding, resulting in models that can accelerate MIR research and contribute to the democratisation of AI.
+
+<hr>
+
+**Dynamical Systems Analysis and Hebbian Learning for Advanced Time-Series Processing**
+
+Supervisor: [Iran R. Roman](https://www.seresearch.qmul.ac.uk/cmai/people/iroman/)
+
+Eligible funding schemes: S&E Studentships for Underrepresented Groups, International PhD Funding Scheme
+
+This research aims to advance neural networks for time-series processing by applying dynamical systems theory and Hebbian learning, with a focus on emulating biological mechanisms that recognize and retain temporal patterns. We intend to develop efficient, adaptable architectures that minimize data dependency, utilizing low-dimensional circuits derived from dynamic analyses of large-scale neural activities. By converting complex neural states into simpler mathematical forms, we enhance both the efficiency and adaptability of processing time-series data.
+
+The PhD project will develop state-of-the-art neural network models for applications such as musical rhythm, speech processing, and time-series forecasting. Using dynamical systems theory, we will dissect these models to understand the underlying dynamics that facilitate synchronization and pattern generation, identifying essential lower-dimensional circuits. Comparative analysis with biological data from humans and primates will be used to inform the design of biologically inspired models.
+
+Additionally, the PhD student will implement Hebbian learning to create networks capable of few-shot and continual learning, thereby reducing the dependency on extensive datasets. This strategy will lead to robust, data-efficient models that offer deeper insights into both artificial and biological time-series processing mechanisms.
+
+<hr>
+
+**Exploiting Domain-Knowledge in Music Representation Learning**
+
+Supervisor: [George Fazekas](https://www.seresearch.qmul.ac.uk/cmai/people/gfazekas)
+
+Eligible funding schemes: S&E Studentships for Underrepresented Groups, CSC PhD Studentships, International PhD Funding Scheme
+
+The field of music representation learning aims to transform complex musical data into latent representations that are useful for tasks such as music classification, mood detection, music recommendation or generation. Despite recent advances in deep learning, many models rely purely on data-driven approaches and overlook domain-specific musical structures such as rhythm, melody and harmony.
+
+This PhD project will investigate the integration of domain knowledge into music representation learning to enhance model interpretability and performance. Embedding music theoretical knowledge, structural hierarchies or genre-specific knowledge, the research should improve learning efficiency and provide richer representations that are more explainable and interpretable. The research has the option to explore various techniques, including incorporating symbolic representations, develop new methodologies for better utilisation of inductive biases, or leveraging musical ontologies to bridge the gap between data-driven models and the structured knowledge inherent in music theory.
+
+There is flexibility in the approach taken, but the candidate should identify and outline a specific method within music analysis, production or generation. Special attention should be devoted to Ethical AI, i.e., it is expected that the proposed approach will not only improve music representation but allow for the reduction data biases or improve attribution of authorship to respect copyright.
+
+<hr>
+
+**Generative sound-based music**
+
+Supervisor: [Anna Xambó](https://www.seresearch.qmul.ac.uk/cmai/people/axambosedo/)
+
+Eligible funding schemes: S&E Studentships for Underrepresented Groups, CSC PhD Studentships, International PhD Funding Scheme
+
+This PhD research explores the potential of generative techniques in sound-based music, where sound itself—rather than traditional musical notes—serves as the core building block of composition. By utilising generative learning procedures, the study will develop systems capable of creating novel soundscapes and site-specific sound art experiences. It is particularly relevant for students with expertise in computing and music, as it combines advanced algorithmic design with artistic sound manipulation. Through the integration of neural networks and sound synthesis methods, this research will examine how machines can generate, transform, and structure sounds into cohesive musical works from a human-centred perspective. This approach contributes to various fields, including acoustic ecology, sound design, interactive music systems, and human-computer interaction.
+
+<hr>
+
+**Interpretable AI for Sound Event Detection and Classification**
+
+Supervisor: [Lin Wang](https://www.seresearch.qmul.ac.uk/cmai/people/lwang/)
+
+Eligible funding schemes: S&E Studentships for Underrepresented Groups, CSC PhD Studentships, International PhD Funding Scheme
+
+Deep-learning models have revolutionized state-of-the-art technologies for environmental sound recognition motivated by their applications in healthcare, smart homes, or urban planning. However, most of the systems used for these applications are based on black boxes and, therefore, cannot be inspected, so the rationale behind their decisions is obscure. Despite recent advances, there is still a lack of research in interpretable machine learning in the audio domain. Applicants are invited to develop ideas to reduce this gap by proposing interpretable deep-learning models for automatic sound event detection and classification in real-life environments.
+
+<hr>
+
+**Machine learning models for musical timbre**
+
+Supervisor: [Charalampos Saitis](https://www.seresearch.qmul.ac.uk/cmai/people/csaitis)
+
+Eligible funding schemes: S&E Studentships for Underrepresented Groups, CSC PhD Studentships, International PhD Funding Scheme
+
+Music information retrieval tasks related to timbre (e.g., instrument identification, playing technique detection) have historically been under-researched, partly due to lack of available -and annotated- data, including a lack of community consensus around instrument and technique taxonomies. In the context of music similarity, which extends to the topic of timbre similarity, metric learning methods are commonly used to learn distances from human judgements. There is extensive work on using metric learning with hand-crafted features, but such representations can be limiting. Conversely, deep metric learning methods attempt to learn distances directly from data, promising a viable alternative. Despite some limited adoption of deep metric learning for specific music similarity tasks, related efforts to learn timbre similarity, or automatically construct taxonomical structures for timbre, are currently lacking. This project will investigate, propose, and develop machine learning models, including curating a new sizable dataset, that can learn discriminative representations of timbre through supervised, semi-supervised, and self-supervised learning paradigms of similarity and categorisation. Such models will enable a wide range of applications for computational music understanding (e.g., foundation models for music) and generation/creativity (e.g., neural audio synthesis). Candidates should have experience in at least one of the following: music informatics, machine listening, metric learning.
+
+<hr>
+
+**Scalable Acoustic Imaging Using Sparse Microphone Arrays for Embedded Devices**
+
+Supervisor: [Iran R. Roman](https://www.seresearch.qmul.ac.uk/cmai/people/iroman/)
+
+Eligible funding schemes: S&E Studentships for Underrepresented Groups, International PhD Funding Scheme
+
+This project will fundamentally transform existing acoustic imaging technologies by developing scalable and adaptable machine learning algorithms aimed at delivering precise spatial sound representations, while requiring minimal hardware. The project focuses on harnessing the potential of embedded microphone arrays, using as few as two or four channels, to create efficient algorithms integrated directly into chips or mobile devices. These algorithms will be designed to accurately localize sound sources and decode semantic information from the sounds, such as identifying the type of sound-producing entity.
+
+The project will entail the development of efficient machine learning models that effectively process both simulated and real sound recordings to not only pinpoint the exact location of sound sources but also extract rich semantic content. This capability will enable compact and versatile acoustic cameras. These cameras will be integrated into various devices, such as smartphones, AR glasses, and security doorbells, enhancing functionalities such as video object tracking by localizing sounds outside the visual field, improving automatic speech recognition systems by providing spatial audio cues to differentiate speakers, and augmenting reality applications by synchronizing virtual sound sources with physical environments.
+
+Students will engage in rigorous algorithmic design, leveraging both theoretical and practical aspects of acoustic signal processing, machine learning, and spatial audio techniques. Comparative analyses with existing technologies will help in fine-tuning the algorithms to achieve high accuracy and efficiency. This research aims to pave the way for next-generation multimodal technologies that enhance the sensory capabilities of everyday devices through advanced sound processing.
+
+<hr>
+
+**Sound-based DIY approaches to creative AI**
+
+Supervisor: [Anna Xambó](https://www.seresearch.qmul.ac.uk/cmai/people/axambosedo/)
+
+Eligible funding schemes: S&E Studentships for Underrepresented Groups, CSC PhD Studentships, International PhD Funding Scheme
+
+I am also open to discussing other projects related to creative AI and DIY projects that aim to improve societal aspects of unprivileged communities through the use of sound-based music and acoustic ecology systems.
+
+<hr>
+
+**Understanding Neural Audio Models with Artificial Intelligence and Linear Algebra**
+
+Supervisor: [Mark Sandler](https://www.seresearch.qmul.ac.uk/cmai/people/msandler/)
+
+Eligible funding schemes: S&E Studentships for Underrepresented Groups, CSC PhD Studentships, International PhD Funding Scheme
+
+Since ~2016 most research in Digital Music and Digital Audio has adopted Deep Learning techniques. These have brought performance improvements in applications like Music Source Separation, Automatic Music Transcription and so on. This is good, but on the downside, the models get larger, they consume increasingly large amounts of power for training and inference, require more data and become less understandable and explainable. These issues underpin the research in this PhD.
+
+A fundamental building block in DL is Matrix (or Linear) Algebra. Through training, each each layer’s weight matrix is progressively modified to reduce the training error. By examining these matrices during training, DL models can be compactly engineered to learn faster and more efficiently.
+
+Research will start by exploring the learning dynamics of established Music Source Separation models. Using this knowledge, we can intelligently prune the models, using Low Rank approximations of weight matrices. We will explore what happens when Low Rank is imposed as a training constraint. Is the model better trained? Is it easier and cheaper to train? Next, the work shifts either to other Neural Audio applications, or to applying Mechanistic Interpretability, which reveals the hidden, innermost structures that emerge in trained Neural Networks.
+
+
+
+<hr>
+
+**Using machine learning to enhance simulation of sound phenomena**
+
+Supervisor: [Josh Reiss](https://www.seresearch.qmul.ac.uk/cmai/people/jreiss/)
+
+Eligible funding schemes: S&E Studentships for Underrepresented Groups, CSC PhD Studentships, International PhD Funding Scheme
+
+Physical and signal-based models of sound generating phenomena are widely used in noise and vibration modelling, sound effects, and digital musical instruments. This project will explore machine learning from sample libraries for improving the models and their design process.  
+
+Not only can optimisation approaches be used to select parameter values such that the output of the model matches samples, the accuracy of such an approach will give us insight into the limitations of a model. It also provides the opportunity to explore the overall performance of different modelling approaches, and to find out whether a model can be generalised to cover a large number of sounds, with a relatively small number of exposed parameters.  
+
+Existing models will be used, with parameter optimisation based on gradient descent. Performance will be compared against recent neural synthesis approaches that often provide high quality synthesis but lack intuitive controls or a physical basis. It will also seek to measure the extent to which entire sample libraries could be replaced by a small number of models with parameters set to match the samples in the library. 
+
+The project can be tailored to the skills of the researcher, and has the potential for high impact. 
