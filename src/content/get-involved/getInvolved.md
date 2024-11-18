@@ -23,14 +23,27 @@ For more information please visit the SMC programme website: <a href="https://ww
 - QMUL studentships: The Centre for Digital Music is part of the School of Electronic Engineering and Computer Science, which has a number of fully-funded PhD Studentships that cover fees and maintenance for UK, EU, and international students. The application deadline is on 31st January 2023 for September 2023 entry. Applicants should follow the guidelines found at <a href="https://eecs.qmul.ac.uk/phd/phd-studentships/" target="_blank" rel="noopener noreferrer" >http://eecs.qmul.ac.uk/phd/phd-studentships/</a>.
 - CSC studentships: The Centre for Digital Music supports applicants funded by the China Scholarship Council, and the university offers tuition fee waivers for CSC applicants. The application deadline is on 31st January 2023 for September 2023 entry. Applicants should follow the guidelines found at <a href="http://eecs.qmul.ac.uk/phd/phd-studentships/" target="_blank" rel="noopener noreferrer" >http://eecs.qmul.ac.uk/phd/phd-studentships/</a>. -->
 
-PhD funding is available through multiple schemes. These include:
+<!--PhD funding is available through multiple schemes. These include:
 
 - [QM Principal and EPSRC-DTP PhD Studentships](http://www.eecs.qmul.ac.uk/phd/phd-studentships/qm-principal-epsrc-dtp-phd-studentships/principal-and-epsrc-dtp-phd-studentships) (home students, with limited availability to international students; only some C4DM academics might be eligible to supervise through this scheme; usually announced early December) 
 - [S&E Doctoral Research Studentships for Underrepresented Groups](http://www.eecs.qmul.ac.uk/phd/phd-studentships/se-doctoral-research-studentships-202425-for-underrepresented-groups/) (home students only, usually 4 positions funded across the Faculty of Science & Engineering)
 - We support international applicants funded by national schemes, e.g., [China Scholarship Council](https://www.qmul.ac.uk/scholarships/items/china-scholarship-council-scholarships.html), [CONACyT (Mexico)](https://www.qmul.ac.uk/scholarships/items/conacyt-scholarships.html). More schemes are listed [on QMUL's website](https://www.qmul.ac.uk/postgraduate/research/funding_phd/studentships/). Application deadlines may vary across schemes.
 - We support home and international applicants funded by [The London Arts & Humanities Partnership (LAHP)](https://www.lahp.ac.uk/prospective-students/).
 - In some occasions we accept self-funded PhD researchers.
-- C4DM hosts the [UKRI Centre for Doctoral Training in AI and Music (AIM CDT)](https://aim.qmul.ac.uk/). Currently the AIM CDT welcomes home and international applicants that are self-funded or sponsored through a national scheme (see above).
+- C4DM hosts the [UKRI Centre for Doctoral Training in AI and Music (AIM CDT)](https://aim.qmul.ac.uk/). Currently the AIM CDT welcomes home and international applicants that are self-funded or sponsored through a national scheme (see above). -->
+
+
+The Centre for Digital Music of Queen Mary University of London welcomes PhD applications for 2025. Candidates are invited to contact the relevant academic by email to elaborate on what the research will entail. In several cases, there is a significant opportunity to jointly shape the direction of research.
+
+Suggested PhD topics and application guidelines can be found at: [https://www.c4dm.eecs.qmul.ac.uk/news/2024-11-12.PhD-call-2025/](https://www.c4dm.eecs.qmul.ac.uk/news/2024-11-12.PhD-call-2025/)
+
+Opportunities include internally and externally funded positions for PhD projects to start in Autumn 2025. It is also possible to apply as a self-funded student or with funding from another source. Studentship opportunities include:
+
+* S&E Doctoral Research Studentships for Underrepresented Groups (UK home applicants, Autumn 2025 start, 6 positions funded across the Faculty of Science & Engineering)
+
+* CSC PhD Studentships in Electronic Engineering and Computer Science (Autumn 2025 start, Chinese applicants, up to 8 nominations allocated for the Centre for Digital Music)
+
+* International PhD Funding Schemes (Autumn 2025 start, numerous international funding agencies)
 
 <!-- **Informal enquiries** -->
 
