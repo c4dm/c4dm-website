@@ -6,4 +6,5 @@ blurb: "Communication acoustics, crossmodal correspondences, sound synthesis, co
 themes: ["comma","mcog"]
 role: "Academic"
 image: "./charissaitis.jpeg"
+elementsId: 46798
 ---

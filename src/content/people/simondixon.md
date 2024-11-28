@@ -6,4 +6,5 @@ blurb: "Music informatics, music signal processing, artificial intelligence, mus
 themes: ["mir"]
 role: "Academic"
 image: "./simondixon.png"
+elementsId: 21674
 ---

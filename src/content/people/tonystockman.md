@@ -6,4 +6,5 @@ blurb: "Interaction Design, auditory displays, Data Sonification, Collaborative 
 themes: ["isam"]
 role: "Academic"
 image: "./tonystockman.jpeg"
+elementsId: 19464
 ---

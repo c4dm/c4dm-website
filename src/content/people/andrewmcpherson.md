@@ -6,4 +6,5 @@ blurb: "new interfaces for musical expression, augmented instruments, performanc
 themes: ["augmi","soundsynthesis"]
 role: "Academic"
 image: "./andrewmcpherson.jpeg"
+elementsId: 29093
 ---

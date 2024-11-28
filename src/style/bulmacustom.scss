@@ -228,4 +228,9 @@ section.hero::before {
           height: auto;
           margin: 0 0 2rem 0; 
     }
-  }
+}
+
+// Hidden element to automate matching users in Elements
+.elements-id {
+    display: none;
+}

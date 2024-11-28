@@ -6,4 +6,5 @@ blurb: "Music information research, Internet of musical things, Extended reality
 themes: ["mir","augmi","isam","mupae"]
 role: "Academic"
 image: "./mathieubarthet.jpeg"
+elementsId: 25194
 ---
