@@ -6,4 +6,5 @@ blurb: "sound engineering, intelligent audio production, sound synthesis, audio 
 themes: ["audioeng","soundsynthesis"]
 role: "Academic"
 image: "./joshuadreiss.jpeg"
+elementsId: 19433
 ---

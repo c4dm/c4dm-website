@@ -21,10 +21,11 @@ const firstColumn = (image) => (
   </>
 );
 
-const secondColumn = (name, acadposition) => (          
+const secondColumn = (name, acadposition, elementsId) => (
                   <>
                     <p className="title is-4">{name || "Name"}</p>
                     <p className="subtitle is-7">{acadposition || "Academic Position"}</p>
+                    <p className="elements-id">{elementsId}</p>
                   </>
                 );
                 
@@ -49,6 +50,7 @@ const People = ({pageContext}) => {
               name
               url
               acadposition
+              elementsId
               blurb
               themes
               role
@@ -117,7 +119,7 @@ const groups = data.people;
                 >
                 <TableCard 
                     first={firstColumn(peopleentry.frontmatter.image)} 
-                    second={secondColumn(peopleentry.frontmatter.name, peopleentry.frontmatter.acadposition)} 
+                    second={secondColumn(peopleentry.frontmatter.name, peopleentry.frontmatter.acadposition, peopleentry.frontmatter.elementsId)}
                     third={thirdColumn(peopleentry.frontmatter.blurb)} 
                 />
                 </div>

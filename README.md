@@ -87,6 +87,7 @@ blurb: "Sabotaging, errors and other mistakes as a source of new techniques in m
 themes: ["augmi","isam"]
 role: "PhD"
 image: "./teodannemann.png"
+elements_id: 00000
 ---
 ```
 The ``acadposition`` should be a very short (2-3 words) description of the position of the member. /
@@ -101,7 +102,9 @@ The ``themes`` entry corresponds to the lab(s) that the member is taking part. C
 - Sonic Interaction Design --> "isam"
 - Sound Synthesis --> "soundsynthesis"
 
-The ``role`` entry is used to group people of the same academic position (e.g PhDs, academics, etc). Make sure that you use the exact same label so members can be correctly grouped. You can see the current tags by going to the [people page](https://c4dmwebsitemain.gatsbyjs.io/people/) and checking the tags that appear. If you add a new label to a member, you should see the corresponding tag appearing on this page. 
+The ``role`` entry is used to group people of the same academic position (e.g PhDs, academics, etc). Make sure that you use the exact same label so members can be correctly grouped. You can see the current tags by going to the [people page](https://c4dmwebsitemain.gatsbyjs.io/people/) and checking the tags that appear. If you add a new label to a member, you should see the corresponding tag appearing on this page.
+
+The ``elements_id`` is used to automatically retrieve publications from Elements. Find this 5-digit number by going to [Elements](https://elements.qmul.ac.uk/homepage.html), then clicking on "My profile" in the user menu at the top right. Your Elements user id will then be visible as a url parameter, the part `?uid=38282` appended to `https://elements.qmul.ac.uk/userprofile.html` in your browser's address bar. If you are looking for someone else's user id, scroll down the page until you see "Find a colleague" in the right column. Searching for that person's name takes you to their profile, where you can find their id by following the same procedure.
 
 If you want to add an image of the member to be displayed, please upload the image to the same folder where the `.md` file is. Then, in the ``image`` entry, add the file name following the format above. \ 
 **Important:** If no image is available, use the default image by adding ``"./defaultprofile.png"``for the ``image`` entry.

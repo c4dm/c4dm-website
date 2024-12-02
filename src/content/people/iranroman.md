@@ -6,4 +6,5 @@ blurb: "theoretical neuroscience, machine perception, artificial intelligence"
 themes: ["comma","mir","mlist"]
 role: "Academic"
 image: "./iranroman.jpeg"
+elementsId: 57815
 ---

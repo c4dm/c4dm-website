@@ -6,4 +6,5 @@ blurb: "new interfaces for musical expression, performance study, human-computer
 themes: ["augmi","mir","isam"]
 role: "Academic"
 image: "./annaxambo.jpeg"
+elementsId: 41762
 ---

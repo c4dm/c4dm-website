@@ -6,4 +6,5 @@ blurb: "spatial and immersive audio, music signal processing, machine learning f
 themes: ["comma","mir"]
 role: "Academic"
 image: "./aidanhogg.jpeg"
+elementsId: 56291
 ---
