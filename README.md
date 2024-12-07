@@ -117,14 +117,14 @@ You will find a list of .md (markdown) files, one for each news & events entry. 
 ---
 title: " C4DM Seminar: Axel Marmoret"
 author: "Admin"
-date: "2022-03-16"
+date: 2022-03-16
 image: "./placeholder.png"
 tags: ["seminars", "events"]
 ---
 ```
 
 `title` and `author` don't have any restrictions in format. 
-`date` has to follow the `yyyy-mm-dd` format.\
+`date` has to follow the `yyyy-mm-dd` format and cannot be quoted.\
 `tags` is an array of words to group the news & events when displayed. You can add whatever tag you find useful. Just remember to be consistent and not create too many tags as it could lead to a cumbersome page display.\
 If you want to add an image to be displayed for the particular entry, please upload the image to the same folder where the `.md` file is. Then, in the ``image`` entry, add the file name following the format above. \ 
 **Important:** If no image is available, use the default image by adding ``"./placeholder.png"``for the ``image`` entry.
