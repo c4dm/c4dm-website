@@ -38,7 +38,7 @@ const People = ({pageContext}) => {
     const data = useStaticQuery(graphql`
       {people: allMarkdownRemark(
           filter: { fields: { category: { eq: "people" } } }
-          sort: { fields: [frontmatter___role, frontmatter___name], order: [ASC, ASC] }
+          sort: [{frontmatter: {role: ASC}}, {frontmatter: {name: ASC}}]
         ) {
           nodes {
             frontmatter {
