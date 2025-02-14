@@ -4,6 +4,13 @@ Our [current students are listed here](/people). Would you like to [study with u
 
 ## 2024
 
+* Yukun LI, "Segmenting and Analysing Pitch Contours across Singing Styles" (Supervisor: Simon Dixon)
+* Corey FORD, "Reflection in AI-enabled music composition" (Supervisor: Nick Bryan-Kinns)
+* Ilaria MANCO, "Learning Music Representations from Audio and Language" (Supervisors: George Fazekas, Emmanouil Benetos)
+* Yixiao ZHANG, "[Improving Controllability and Editability for Pretrained Text-to-Music Generation Models](https://qmro.qmul.ac.uk/xmlui/handle/123456789/101627)" (Supervisor: Simon Dixon)
+* Lauren EDLIN, "Methods for Data-driven Models of Comics" (Supervisor: Josh Reiss)
+* Gary BROMHAM, "Enveloping and Shaping the Sound: Analysis of the perception of retro aesthetics in popular music production" (Supervisor: George Fazekas)
+* Sophie MCDONALD, "[At home with community: playful design towards healthy community placemaking](https://qmro.qmul.ac.uk/xmlui/handle/123456789/103971)" (Supervisors: Nick Bryan-Kinns and Dan Stowell)
 * Pedro SARMENTO, "[Guitar Tablature Generation with Deep Learning](https://qmro.qmul.ac.uk/xmlui/handle/123456789/98872)" (Supervisor: Mathieu Barthet)
 * Mei ZHANG, "Supporting Textile and Fashion Designers in Designing with Interactive Technology Through a Material Lens" (Supervisors: Nick Bryan-Kinns and Becky Stewart)
 * Tim KIRBY, "Towards Real-time Synthesis of Percussive Instruments" (Supervisor: Mark Sandler)
