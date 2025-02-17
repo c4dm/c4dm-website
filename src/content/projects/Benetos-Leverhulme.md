@@ -7,7 +7,7 @@ end: "2024"
 grant: "RAEng/Leverhulme Trust Research Fellowship LTRF2223-19-106"
 partner: "Royal Academy of Engineering"
 amount: "£52,455"
-status: "active"
+status: "complete"
 tags: ["UK national academy funding"]
 image: "./RAEng.png"
 ---
