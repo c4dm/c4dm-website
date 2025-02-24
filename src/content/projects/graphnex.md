@@ -6,7 +6,7 @@ begin: "2021"
 end: "2024"
 grant: "CHIST-ERA / EPSRC grant EP/V062107/1"
 amount: "£293,434"
-status: "active"
+status: "complete"
 tags: ["UKRI funding"]
 image: "./graphnex.png"
 ---

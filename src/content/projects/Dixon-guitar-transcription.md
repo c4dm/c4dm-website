@@ -5,7 +5,7 @@ begin: "2024"
 end: "2024"
 grant: "Innovate UK ICURe Programme DSMAR24-06 / 521975189"
 amount: "£2,500"
-status: "active"
+status: "complete"
 tags: ["UKRI funding"]
 image: "./IUK.png"
 ---

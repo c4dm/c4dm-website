@@ -6,7 +6,7 @@ end: "2023"
 grant: "Universal Music Group International Limited, AIM CDT PhD studentship"
 partner: "Universal Music Group International Limited"
 amount: "£54,000 "
-status: "active"
+status: "complete"
 tags: ["Industry funding"]
 image: "./universalaim.jpeg"
 ---

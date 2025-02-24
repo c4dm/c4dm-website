@@ -6,7 +6,7 @@ begin: "2024"
 end: "2024"
 grant: "STEM.TECH"
 amount: "£11,850"
-status: "active"
+status: "complete"
 tags: ["Industry funding"]
 partner: "STEM.TECH"
 image: "./rudiments.png"
