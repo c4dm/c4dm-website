@@ -10,4 +10,4 @@ We are delighted to share that Mary Pilataki, a PhD student at C4DM, has receive
 
 The awarded paper, “Extraction and Neural Synthesis of Low-Order Spectral Components for Head-Related Transfer Functions”, presents research carried out during her internship at PlayStation London in collaboration with Cal Armstrong and Chris Buchanan. The study explores how deep learning can separate sound colouration from spatial cues in Head-Related Transfer Functions (HRTFs), opening up new possibilities for creating more personalised and immersive 3D audio experiences.
 
-The full paper is available through the [AES E-Library](aes2.org/publications/elibrary-page/?id=22993).
+The full paper is available through the [AES E-Library](https://aes2.org/publications/elibrary-page/?id=22993).
