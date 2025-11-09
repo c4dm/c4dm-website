@@ -5,7 +5,7 @@ author: "Prof Mark Sandler (PI), Prof Andrea Cavallaro (CI), Prof Pat Healey (CI
 begin: "2021"
 end: "2024"
 amount: "£177,000 (standard stipend) + £27,000 (contribution from BBC)"
-status: "active"
+status: "complete"
 partner: "BBC"
 tags: ["Industry funding"]
 image: "./dame.png"
