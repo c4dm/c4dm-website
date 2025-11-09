@@ -2,20 +2,36 @@ This is a list of past PhDs successfully completed in the Centre for Digital Mus
 
 Our [current students are listed here](/people). Would you like to [study with us](/get-involved)?
 
+## 2025
+
+* Xiaojing LIU, "Automatic mixing for multiple speaker scenarios" (Supervisor: Josh Reiss)
+* Elona SHATRI, "Structured Approaches For Optical Music Recognition Integrating Enhanced Datasets, Specialised Architectures And Multi-Level Evaluation" (Supervisor: George Fazekas)
+* Jiawen HUANG, "[Enhancing Automatic Lyrics Transcription: Challenges, Insights, and Advances](https://qmro.qmul.ac.uk/xmlui/handle/123456789/112679)" (Supervisor: Emmanouil Benetos)
+* Inês NOLASCO, "Acoustic identification of individual animals in the wild" (Supervisors: Dan Stowell, Emmanouil Benetos)
+* Marco COMUNITÀ, "Understanding and Modeling Audio Effects with Differentiable Methods" (Supervisor: Josh Reiss)
+* Sebastian LÖBBERS, "Sketching Sounds: Using sound-shape associations to build a sketch-based sound synthesiser" (Supervisor: George Fazekas)
+* Jiachen LUO, "[Unimodal and Bimodal Speech Emotion Recognition in Conversations Content](https://qmro.qmul.ac.uk/xmlui/handle/123456789/109313)" (Supervisor: Josh Reiss)
+* Vjosa PRENIQI, "[Moral Values in Music: A Data-Driven Study of Listener Preferences and Lyrical Content](https://qmro.qmul.ac.uk/xmlui/handle/123456789/112605)" (Supervisor: Charalampos Saitis)
+* Xavier RILEY, "Transcribing the Jazz Ensemble: Applying deep learning models to jazz transcription" (Supervisor: Simon Dixon) 
+* Andrea MARTELLONI, "[Real-Time AI to Augment Percussive Fingerstyle on the Acoustic Guitar](https://qmro.qmul.ac.uk/xmlui/handle/123456789/110053)" (Supervisors: Mathieu Barthet, Andrew McPherson)
+* Berker BANAR, "[Composing Contemporary Classical Music Using Generative Deep Learning](https://qmro.qmul.ac.uk/xmlui/handle/123456789/106333)" (Supervisor: Simon Colton)
+* Nicole ROBSON, "[Human-sound interaction: the relational experience of (in)audible installation art](https://qmro.qmul.ac.uk/xmlui/handle/123456789/111051)" (Supervisors: Nick Bryan-Kinns, Andrew McPherson)
+
+
 ## 2024
 
-* Yukun LI, "Segmenting and Analysing Pitch Contours across Singing Styles" (Supervisor: Simon Dixon)
-* Corey FORD, "Reflection in AI-enabled music composition" (Supervisor: Nick Bryan-Kinns)
-* Ilaria MANCO, "Learning Music Representations from Audio and Language" (Supervisors: George Fazekas, Emmanouil Benetos)
+* Yukun LI, "[Segmenting and Analysing Pitch Contours across Singing Styles](https://qmro.qmul.ac.uk/xmlui/handle/123456789/104945)" (Supervisor: Simon Dixon)
+* Corey FORD, "[Reflection in Creativity Support Tool Interaction: Characterisations for AI-based Music Composition](https://qmro.qmul.ac.uk/xmlui/handle/123456789/111951)" (Supervisor: Nick Bryan-Kinns)
+* Ilaria MANCO, "[Learning Music Representations from Audio and Language](https://qmro.qmul.ac.uk/xmlui/handle/123456789/111095)" (Supervisors: George Fazekas, Emmanouil Benetos)
 * Yixiao ZHANG, "[Improving Controllability and Editability for Pretrained Text-to-Music Generation Models](https://qmro.qmul.ac.uk/xmlui/handle/123456789/101627)" (Supervisor: Simon Dixon)
-* Lauren EDLIN, "Methods for Data-driven Models of Comics" (Supervisor: Josh Reiss)
-* Gary BROMHAM, "Enveloping and Shaping the Sound: Analysis of the perception of retro aesthetics in popular music production" (Supervisor: George Fazekas)
+* Lauren EDLIN, "[Methods for Data-driven Models of Comics](https://qmro.qmul.ac.uk/xmlui/handle/123456789/110255)" (Supervisor: Josh Reiss)
+* Gary BROMHAM, "[Enveloping and Shaping the Sound: Analysis of the perception of retro aesthetics in popular music production](https://qmro.qmul.ac.uk/xmlui/handle/123456789/106491)" (Supervisor: George Fazekas)
 * Sophie MCDONALD, "[At home with community: playful design towards healthy community placemaking](https://qmro.qmul.ac.uk/xmlui/handle/123456789/103971)" (Supervisors: Nick Bryan-Kinns and Dan Stowell)
 * Pedro SARMENTO, "[Guitar Tablature Generation with Deep Learning](https://qmro.qmul.ac.uk/xmlui/handle/123456789/98872)" (Supervisor: Mathieu Barthet)
 * Mei ZHANG, "Supporting Textile and Fashion Designers in Designing with Interactive Technology Through a Material Lens" (Supervisors: Nick Bryan-Kinns and Becky Stewart)
-* Tim KIRBY, "Towards Real-time Synthesis of Percussive Instruments" (Supervisor: Mark Sandler)
-* Jianing ZHENG, "The Role of Materials in Musical Interaction" (Supervisor: Andrew McPherson)
-* Elizabeth WILSON, "Affective Live Coding: Fostering Human-Machine Collaboration with Autonomous Agents" (Supervisors: George Fazekas, Geraint Wiggins, Elaine Chew)
+* Tim KIRBY, "[Towards Real-time Synthesis of Percussive Instruments](https://qmro.qmul.ac.uk/xmlui/handle/123456789/105018)" (Supervisor: Mark Sandler)
+* Jianing ZHENG, "[The Role of Materials in Musical Interaction](https://qmro.qmul.ac.uk/xmlui/handle/123456789/101621)" (Supervisor: Andrew McPherson)
+* Elizabeth WILSON, "[Affective Live Coding: Fostering Human-Machine Collaboration with Autonomous Agents](https://qmro.qmul.ac.uk/xmlui/handle/123456789/109311)" (Supervisors: George Fazekas, Geraint Wiggins, Elaine Chew)
 * Charlotte NORDMOEN, "[From rational to relational: more-than-human perspectives on crafting technology](https://qmro.qmul.ac.uk/xmlui/handle/123456789/104180)" (Supervisor: Andrew McPherson)
 * Brendan O'CONNOR, "[Analysis, Disentanglement, and Conversion of Singing Voice Attributes](https://qmro.qmul.ac.uk/xmlui/handle/123456789/95685)" (Supervisor: Simon Dixon)
 * Saurjya SARKAR, "[Time-domain Music Source Separation for Choirs and Ensembles](https://qmro.qmul.ac.uk/xmlui/handle/123456789/95818)" (Supervisor: Mark Sandler)
