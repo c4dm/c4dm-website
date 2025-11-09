@@ -9,6 +9,6 @@ amount: "£40,314"
 status: "active"
 tags: ["Industry funding"]
 partner: "Google LLC"
-image: "./rudiments.png"
+image: "./Google.png"
 ---
 
