@@ -33,17 +33,20 @@ For more information please visit the SMC programme website: <a href="https://ww
 - C4DM hosts the [UKRI Centre for Doctoral Training in AI and Music (AIM CDT)](https://aim.qmul.ac.uk/). Currently the AIM CDT welcomes home and international applicants that are self-funded or sponsored through a national scheme (see above). -->
 
 
-The Centre for Digital Music of Queen Mary University of London welcomes PhD applications for 2025. Candidates are invited to contact the relevant academic by email to elaborate on what the research will entail. In several cases, there is a significant opportunity to jointly shape the direction of research.
+The Centre for Digital Music of Queen Mary University of London welcomes PhD applications for 2026. Candidates are invited to contact the relevant academic by email to elaborate on what the research will entail. In several cases, there is a significant opportunity to jointly shape the direction of research.
 
-Suggested PhD topics and application guidelines can be found at: [https://www.c4dm.eecs.qmul.ac.uk/news/2024-11-12.PhD-call-2025/](https://www.c4dm.eecs.qmul.ac.uk/news/2024-11-12.PhD-call-2025/)
+Suggested PhD topics and application guidelines can be found at: [https://www.c4dm.eecs.qmul.ac.uk/news/2025-11-17.PhD-call-2026/](https://www.c4dm.eecs.qmul.ac.uk/news/2025-11-17.PhD-call-2026/)
 
-Opportunities include internally and externally funded positions for PhD projects to start in Autumn 2025. It is also possible to apply as a self-funded student or with funding from another source. Studentship opportunities include:
+Opportunities include internally and externally funded positions for PhD projects to start in Autumn 2026. It is also possible to apply as a self-funded student or with funding from another source. Studentship opportunities include:
 
-* S&E Doctoral Research Studentships for Underrepresented Groups (UK home applicants, Autumn 2025 start, 6 positions funded across the Faculty of Science & Engineering)
+* One UK home PhD studentship (Autumn 2026 start, UK home applicants, deadline 9 January 2026)
 
-* CSC PhD Studentships in Electronic Engineering and Computer Science (Autumn 2025 start, Chinese applicants, up to 8 nominations allocated for the Centre for Digital Music)
+* S&E Doctoral Research Studentships for Underrepresented Groups (UK home applicants, Autumn 2026 start, 3 positions funded across the Faculty of Science & Engineering, deadline 28 January 2026 5pm)
 
-* International PhD Funding Schemes (Autumn 2025 start, numerous international funding agencies)
+* CSC PhD Studentships in Electronic Engineering and Computer Science (Autumn 2026 start, Chinese applicants, up to 5 nominations allocated for the Centre for Digital Music, deadline 28 January 2026 5pm)
+
+* International PhD Funding Schemes (Autumn 2026 start, numerous international funding agencies)
+
 
 <!-- **Informal enquiries** -->
 
