@@ -45,7 +45,7 @@ Opportunities include internally and externally funded positions for PhD project
 
 * CSC PhD Studentships in Electronic Engineering and Computer Science (Autumn 2026 start, Chinese applicants, up to 5 nominations allocated for the Centre for Digital Music, deadline 28 January 2026 5pm)
 
-* International PhD Funding Schemes (Autumn 2026 start, numerous international funding agencies)
+* National (country of origin) PhD Study Abroad Schemes (Autumn 2026 start, any nationality)
 
 
 <!-- **Informal enquiries** -->
