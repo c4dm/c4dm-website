@@ -47,7 +47,19 @@ module.exports = {
         useAutoGen: true, // useAutoGen: required 'true' to use autogen
       },
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 800,
+            },
+          },
+        ],
+      },
+    },
     "gatsby-plugin-sass",
     {
       resolve: "gatsby-remark-embed-video",
