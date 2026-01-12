@@ -4,6 +4,6 @@ url: "http://lewiswolstanholme.co.uk"
 acadposition: "PhD Student"
 blurb: "Meta-Physical Modelling"
 themes: ["sounsynthesis","augmi"]
-role: "PhD"
+role: ["PhD","Support"]
 image: "./lewiswolstanholme.jpg"
 ---
