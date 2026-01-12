@@ -2,7 +2,7 @@
 name: "Merlin Goldman"
 url: "https://www.merlingoldman.com/"
 acadposition: "PhD Student"
-blurb: ""
+blurb: "Light-Based Modular Sound Synthesis"
 themes: []
 role: "PhD"
 image: "./merlingoldman.jpg"
