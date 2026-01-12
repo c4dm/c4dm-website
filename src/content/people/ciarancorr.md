@@ -5,5 +5,5 @@ acadposition: "C4DM Studios Manager"
 blurb: ""
 themes: []
 role: "Support"
-image: ""
+image: "./defaultprofile.png"
 ---
