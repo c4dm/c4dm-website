@@ -4,6 +4,6 @@ url: "https://github.com/ivanlmh"
 acadposition: "Research Assistant"
 blurb: "Sample Identification in Mastered Songs using Deep Learning Methods"
 themes: ["mir"]
-role: "Research Assistant"
+role: "Visitor"
 image: "./ivanhiggs.jpeg"
 ---
