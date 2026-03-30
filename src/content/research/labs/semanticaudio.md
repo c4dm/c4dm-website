@@ -1,6 +1,6 @@
 ---
 name: Semantic Audio
-link: "https://eecs.qmul.ac.uk/~gyorgyf/index.html"
+link: "https://www.seresearch.qmul.ac.uk/cmai/people/gfazekas"
 image: "groups9.png"
 status: "active"
 ---
