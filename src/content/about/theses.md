@@ -2,6 +2,11 @@ This is a list of past PhDs successfully completed in the Centre for Digital Mus
 
 Our [current students are listed here](/people). Would you like to [study with us](/get-involved)?
 
+## 2026
+
+* Luca MARINELLI, “[A Multimodal Semi-Annotated Analysis of Sound and Music in Gendered Toy Advertisement](https://qmro.qmul.ac.uk/xmlui/handle/123456789/125871)” (Supervisor: Charalampos Saitis)
+* Jincheng ZHANG, “Controllable Music Generation using Deep Learning” (Supervisors: Charalampos Saitis, György Fazekas)
+
 ## 2025
 
 * Xiaojing LIU, "Automatic mixing for multiple speaker scenarios" (Supervisor: Josh Reiss)
