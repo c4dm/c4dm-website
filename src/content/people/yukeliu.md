@@ -5,5 +5,5 @@ acadposition: "Research Assistant"
 blurb: "Music copyright infringement detection"
 themes: ["mir","mlist"]
 role: "Research Assistant"
-image: "./yukeliu.jpg"
+image: "./yukeliu.jpeg"
 ---
