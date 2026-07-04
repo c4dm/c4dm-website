@@ -9,5 +9,5 @@ partner: "Meta Platforms Inc"
 amount: "£33,551"
 status: "active"
 tags: ["Industry funding"]
-image: "./Meta.jpg"
+image: "./Meta.png"
 ---
