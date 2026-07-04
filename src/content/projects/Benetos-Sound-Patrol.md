@@ -6,7 +6,7 @@ begin: "2026"
 end: "2026"
 grant: "Sound Patrol PhD internship"
 amount: "£20,157"
-status: "complete"
+status: "active"
 tags: ["Industry funding"]
 partner: "Sound Patrol"
 image: "./SoundPatrol.png"
