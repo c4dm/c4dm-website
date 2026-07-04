@@ -6,7 +6,7 @@ begin: "2024"
 end: "2025"
 grant: "Innovate UK Creative Catalyst: AI in the Music Industry"
 amount: "£48,144"
-status: "active"
+status: "complete"
 tags: ["UKRI funding"]
 image: "./IUK.png"
 ---

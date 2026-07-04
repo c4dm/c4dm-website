@@ -6,7 +6,7 @@ begin: "2024"
 end: "2025"
 grant: "L-Acoustics UK Ltd"
 amount: "£65,621"
-status: "active"
+status: "complete"
 tags: ["Industry funding"]
 partner: "L-Acoustics UK Ltd"
 image: "./rudiments.png"

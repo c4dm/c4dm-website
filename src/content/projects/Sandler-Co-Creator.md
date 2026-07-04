@@ -6,7 +6,7 @@ begin: "2024"
 end: "2025"
 grant: "Innovate UK Collaborative AI Solutions"
 amount: "£320,887"
-status: "active"
+status: "complete"
 tags: ["UKRI funding"]
 image: "./IUK.png"
 ---

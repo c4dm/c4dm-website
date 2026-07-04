@@ -6,7 +6,7 @@ begin: "2024"
 end: "2026"
 grant: "Innovate UK Smart Grants"
 amount: "£166,349"
-status: "active"
+status: "complete"
 tags: ["UKRI funding"]
 image: "./IUK.png"
 ---

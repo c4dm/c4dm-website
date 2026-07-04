@@ -6,7 +6,7 @@ begin: "2025"
 end: "2025"
 grant: "Sofilab UG"
 amount: "£6,101"
-status: "active"
+status: "complete"
 tags: ["Industry funding"]
 partner: "Sofilab UG"
 image: "./Sofilab.png"

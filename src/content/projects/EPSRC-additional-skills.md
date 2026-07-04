@@ -6,7 +6,7 @@ begin: "2025"
 end: "2026"
 grant: "EPSRC additional skills funding summer 2025"
 amount: "£180,000"
-status: "active"
+status: "complete"
 tags: ["UKRI funding"]
 image: "./EPSRC.png"
 ---

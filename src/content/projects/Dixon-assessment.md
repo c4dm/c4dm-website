@@ -5,7 +5,7 @@ begin: "2024"
 end: "2025"
 grant: "Industry/contract research"
 amount: "£250,000"
-status: "active"
+status: "complete"
 tags: ["Industry funding"]
 image: "./rudiments.png"
 ---

@@ -7,7 +7,7 @@ end: "2026"
 grant: "DAACI Ltd, PhD studentship"
 partner: "DAACI Ltd"
 amount: "£140,000"
-status: "active"
+status: "complete"
 tags: ["Industry funding"]
 image: "./rudiments.png"
 ---

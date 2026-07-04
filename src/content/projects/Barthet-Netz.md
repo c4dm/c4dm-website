@@ -6,7 +6,7 @@ begin: "2024"
 end: "2025"
 grant: "Innovate UK ICURe Explore"
 amount: "£34,523"
-status: "active"
+status: "complete"
 tags: ["UKRI funding"]
 image: "./IUK.png"
 ---

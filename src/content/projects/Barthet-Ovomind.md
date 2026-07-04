@@ -7,7 +7,7 @@ end: "2025"
 grant: "OVOMIND SA, PhD studentship"
 partner: "OVOMIND SA"
 amount: "£33,500"
-status: "active"
+status: "complete"
 tags: ["Industry funding"]
 image: "./rudiments.png"
 ---
