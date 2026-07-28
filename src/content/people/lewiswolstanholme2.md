@@ -1,8 +1,8 @@
 ---
 name: "Lewis Wolstanholme"
-url: "http://lewiswolstanholme.co.uk"
+url: "https://lewiswolstanholme.co.uk"
 acadposition: "C4DM Studios Manager"
-blurb: ""
+blurb: "Studio Engineer, Sound & Motion Research Technician, Teaching Fellow"
 themes: []
 role: "Support"
 image: "./lewiswolstanholme.jpg"
