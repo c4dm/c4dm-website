@@ -102,6 +102,11 @@ const Layout = ({children, crumbs, name, hero}) => {
               <br/>
 
               <a
+                  href="https://c4dm-studios.qmul.ac.uk/"
+                  target="_blank"
+                  rel="Link to C4DM Studios"
+                >C4DM Studios</a><br/>
+              <a
                   href="https://github.com/c4dm/c4dm-website"
                   target="_blank"
                   rel="Internal Site Link"
