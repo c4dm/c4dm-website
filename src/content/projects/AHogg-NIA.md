@@ -5,7 +5,7 @@ author: "Dr Aidan Hogg (PI)"
 begin: "2026"
 end: "2029"
 grant: "EPSRC New Investigator Award"
-amount: "£485,786"
+amount: "£509,887.58"
 status: "active"
 tags: ["UKRI funding"]
 image: "./EPSRC.png"
