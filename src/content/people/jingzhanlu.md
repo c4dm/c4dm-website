@@ -1,0 +1,9 @@
+---
+name: "Jingzhan Lu"
+url: "https://jingzhan-lu.github.io/"
+acadposition: "Research Assistant"
+blurb: "Large language models for multimodal music understanding and ethical audio generation"
+themes: []
+role: "Research Assistant"
+image: "./jingzhanlu.jpg"
+---
