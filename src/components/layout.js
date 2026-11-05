@@ -10,6 +10,7 @@ const navItems = [
     {name: "People", link: "/people"},
     {name: "News & Events", link: "/news"},
     {name: "Partners", link: "/partners"},
+	{name: "C4DM Studios", link: "https://c4dm-studios.qmul.ac.uk/", external: true },
     {name: "Get Involved", link: "/get-involved"},
 ]
 
@@ -77,13 +78,19 @@ const Layout = ({children, crumbs, name, hero}) => {
           }`}
         >
           {navItems.map((item) => (
-            <React.Fragment key={`navbar-unit-${item.name}`}>
-              <Link className="navbar-item" to={item.link}>
-                {item.name}
-              </Link>
-              <span className="navitem-divider"></span>
-            </React.Fragment>
-          ))}
+			  <React.Fragment key={`navbar-unit-${item.name}`}> 
+				{item.external ? (
+					<a className="navbar-item" href={item.link}>
+						{item.name}
+					</a>
+				) : (
+					<Link className="navbar-item" to={item.link}>
+						{item.name}
+      				</Link>
+    			)}
+    			<span className="navitem-divider"></span>
+  			</React.Fragment>
+		))}
         </div>
       </nav>
     );
